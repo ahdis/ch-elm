@@ -2,20 +2,24 @@ All significant changes to this FHIR implementation guide will be documented on 
 
 ### 1.2.0 - cibuild 
 
-* [#32](https://github.com/ahdis/ch-elm/issues/62): adding ValueSets/ConceptMaps for Interpretation Code
+#### Added
+* [#32](https://github.com/ahdis/ch-elm/issues/62): Adding ValueSets/ConceptMaps for Interpretation Code
+
+#### Fixed
+* [#63](https://github.com/ahdis/ch-elm/issues/63): Standardize spelling
 
 
 ### 1.1.0 2024/01/31
 
 #### Added
-* [#56](https://github.com/ahdis/ch-elm/issues/56): add a search box to the ig #56
+* [#56](https://github.com/ahdis/ch-elm/issues/56): Add a search box to the ig
 
 #### Changed / Updated
 * [#49](https://github.com/ahdis/ch-elm/issues/49): Update description of CS/VS CH ELM FOPH Patient Name Representation
 * [#52](https://github.com/ahdis/ch-elm/issues/52): CH ELM Organization: BUR and UID as identifiers 0..1, no ZSR anymore
 * [#6](https://github.com/ahdis/ch-elm/issues/6): Fix ig dependencies to published versions 
 * [#60](https://github.com/ahdis/ch-elm/issues/60): Removal of rule that prevents a specimen code to be sent 
-* [#61](https://github.com/ahdis/ch-elm/issues/61): postalCode / city required for Orderer (Practitioner and/or Organisation)
+* [#61](https://github.com/ahdis/ch-elm/issues/61): postalCode / city required for Orderer (Practitioner and/or Organization)
 
 #### Fixed
 * [#45](https://github.com/ahdis/ch-elm/issues/45): Fix minimum cardinality for Practitioner in Bundle
@@ -24,7 +28,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 * [#58](https://github.com/ahdis/ch-elm/issues/58): Don't indicated meta.profiles in examples
 * [#57](https://github.com/ahdis/ch-elm/issues/57): Patient address.line also specified, not only extension
 
-### 1.0.0-release
+### 1.0.0 2023/11/16
 
 #### Added
 * New examples: Carbapenemase-producing Enterobacteriaceae (CPE), Campylobacter spp., Treponema pallidum, Influenza, SARS-CoV-2
