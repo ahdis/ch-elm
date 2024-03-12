@@ -1,11 +1,16 @@
 All significant changes to this FHIR implementation guide will be documented on this page.   
 
-### 1.2.0 - cibuild 
+### Next version based on the updated CH LAB-Report IG
 
+#### Changed / Updated
+* Dependency on the latest publication of CH LAB-Report updated and necessary adjustments in profiles made. The changes does not have an impact for the CH ELM implementation.
+   * Use IPS datatype profiles (CodeableConcept, Coding) as parent
+   * Change the name of the parent profile ChLabReportSpecimen to ChLabSpecimen
+
+### 1.2.0 - cibuild 
 * [#32](https://github.com/ahdis/ch-elm/issues/62): adding ValueSets/ConceptMaps for Interpretation Code
 * [#68](https://github.com/ahdis/ch-elm/issues/68): Add slice for DocumentReference.contained for improving validation output
 * [#71](https://github.com/ahdis/ch-elm/issues/71): Fix SARS-CoV-2 Strict validation
-
 ### 1.1.0 2024/01/31
 
 #### Added
