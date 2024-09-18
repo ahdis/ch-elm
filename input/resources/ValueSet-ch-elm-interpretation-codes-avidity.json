@@ -1,0 +1,20 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ch-elm-interpretation-codes-avidity",
+  "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-avidity",
+  "version": "2024-09-18",
+  "name": "ChElmInterpretationCodesAvidity",
+  "title": "CH ELM Interpretation Codes Avidity",
+  "status": "active",
+  "experimental": false,
+  "description": "This CH ELM value set includes the code for avidity interpretation code(s).",
+  "compose": {
+    "include": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+        "concept": [
+        ]
+      }
+    ]
+  }
+}
