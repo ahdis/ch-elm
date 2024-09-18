@@ -27,6 +27,9 @@
           },
           {
             "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-titer"
+          },
+          {
+            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-avidity"
           }
         ]
       }
