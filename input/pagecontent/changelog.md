@@ -1,5 +1,8 @@
 All significant changes to this FHIR implementation guide will be documented on this page.   
 
+### 1.x.x
+* [#118]Observation.value depending on leading code
+
 ### 1.4.0 2024/08/20
 
 * [#111](https://github.com/ahdis/ch-elm/issues/111) added examples for Neisseria (primary and secondary lab), Measles Seroconversion,  Corynebacterium diphtheriae, Streptococcus pneumoniae,  Vibrio cholerae, Hepatite E, Haemophilus influenzae, Francisella tularensis, Dengue Titer and updated valuesets
