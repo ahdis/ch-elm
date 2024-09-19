@@ -1,0 +1,51 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "ch-elm-results-to-observationprofile",
+  "url": "http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-results-to-observationprofile",
+  "version": "2024-09-18",
+  "name": "ChElmResultsToObservationProfile",
+  "title": "CH ELM Results To Observation Profile",
+  "status": "active",
+  "experimental": false,
+  "description": "This CH ELM concept map specifies the observation profile for each leading code.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "CHE"
+        }
+      ]
+    }
+  ],
+  "sourceCanonical": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-laboratory-observation",
+  "targetCanonical": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-vs",
+  "group": [
+    {
+      "source": "http://loinc.org",
+      "target": "http://fhir.ch/ig/ch-elm/CodeSystem/ch-elm-osbservation-codes-vs",
+      "element": [
+        {
+          "code": "46732-4",
+          "display": "Francisella tularensis subtype [Identifier] in Specimen by NAA with probe detection",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-observation-pq",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "100749-1",
+          "display": "Legionella pneumophila serogroup 1 [Presence] in Specimen by NAA with probe detection",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-observation-pq",
+              "equivalence": "relatedto"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
