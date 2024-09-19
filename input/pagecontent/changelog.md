@@ -1,7 +1,7 @@
 All significant changes to this FHIR implementation guide will be documented on this page.   
 
 ### 1.x.x
-* [#118]Observation.value depending on leading code
+* [#118](https://github.com/ahdis/ch-elm/issues/118)Observation.value depending on leading code
 
 ### 1.4.0 2024/08/20
 
