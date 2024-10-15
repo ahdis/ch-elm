@@ -42,7 +42,6 @@ POST https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir/$validate HTTP/1.1
 Content-Type: application/fhir+json
 Accept: application/fhir+json
 
-< ./bundle.json
 
 
 ### $validate on DocumentReference
@@ -114,20 +113,35 @@ Accept: application/fhir+json
 
 < ../fsh-generated/resources/Bundle-1Doc-NeisseriaGonorrhoeae.json
 
-###
-POST https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir/Bundle/$validate?profile=http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-document-strict HTTP/1.1
+### ABN V
+POST https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir/DocumentReference/$validate HTTP/1.1
 Content-Type: application/fhir+json
 Accept: application/fhir+json
 
-< ../fsh-generated/resources/Bundle-1bDoc-NeisseriaGonorrhoeae.json
-
+< ./DocumentReference-1-DocumentReference.json
 
 ###
-POST https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir/Bundle/$validate?_validatorAnonymizePatientPriorToValidation=false HTTP/1.1
+POST https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir/DocumentReference/$validate?_strict=false HTTP/1.1
+Content-Type: application/fhir+json
+Accept: application/fhir+json
+
+< ./DocumentReference-1-DocumentReference.json
+
+
+### Non strict validation
+POST https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir/Bundle/$validate?_strict=false HTTP/1.1
 Content-Type: application/fhir+json
 Accept: application/fhir+json
 
 < ./Bundle-1bDoc-NeisseriaGonorrhoeae.json
+
+### strict validation
+POST https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir/Bundle/$validate HTTP/1.1
+Content-Type: application/fhir+json
+Accept: application/fhir+json
+
+< ./Bundle-1bDoc-NeisseriaGonorrhoeae.json
+
 
 ###
 POST https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir/Bundle/$validate?_validatorAnonymizePatientPriorToValidation=false HTTP/1.1
@@ -145,7 +159,7 @@ Accept: application/fhir+json
 
 
 ###
-POST http://localhost:8080/matchboxv3/fhir/$validate?profile=http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-document-strict HTTP/1.1
+POST http://localhost:8080/matchboxv3/fhir/$validate?profile=http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-document-strict&_strict=false HTTP/1.1
 Content-Type: application/fhir+json
 Accept: application/fhir+json
 

@@ -144,5 +144,9 @@ Entry 'urn:uuid:f3a6fb93-867e-4283-bc41-d6b3e4018efb' isn't reachable by travers
 Entry 'urn:uuid:bdae0960-c093-4684-ae8f-863f8bcf4613' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
 Entry 'urn:uuid:22702194-d26d-4352-a5f8-805dd1fb6bcb' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
 
+== input/resources/Bundle-32Doc-Rubella-avidity.xml ==
+Entry 'urn:uuid:0fdc0897-6abf-4b54-b3f0-96087f6e8153' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
+Entry 'urn:uuid:b0564da1-cc00-4022-86b3-4d35efaeb414' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
+
 # Terminology error during build, no impact
 Error from http://tx.fhir.org/r4: POST Stream too large%

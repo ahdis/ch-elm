@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "ch-elm-expecting-specimen-specification",
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-expecting-specimen-specification",
-  "version": "2024-09-24",
+  "version": "2024-10-15",
   "name": "ChElmExpectingSpecimenSpecification",
   "title": "CH ELM Expecting Specimen Specification",
   "status": "active",

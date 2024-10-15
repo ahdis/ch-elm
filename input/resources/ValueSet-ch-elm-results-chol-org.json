@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "ch-elm-results-chol-org",
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-chol-org",
-  "version": "2024-09-24",
+  "version": "2024-10-15",
   "name": "ChElmResultsCholOrg",
   "title": "CH ELM Results Chol Org",
   "status": "active",

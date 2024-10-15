@@ -206,6 +206,10 @@ resources:
   # name: 31Doc - Salmonella typhi
   # description: Example Document for Salmonella typhi
   # exampleCanonical: http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-document-strict         
+  Bundle/32Doc-Rubella-avidity:
+    name: 32Doc - Rubella avidity
+    description: Example Document for Rubella avidity
+    exampleCanonical: http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-document-strict
   Binary/Test92-Bundle-WarningBerUidGln:
     extension:
       - url: http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format

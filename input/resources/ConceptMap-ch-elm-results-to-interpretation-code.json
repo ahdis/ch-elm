@@ -2,7 +2,7 @@
   "resourceType": "ConceptMap",
   "id": "ch-elm-results-to-interpretation-code",
   "url": "http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-results-to-interpretation-code",
-  "version": "2024-09-24",
+  "version": "2024-10-15",
   "name": "ChElmResultsToInterpretationCode",
   "title": "CH ELM Results To Interpretation Code",
   "status": "active",
@@ -178,6 +178,16 @@
         {
           "code": "101555-1",
           "display": "Campylobacter upsaliensis DNA [Presence] in Stool by NAA with probe detection",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "101802-7",
+          "display": "Brucella sp IgA Ab [Presence] in Serum",
           "target": [
             {
               "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
@@ -376,6 +386,16 @@
           ]
         },
         {
+          "code": "17563-8",
+          "display": "Salmonella sp identified in Specimen by Organism specific culture",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
           "code": "20458-6",
           "display": "Rubella virus IgG Ab [Interpretation] in Serum",
           "target": [
@@ -548,6 +568,26 @@
         {
           "code": "24116-6",
           "display": "Rubella virus IgM Ab [Presence] in Serum or Plasma by Immunoassay",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "24396-4",
+          "display": "Brucella sp IgG Ab [Presence] in Serum",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "24397-2",
+          "display": "Brucella sp IgM Ab [Presence] in Serum",
           "target": [
             {
               "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
@@ -916,6 +956,26 @@
           ]
         },
         {
+          "code": "41625-5",
+          "display": "Brucella sp DNA [Identifier] in Specimen by NAA with probe detection",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "41626-3",
+          "display": "Brucella sp DNA [Presence] in Specimen by NAA with probe detection",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
           "code": "41763-4",
           "display": "Rubella virus IgG Ab [Titer] in Serum",
           "target": [
@@ -971,6 +1031,16 @@
           "target": [
             {
               "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-sero",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "44797-9",
+          "display": "Brucella sp [Presence] in Specimen by Organism specific culture",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
               "equivalence": "relatedto"
             }
           ]
@@ -1108,6 +1178,16 @@
         {
           "code": "49609-1",
           "display": "Vibrio sp DNA [Identifier] in Specimen by NAA with probe detection",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "49612-5",
+          "display": "Salmonella sp DNA [Presence] in Specimen by NAA with probe detection",
           "target": [
             {
               "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
@@ -1286,6 +1366,16 @@
           ]
         },
         {
+          "code": "52986-7",
+          "display": "Rubella virus IgG Ab avidity [Ratio] in Serum by Immunoassay",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-avidity",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
           "code": "53607-8",
           "display": "Haemophilus influenzae B DNA [Presence] in Blood by NAA with probe detection",
           "target": [
@@ -1368,6 +1458,16 @@
         {
           "code": "54091-4",
           "display": "Rubella virus RNA [Presence] in Specimen by NAA with probe detection",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "552-0",
+          "display": "Brucella sp identified in Specimen by Organism specific culture",
           "target": [
             {
               "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
@@ -1866,6 +1966,16 @@
           ]
         },
         {
+          "code": "72307-2",
+          "display": "Brucella sp IgG Ab [Titer] in Serum --2nd specimen",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-titer",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
           "code": "74785-7",
           "display": "Influenza virus B Victoria lineage RNA [Presence] in Specimen by NAA with probe detection",
           "target": [
@@ -2088,6 +2198,16 @@
         {
           "code": "82300-5",
           "display": "Shigella sp [Presence] in Stool by Culture",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "82301-3",
+          "display": "Salmonella sp [Presence] in Stool by Culture",
           "target": [
             {
               "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
@@ -2416,6 +2536,16 @@
           ]
         },
         {
+          "code": "93385-3",
+          "display": "Salmonella sp DNA [Presence] by NAA with probe detection in Positive blood culture",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
           "code": "93388-7",
           "display": "Neisseria meningitidis DNA [Presence] by NAA with probe detection in Positive blood culture",
           "target": [
@@ -2611,6 +2741,16 @@
           "target": [
             {
               "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos-neg",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "97313-1",
+          "display": "Salmonella sp DNA [Presence] in Stool by NAA with probe detection",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
               "equivalence": "relatedto"
             }
           ]

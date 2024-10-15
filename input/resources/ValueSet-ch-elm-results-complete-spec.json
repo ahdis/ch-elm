@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "ch-elm-results-complete-spec",
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-complete-spec",
-  "version": "2024-09-24",
+  "version": "2024-10-15",
   "name": "ChElmResultsCompleteSpec",
   "title": "CH ELM Results Complete Spec",
   "status": "active",
@@ -118,6 +118,10 @@
             "display": "Specimen from blood product (specimen)"
           },
           {
+            "code": "258604001",
+            "display": "Upper respiratory specimen"
+          },
+          {
             "code": "119393003",
             "display": "Specimen from urethra (specimen)"
           },
@@ -144,6 +148,10 @@
           {
             "code": "119323008",
             "display": "Pus specimen (specimen)"
+          },
+          {
+            "code": "258606004",
+            "display": "Lower respiratory tract specimen"
           },
           {
             "code": "399492000",

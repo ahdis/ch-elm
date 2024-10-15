@@ -166,3 +166,11 @@ Accept: application/fhir+xml;fhirVersion=4.0
 Content-Type: application/fhir+json;fhirVersion=4.0
 
 < ./31Doc-Salmonella-typhi.json
+
+
+### 2a. Transform order-referral-form to ORF Bundle
+POST {{host}}/StructureMap/$transform?source=http://fhir.ch/ig/ch-elm/StructureMap/QrToBundle
+Accept: application/fhir+xml;fhirVersion=4.0
+Content-Type: application/fhir+json;fhirVersion=4.0
+
+< ./32Doc-RubellaAvidity.json

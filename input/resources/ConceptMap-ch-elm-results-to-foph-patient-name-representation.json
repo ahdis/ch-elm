@@ -2,7 +2,7 @@
   "resourceType": "ConceptMap",
   "id": "ch-elm-results-to-foph-patient-name-representation",
   "url": "http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-results-to-foph-patient-name-representation",
-  "version": "2024-09-24",
+  "version": "2024-10-15",
   "name": "ChElmResultsToFophPatientNameRepresentation",
   "title": "CH ELM Results To FOPH Patient Name Representation",
   "status": "active",
@@ -178,6 +178,16 @@
         {
           "code": "101555-1",
           "display": "Campylobacter upsaliensis DNA [Presence] in Stool by NAA with probe detection",
+          "target": [
+            {
+              "code": "initials",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "101802-7",
+          "display": "Brucella sp IgA Ab [Presence] in Serum",
           "target": [
             {
               "code": "initials",
@@ -376,6 +386,16 @@
           ]
         },
         {
+          "code": "17563-8",
+          "display": "Salmonella sp identified in Specimen by Organism specific culture",
+          "target": [
+            {
+              "code": "full-name",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
           "code": "20458-6",
           "display": "Rubella virus IgG Ab [Interpretation] in Serum",
           "target": [
@@ -551,6 +571,26 @@
           "target": [
             {
               "code": "full-name",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "24396-4",
+          "display": "Brucella sp IgG Ab [Presence] in Serum",
+          "target": [
+            {
+              "code": "initials",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "24397-2",
+          "display": "Brucella sp IgM Ab [Presence] in Serum",
+          "target": [
+            {
+              "code": "initials",
               "equivalence": "relatedto"
             }
           ]
@@ -916,6 +956,26 @@
           ]
         },
         {
+          "code": "41625-5",
+          "display": "Brucella sp DNA [Identifier] in Specimen by NAA with probe detection",
+          "target": [
+            {
+              "code": "initials",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "41626-3",
+          "display": "Brucella sp DNA [Presence] in Specimen by NAA with probe detection",
+          "target": [
+            {
+              "code": "initials",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
           "code": "41763-4",
           "display": "Rubella virus IgG Ab [Titer] in Serum",
           "target": [
@@ -971,6 +1031,16 @@
           "target": [
             {
               "code": "full-name",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "44797-9",
+          "display": "Brucella sp [Presence] in Specimen by Organism specific culture",
+          "target": [
+            {
+              "code": "initials",
               "equivalence": "relatedto"
             }
           ]
@@ -1108,6 +1178,16 @@
         {
           "code": "49609-1",
           "display": "Vibrio sp DNA [Identifier] in Specimen by NAA with probe detection",
+          "target": [
+            {
+              "code": "full-name",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "49612-5",
+          "display": "Salmonella sp DNA [Presence] in Specimen by NAA with probe detection",
           "target": [
             {
               "code": "full-name",
@@ -1286,6 +1366,16 @@
           ]
         },
         {
+          "code": "52986-7",
+          "display": "Rubella virus IgG Ab avidity [Ratio] in Serum by Immunoassay",
+          "target": [
+            {
+              "code": "full-name",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
           "code": "53607-8",
           "display": "Haemophilus influenzae B DNA [Presence] in Blood by NAA with probe detection",
           "target": [
@@ -1371,6 +1461,16 @@
           "target": [
             {
               "code": "full-name",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "552-0",
+          "display": "Brucella sp identified in Specimen by Organism specific culture",
+          "target": [
+            {
+              "code": "initials",
               "equivalence": "relatedto"
             }
           ]
@@ -1866,6 +1966,16 @@
           ]
         },
         {
+          "code": "72307-2",
+          "display": "Brucella sp IgG Ab [Titer] in Serum --2nd specimen",
+          "target": [
+            {
+              "code": "initials",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
           "code": "74785-7",
           "display": "Influenza virus B Victoria lineage RNA [Presence] in Specimen by NAA with probe detection",
           "target": [
@@ -2088,6 +2198,16 @@
         {
           "code": "82300-5",
           "display": "Shigella sp [Presence] in Stool by Culture",
+          "target": [
+            {
+              "code": "full-name",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "82301-3",
+          "display": "Salmonella sp [Presence] in Stool by Culture",
           "target": [
             {
               "code": "full-name",
@@ -2416,6 +2536,16 @@
           ]
         },
         {
+          "code": "93385-3",
+          "display": "Salmonella sp DNA [Presence] by NAA with probe detection in Positive blood culture",
+          "target": [
+            {
+              "code": "full-name",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
           "code": "93388-7",
           "display": "Neisseria meningitidis DNA [Presence] by NAA with probe detection in Positive blood culture",
           "target": [
@@ -2608,6 +2738,16 @@
         {
           "code": "96797-6",
           "display": "SARS-CoV-2 (COVID-19) RNA [Presence] in Oropharyngeal wash by NAA with probe detection",
+          "target": [
+            {
+              "code": "full-name",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "97313-1",
+          "display": "Salmonella sp DNA [Presence] in Stool by NAA with probe detection",
           "target": [
             {
               "code": "full-name",
