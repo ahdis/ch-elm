@@ -1,0 +1,34 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "ch-elm-observation-profile-vs",
+  "url": "http://fhir.ch/ig/ch-elm/CodeSystem/ch-elm-observation-profile-vs",
+  "version": "2024-10-17",
+  "name": "ChElmObservationProfileVs",
+  "title": "CH ELM Observation Profile Vs",
+  "status": "active",
+  "experimental": false,
+  "description": "The codes contained in this code system represent URLs of Profile Observations that can be used as target codes in ConceptMaps. These profiles defines the Observation in relation to the leading code.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "CHE"
+        }
+      ]
+    }
+  ],
+  "caseSensitive": false,
+  "content": "complete",
+  "concept": [
+    {
+      "code": "http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-observation-txt"
+    },
+    {
+      "code": "http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-observation-rto"
+    },
+    {
+      "code": "http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-observation-pq"
+    }
+  ]
+}

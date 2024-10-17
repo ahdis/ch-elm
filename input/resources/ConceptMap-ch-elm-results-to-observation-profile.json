@@ -1,0 +1,41 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "ch-elm-results-to-observation-profile",
+  "url": "http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-results-to-observation-profile",
+  "version": "2024-10-17",
+  "name": "ChElmResultsToObservationProfile",
+  "title": "CH ELM Results To Observation Profile",
+  "status": "active",
+  "experimental": false,
+  "description": "This CH ELM concept map specifies the observation profile for each leading code",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "CHE"
+        }
+      ]
+    }
+  ],
+  "sourceCanonical": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-laboratory-observation",
+  "targetCanonical": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-observation-profile-vs",
+  "group": [
+    {
+      "source": "http://loinc.org",
+      "target": "http://fhir.ch/ig/ch-elm/CodeSystem/ch-elm-observation-profile-vs",
+      "element": [
+        {
+          "code": "56475-7",
+          "display": "Salmonella sp antigenic formula [Identifier] in Isolate by Agglutination",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-observation-txt",
+              "equivalence": "relatedto"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

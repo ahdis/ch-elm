@@ -1,4 +1,7 @@
 All significant changes to this FHIR implementation guide will be documented on this page.   
+### 1.6.0 - unreleased
+
+* [#118](https://github.com/ahdis/ch-elm/issues/118)Observation.value depending on leading code
 
 ### 1.5.0 2024/09/24
 * [#115](https://github.com/ahdis/ch-elm/issues/115) reorganize FHIR document page and add examples for Chikungunya fever, Tick-borne encephalitis, Hepatitis A, Listeriosis and Rubella - reporting of a seroconversion, valuesets are also updated
