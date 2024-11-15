@@ -36,7 +36,7 @@ Description: "This CH ELM base profile constrains the Observation resource for t
 * performer only Reference(ChElmOrganizationLab)
 * specimen only Reference(ChElmSpecimen)
 * specimen 1..
-* interpretation 1..1
+* interpretation 0..1
 * interpretation only ChElmCodeableConcept
 * interpretation ^short = "see also 'Guidance - Laboratory Result'"
 * dataAbsentReason 0..1
