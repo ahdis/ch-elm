@@ -24,14 +24,6 @@ Description: "This CH ELM base profile constrains the Observation resource for t
 * effective[x] 1..
 * effectiveDateTime 1..
 * effectiveDateTime obeys ch-elm-dateTime
-
-* valueString ^short = "String if required by leading code, see also 'Guidance - Laboratory Result'" 
-* valueQuantity ^short = "Quantity if required by leading code, see also 'Guidance - Laboratory Result'"
-* valueRatio ^short = "Ratio if required by leading code, see also 'Guidance - Laboratory Result'"
-* valueCodeableConcept ^short = "Positive/Negative or code for an additional organism specification, see also 'Guidance - Laboratory Result'"
-* valueCodeableConcept only ChElmCodeableConcept
-* valueCodeableConcept from ChElmResultsCodedValuesLaboratory (preferred) // not required, because the additional organism codes come from other valuesets
-
 * performer 1..1
 * performer only Reference(ChElmOrganizationLab)
 * specimen only Reference(ChElmSpecimen)
@@ -48,6 +40,30 @@ Id: ch-elm-observation-results-laboratory-strict
 Title: "CH ELM Observation Results: Laboratory (strict)"
 Description: "CH ELM profile for the Observation resource with a stricter validation mechanism than the base profile via binding strength reinforcement for the leading code element."
 * code from ChElmResultsLaboratoryObservation (required)
+
+Profile: ChElmObservationResultsLaboratoryMs
+Parent: ChElmObservationResultsLaboratory
+Id: ch-elm-observation-results-laboratory-ms
+Title: "CH ELM Observation Results for Microbiology studies (set)"
+Description: "This CH ELM profile constrains the Observation resource for the purpose of laboratory test reports."
+* interpretation 1..1
+* valueString ^short = "String if required by leading code, see also 'Guidance - Laboratory Result'" 
+* valueQuantity ^short = "Quantity if required by leading code, see also 'Guidance - Laboratory Result'"
+* valueCodeableConcept ^short = "Positive/Negative or code for an additional organism specification, see also 'Guidance - Laboratory Result'"
+* valueCodeableConcept only ChElmCodeableConcept
+* valueCodeableConcept from ChElmResultsCodedValuesLaboratory (preferred) // not required, because the additional organism codes come from other valuesets
+
+Profile: ChElmObservationResultsLaboratoryMstOrGt
+Parent: ChElmObservationResultsLaboratory
+Id: ch-elm-observation-results-laboratory-mst-or-gt
+Title: "CH ELM Observation Results for Microbial susceptibility tests or Genotyping"
+Description: "This CH ELM profile constrains the Observation resource for the purpose of laboratory test reports."
+* component 1..*
+* component.code  ^short = "see also 'Guidance - Laboratory Result'"
+* component.code 1..1
+* component.interpretation 1..1
+* component.valueString ^short = "String if required by leading code, see also 'Guidance - Laboratory Result'" 
+* component.valueQuantity ^short = "Quantity if required by leading code, see also 'Guidance - Laboratory Result'"
 
 Profile: ChElmObservationVirl
 Parent: Observation

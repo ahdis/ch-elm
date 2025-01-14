@@ -14,6 +14,10 @@
         "system": "http://loinc.org",
         "concept": [
           {
+            "code": "29579-0",
+            "display": "Mycobacterial susceptibility panel by Method for Slow-growing mycobacteria" 
+          },
+          {
             "code": "100383-9",
             "display": "Monkeypox virus DNA [Presence] in Specimen by NAA with probe detection"
           },
