@@ -1,24 +1,24 @@
-Instance: 58Doc-Susceptibility
+Instance: 61Doc-Tb-Susceptibility
 InstanceOf: ChElmDocumentStrict
 Usage: #example
-Title: "58Doc - Tuberculosis Susceptibility"
+Title: "61Doc - Tuberculosis Susceptibility"
 Description: "Example for a CH ELM Document: Laboratory Report"
 * identifier.system = "urn:ietf:rfc:3986"
-* identifier.value = "urn:uuid:7bb4d082-a40f-4771-b062-2858f2f7b7de"
+* identifier.value = "urn:uuid:2821b775-16f8-4910-bba8-1b7d99627f3e"
 * type = #document
-* timestamp = "2023-09-10T12:00:00+02:00"
-* entry[0].fullUrl = "http://test.fhir.ch/r4/Composition/58Comp-Susceptibility"
-* entry[=].resource = 58Comp-Susceptibility
-* entry[+].fullUrl = "http://test.fhir.ch/r4/DiagnosticReport/58DR-Susceptibility"
-* entry[=].resource = 58DR-Susceptibility
+* timestamp = "2024-09-10T12:00:00+02:00"
+* entry[0].fullUrl = "http://test.fhir.ch/r4/Composition/61Comp-Susceptibility"
+* entry[=].resource = 61Comp-Susceptibility
+* entry[+].fullUrl = "http://test.fhir.ch/r4/DiagnosticReport/61DR-Susceptibility"
+* entry[=].resource = 61DR-Susceptibility
 * entry[+].fullUrl = "http://test.fhir.ch/r4/Patient/Pat-001"
 * entry[=].resource = Pat-001
-* entry[+].fullUrl = "http://test.fhir.ch/r4/Observation/58Obs-Susceptibility"
-* entry[=].resource = 58Obs-Susceptibility
-* entry[+].fullUrl = "http://test.fhir.ch/r4/Specimen/58Spec-Susceptibility"
-* entry[=].resource = 58Spec-Susceptibility
-* entry[+].fullUrl = "http://test.fhir.ch/r4/ServiceRequest/58SR-Susceptibility"
-* entry[=].resource = 58SR-Susceptibility
+* entry[+].fullUrl = "http://test.fhir.ch/r4/Observation/61Obs-Susceptibility"
+* entry[=].resource = 61Obs-Susceptibility
+* entry[+].fullUrl = "http://test.fhir.ch/r4/Specimen/61Spec-Susceptibility"
+* entry[=].resource = 61Spec-Susceptibility
+* entry[+].fullUrl = "http://test.fhir.ch/r4/ServiceRequest/61SR-Susceptibility"
+* entry[=].resource = 61SR-Susceptibility
 * entry[+].fullUrl = "http://test.fhir.ch/r4/Organization/1Org-Labor"
 * entry[=].resource = 1Org-Labor
 * entry[+].fullUrl = "http://test.fhir.ch/r4/PractitionerRole/PR-PeterHauser"
@@ -28,40 +28,40 @@ Description: "Example for a CH ELM Document: Laboratory Report"
 * entry[+].fullUrl = "http://test.fhir.ch/r4/Organization/Org-PeterHauser"
 * entry[=].resource = Org-PeterHauser
 
-Instance: 58Comp-Susceptibility
+Instance: 61Comp-Susceptibility
 InstanceOf: ChElmComposition
 Usage: #inline
 * language = #de-CH
 * identifier.system = "urn:ietf:rfc:3986"
-* identifier.value = "urn:uuid:7bb4d082-a40f-4771-b062-2858f2f7b7de"
+* identifier.value = "urn:uuid:2821b775-16f8-4910-bba8-1b7d99627f3e"
 * status = #final
 * type.coding[0].version = "http://snomed.info/sct/2011000195101"
 * type.coding[=] = $sct#4241000179101 "Laborbericht"
 * type.coding[+] = $loinc#11502-2 "Laboratory report"
 * subject = Reference(Pat-001)
-* date = "2023-09-10T12:00:00+02:00"
+* date = "2024-09-10T12:00:00+02:00"
 * author = Reference(1Org-Labor)
-* title = "Laborbericht vom 10.09.2023"
+* title = "Laborbericht vom 10.09.2024"
 * section.title = "Resistenztestung"
 * section.code = $loinc#18769-0 "Microbial susceptibility tests Set"
-* section.entry = Reference(58Obs-Susceptibility)
+* section.entry = Reference(61Obs-Susceptibility)
 
-Instance: 58DR-Susceptibility
+Instance: 61DR-Susceptibility
 InstanceOf: ChElmDiagnosticReport
 Usage: #inline
 * extension[DiagnosticReportCompositionR5].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.composition"
-* extension[DiagnosticReportCompositionR5].valueReference = Reference(Composition/58Comp-Susceptibility)
+* extension[DiagnosticReportCompositionR5].valueReference = Reference(Composition/61Comp-Susceptibility)
 * identifier.system = "urn:ietf:rfc:3986"
-* identifier.value = "urn:uuid:7bb4d082-a40f-4771-b062-2858f2f7b7de"
-* basedOn = Reference(58SR-Susceptibility)
+* identifier.value = "urn:uuid:2821b775-16f8-4910-bba8-1b7d99627f3e"
+* basedOn = Reference(61SR-Susceptibility)
 * status = #final
 * code = $loinc#11502-2 "Laboratory report"
 * subject = Reference(Pat-001)
 * performer = Reference(1Org-Labor)
-* specimen = Reference(58Spec-Susceptibility)
-* result = Reference(58Obs-Susceptibility)
+* specimen = Reference(61Spec-Susceptibility)
+* result = Reference(61Obs-Susceptibility)
 
-Instance: 58SR-Susceptibility
+Instance: 61SR-Susceptibility
 InstanceOf: ChElmServiceRequestLaboratoryOrder
 Usage: #inline
 * identifier.value = "26500923622"
@@ -70,25 +70,24 @@ Usage: #inline
 * code = $loinc#29579-0 "Mycobacterial susceptibility panel by Method for Slow-growing mycobacteria"
 * subject = Reference(Pat-001)
 * requester = Reference(PR-PeterHauser)
-* specimen = Reference(58Spec-Susceptibility)
+* specimen = Reference(61Spec-Susceptibility)
 
-Instance: 58Spec-Susceptibility
+Instance: 61Spec-Susceptibility
 InstanceOf: ChElmSpecimen
 Usage: #inline
-* type.text = "Material declared by Observation.code or non-mandatory"
 * subject = Reference(Pat-001)
-* collection.collectedDateTime = "2023-09-08"
+* collection.collectedDateTime = "2024-09-08"
 
-Instance: 58Obs-Susceptibility
+Instance: 61Obs-Susceptibility
 InstanceOf: ChElmObservationResultsLaboratory
 Usage: #inline
 * status = #final
 * category[laboratory] = $observation-category#laboratory "Laboratory"
 * code = $loinc#29579-0 "Mycobacterial susceptibility panel by Method for Slow-growing mycobacteria"
 * subject = Reference(Pat-001)
-* effectiveDateTime = "2023-09-10T14:20:00+02:00"
+* effectiveDateTime = "2024-09-10T14:20:00+02:00"
 * performer = Reference(1Org-Labor)
-* specimen = Reference(58Spec-Susceptibility)
+* specimen = Reference(61Spec-Susceptibility)
 //* valueCodeableConcept = $sct#10828004 "Positive"
 //* interpretation = $v3-ObservationInterpretation#POS "Positive"
 
@@ -98,4 +97,4 @@ Usage: #inline
 
 * component[+].code = $loinc#LP16274-0 "rifAMPin"
 * component[=].valueQuantity = 0.1 'mg/L' "milligram per liter"
-* component[=].interpretation = $v3-ObservationInterpretation#R "susceptible" // #R "Resistant" | #S "Susceptible"
+* component[=].interpretation = $v3-ObservationInterpretation#R "Resistant" // #R "Resistant" | #S "Susceptible"

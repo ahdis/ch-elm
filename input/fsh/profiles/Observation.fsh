@@ -39,11 +39,11 @@ Parent: ChElmObservationResultsLaboratory
 Id: ch-elm-observation-results-laboratory-strict
 Title: "CH ELM Observation Results: Laboratory (strict)"
 Description: "CH ELM profile for the Observation resource with a stricter validation mechanism than the base profile via binding strength reinforcement for the leading code element."
-* code from ChElmResultsLaboratoryObservation (required)
+* code from ChElmResultsLaboratoryObservationComplete (required)
 
-Profile: ChElmObservationResultsLaboratoryMs
+Profile: ChElmObservationResultsLaboratoryMicrobiology
 Parent: ChElmObservationResultsLaboratory
-Id: ch-elm-observation-results-laboratory-ms
+Id: ch-elm-observation-results-laboratory-microbiology
 Title: "CH ELM Observation Results for Microbiology studies (set)"
 Description: "This CH ELM profile constrains the Observation resource for the purpose of laboratory test reports."
 * interpretation 1..1
@@ -53,10 +53,22 @@ Description: "This CH ELM profile constrains the Observation resource for the pu
 * valueCodeableConcept only ChElmCodeableConcept
 * valueCodeableConcept from ChElmResultsCodedValuesLaboratory (preferred) // not required, because the additional organism codes come from other valuesets
 
-Profile: ChElmObservationResultsLaboratoryMstOrGt
+Profile: ChElmObservationResultsLaboratorySusceptibility
 Parent: ChElmObservationResultsLaboratory
-Id: ch-elm-observation-results-laboratory-mst-or-gt
-Title: "CH ELM Observation Results for Microbial susceptibility tests or Genotyping"
+Id: ch-elm-observation-results-laboratory-susceptibility
+Title: "CH ELM Observation Results for Microbial susceptibility tests"
+Description: "This CH ELM profile constrains the Observation resource for the purpose of laboratory test reports."
+* component 1..*
+* component.code  ^short = "see also 'Guidance - Laboratory Result'"
+* component.code 1..1
+* component.interpretation 1..1
+* component.valueString ^short = "String if required by leading code, see also 'Guidance - Laboratory Result'" 
+* component.valueQuantity ^short = "Quantity if required by leading code, see also 'Guidance - Laboratory Result'"
+
+Profile: ChElmObservationResultsLaboratoryGenotyping
+Parent: ChElmObservationResultsLaboratory
+Id: ch-elm-observation-results-laboratory-genotyping
+Title: "CH ELM Observation Results for Genotyping"
 Description: "This CH ELM profile constrains the Observation resource for the purpose of laboratory test reports."
 * component 1..*
 * component.code  ^short = "see also 'Guidance - Laboratory Result'"

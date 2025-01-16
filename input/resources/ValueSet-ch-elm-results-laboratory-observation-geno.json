@@ -1,0 +1,30 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ch-elm-results-laboratory-observation-geno",
+  "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-laboratory-observation-geno",
+  "version": "2024-01-15",
+  "name": "ChElmResultsLaboratoryObservationGeno",
+  "title": "CH ELM Results Laboratory Observation Genotyping",
+  "status": "active",
+  "experimental": false,
+  "description": "This CH ELM value set includes the codes for the laboratory test results (organism) for Genotyping.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "113861009",
+            "display": "Mycobacterium tuberculosis (organism)" 
+          },
+          {
+            "code":"1098201000112108",
+            "display": "Carbapenemase-producing Klebsiella pneumoniae (organism)"          
+          }
+        ]
+      }
+    ]
+  }
+}
+
+ 
