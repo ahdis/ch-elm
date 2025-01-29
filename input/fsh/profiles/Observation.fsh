@@ -75,11 +75,12 @@ Title: "CH ELM Observation Results for Microbial susceptibility tests"
 Description: "This CH ELM profile constrains the Observation resource for the purpose of laboratory test reports."
 * obeys ch-elm-component-code-susc-loinc
 * obeys ch-elm-component-code-susc-snomedct
+* obeys ch-elm-component-interpretation-code-susc-loinc
+* obeys ch-elm-component-interpretation-code-susc-snomedct
 * component 1..*
 * component.code  ^short = "see also 'Guidance - Laboratory Result'"
 * component.code 1..1
 * component.interpretation 1..1
-* component.interpretation from $ch-elm-interpretation-codes-res-sus (required)
 * component.valueQuantity ^short = "Quantity if required by leading code, see also 'Guidance - Laboratory Result'"
 
 Profile: ChElmObservationResultsLaboratorySusceptibilityStrict
@@ -94,13 +95,14 @@ Parent: ChElmObservationResultsLaboratory
 Id: ch-elm-observation-results-laboratory-genotyping
 Title: "CH ELM Observation Results for Genotyping"
 Description: "This CH ELM profile constrains the Observation resource for the purpose of laboratory test reports."
-* obeys ch-elm-component-code-gene-loinc
-* obeys ch-elm-component-code-gene-snomedct
+* obeys ch-elm-component-code-geno-loinc
+* obeys ch-elm-component-code-geno-snomedct
+* obeys ch-elm-component-interpretation-code-geno-loinc
+* obeys ch-elm-component-interpretation-code-geno-snomedct
 * component 1..*
 * component.code  ^short = "see also 'Guidance - Laboratory Result'"
 * component.code 1..1
 * component.interpretation 1..1
-* component.interpretation from $ch-elm-interpretation-codes-pre-abs (required)
 * component.valueString ^short = "String if required by leading code, see also 'Guidance - Laboratory Result'" 
 * component.valueQuantity ^short = "Quantity if required by leading code, see also 'Guidance - Laboratory Result'"
 

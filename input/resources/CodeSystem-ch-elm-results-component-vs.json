@@ -22,7 +22,10 @@
   "content": "complete",
   "concept": [
     {
-      "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-component-antibiotic"
+      "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-component-antibiotic-cpe"
+    },
+    {
+      "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-component-antibiotic-tb"
     },
     {
       "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-component-gene"

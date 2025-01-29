@@ -25,4 +25,4 @@ Alias: $ch-elm-results-laboratory-observation-geno = http://fhir.ch/ig/ch-elm/Va
 Alias: $ch-elm-results-laboratory-observation-susc = http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-laboratory-observation-susc
 
 Alias: $ch-elm-interpretation-codes-res-sus = http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-res-sus
-Alias: $ch-elm-interpretation-codes-pre-abs = http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pre-abs
+Alias: $ch-elm-interpretation-codes-pres-abs = http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pres-abs

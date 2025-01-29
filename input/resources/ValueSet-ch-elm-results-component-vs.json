@@ -14,7 +14,10 @@
         "system": "http://fhir.ch/ig/ch-elm/CodeSystem/ch-elm-results-component-vs",
         "concept": [
           {
-            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-component-antibiotic"
+            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-component-antibiotic-tb"
+          },
+          {
+            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-component-antibiotic-cpe"
           },
           {
             "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-component-gene"

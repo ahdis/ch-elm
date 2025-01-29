@@ -1,0 +1,28 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ch-elm-results-component-antibiotic-tb",
+  "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-component-antibiotic-tb",
+  "version": "2025-01-21",
+  "name": "ChElmResultsComponentAntibioticTb",
+  "title": "CH ELM Results Component Antibiotic Tb",
+  "status": "active",
+  "experimental": false,
+  "description": "The \"CH ELM Results Component Antibiotics\" TB provides a curated set of codes representing specific antibiotics.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "LP15831-8",
+            "display": "Isoniazid"
+          },
+          {
+            "code": "LP16274-0",
+            "display": "rifAMPin"
+          }
+        ]
+      }
+    ]
+  }
+}

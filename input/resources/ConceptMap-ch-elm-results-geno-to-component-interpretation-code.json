@@ -1,10 +1,10 @@
 {
   "resourceType": "ConceptMap",
-  "id": "ch-elm-results-gene-to-component-code",
-  "url": "http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-results-gene-to-component-code",
-  "version": "2025-01-21",
-  "name": "ChElmResultsGeneToComponentCode",
-  "title": "CH ELM Results To Genotying Component code ValueSet",
+  "id": "ch-elm-results-geno-to-component-interpretation-code",
+  "url": "http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-results-geno-to-component-interpretation-code",
+  "version": "2025-01-28",
+  "name": "ChElmResultsGenotypingToComponentInterpretationCode",
+  "title": "CH ELM Results To Genotyping Component Interpretation Code ValueSet",
   "status": "active",
   "experimental": false,
   "description": "This CH ELM concept map specifies the ValueSet for component.code for each leading code",
@@ -18,19 +18,19 @@
       ]
     }
   ],
-  "sourceCanonical": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-laboratory-observation-gene",
-  "targetCanonical": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-component-vs",
+  "sourceCanonical": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-laboratory-observation-geno",
+  "targetCanonical": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-code-vs",
   "group": [
     {
       "source": "http://snomed.info/sct",
-      "target": "http://fhir.ch/ig/ch-elm/CodeSystem/ch-elm-results-component-vs",
+      "target": "http://fhir.ch/ig/ch-elm/CodeSystem/ch-elm-results-interpretation-code-vs",
       "element": [
         {
           "code": "113861009",
           "display": "Mycobacterium tuberculosis (organism)",
           "target": [
             {
-              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-component-gene",
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pres-abs",
               "equivalence": "relatedto"
             }
           ]
@@ -40,7 +40,7 @@
           "display": "Carbapenemase-producing Klebsiella pneumoniae (organism)",
           "target": [
             {
-              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-component-gene",
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pres-abs",
               "equivalence": "relatedto"
             }
           ]

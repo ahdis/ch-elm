@@ -91,7 +91,7 @@ Usage: #inline
 
 * component[0].code = $loinc#LP441355-7 "OXA-23 carbapenemase"
 * component[0].dataAbsentReason = $data-absent-reason-cs#not-applicable
-* component[=].interpretation = $sct#272519000 "Absent (qualifier value)"
+* component[=].interpretation = $sct#2667000 "Absent (qualifier value)"
 
 * component[+].code = $loinc#63368-5 "Carbapenem resistance genes [Identifier] by NAA with probe detection"
 * component[=].valueString = "some mutation string" 

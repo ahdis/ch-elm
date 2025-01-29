@@ -1,7 +1,7 @@
 {
   "resourceType": "ValueSet",
-  "id": "ch-elm-interpretation-codes-pre-abs",
-  "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pre-abs",
+  "id": "ch-elm-interpretation-codes-pres-abs",
+  "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pres-abs",
   "version": "2025-01-21",
   "name": "ChElmInterpretationCodesPresentAbsent",
   "title": "CH ELM Interpretation Codes Present and Absent",
@@ -18,7 +18,7 @@
             "display": "Present (qualifier value)"
           },
           {
-            "code": "272519000",
+            "code": "2667000",
             "display": "Absent (qualifier value)"
           }
         ]
