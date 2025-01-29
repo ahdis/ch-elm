@@ -1,0 +1,24 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ch-elm-results-component-gene-tb",
+  "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-component-gene-tb",
+  "version": "2025-01-21",
+  "name": "ChElmResultsComponentGeneTb",
+  "title": "CH ELM Results Component Gene Tb",
+  "status": "active",
+  "experimental": false,
+  "description": "The \"CH ELM Results Component Gene Tb\" provides a curated set of codes representing specific genes.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "63072-3",
+            "display": "Mycobacterium tuberculosis inhA gene isoniazid low level resistance mutation [Presence] by Molecular method"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -30,7 +30,7 @@
           "display": "Mycobacterium tuberculosis (organism)",
           "target": [
             {
-              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-component-gene",
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-component-gene-tb",
               "equivalence": "relatedto"
             }
           ]
@@ -40,7 +40,7 @@
           "display": "Carbapenemase-producing Klebsiella pneumoniae (organism)",
           "target": [
             {
-              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-component-gene",
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-component-gene-cpe",
               "equivalence": "relatedto"
             }
           ]
