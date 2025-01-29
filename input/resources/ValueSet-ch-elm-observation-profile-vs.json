@@ -21,6 +21,9 @@
           },
           {
             "code": "http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-observation-pq-virl"
+          },
+          {
+            "code": "http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-observation-component-conc"
           }
         ]
       }

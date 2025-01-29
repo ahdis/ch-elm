@@ -77,6 +77,8 @@ Description: "This CH ELM profile constrains the Observation resource for the pu
 * obeys ch-elm-component-code-susc-snomedct
 * obeys ch-elm-component-interpretation-code-susc-loinc
 * obeys ch-elm-component-interpretation-code-susc-snomedct
+* obeys ch-elm-component-observation-profile-susc-loinc
+* obeys ch-elm-component-observation-profile-susc-snomedct
 * component 1..*
 * component.code  ^short = "see also 'Guidance - Laboratory Result'"
 * component.code 1..1
@@ -135,6 +137,17 @@ Description: "Ratio as observation result, see also 'Guidance - Laboratory Resul
 * valueRatio.denominator 1..1
 * valueRatio.denominator.value 1..1
 * valueRatio.denominator.code 1..1
+
+Profile: ChElmObservationComponentConcentration
+Parent: Observation
+Id: ch-elm-observation-component-conc
+Title: "CH ELM Observation Component Results: Concentration"
+Description: "Ratio as observation.component result, see also 'Guidance - Laboratory Result'"
+* component.valueQuantity 1..1
+* component.valueQuantity.value 1..1
+* component.valueQuantity.code = #mg/L 
+* component.valueQuantity.system = "http://unitsofmeasure.org"
+* component.valueQuantity.unit = #mg/L 
 
 Profile: ChElmObservationTxt
 Parent: Observation

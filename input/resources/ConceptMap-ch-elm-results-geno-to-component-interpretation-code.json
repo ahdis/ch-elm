@@ -30,7 +30,7 @@
           "display": "Mycobacterium tuberculosis (organism)",
           "target": [
             {
-              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pres-abs",
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pres-abs-np",
               "equivalence": "relatedto"
             }
           ]

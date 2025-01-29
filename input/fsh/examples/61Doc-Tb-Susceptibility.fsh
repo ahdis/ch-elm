@@ -79,7 +79,7 @@ Usage: #inline
 * collection.collectedDateTime = "2024-09-08"
 
 Instance: 61Obs-Susceptibility
-InstanceOf: ChElmObservationResultsLaboratory
+InstanceOf: ChElmObservationResultsLaboratorySusceptibilityStrict
 Usage: #inline
 * status = #final
 * category[laboratory] = $observation-category#laboratory "Laboratory"
@@ -90,9 +90,9 @@ Usage: #inline
 * specimen = Reference(61Spec-Susceptibility)
 
 * component[0].code = $loinc#LP15831-8 "Isoniazid"
-* component[=].valueQuantity = 0.4 'mg/L' "milligram per liter"
+* component[=].valueQuantity = 0.4 'mg/L' "mg/L"
 * component[=].interpretation = $v3-ObservationInterpretation#S "Susceptible" 
 
 * component[+].code = $loinc#LP16274-0 "rifAMPin"
-* component[=].dataAbsentReason = $data-absent-reason-cs#not-applicable
+* component[=].valueQuantity = 0.1 'mg/L' "mg/L"
 * component[=].interpretation = $v3-ObservationInterpretation#R "Resistant"
