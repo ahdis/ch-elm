@@ -149,6 +149,13 @@ Description: "Ratio as observation.component result, see also 'Guidance - Labora
 * component.valueQuantity.system = "http://unitsofmeasure.org"
 * component.valueQuantity.unit = #mg/L 
 
+Profile: ChElmObservationComponentTxt
+Parent: Observation
+Id: ch-elm-observation-component-txt
+Title: "CH ELM Observation Component Results: Text"
+Description: "Text as observation.component result, see also 'Guidance - Laboratory Result'"
+* component.valueString 0..1
+
 Profile: ChElmObservationTxt
 Parent: Observation
 Id: ch-elm-observation-txt
