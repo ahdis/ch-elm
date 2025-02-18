@@ -88,11 +88,10 @@ Usage: #inline
 * effectiveDateTime = "2024-09-10T14:20:00+02:00"
 * performer = Reference(1Org-Labor)
 * specimen = Reference(62Spec-Susceptibility)
-//* valueCodeableConcept = $sct#10828004 "Positive"
-//* interpretation = $v3-ObservationInterpretation#POS "Positive"
 
 * component[0].code = $loinc#LP15795-5 "Imipenem"
 * component[=].interpretation = $v3-ObservationInterpretation#R "Resistant" // #R "Resistant" | #S "Susceptible"
+* component[=].dataAbsentReason = $data-absent-reason-cs#not-applicable
 
 * component[+].code = $loinc#LP95252-0 "Doripenem"
 * component[=].valueQuantity = 0.1 'mg/L' "milligram per liter"

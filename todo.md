@@ -1,26 +1,23 @@
 TODO
 ====
 
-Beispiele gemäss PDF / Confluence eingebaut.
-
-Abbildung Genotype value kann nicht optional sein (oder sonst dataAbsentReason) wegen EU Constraint
-
-Beispiele für ValueSets wie unten und Constraints müssen noch weiter angepasst werden auf Component Ebene für suscepbility soiwe genotyping
-
-
-1b) eine ConceptMap von source Observation.code zu Section.code (microbiology studies / microbial susceptibility tests / genotype)
-    http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-results-to-lab-study-types
-
-strict kann dann angepasst werden via memberOf?
- 
-
 2. component.code - mapped observation.code zu valueset (antibiotika valueset oder pathogen valueset)
-    http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-results-susc-to-antibiotic
-    http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-results-geno-to-gene
+    http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-results-susc-to-compoment-code
+    http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-results-geno-to-component-code
     + die jeweiligen ValueSets müssen zu Verfügung gestellt werden
 
-        http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-antibiotic-myco
-        http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-gene-myco
+
+    Die neuen ValueSets canonical müssen in diesem Codesystem gelistet sein
+    http://fhir.ch/ig/ch-elm/CodeSystem/ch-elm-results-component-vs
+
+
+    ---> Should it be two ValueSets (one for antibiotic and one for gene) or should it be depending on the pathogen? 
+    Current test is to add one for the antibiotic and one for the gene:
+
+        http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-component-antibiotic
+        http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-component-gene
+
+    Then the ConceptMap would be a bit overkill, because we have all the mappings only the same, we could it do directly via ValueSet binding? TBD at the meeting
  
 3. component.value
 
@@ -28,13 +25,19 @@ http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-results-susc-to-compoment-observation
 http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-results-geno-to-compoment-observation-profile
   + zusätlich ValueSets müssen zu Verfügung gestellt werden falls notwendig (Diskussion am Mittwoch)
 
-bei antibiogram, bei susc: nie einen string
+bei antibiogram, bei susc: nie einen string: can it always be just a fix valueQuantity or absentReason?
 
 bei genotyping kann es einen string haben, bei CPE setzt es einen einen component.code dann muss es einen valueString schicken
 
--> besser zwei Modellierung
- 
+-> tow modeling, should we make the modeling more detailed or do we need concept maps?
 
 4. component.interpretation - mapped observation.code zu interpretation code value set
-   http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-results-susc-to-compoment-interpretation-code
-   http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-results-geno-to-compoment-interpretation-code
+
+   could this be mapped directly to the two valuesets:
+
+   susc: susceptible/resistant  http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-res-sus
+   genotyping: present / absent (are the snomed codes right?) ttp://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pre-abs
+
+   if yes then we don't need the following concept maps:
+     http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-results-susc-to-compoment-interpretation-code
+     http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-results-geno-to-compoment-interpretation-code

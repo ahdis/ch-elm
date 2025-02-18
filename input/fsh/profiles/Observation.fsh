@@ -24,6 +24,14 @@ Description: "This CH ELM base profile constrains the Observation resource for t
 * effective[x] 1..
 * effectiveDateTime 1..
 * effectiveDateTime obeys ch-elm-dateTime
+
+* valueString ^short = "String if required by leading code, see also 'Guidance - Laboratory Result'" 
+* valueQuantity ^short = "Quantity if required by leading code, see also 'Guidance - Laboratory Result'"
+* valueRatio ^short = "Ratio if required by leading code, see also 'Guidance - Laboratory Result'"
+* valueCodeableConcept ^short = "Positive/Negative or code for an additional organism specification, see also 'Guidance - Laboratory Result'"
+* valueCodeableConcept only ChElmCodeableConcept
+* valueCodeableConcept from ChElmResultsCodedValuesLaboratory (preferred) // not required, because the additional organism codes come from other valuesets
+
 * performer 1..1
 * performer only Reference(ChElmOrganizationLab)
 * specimen only Reference(ChElmSpecimen)
@@ -53,29 +61,55 @@ Description: "This CH ELM profile constrains the Observation resource for the pu
 * valueCodeableConcept only ChElmCodeableConcept
 * valueCodeableConcept from ChElmResultsCodedValuesLaboratory (preferred) // not required, because the additional organism codes come from other valuesets
 
+Profile: ChElmObservationResultsLaboratoryMicrobiologyStrict
+Parent: ChElmObservationResultsLaboratoryMicrobiology
+Id: ch-elm-observation-results-laboratory-microbiolgy-strict
+Title: "CH ELM Observation Results for Microbiology studies (set) strict"
+Description: "CH ELM profile for the Observation resource with a stricter validation mechanism than the base profile via binding strength reinforcement for the leading code element."
+* code from ChElmResultsLaboratoryObservation (required)
+
 Profile: ChElmObservationResultsLaboratorySusceptibility
 Parent: ChElmObservationResultsLaboratory
 Id: ch-elm-observation-results-laboratory-susceptibility
 Title: "CH ELM Observation Results for Microbial susceptibility tests"
 Description: "This CH ELM profile constrains the Observation resource for the purpose of laboratory test reports."
+* obeys ch-elm-component-code-susc-loinc
+* obeys ch-elm-component-code-susc-snomedct
 * component 1..*
 * component.code  ^short = "see also 'Guidance - Laboratory Result'"
 * component.code 1..1
 * component.interpretation 1..1
-* component.valueString ^short = "String if required by leading code, see also 'Guidance - Laboratory Result'" 
+* component.interpretation from $ch-elm-interpretation-codes-res-sus (required)
 * component.valueQuantity ^short = "Quantity if required by leading code, see also 'Guidance - Laboratory Result'"
+
+Profile: ChElmObservationResultsLaboratorySusceptibilityStrict
+Parent: ChElmObservationResultsLaboratorySusceptibility
+Id: ch-elm-observation-results-laboratory-susceptibility-strict
+Title: "CH ELM Observation Results for Microbial susceptibility tests (strict)"
+Description: "CH ELM profile for the Observation resource with a stricter validation mechanism than the base profile via binding strength reinforcement for the leading code element."
+* code from $ch-elm-results-laboratory-observation-susc (required)
 
 Profile: ChElmObservationResultsLaboratoryGenotyping
 Parent: ChElmObservationResultsLaboratory
 Id: ch-elm-observation-results-laboratory-genotyping
 Title: "CH ELM Observation Results for Genotyping"
 Description: "This CH ELM profile constrains the Observation resource for the purpose of laboratory test reports."
+* obeys ch-elm-component-code-gene-loinc
+* obeys ch-elm-component-code-gene-snomedct
 * component 1..*
 * component.code  ^short = "see also 'Guidance - Laboratory Result'"
 * component.code 1..1
 * component.interpretation 1..1
+* component.interpretation from $ch-elm-interpretation-codes-pre-abs (required)
 * component.valueString ^short = "String if required by leading code, see also 'Guidance - Laboratory Result'" 
 * component.valueQuantity ^short = "Quantity if required by leading code, see also 'Guidance - Laboratory Result'"
+
+Profile: ChElmObservationResultsLaboratoryGenotypingStrict
+Parent: ChElmObservationResultsLaboratoryGenotyping
+Id: ch-elm-observation-results-laboratory-genotyping-strict
+Title: "CH ELM Observation Results for Genotyping (strict)"
+Description: "CH ELM profile for the Observation resource with a stricter validation mechanism than the base profile via binding strength reinforcement for the leading code element."
+* code from $ch-elm-results-laboratory-observation-geno (required)
 
 Profile: ChElmObservationVirl
 Parent: Observation

@@ -1,0 +1,36 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ch-elm-results-component-antibiotic",
+  "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-component-antibiotic",
+  "version": "2025-01-21",
+  "name": "ChElmResultsComponentAntibiotic",
+  "title": "CH ELM Results Component Antibiotic",
+  "status": "active",
+  "experimental": false,
+  "description": "The \"CH ELM Results Component Antibitics\" oprovides a curated set of codes representing specific antibiotics.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "LP15831-8",
+            "display": "Isoniazid"
+          },
+          {
+            "code": "LP15795-5",
+            "display": "Imipenem"
+          },
+          {
+            "code": "LP16274-0",
+            "display": "rifAMPin"
+          },
+          {
+            "code": "LP95252-0",
+            "display": "Doripenem"
+          }
+        ]
+      }
+    ]
+  }
+}

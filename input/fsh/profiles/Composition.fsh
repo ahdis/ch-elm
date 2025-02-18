@@ -20,6 +20,7 @@ Description: "This CH ELM base profile constrains the Composition resource for t
 * section 1..1
   * ^slicing.discriminator[2].type = #value
   * ^slicing.discriminator[2].path = "code"
+  * ^slicing.rules = #closed
 * section contains lab-mst 0..1 and lab-gt 0..1
 * section[lab-no-subsections] 0..1
 * section[lab-no-subsections].title 1..
@@ -51,3 +52,13 @@ Description: "This CH ELM base profile constrains the Composition resource for t
 * section[lab-gt].entry only Reference(ChElmObservationResultsLaboratoryGenotyping)
 * section[lab-gt].section ..0
 * section[lab-subsections] 0..0
+
+
+Profile: ChElmCompositionStrict
+Parent: ChElmComposition
+Id: ch-elm-composition-strict
+Title: "CH ELM Composition: Laboratory Report Strict"
+Description: "This CH ELM Composition profile constrains that the section codes have corresponding observation value codes"
+* section[lab-no-subsections].entry only Reference(ChElmObservationResultsLaboratoryMicrobiologyStrict)
+* section[lab-mst].entry only Reference(ChElmObservationResultsLaboratorySusceptibilityStrict)
+* section[lab-gt].entry only Reference(ChElmObservationResultsLaboratoryGenotypingStrict)

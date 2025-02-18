@@ -43,7 +43,7 @@ Usage: #inline
 * author = Reference(1Org-Labor)
 * title = "Laborbericht vom 10.09.2024"
 * section.title = "Genotyping"
-* section.code = $sct#726528006 "Genotyping"
+* section.code = $sct#726528006 "Genotyping (qualifier value)"
 * section.entry = Reference(63Obs-Genotyping)
 
 Instance: 63DR-Genotyping
@@ -88,9 +88,7 @@ Usage: #inline
 * effectiveDateTime = "2024-09-10T14:20:00+02:00"
 * performer = Reference(1Org-Labor)
 * specimen = Reference(63Spec-Genotyping)
-//* valueCodeableConcept = $sct#10828004 "Positive"
-//* interpretation = $v3-ObservationInterpretation#POS "Positive"
 
-* component[0].code.text = "inhA"  // TBD: used as string
-* component[=].interpretation.text = "present" // TBD: new interpretation codes ???
-// we need either value or dataAbsentReasen: Bundle.entry[3].resource/*Observation/63Obs-Genotyping*/: Constraint failed: eu-lab-2: 'If observation has components and observation status is other then "registered" or "cancelled", at least one of these Observation.component elements shall be provided: "value" or "dataAbsentReason"' (defined in http://hl7.eu/fhir/laboratory/StructureDefinition/Observation-resultslab-eu-lab)
+* component[0].code = $loinc#63072-3 "Mycobacterium tuberculosis inhA gene isoniazid low level resistance mutation [Presence] by Molecular method"
+* component[0].dataAbsentReason = $data-absent-reason-cs#not-applicable
+* component[=].interpretation = $sct#52101004 "Present (qualifier value)"

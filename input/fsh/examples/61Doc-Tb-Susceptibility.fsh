@@ -88,13 +88,11 @@ Usage: #inline
 * effectiveDateTime = "2024-09-10T14:20:00+02:00"
 * performer = Reference(1Org-Labor)
 * specimen = Reference(61Spec-Susceptibility)
-//* valueCodeableConcept = $sct#10828004 "Positive"
-//* interpretation = $v3-ObservationInterpretation#POS "Positive"
 
 * component[0].code = $loinc#LP15831-8 "Isoniazid"
 * component[=].valueQuantity = 0.4 'mg/L' "milligram per liter"
-* component[=].interpretation = $v3-ObservationInterpretation#S "Susceptible" // #R "Resistant" | #S "Susceptible"
+* component[=].interpretation = $v3-ObservationInterpretation#S "Susceptible" 
 
 * component[+].code = $loinc#LP16274-0 "rifAMPin"
-* component[=].valueQuantity = 0.1 'mg/L' "milligram per liter"
-* component[=].interpretation = $v3-ObservationInterpretation#R "Resistant" // #R "Resistant" | #S "Susceptible"
+* component[=].dataAbsentReason = $data-absent-reason-cs#not-applicable
+* component[=].interpretation = $v3-ObservationInterpretation#R "Resistant"
