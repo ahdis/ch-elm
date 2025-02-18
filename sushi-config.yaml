@@ -11,7 +11,7 @@ description: FHIR® Implementation Guide for the Electronic Laboratory Report of
 status: active # draft | active | retired | unknown
 license: CC0-1.0
 copyright: CC0-1.0
-jurisdiction: urn:iso:std:iso:3166#CHE
+jurisdiction: urn:iso:std:iso:3166#CH
 date: 2025-02-04
 version: 1.8.0
 fhirVersion: 4.0.1
