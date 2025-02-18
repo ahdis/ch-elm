@@ -1,48 +1,17 @@
 TODO
 ====
 
-2. component.code - mapped observation.code zu valueset (antibiotika valueset oder pathogen valueset)
-    http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-results-susc-to-compoment-code
-    http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-results-geno-to-component-code
-    + die jeweiligen ValueSets müssen zu Verfügung gestellt werden
 
-
-    Die neuen ValueSets canonical müssen in diesem Codesystem gelistet sein
-    http://fhir.ch/ig/ch-elm/CodeSystem/ch-elm-results-component-vs
-
-
-    ---> Should it be two ValueSets (one for antibiotic and one for gene) or should it be depending on the pathogen?
-     
-    --> is is depending on the pathogen.
-
-    Current test is to add one for the antibiotic and one for the gene:
-
-        http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-component-antibiotic
-        http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-component-gene
-
-    Then the ConceptMap would be a bit overkill, because we have all the mappings only the same, we could it do directly via ValueSet binding? TBD at the meeting
- 
-3. component.value
+1. component.value currently profile mapping only for sucs, geno not yet done
 
 http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-results-susc-to-compoment-observation-profile
-http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-results-geno-to-compoment-observation-profile
-  + zusätlich ValueSets müssen zu Verfügung gestellt werden falls notwendig (Diskussion am Mittwoch)
 
-bei antibiogram, bei susc: nie einen string: can it always be just a fix valueQuantity or absentReason?
-bei genotyping kann es einen string haben, bei CPE setzt es einen einen component.code dann muss es einen valueString schicken
+2. component.interpretation - mapped observation.code zu interpretation code value set
 
--> two modeling, need to create the concept maps
-
-4. component.interpretation - mapped observation.code zu interpretation code value set
-
-   susc: susceptible/resistant  http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-res-sus
    genotyping: present / absent (are the snomed codes right?) ttp://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pre-abs
 
-  we need the concept maps:
-     http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-results-susc-to-compoment-interpretation-code
-     http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-results-geno-to-compoment-interpretation-code
 
-
+need to describe the requirements how to add component results for susc/geno  
 
 
 ### New Value Sets Table
@@ -72,5 +41,4 @@ bei genotyping kann es einen string haben, bei CPE setzt es einen einen componen
 | Antibiogram | When should a valueQuantity be reported | observation.code | observation.component.value (profile) | http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-results-susc-to-compoment-observation-profile |
 | Antibiogram | Which interpretation can be used, given the pathogen | observation.code | observation.component.interpretation | http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-results-susc-to-compoment-interpretation-code |
 | Genotyping | Which mutations can be used given the pathogen | observation.code | observation.component.code | http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-results-geno-to-component-code |
-| Genotyping | Is an additional string necessary to report a mutation | observation.component.code | observation.component.valueString (profile | http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-results-geno-to-compoment-observation-profile |
 | Genotyping | Which interpretation can be used, given the pathogen | observation.code | observation.component.interpretation | http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-results-geno-to-compoment-interpretation-code |
