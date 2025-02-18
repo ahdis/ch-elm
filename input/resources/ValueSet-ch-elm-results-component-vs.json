@@ -1,0 +1,31 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ch-elm-results-component-vs",
+  "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-component-vs",
+  "version": "2025-01-21",
+  "name": "ChElmResultsComponentVs",
+  "title": "CH ELM Results Component Vs",
+  "status": "active",
+  "experimental": false,
+  "description": "This CH ELM value set includes the value set URLs as codes to map in the concept maps the leading codes",
+  "compose": {
+    "include": [
+      {
+        "system": "http://fhir.ch/ig/ch-elm/CodeSystem/ch-elm-results-component-vs",
+        "concept": [
+          {
+            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-component-antibiotic-tb"
+          },
+          {
+            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-component-antibiotic-cpe"
+          },
+          {
+            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-component-gene-tb"
+          },
+          {
+            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-component-gene-cpe"
+          }        ]
+      }
+    ]
+  }
+}

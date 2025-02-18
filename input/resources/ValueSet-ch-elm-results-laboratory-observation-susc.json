@@ -1,0 +1,33 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ch-elm-results-laboratory-observation-susc",
+  "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-laboratory-observation-susc",
+  "version": "2024-01-15",
+  "name": "ChElmResultsLaboratoryObservationSusc",
+  "title": "CH ELM Results Laboratory Observation Susceptibility",
+  "status": "active",
+  "experimental": false,
+  "description": "This CH ELM value set includes the codes for the laboratory test results (organism) for Susceptibility Testing.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "29579-0",
+            "display": "Mycobacterial susceptibility panel by Method for Slow-growing mycobacteria" 
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "734201007",
+            "display": "Carbapenem resistant Enterobacter cloacae complex (organism)"
+          }
+        ]
+      }
+    ]
+  }
+}

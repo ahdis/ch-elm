@@ -1,0 +1,57 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "ch-elm-results-susc-to-component-code",
+  "url": "http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-results-susc-to-component-code",
+  "version": "2025-01-21",
+  "name": "ChElmResultsSuscToComponentCode",
+  "title": "CH ELM Results To Susceptibility Component code ValueSet",
+  "status": "active",
+  "experimental": false,
+  "description": "This CH ELM concept map specifies the ValueSet for component.code for each leading code",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "CHE"
+        }
+      ]
+    }
+  ],
+  "sourceCanonical": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-laboratory-observation-susc",
+  "targetCanonical": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-component-vs",
+  "group": [
+    {
+      "source": "http://loinc.org",
+      "target": "http://fhir.ch/ig/ch-elm/CodeSystem/ch-elm-results-component-vs",
+      "element": [
+        {
+          "code": "29579-0",
+          "display": "Mycobacterial susceptibility panel by Method for Slow-growing mycobacteria",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-component-antibiotic-tb",
+              "equivalence": "relatedto"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "http://snomed.info/sct",
+      "target": "http://fhir.ch/ig/ch-elm/CodeSystem/ch-elm-results-component-vs",
+      "element": [
+        {
+          "code": "734201007",
+          "display": "Carbapenem resistant Enterobacter cloacae complex (organism)",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-component-antibiotic-cpe",
+              "equivalence": "relatedto"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

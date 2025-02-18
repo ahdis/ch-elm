@@ -13,3 +13,14 @@ Description: "This CH ELM value set includes the codes for the laboratory test r
 * $sct#371932001 "Borderline normal (qualifier value)"
 * $sct#373068000 "Undetermined (qualifier value)"
 */
+
+
+ValueSet: ChElmResultsLaboratoryObservationComplete
+Id: ch-elm-results-laboratory-observation-complete
+Title: "CH ELM Results Laboratory Observation Complete"
+Description: "Includes microbiology studies, microbial susceptibility tests, and genotyping ValueSets"
+* ^status = #active
+* ^experimental = false
+* include codes from valueset $ch-elm-results-laboratory-observation
+* include codes from valueset $ch-elm-results-laboratory-observation-geno
+* include codes from valueset $ch-elm-results-laboratory-observation-susc

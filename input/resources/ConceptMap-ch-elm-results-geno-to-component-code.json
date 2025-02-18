@@ -1,0 +1,51 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "ch-elm-results-geno-to-component-code",
+  "url": "http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-results-geno-to-component-code",
+  "version": "2025-01-21",
+  "name": "ChElmResultsGenoToComponentCode",
+  "title": "CH ELM Results To Genotying Component code ValueSet",
+  "status": "active",
+  "experimental": false,
+  "description": "This CH ELM concept map specifies the ValueSet for component.code for each leading code",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "CHE"
+        }
+      ]
+    }
+  ],
+  "sourceCanonical": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-laboratory-observation-gene",
+  "targetCanonical": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-component-vs",
+  "group": [
+    {
+      "source": "http://snomed.info/sct",
+      "target": "http://fhir.ch/ig/ch-elm/CodeSystem/ch-elm-results-component-vs",
+      "element": [
+        {
+          "code": "113861009",
+          "display": "Mycobacterium tuberculosis (organism)",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-component-gene-tb",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "1098201000112108",
+          "display": "Carbapenemase-producing Klebsiella pneumoniae (organism)",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-component-gene-cpe",
+              "equivalence": "relatedto"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
