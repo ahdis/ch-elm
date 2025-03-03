@@ -18,7 +18,7 @@
       ]
     }
   ],
-  "sourceCanonical": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-laboratory-observation-gene",
+  "sourceCanonical": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-laboratory-observation-geno",
   "targetCanonical": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-component-vs",
   "group": [
     {
