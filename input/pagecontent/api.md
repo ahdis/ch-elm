@@ -102,10 +102,13 @@ If the FOPH encounters any errors or if any validation fails, the FOPH shall ret
 
 ####  Send Report Response Message
 
-The FOPH returns a HTTP Status code appropriate to the processing outcome, conforming to the create transaction specification requirements as specified in [http://hl7.org/fhir/R4/http.html#create](http://hl7.org/fhir/R4/http.html#create). 
+After sending the report (FHIR document) to the FOPH, an HTTP Status code is returned appropriate to the processing outcome, conforming to the create transaction specification requirements as specified in [http://hl7.org/fhir/R4/http.html#create](http://hl7.org/fhir/R4/http.html#create). 
 
-If the FOPH has accepted the information it will return an id for the created DocumentReference. The DocumentReference will have an additional element returning the processing state of the document, which can have the following values:
-[in-progress](DocumentReference-1-DocumentReferenceResponseInProgress.json.html), [failed](DocumentReference-1-DocumentReferenceResponseFailed.json.html), [completed](DocumentReference-1-DocumentReferenceResponseCompleted.json.html). If failed a reference to an OperationOutcome is added.
+If the FHIR document has passed the validation-process the returned response message body contains a DocumentReference-Resource with the FOPH-generated DocumentReference-ID and the status code [in-progress](https://fhir.ch/ig/ch-elm/DocumentReference-1-DocumentReferenceResponseInProgress.json.html). The DocumentReference-ID can be used to track the status of the document during the FOPH processing-steps. In case of a processing-issue, the status-code changes to [failed](https://fhir.ch/ig/ch-elm/DocumentReference-1-DocumentReferenceResponseFailed.json.html), if the document-processing is successful, the status-code changes to [completed](https://fhir.ch/ig/ch-elm/DocumentReference-1-DocumentReferenceResponseCompleted.json.html) (see also chapter [Response message - Message semantics](#message-semantics-3)).
+
+“If the FHIR document is not valid, the returned response message body contains an OperationOutcome-Resource with information about the validation-errors. (The OperationOutcome contains neither a DocumentReference-ID nor a status-code).
+
+
 
 ##### Trigger Events
 
@@ -227,7 +230,9 @@ The response shall adhere to the FHIR Bundle constraints [specified](StructureDe
 
 ###### DocumentReference Resource Contents
 
-Example of responses from query by id:
+The response message body contains a DocumentReference-Resource with a reference to the contained OperationOutcome-Resource (validation messages) and a status-code indicating the status of the document processing: in-progress, failed, completed. The status “failed” indicates that the document could not be processed due to further conformity issues. Please note, that failed FHIR-documents are NOT inserted in our database and have to be corrected and re-submitted.
+
+Example of such responses:
 [in-progress](DocumentReference-1-DocumentReferenceResponseInProgress.json.html), [failed](DocumentReference-1-DocumentReferenceResponseFailed.json.html), [completed](DocumentReference-1-DocumentReferenceResponseCompleted.json.html).
 
 
