@@ -29,6 +29,7 @@ Description: "This CH ELM extension enables to proivde the HIV Code."
 * ^context[+].type = #element
 * ^context[=].expression = "HumanName"
 * . ^short = "CH ELM Extension: HIV Code"
+* obeys ch-elm-hiv-check
 * value[x] 1..
 * value[x] only string
 * valueString ^short = "Name of the HIV code"

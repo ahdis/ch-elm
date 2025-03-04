@@ -20,7 +20,15 @@ Depending on the organism (leading code), the requirement for how the patient’
    * see Profile [CH ELM Patient VCT](StructureDefinition-ChElmPatientVCT.html) 
    * [Example](Patient-Pat-VCT.json.html): kste12345 (Patient.name.extension = kste12345, Patient.name.family/Patient.name.given = masked, no telecom and no street address)
 * **HIV Code**
-   * Organism: In the case of HIV/AIDS, under initials, enter the first letter and the number of letters of the first name. If this is longer than 9 letters, the number is 0. In the case of multi-part first names with a hyphen or in two words, only the first part is used.
+   * Organism: HIV/AIDS
+   * Basic principle: Take the first letter of the first name and add the number of letters of the first name. E.g. Samuel -> S6. This value need to be provided in the [CH ELM Extension: HIV code](SStructureDefinition-ch-elm-ext-hiv-code.html) and Patient.name.family, Patient.name.given need to be masked.
+   * Special cases:
+     - If there are more than 9 letters, put 0. E.g. Christopher -> C0
+     - Multi-part given name with a hyphen, use only the first part. E.g. Hans-Jakob -> H4
+     - Multi-part given name in two words, use only the first part. E.g. Maria Eva -> M5
+     - If the first name has only one letter, use the letter followed by 1. E.g. S -> S1
+     - If the first name is “0”, then use “01”
+     - If the first name is missing, then use “0”
    * see Profile [CH ELM Patient HIV](StructureDefinition-ChElmPatientHIV.html) 
    * [Example](Patient-Pat-004.json.html): E5 (Patient.name.extension = E5, Patient.name.family/Patient.name.given = masked, no telecom and no street address)
 * **Conditional**
