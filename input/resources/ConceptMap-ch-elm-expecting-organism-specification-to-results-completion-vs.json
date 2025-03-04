@@ -2,7 +2,7 @@
   "resourceType": "ConceptMap",
   "id": "ch-elm-expecting-organism-specification-to-results-completion-vs",
   "url": "http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-expecting-organism-specification-to-results-completion-vs",
-  "version": "2025-01-23",
+  "version": "2025-03-04",
   "name": "ChElmExpectingOrganismSpecificationToResultsCompletionVs",
   "title": "CH ELM Expecting Organism Specification To Results Completion Vs",
   "status": "active",
@@ -41,16 +41,6 @@
           "target": [
             {
               "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-leg-org",
-              "equivalence": "relatedto"
-            }
-          ]
-        },
-        {
-          "code": "101427-3",
-          "display": "Shigella sp DNA [Presence] in Stool by NAA with probe detection",
-          "target": [
-            {
-              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-shi-org",
               "equivalence": "relatedto"
             }
           ]
@@ -166,16 +156,6 @@
           ]
         },
         {
-          "code": "46455-2",
-          "display": "Shigella sp DNA [Presence] in Specimen by NAA with probe detection",
-          "target": [
-            {
-              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-shi-org",
-              "equivalence": "relatedto"
-            }
-          ]
-        },
-        {
           "code": "46732-4",
           "display": "Francisella tularensis subtype [Identifier] in Specimen by NAA with probe detection",
           "target": [
@@ -231,6 +211,56 @@
           "target": [
             {
               "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-mal-org",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "534-8",
+          "display": "Mycobacterium sp identified in Cerebral spinal fluid by Organism specific culture",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-tub-org",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "539-7",
+          "display": "Mycobacterium sp identified in Sputum by Organism specific culture",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-tub-org",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "540-5",
+          "display": "Mycobacterium sp identified in Tissue by Organism specific culture",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-tub-org",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "541-3",
+          "display": "Mycobacterium sp identified in Urine by Organism specific culture",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-tub-org",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "543-9",
+          "display": "Mycobacterium sp identified in Specimen by Organism specific culture",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-tub-org",
               "equivalence": "relatedto"
             }
           ]
@@ -521,6 +551,16 @@
           "target": [
             {
               "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-camp-org",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "9823-6",
+          "display": "Mycobacterium sp identified in Bronchial specimen by Organism specific culture",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-tub-org",
               "equivalence": "relatedto"
             }
           ]

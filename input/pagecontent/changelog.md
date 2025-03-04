@@ -2,6 +2,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 ### 1.9.0 unreleased
 * [#127](https://github.com/ahdis/ch-elm/issues/127) Susceptibility and genotyping
 * [#140](https://github.com/ahdis/ch-elm/issues/140) Do not use "not-performed" status 
+* [#141](https://github.com/ahdis/ch-elm/issues/141) Do not use ValueSet-ch-elm-interpretation-codes-pres-abs
 
 ### 1.8.0 2025/02/04
 

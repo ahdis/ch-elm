@@ -23,9 +23,6 @@
             "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos-neg"
           },
           {
-            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pres-abs"
-          },
-          {
             "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-res"
           },
           {

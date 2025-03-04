@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "ch-elm-expecting-organism-specification",
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-expecting-organism-specification",
-  "version": "2025-01-23",
+  "version": "2025-03-04",
   "name": "ChElmExpectingOrganismSpecification",
   "title": "CH ELM Expecting Organism Specification",
   "status": "active",
@@ -20,10 +20,6 @@
           {
             "code": "101219-4",
             "display": "Legionella sp DNA [Presence] in Specimen by NAA with probe detection"
-          },
-          {
-            "code": "101427-3",
-            "display": "Shigella sp DNA [Presence] in Stool by NAA with probe detection"
           },
           {
             "code": "104376-9",
@@ -70,10 +66,6 @@
             "display": "Shigella sp [Presence] in Specimen by Organism specific culture"
           },
           {
-            "code": "46455-2",
-            "display": "Shigella sp DNA [Presence] in Specimen by NAA with probe detection"
-          },
-          {
             "code": "46732-4",
             "display": "Francisella tularensis subtype [Identifier] in Specimen by NAA with probe detection"
           },
@@ -96,6 +88,26 @@
           {
             "code": "51587-4",
             "display": "Plasmodium sp [Presence] in Blood by Light microscopy"
+          },
+          {
+            "code": "534-8",
+            "display": "Mycobacterium sp identified in Cerebral spinal fluid by Organism specific culture"
+          },
+          {
+            "code": "539-7",
+            "display": "Mycobacterium sp identified in Sputum by Organism specific culture"
+          },
+          {
+            "code": "540-5",
+            "display": "Mycobacterium sp identified in Tissue by Organism specific culture"
+          },
+          {
+            "code": "541-3",
+            "display": "Mycobacterium sp identified in Urine by Organism specific culture"
+          },
+          {
+            "code": "543-9",
+            "display": "Mycobacterium sp identified in Specimen by Organism specific culture"
           },
           {
             "code": "552-0",
@@ -212,6 +224,10 @@
           {
             "code": "97513-6",
             "display": "Campylobacter sp [Presence] in Specimen by Organism specific culture"
+          },
+          {
+            "code": "9823-6",
+            "display": "Mycobacterium sp identified in Bronchial specimen by Organism specific culture"
           }
         ]
       }

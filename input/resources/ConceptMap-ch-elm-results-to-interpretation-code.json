@@ -2,7 +2,7 @@
   "resourceType": "ConceptMap",
   "id": "ch-elm-results-to-interpretation-code",
   "url": "http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-results-to-interpretation-code",
-  "version": "2025-01-23",
+  "version": "2025-03-04",
   "name": "ChElmResultsToInterpretationCode",
   "title": "CH ELM Results To Interpretation Code",
   "status": "active",
@@ -148,16 +148,6 @@
         {
           "code": "101424-0",
           "display": "Influenza virus A H3 RNA [Presence] in Respiratory system specimen by NAA with probe detection",
-          "target": [
-            {
-              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
-              "equivalence": "relatedto"
-            }
-          ]
-        },
-        {
-          "code": "101427-3",
-          "display": "Shigella sp DNA [Presence] in Stool by NAA with probe detection",
           "target": [
             {
               "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
@@ -336,6 +326,16 @@
           ]
         },
         {
+          "code": "107242-0",
+          "display": "Tick-borne encephalitis virus Ab [Interpretation] in Serum or Plasma",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-sero",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
           "code": "11259-9",
           "display": "Hepatitis C virus RNA [Presence] in Serum or Plasma by NAA with probe detection",
           "target": [
@@ -351,6 +351,46 @@
           "target": [
             {
               "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos-neg",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "11477-7",
+          "display": "Microscopic observation [Identifier] in Sputum by Acid fast stain",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "11479-3",
+          "display": "Microscopic observation [Identifier] in Tissue by Acid fast stain",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "11480-1",
+          "display": "Microscopic observation [Identifier] in Urine by Acid fast stain",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "11545-1",
+          "display": "Microscopic observation [Identifier] in Specimen by Acid fast stain",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
               "equivalence": "relatedto"
             }
           ]
@@ -668,6 +708,16 @@
         {
           "code": "23838-6",
           "display": "Chlamydia trachomatis rRNA [Presence] in Genital fluid by Probe",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "24002-8",
+          "display": "Microscopic observation [Identifier] in Bronchial specimen by Acid fast stain",
           "target": [
             {
               "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
@@ -1036,6 +1086,16 @@
           ]
         },
         {
+          "code": "32188-5",
+          "display": "Microscopic observation [Identifier] in Cerebral spinal fluid by Acid fast stain",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
           "code": "32705-6",
           "display": "Neisseria gonorrhoeae DNA [Presence] in Vaginal fluid by NAA with probe detection",
           "target": [
@@ -1178,6 +1238,16 @@
         {
           "code": "38353-9",
           "display": "Streptococcus sp identified in Specimen by Organism specific culture",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "38379-4",
+          "display": "Mycobacterium tuberculosis complex DNA [Presence] in Specimen by NAA with probe detection",
           "target": [
             {
               "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
@@ -1468,16 +1538,6 @@
         {
           "code": "46454-5",
           "display": "Shigella sp [Presence] in Specimen by Organism specific culture",
-          "target": [
-            {
-              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
-              "equivalence": "relatedto"
-            }
-          ]
-        },
-        {
-          "code": "46455-2",
-          "display": "Shigella sp DNA [Presence] in Specimen by NAA with probe detection",
           "target": [
             {
               "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
@@ -1786,6 +1846,16 @@
           ]
         },
         {
+          "code": "534-8",
+          "display": "Mycobacterium sp identified in Cerebral spinal fluid by Organism specific culture",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
           "code": "53607-8",
           "display": "Haemophilus influenzae B DNA [Presence] in Blood by NAA with probe detection",
           "target": [
@@ -1876,11 +1946,51 @@
           ]
         },
         {
+          "code": "539-7",
+          "display": "Mycobacterium sp identified in Sputum by Organism specific culture",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "540-5",
+          "display": "Mycobacterium sp identified in Tissue by Organism specific culture",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
           "code": "54091-4",
           "display": "Rubella virus RNA [Presence] in Specimen by NAA with probe detection",
           "target": [
             {
               "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos-neg",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "541-3",
+          "display": "Mycobacterium sp identified in Urine by Organism specific culture",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "543-9",
+          "display": "Mycobacterium sp identified in Specimen by Organism specific culture",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
               "equivalence": "relatedto"
             }
           ]
@@ -2816,6 +2926,16 @@
           ]
         },
         {
+          "code": "85362-2",
+          "display": "Mycobacterium tuberculosis complex DNA [Presence] in Sputum or Bronchial by NAA with probe detection",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
           "code": "85477-8",
           "display": "Influenza virus A RNA [Presence] in Upper respiratory specimen by NAA with probe detection",
           "target": [
@@ -3608,6 +3728,16 @@
         {
           "code": "97920-3",
           "display": "Tick-borne encephalitis virus RNA [Presence] in Specimen by NAA with probe detection",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "9823-6",
+          "display": "Mycobacterium sp identified in Bronchial specimen by Organism specific culture",
           "target": [
             {
               "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",

@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "ch-elm-results-men-org",
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-men-org",
-  "version": "2025-01-23",
+  "version": "2025-03-04",
   "name": "ChElmResultsMenOrg",
   "title": "CH ELM Results Men Org",
   "status": "active",

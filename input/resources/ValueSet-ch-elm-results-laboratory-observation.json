@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "ch-elm-results-laboratory-observation",
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-laboratory-observation",
-  "version": "2025-01-23",
+  "version": "2025-03-04",
   "name": "ChElmResultsLaboratoryObservation",
   "title": "CH ELM Results Laboratory Observation",
   "status": "active",
@@ -64,10 +64,6 @@
           {
             "code": "101424-0",
             "display": "Influenza virus A H3 RNA [Presence] in Respiratory system specimen by NAA with probe detection"
-          },
-          {
-            "code": "101427-3",
-            "display": "Shigella sp DNA [Presence] in Stool by NAA with probe detection"
           },
           {
             "code": "101662-5",
@@ -138,12 +134,32 @@
             "display": "Campylobacter sp DNA [Presence] in Specimen by NAA with probe detection"
           },
           {
+            "code": "107242-0",
+            "display": "Tick-borne encephalitis virus Ab [Interpretation] in Serum or Plasma"
+          },
+          {
             "code": "11259-9",
             "display": "Hepatitis C virus RNA [Presence] in Serum or Plasma by NAA with probe detection"
           },
           {
             "code": "11469-4",
             "display": "Bacillus anthracis [Presence] in Specimen by Organism specific culture"
+          },
+          {
+            "code": "11477-7",
+            "display": "Microscopic observation [Identifier] in Sputum by Acid fast stain"
+          },
+          {
+            "code": "11479-3",
+            "display": "Microscopic observation [Identifier] in Tissue by Acid fast stain"
+          },
+          {
+            "code": "11480-1",
+            "display": "Microscopic observation [Identifier] in Urine by Acid fast stain"
+          },
+          {
+            "code": "11545-1",
+            "display": "Microscopic observation [Identifier] in Specimen by Acid fast stain"
           },
           {
             "code": "13954-3",
@@ -272,6 +288,10 @@
           {
             "code": "23838-6",
             "display": "Chlamydia trachomatis rRNA [Presence] in Genital fluid by Probe"
+          },
+          {
+            "code": "24002-8",
+            "display": "Microscopic observation [Identifier] in Bronchial specimen by Acid fast stain"
           },
           {
             "code": "24102-6",
@@ -418,6 +438,10 @@
             "display": "Hantavirus IgM Ab [Presence] in Serum"
           },
           {
+            "code": "32188-5",
+            "display": "Microscopic observation [Identifier] in Cerebral spinal fluid by Acid fast stain"
+          },
+          {
             "code": "32705-6",
             "display": "Neisseria gonorrhoeae DNA [Presence] in Vaginal fluid by NAA with probe detection"
           },
@@ -476,6 +500,10 @@
           {
             "code": "38353-9",
             "display": "Streptococcus sp identified in Specimen by Organism specific culture"
+          },
+          {
+            "code": "38379-4",
+            "display": "Mycobacterium tuberculosis complex DNA [Presence] in Specimen by NAA with probe detection"
           },
           {
             "code": "38382-8",
@@ -592,10 +620,6 @@
           {
             "code": "46454-5",
             "display": "Shigella sp [Presence] in Specimen by Organism specific culture"
-          },
-          {
-            "code": "46455-2",
-            "display": "Shigella sp DNA [Presence] in Specimen by NAA with probe detection"
           },
           {
             "code": "46732-4",
@@ -718,6 +742,10 @@
             "display": "Rubella virus IgG Ab avidity [Ratio] in Serum by Immunoassay"
           },
           {
+            "code": "534-8",
+            "display": "Mycobacterium sp identified in Cerebral spinal fluid by Organism specific culture"
+          },
+          {
             "code": "53607-8",
             "display": "Haemophilus influenzae B DNA [Presence] in Blood by NAA with probe detection"
           },
@@ -754,8 +782,24 @@
             "display": "Escherichia coli shiga-like toxin identified in Specimen"
           },
           {
+            "code": "539-7",
+            "display": "Mycobacterium sp identified in Sputum by Organism specific culture"
+          },
+          {
+            "code": "540-5",
+            "display": "Mycobacterium sp identified in Tissue by Organism specific culture"
+          },
+          {
             "code": "54091-4",
             "display": "Rubella virus RNA [Presence] in Specimen by NAA with probe detection"
+          },
+          {
+            "code": "541-3",
+            "display": "Mycobacterium sp identified in Urine by Organism specific culture"
+          },
+          {
+            "code": "543-9",
+            "display": "Mycobacterium sp identified in Specimen by Organism specific culture"
           },
           {
             "code": "552-0",
@@ -1130,6 +1174,10 @@
             "display": "Zika virus IgM Ab [Presence] in Serum by Immunofluorescence"
           },
           {
+            "code": "85362-2",
+            "display": "Mycobacterium tuberculosis complex DNA [Presence] in Sputum or Bronchial by NAA with probe detection"
+          },
+          {
             "code": "85477-8",
             "display": "Influenza virus A RNA [Presence] in Upper respiratory specimen by NAA with probe detection"
           },
@@ -1448,6 +1496,10 @@
           {
             "code": "97920-3",
             "display": "Tick-borne encephalitis virus RNA [Presence] in Specimen by NAA with probe detection"
+          },
+          {
+            "code": "9823-6",
+            "display": "Mycobacterium sp identified in Bronchial specimen by Organism specific culture"
           },
           {
             "code": "99090-3",

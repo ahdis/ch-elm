@@ -2,7 +2,7 @@
   "resourceType": "CodeSystem",
   "id": "ch-elm-foph-business-rules",
   "url": "http://fhir.ch/ig/ch-elm/CodeSystem/ch-elm-foph-business-rules",
-  "version": "2025-01-23",
+  "version": "2025-03-04",
   "name": "ChElmFophBusinessRules",
   "title": "CH ELM FOPH Business Rules",
   "status": "active",
@@ -43,6 +43,10 @@
           "display": "The patient address state element should contain a two letter canton code."
         },
         {
+          "code": "FOPH-017",
+          "display": "The combination of postal code & city in the patient address element could not be found in the FOPH location database."
+        },
+        {
           "code": "FOPH-005",
           "display": "The required anonymization for the reported organism was violated. The following field(s) are affected: %fields%"
         },
@@ -53,6 +57,14 @@
         {
           "code": "FOPH-010",
           "display": "Attention, the code %code% (%codeSystem%) expires on %validTo%. Please adjust your systems by this date."
+        },
+        {
+          "code": "FOPH-019",
+          "display": "The combination of postal code & city in the practitioner orderer address element could not be found in the FOPH location database."
+        },
+        {
+          "code": "FOPH-018",
+          "display": "The combination of postal code & city in the organization orderer address element could not be found in the FOPH location database."
         },
         {
           "code": "FOPH-015",

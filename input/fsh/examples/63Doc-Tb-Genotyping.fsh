@@ -91,4 +91,4 @@ Usage: #inline
 
 * component[0].code = $loinc#63072-3 "Mycobacterium tuberculosis inhA gene isoniazid low level resistance mutation [Presence] by Molecular method"
 * component[0].dataAbsentReason = $data-absent-reason-cs#not-applicable
-* component[=].interpretation = $sct#52101004 "Present (qualifier value)"
+* component[=].interpretation =  $v3-ObservationInterpretation#POS "Positive"

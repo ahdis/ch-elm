@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "ch-elm-results-ehec-tox-org",
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-ehec-tox-org",
-  "version": "2025-01-23",
+  "version": "2025-03-04",
   "name": "ChElmResultsEhecToxOrg",
   "title": "CH ELM Results Ehec Tox Org",
   "status": "active",

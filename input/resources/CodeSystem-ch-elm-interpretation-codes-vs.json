@@ -2,7 +2,7 @@
   "resourceType": "CodeSystem",
   "id": "ch-elm-interpretation-codes-vs",
   "url": "http://fhir.ch/ig/ch-elm/CodeSystem/ch-elm-interpretation-codes-vs",
-  "version": "2025-01-23",
+  "version": "2025-03-04",
   "name": "ChElmInterpretationCodesVs",
   "title": "CH ELM Interpretation Codes Vs",
   "status": "active",
@@ -29,9 +29,6 @@
     },
     {
       "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos-neg"
-    },
-    {
-      "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pres-abs"
     },
     {
       "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-res"
