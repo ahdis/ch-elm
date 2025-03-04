@@ -131,7 +131,7 @@ Expression: "'http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-results-susc-to-compone
 Invariant: ch-elm-component-interpretation-code-geno-loinc
 Description: "If Observation.code is mapped in http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-results-geno-to-component-interpretation-code, then the component.interpretation code must be a member of the mapped ValueSet for genotyping testing"
 Severity: #error
-Expression: "'http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-results-geno-to-component-interpretation-code'.resolve().group.where(source='http://loinc.org').element.where(code=%context.code.coding.where(system='http://loinc.org').first().code).exists() implies component.interpretation.all(memberOf('http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-results-geno-to-interpretation-code'.resolve().group.where(source='http://loinc.org').element.where(code=%context.code.coding.where(system='http://loinc.org').first().code).target.first().code))"
+Expression: "'http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-results-geno-to-component-interpretation-code'.resolve().group.where(source='http://loinc.org').element.where(code=%context.code.coding.where(system='http://loinc.org').first().code).exists() implies component.interpretation.all(memberOf('http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-results-geno-to-component-interpretation-code'.resolve().group.where(source='http://loinc.org').element.where(code=%context.code.coding.where(system='http://loinc.org').first().code).target.first().code))"
 
 Invariant: ch-elm-component-interpretation-code-geno-snomedct
 Description: "If Observation.code is mapped in http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-results-geno-to-component-interpretation-code, then the component.interpretation code must be a member of the mapped ValueSet for genotyping testing"
@@ -152,3 +152,8 @@ Invariant: ch-elm-practioner-zsr-check-digit
 Description: "invalid ZSR number, cannot be processed, must pass the modulus 26 check - https://confluence.sasis.ch/display/PublicZSR/ZSR+Webservice+FAQ"
 Severity: #warning
 Expression: "identifier.where(system='urn:oid:2.16.756.5.30.1.123.100.2.1.1').exists() implies identifier.where(system='urn:oid:2.16.756.5.30.1.123.100.2.1.1').value.select(((substring(1,1).toInteger()*6)+(substring(2,1).toInteger()*5)+(substring(3,1).toInteger()*4)+(substring(4,1).toInteger()*3)+(substring(5,1).toInteger()*2)+(substring(6,1).toInteger()))mod(26)=iif(substring(0,1)='A',1,iif(substring(0,1)='B',2,iif(substring(0,1)='C',3,iif(substring(0,1)='D',4,iif(substring(0,1)='E',5,iif(substring(0,1)='F',6,iif(substring(0,1)='G',7,iif(substring(0,1)='H',8,iif(substring(0,1)='I',9,iif(substring(0,1)='J',10,iif(substring(0,1)='K',11,iif(substring(0,1)='L',12,iif(substring(0,1)='M',13,iif(substring(0,1)='N',14,iif(substring(0,1)='O',15,iif(substring(0,1)='P',16,iif(substring(0,1)='Q',17,iif(substring(0,1)='R',18,iif(substring(0,1)='S',19,iif(substring(0,1)='T',20,iif(substring(0,1)='U',21,iif(substring(0,1)='V',22,iif(substring(0,1)='W',23,iif(substring(0,1)='X',24,iif(substring(0,1)='Y',25,iif(substring(0,1)='Z',26,-1))))))))))))))))))))))))))).allTrue()"
+
+Invariant: ch-elm-denominator-greater-zero
+Description: "denominator must be greater than zero in ratio"
+Severity: #error
+Expression: "value.denominator.value > 0"

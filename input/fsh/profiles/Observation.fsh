@@ -129,6 +129,7 @@ Parent: Observation
 Id: ch-elm-observation-rto
 Title: "CH ELM Observation Results: Ratio"
 Description: "Ratio as observation result, see also 'Guidance - Laboratory Result'"
+* obeys ch-elm-denominator-greater-zero
 * valueRatio 1..1
 * valueRatio.numerator 1..1
 * valueRatio.numerator.value = 1

@@ -83,7 +83,7 @@ InstanceOf: ChElmObservationResultsLaboratory
 Usage: #inline
 * status = #final
 * category[laboratory] = $observation-category#laboratory "Laboratory"
-* code = $sct#113861009 "Mycobacterium tuberculosis (organism)"
+* code = $loinc#94053-6 "Mycobacterium tuberculosis complex resistance panel by Molecular genetics method"
 * subject = Reference(Pat-001)
 * effectiveDateTime = "2024-09-10T14:20:00+02:00"
 * performer = Reference(1Org-Labor)

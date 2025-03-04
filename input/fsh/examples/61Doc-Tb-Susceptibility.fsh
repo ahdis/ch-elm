@@ -89,10 +89,10 @@ Usage: #inline
 * performer = Reference(1Org-Labor)
 * specimen = Reference(61Spec-Susceptibility)
 
-* component[0].code = $loinc#LP15831-8 "Isoniazid"
+* component[0].code = $loinc#18934-0 "Isoniazid [Susceptibility]"
 * component[=].valueQuantity = 0.4 'mg/L' "mg/L"
 * component[=].interpretation = $v3-ObservationInterpretation#S "Susceptible" 
 
-* component[+].code = $loinc#LP16274-0 "rifAMPin"
+* component[+].code = $loinc#18974-6 "rifAMPin [Susceptibility]"
 * component[=].valueQuantity = 0.1 'mg/L' "mg/L"
 * component[=].interpretation = $v3-ObservationInterpretation#R "Resistant"
