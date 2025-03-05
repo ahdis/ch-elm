@@ -4,17 +4,12 @@ Id: ch-elm-observation-results-laboratory
 Title: "CH ELM Observation Results: Laboratory"
 Description: "This CH ELM base profile constrains the Observation resource for the purpose of laboratory test reports."
 * obeys ch-elm-expecting-specimen-specification
-* obeys ch-elm-expecting-organism-specification
-* obeys ch-elm-interpretation-code-loinc
-* obeys ch-elm-interpretation-code-snomedct
 * obeys ch-elm-patient-name-representation-initial-loinc
 * obeys ch-elm-patient-name-representation-initial-snomedct
 * obeys ch-elm-patient-name-representation-initial-or-vctcode-loinc
 * obeys ch-elm-patient-name-representation-initial-or-vctcode-snomedct
 * obeys ch-elm-patient-name-representation-hiv-code-loinc
 * obeys ch-elm-patient-name-representation-hiv-code-snomedct
-* obeys ch-elm-observation-profile-loinc
-* obeys ch-elm-observation-profile-snomedct
 * . ^short = "CH ELM Observation Results: Laboratory"
 * status = #final
 * code from ChElmResultsLaboratoryObservation (extensible)
@@ -54,6 +49,11 @@ Parent: ChElmObservationResultsLaboratory
 Id: ch-elm-observation-results-laboratory-microbiology
 Title: "CH ELM Observation Results for Microbiology studies (set)"
 Description: "This CH ELM profile constrains the Observation resource for the purpose of laboratory test reports."
+* obeys ch-elm-interpretation-code-loinc
+* obeys ch-elm-interpretation-code-snomedct
+* obeys ch-elm-observation-profile-loinc
+* obeys ch-elm-observation-profile-snomedct
+* obeys ch-elm-expecting-organism-specification
 * interpretation 1..1
 * valueString ^short = "String if required by leading code, see also 'Guidance - Laboratory Result'" 
 * valueQuantity ^short = "Quantity if required by leading code, see also 'Guidance - Laboratory Result'"
