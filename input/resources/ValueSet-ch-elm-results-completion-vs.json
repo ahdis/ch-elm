@@ -50,9 +50,6 @@
             "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-cjd-org"
           },
           {
-            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-cpe-org"
-          },
-          {
             "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-diph-org"
           },
           {
