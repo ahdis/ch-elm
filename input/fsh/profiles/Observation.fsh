@@ -12,7 +12,7 @@ Description: "This CH ELM base profile constrains the Observation resource for t
 * obeys ch-elm-patient-name-representation-hiv-code-snomedct
 * . ^short = "CH ELM Observation Results: Laboratory"
 * status = #final
-* code from ChElmResultsLaboratoryObservation (extensible)
+* code from ChElmResultsLaboratoryObservationComplete (extensible)
 * code only ChElmCodeableConcept
 * subject only Reference(ChElmPatient)
 * subject 1..
@@ -54,6 +54,7 @@ Description: "This CH ELM profile constrains the Observation resource for the pu
 * obeys ch-elm-observation-profile-loinc
 * obeys ch-elm-observation-profile-snomedct
 * obeys ch-elm-expecting-organism-specification
+* code from ChElmResultsLaboratoryObservation (extensible)
 * interpretation 1..1
 * valueString ^short = "String if required by leading code, see also 'Guidance - Laboratory Result'" 
 * valueQuantity ^short = "Quantity if required by leading code, see also 'Guidance - Laboratory Result'"
@@ -79,6 +80,7 @@ Description: "This CH ELM profile constrains the Observation resource for the pu
 * obeys ch-elm-component-interpretation-code-susc-snomedct
 * obeys ch-elm-component-observation-profile-susc-loinc
 * obeys ch-elm-component-observation-profile-susc-snomedct
+* code from $ch-elm-results-laboratory-observation-susc (extensible)
 * component 1..*
 * component.code  ^short = "see also 'Guidance - Laboratory Result'"
 * component.code 1..1
@@ -101,6 +103,7 @@ Description: "This CH ELM profile constrains the Observation resource for the pu
 * obeys ch-elm-component-code-geno-snomedct
 * obeys ch-elm-component-interpretation-code-geno-loinc
 * obeys ch-elm-component-interpretation-code-geno-snomedct
+* code from $ch-elm-results-laboratory-observation-geno (extensible)
 * component 1..*
 * component.code  ^short = "see also 'Guidance - Laboratory Result'"
 * component.code 1..1

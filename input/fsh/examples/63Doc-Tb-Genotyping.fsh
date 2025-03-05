@@ -67,7 +67,7 @@ Usage: #inline
 * identifier.value = "26500923622"
 * status = #completed
 * intent = #order
-* code = $loinc#29579-0 "Mycobacterial Genotyping panel by Method for Slow-growing mycobacteria"
+* code = $loinc#94053-6 "Mycobacterium tuberculosis complex resistance panel by Molecular genetics method"
 * subject = Reference(Pat-001)
 * requester = Reference(PR-PeterHauser)
 * specimen = Reference(63Spec-Genotyping)
