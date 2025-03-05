@@ -18,15 +18,6 @@
             "display": "Mycobacterium tuberculosis complex resistance panel by Molecular genetics method" 
           }
         ]
-      },
-      {
-        "system": "http://snomed.info/sct",
-        "concept": [
-          {
-            "code":"1098201000112108",
-            "display": "Carbapenemase-producing Klebsiella pneumoniae (organism)"          
-          }
-        ]
       }
     ]
   }

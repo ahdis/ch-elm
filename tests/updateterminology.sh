@@ -245,16 +245,7 @@ curl --request GET \
   --cert $CERT \
   --key $KEY \
   -o ../input/resources/ValueSet-$VALUESET.json
-
-VALUESET="ch-elm-results-cpe-org"
-curl --request GET \
-  --url https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir/ValueSet/$VALUESET \
-  --header 'accept: application/fhir+json' \
-  --header 'user-agent: vscode-restclient' \
-  --cert $CERT \
-  --key $KEY \
-  -o ../input/resources/ValueSet-$VALUESET.json
-
+  
 VALUESET="ch-elm-results-diph-org"
 curl --request GET \
   --url https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir/ValueSet/$VALUESET \

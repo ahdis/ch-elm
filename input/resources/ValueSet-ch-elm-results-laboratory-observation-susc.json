@@ -18,15 +18,6 @@
             "display": "Mycobacterial susceptibility panel by Method for Slow-growing mycobacteria" 
           }
         ]
-      },
-      {
-        "system": "http://snomed.info/sct",
-        "concept": [
-          {
-            "code": "734201007",
-            "display": "Carbapenem resistant Enterobacter cloacae complex (organism)"
-          }
-        ]
       }
     ]
   }
