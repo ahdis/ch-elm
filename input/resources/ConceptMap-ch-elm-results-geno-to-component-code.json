@@ -22,19 +22,25 @@
   "targetCanonical": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-component-vs",
   "group": [
     {
-      "source": "http://snomed.info/sct",
+      "source": "http://loinc.org",
       "target": "http://fhir.ch/ig/ch-elm/CodeSystem/ch-elm-results-component-vs",
       "element": [
         {
-          "code": "113861009",
-          "display": "Mycobacterium tuberculosis (organism)",
+          "code": "94053-6",
+          "display": "Mycobacterium tuberculosis complex resistance panel by Molecular genetics method",
           "target": [
             {
               "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-component-gene-tb",
               "equivalence": "relatedto"
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "source": "http://snomed.info/sct",
+      "target": "http://fhir.ch/ig/ch-elm/CodeSystem/ch-elm-results-component-vs",
+      "element": [
         {
           "code": "1098201000112108",
           "display": "Carbapenemase-producing Klebsiella pneumoniae (organism)",

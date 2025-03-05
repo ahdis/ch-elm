@@ -14,8 +14,16 @@
         "system": "http://loinc.org",
         "concept": [
           {
+            "code": "46246-5",
+            "display": "Mycobacterium tuberculosis katG gene isoniazid high level resistance mutation [Identifier] by Molecular method"
+          },
+          {
             "code": "63072-3",
             "display": "Mycobacterium tuberculosis inhA gene isoniazid low level resistance mutation [Presence] by Molecular method"
+          },
+          {
+            "code": "46244-0",
+            "display": "Mycobacterium tuberculosis complex rpoB gene rifAMPin resistance mutation identified by Molecular method"
           }
         ]
       }

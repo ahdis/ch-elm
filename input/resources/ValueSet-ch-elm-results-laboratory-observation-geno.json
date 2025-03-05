@@ -11,12 +11,17 @@
   "compose": {
     "include": [
       {
-        "system": "http://snomed.info/sct",
+        "system": "http://loinc.org",
         "concept": [
           {
-            "code": "113861009",
-            "display": "Mycobacterium tuberculosis (organism)" 
-          },
+            "code": "94053-6",
+            "display": "Mycobacterium tuberculosis complex resistance panel by Molecular genetics method" 
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
           {
             "code":"1098201000112108",
             "display": "Carbapenemase-producing Klebsiella pneumoniae (organism)"          

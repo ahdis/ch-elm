@@ -4,6 +4,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 * [#140](https://github.com/ahdis/ch-elm/issues/140) Do not use "not-performed" status 
 * [#141](https://github.com/ahdis/ch-elm/issues/141) Do not use ValueSet-ch-elm-interpretation-codes-pres-abs
 * [#139](https://github.com/ahdis/ch-elm/issues/139) HIV code validation & documentation
+* [#142](https://github.com/ahdis/ch-elm/issues/142) Constraint denominator to strictly positive values
 
 ### 1.8.0 2025/02/04
 

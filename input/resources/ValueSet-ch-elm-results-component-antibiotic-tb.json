@@ -14,12 +14,20 @@
         "system": "http://loinc.org",
         "concept": [
           {
-            "code": "LP15831-8",
-            "display": "Isoniazid"
+            "code": "18921-7",
+            "display": "Ethambutol [Susceptibility]"
           },
           {
-            "code": "LP16274-0",
-            "display": "rifAMPin"
+            "code": "18974-6",
+            "display": "rifAMPin [Susceptibility]"
+          },
+          {
+            "code": "18934-0",
+            "display": "Isoniazid [Susceptibility]"
+          },
+          {
+            "code": "18973-8",
+            "display": "Pyrazinamide [Susceptibility]"
           }
         ]
       }
