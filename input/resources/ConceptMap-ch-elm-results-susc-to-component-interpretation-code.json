@@ -36,22 +36,6 @@
           ]
         }
       ]
-    },
-    {
-      "source": "http://snomed.info/sct",
-      "target": "http://fhir.ch/ig/ch-elm/CodeSystem/ch-elm-results-interpretation-code-vs",
-      "element": [
-        {
-          "code": "734201007",
-          "display": "Carbapenem resistant Enterobacter cloacae complex (organism)",
-          "target": [
-            {
-              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-res",
-              "equivalence": "relatedto"
-            }
-          ]
-        }
-      ]
     }
   ]
 }

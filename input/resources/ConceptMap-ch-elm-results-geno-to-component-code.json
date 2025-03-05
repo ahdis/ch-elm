@@ -36,22 +36,6 @@
           ]
         }
       ]
-    },
-    {
-      "source": "http://snomed.info/sct",
-      "target": "http://fhir.ch/ig/ch-elm/CodeSystem/ch-elm-results-component-vs",
-      "element": [
-        {
-          "code": "1098201000112108",
-          "display": "Carbapenemase-producing Klebsiella pneumoniae (organism)",
-          "target": [
-            {
-              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-component-gene-cpe",
-              "equivalence": "relatedto"
-            }
-          ]
-        }
-      ]
     }
   ]
 }
