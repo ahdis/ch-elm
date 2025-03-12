@@ -11,8 +11,8 @@ Description: "Example for a CH ELM Document: Laboratory Report"
 * entry[=].resource = 63Comp-Genotyping
 * entry[+].fullUrl = "http://test.fhir.ch/r4/DiagnosticReport/63DR-Genotyping"
 * entry[=].resource = 63DR-Genotyping
-* entry[+].fullUrl = "http://test.fhir.ch/r4/Patient/Pat-001"
-* entry[=].resource = Pat-001
+* entry[+].fullUrl = "http://test.fhir.ch/r4/Patient/Pat-003"
+* entry[=].resource = Pat-003
 * entry[+].fullUrl = "http://test.fhir.ch/r4/Observation/63Obs-Genotyping"
 * entry[=].resource = 63Obs-Genotyping
 * entry[+].fullUrl = "http://test.fhir.ch/r4/Specimen/63Spec-Genotyping"
@@ -38,7 +38,7 @@ Usage: #inline
 * type.coding[0].version = "http://snomed.info/sct/2011000195101"
 * type.coding[=] = $sct#4241000179101 "Laborbericht"
 * type.coding[+] = $loinc#11502-2 "Laboratory report"
-* subject = Reference(Pat-001)
+* subject = Reference(Pat-003)
 * date = "2024-09-10T12:00:00+02:00"
 * author = Reference(1Org-Labor)
 * title = "Laborbericht vom 10.09.2024"
@@ -56,7 +56,7 @@ Usage: #inline
 * basedOn = Reference(63SR-Genotyping)
 * status = #final
 * code = $loinc#11502-2 "Laboratory report"
-* subject = Reference(Pat-001)
+* subject = Reference(Pat-003)
 * performer = Reference(1Org-Labor)
 * specimen = Reference(63Spec-Genotyping)
 * result = Reference(63Obs-Genotyping)
@@ -68,14 +68,14 @@ Usage: #inline
 * status = #completed
 * intent = #order
 * code = $loinc#94053-6 "Mycobacterium tuberculosis complex resistance panel by Molecular genetics method"
-* subject = Reference(Pat-001)
+* subject = Reference(Pat-003)
 * requester = Reference(PR-PeterHauser)
 * specimen = Reference(63Spec-Genotyping)
 
 Instance: 63Spec-Genotyping
 InstanceOf: ChElmSpecimen
 Usage: #inline
-* subject = Reference(Pat-001)
+* subject = Reference(Pat-003)
 * collection.collectedDateTime = "2024-09-08"
 
 Instance: 63Obs-Genotyping
@@ -84,7 +84,7 @@ Usage: #inline
 * status = #final
 * category[laboratory] = $observation-category#laboratory "Laboratory"
 * code = $loinc#94053-6 "Mycobacterium tuberculosis complex resistance panel by Molecular genetics method"
-* subject = Reference(Pat-001)
+* subject = Reference(Pat-003)
 * effectiveDateTime = "2024-09-10T14:20:00+02:00"
 * performer = Reference(1Org-Labor)
 * specimen = Reference(63Spec-Genotyping)
