@@ -155,8 +155,8 @@ Expression: "identifier.where(system='urn:oid:2.16.756.5.30.1.123.100.2.1.1').ex
 
 Invariant: ch-elm-hiv-check
 Description: "invalid hiv code: 1) either start with a letter or the number 0, 2) be a maximum of 2 characters long, 3) have a number in the last place 4) if it starts with 0, it must either consist only of 0 or be followed by a 1."
-Severity: #warning
-Expression: "value.matches('^[A-Za-z][0-9]?$|^0$|^01$')"
+Severity: #error
+Expression: "value.matches('^[A-Za-z][0-9]$|^0$|^01$')"
 
 Invariant: ch-elm-denominator-greater-zero
 Description: "denominator must be greater than zero in ratio"

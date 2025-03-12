@@ -26,7 +26,7 @@ contact:
         value: https://www.bag.admin.ch/bag/en/home/das-bag/kontakt-standort.html
 
 dependencies:
-  hl7.terminology: 6.1.0
+  hl7.terminology.r4: 6.2.0
   hl7.fhir.eu.laboratory: 0.1.0
   hl7.fhir.uv.ips: 1.1.0
   ch.fhir.ig.ch-lab-report: 1.0.0
@@ -321,7 +321,7 @@ resources:
     extension:
       - url: http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format
         valueCode: application/fhir+json
-    name: Test92 - Bundle provoking warning for Ber Uid and Gln
+    name: Test92 Bundle - Bundle provoking warning for Ber Uid and Gln
     description: Test bundle to verify if incorrect BerUid Gln are detected with warnings
     exampleCanonical: http://hl7.org/fhir/StructureDefinition/Binary
   TestScript/Test92-WarningBerUidGln:
@@ -331,19 +331,29 @@ resources:
     extension:
       - url: http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format
         valueCode: application/fhir+xml
-    name: Test93 - DocumentReference with contained Bundle provoking error for full name for Influenca (must be initials)
+    name: Test93 Bundle - DocumentReference with contained Bundle provoking error for full name for Influenca (must be initials)
     description: Test DocumentReference with contained Bundle provoking error for full name for Influenca (must be initials)
     exampleCanonical: http://hl7.org/fhir/StructureDefinition/Binary
   Binary/Test97-Bundle-CoaxiellaNoRatio:
     extension:
       - url: http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format
         valueCode: application/fhir+xml
-    name: Test97 - Coxiella without titer ratio which should raise an error
+    name: Test97 Bundle - Coxiella without titer ratio which should raise an error
     description: Coxiella without titer ratio which should raise an error
     exampleCanonical: http://hl7.org/fhir/StructureDefinition/Binary
   TestScript/Test93-Error-FullName-Influenca:
-    name: Test93 - Error if full name is provided by Influenca (should be initials)
+    name: Test93 Error if full name is provided by Influenca (should be initials)
     description: Test script to verify error if full name is provided by Influenca (must be initials)
   TestScript/Test94-Ignore-Source-Warning:
     name: Test94 - If warning is ignored for Binding for path (.+) has no source
     description: Test script to verify if warning is ignored for Binding for path (.+) has no source
+  TestScript/Test98-HivInvalidCode:
+    name: Test98 - Verify that error for invalid hiv code is raised
+    description: Test script to verify if error is raised for an invalid hiv code
+  Binary/Test99-Bundle-CoaxiellaZeroDenominator:
+    extension:
+      - url: http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format
+        valueCode: application/fhir+json
+    name: Test99 Bundle - Coxiella without zero denominator should raise an error
+    description: Coxiella with zero denomiator should raise an error
+    exampleCanonical: http://hl7.org/fhir/StructureDefinition/Binary

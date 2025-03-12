@@ -119,3 +119,31 @@ InstanceOf: TestScript
 * insert ActionAssertFhirPathTrue(Confirm that the returned resource is an OperationOutcome., [[is(FHIR.OperationOutcome)]])
 * insert ActionAssertFhirPathTrue(Confirm that we have errors., [[issue.where(severity='error' or severity='fatal').count()>0]])
 * insert ActionAssertFhirPathTrue(Check Constraint failed: ch-elm-observation-profile-loinc, [[issue.where(diagnostics.matches('Constraint failed: ch-elm-observation-profile-loinc')).count() > 0]])
+
+Instance: Test98-HivInvalidCode
+InstanceOf: TestScript
+* url = "http://fhir.ch/ig/ch-elm/TestScript/Test98-HivInvalidCode"
+* name = "Test98HivInvalidCode"
+* status = #active
+* insert Fixture(inputdata, [[Binary/Test98-Bundle-HivInvalidCode]])
+* test.name = "Test98"
+* test.description = "Test98: Verify that error for invalid hiv code is raised"
+* insert ActionOperationValidate(http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-document-strict, inputdata)
+* insert ActionAssertResponseCodeOk
+* insert ActionAssertFhirPathTrue(Confirm that the returned resource is an OperationOutcome., [[is(FHIR.OperationOutcome)]])
+* insert ActionAssertFhirPathTrue(Confirm that we have errors., [[issue.where(severity='error' or severity='fatal').count()>0]])
+* insert ActionAssertFhirPathTrue(Check Constraint failed: ch-elm-hiv-check, [[issue.where(diagnostics.matches('Constraint failed: ch-elm-hiv-check')).count() > 0]])
+
+Instance: Test99-CoaxiellaZeroDenominator
+InstanceOf: TestScript
+* url = "http://fhir.ch/ig/ch-elm/TestScript/Test99-CoaxiellaZeroDenominator"
+* name = "Test99CoaxiellaZeroDenominator"
+* status = #active
+* insert Fixture(inputdata, [[Binary/Test99-Bundle-CoaxiellaZeroDenominator]])
+* test.name = "Test99"
+* test.description = "Test99: Verify that error for denominator not positive is raised"
+* insert ActionOperationValidate(http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-document-strict, inputdata)
+* insert ActionAssertResponseCodeOk
+* insert ActionAssertFhirPathTrue(Confirm that the returned resource is an OperationOutcome., [[is(FHIR.OperationOutcome)]])
+* insert ActionAssertFhirPathTrue(Confirm that we have errors., [[issue.where(severity='error' or severity='fatal').count()>0]])
+* insert ActionAssertFhirPathTrue(Check Constraint failed: ch-elm-observation-profile-loinc, [[issue.where(diagnostics.matches('Constraint failed: ch-elm-observation-profile-loinc')).count() > 0]])
