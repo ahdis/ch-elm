@@ -2,7 +2,7 @@
   "resourceType": "CodeSystem",
   "id": "ch-elm-results-completion-vs",
   "url": "http://fhir.ch/ig/ch-elm/CodeSystem/ch-elm-results-completion-vs",
-  "version": "2025-03-04",
+  "version": "2025-03-12",
   "name": "ChElmResultsCompletionVs",
   "title": "CH ELM Results Completion Vs",
   "status": "active",
@@ -58,6 +58,9 @@
       "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-cjd-org"
     },
     {
+      "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-cpe-org"
+    },
+    {
       "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-diph-org"
     },
     {
@@ -101,6 +104,9 @@
     },
     {
       "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-men-org"
+    },
+    {
+      "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-mpox-org"
     },
     {
       "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-mpx-ctng"

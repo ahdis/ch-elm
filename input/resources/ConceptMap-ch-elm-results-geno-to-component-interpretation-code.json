@@ -2,12 +2,12 @@
   "resourceType": "ConceptMap",
   "id": "ch-elm-results-geno-to-component-interpretation-code",
   "url": "http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-results-geno-to-component-interpretation-code",
-  "version": "2025-01-28",
-  "name": "ChElmResultsGenotypingToComponentInterpretationCode",
-  "title": "CH ELM Results To Genotyping Component Interpretation Code ValueSet",
+  "version": "2025-03-12",
+  "name": "ChElmResultsGenoToComponentInterpretationCode",
+  "title": "CH ELM Results Genotyping To Component Interpretation Code",
   "status": "active",
   "experimental": false,
-  "description": "This CH ELM concept map specifies the ValueSet for component.code for each leading code",
+  "description": "This CH ELM concept map specifies the ValuesSet for component.code for each leading code.",
   "jurisdiction": [
     {
       "coding": [
@@ -19,11 +19,11 @@
     }
   ],
   "sourceCanonical": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-laboratory-observation-geno",
-  "targetCanonical": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-code-vs",
+  "targetCanonical": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-vs",
   "group": [
     {
       "source": "http://loinc.org",
-      "target": "http://fhir.ch/ig/ch-elm/CodeSystem/ch-elm-results-interpretation-code-vs",
+      "target": "http://fhir.ch/ig/ch-elm/CodeSystem/ch-elm-interpretation-codes-vs",
       "element": [
         {
           "code": "94053-6",

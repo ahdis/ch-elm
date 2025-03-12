@@ -2,17 +2,21 @@
   "resourceType": "ValueSet",
   "id": "ch-elm-results-component-antibiotic-tb",
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-component-antibiotic-tb",
-  "version": "2025-01-21",
+  "version": "2025-03-12",
   "name": "ChElmResultsComponentAntibioticTb",
-  "title": "CH ELM Results Component Antibiotic Tb",
+  "title": "CH ELM Results Antibiotic Tb",
   "status": "active",
   "experimental": false,
-  "description": "The \"CH ELM Results Component Antibiotics\" TB provides a curated set of codes representing specific antibiotics.",
+  "description": "The \"ch elm results antibiotic tb\" group provides a curated set of codes representing specific antibiotics. Each code within this group is selected to ensure consistency and accuracy for medical coding related to the primary LOINC codes. Clients using the \"ch elm results antibiotic tb\" group should refer to the provided codes to ensure they capture and report antibiotic information correctly and consistently",
   "compose": {
     "include": [
       {
         "system": "http://loinc.org",
         "concept": [
+          {
+            "code": "18934-0",
+            "display": "Isoniazid [Susceptibility]"
+          },
           {
             "code": "18921-7",
             "display": "Ethambutol [Susceptibility]"
@@ -20,10 +24,6 @@
           {
             "code": "18974-6",
             "display": "rifAMPin [Susceptibility]"
-          },
-          {
-            "code": "18934-0",
-            "display": "Isoniazid [Susceptibility]"
           },
           {
             "code": "18973-8",

@@ -2,12 +2,12 @@
   "resourceType": "ValueSet",
   "id": "ch-elm-results-component-gene-tb",
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-component-gene-tb",
-  "version": "2025-01-21",
+  "version": "2025-03-12",
   "name": "ChElmResultsComponentGeneTb",
-  "title": "CH ELM Results Component Gene Tb",
+  "title": "CH ELM Results Gene Tb",
   "status": "active",
   "experimental": false,
-  "description": "The \"CH ELM Results Component Gene Tb\" provides a curated set of codes representing specific genes.",
+  "description": "The \"CH ELM Results Gene Tb\" group provides a curated set of codes representing specific genotypes. Each code within this group is selected to ensure consistency and accuracy for medical coding related to the primary LOINC codes. Clients using the \"CH ELM Results Gene Tb\" group should refer to the provided codes to ensure they capture and report antibiotic information correctly and consistently",
   "compose": {
     "include": [
       {
@@ -18,12 +18,12 @@
             "display": "Mycobacterium tuberculosis katG gene isoniazid high level resistance mutation [Identifier] by Molecular method"
           },
           {
-            "code": "63072-3",
-            "display": "Mycobacterium tuberculosis inhA gene isoniazid low level resistance mutation [Presence] by Molecular method"
-          },
-          {
             "code": "46244-0",
             "display": "Mycobacterium tuberculosis complex rpoB gene rifAMPin resistance mutation identified by Molecular method"
+          },
+          {
+            "code": "63072-3",
+            "display": "Mycobacterium tuberculosis inhA gene isoniazid low level resistance mutation [Presence] by Molecular method"
           }
         ]
       }

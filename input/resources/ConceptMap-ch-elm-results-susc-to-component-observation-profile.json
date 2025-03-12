@@ -2,12 +2,12 @@
   "resourceType": "ConceptMap",
   "id": "ch-elm-results-susc-to-component-observation-profile",
   "url": "http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-results-susc-to-component-observation-profile",
-  "version": "2025-01-28",
-  "name": "ChElmResultsSusceptibilityToComponentObservationProfile",
-  "title": "CH ELM Results To Susceptibility Component Observation Profile ValueSet",
+  "version": "2025-03-12",
+  "name": "ChElmResultsSuscToComponentObservationProfile",
+  "title": "CH ELM Results Susceptibility To Component Obersvation Profile",
   "status": "active",
   "experimental": false,
-  "description": "This CH ELM concept map specifies the Profile for observation.component for each leading code",
+  "description": "This CH ELM concept map specifies the ValuesSet for component.code for each leading code.",
   "jurisdiction": [
     {
       "coding": [
@@ -19,7 +19,7 @@
     }
   ],
   "sourceCanonical": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-laboratory-observation-susc",
-  "targetCanonical": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-observeration-profile-vs",
+  "targetCanonical": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-observation-profile-vs",
   "group": [
     {
       "source": "http://loinc.org",

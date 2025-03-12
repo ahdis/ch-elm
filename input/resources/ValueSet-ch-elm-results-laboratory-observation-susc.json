@@ -2,12 +2,12 @@
   "resourceType": "ValueSet",
   "id": "ch-elm-results-laboratory-observation-susc",
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-laboratory-observation-susc",
-  "version": "2024-01-15",
+  "version": "2025-03-12",
   "name": "ChElmResultsLaboratoryObservationSusc",
   "title": "CH ELM Results Laboratory Observation Susceptibility",
   "status": "active",
   "experimental": false,
-  "description": "This CH ELM value set includes the codes for the laboratory test results (organism) for Susceptibility Testing.",
+  "description": "This CH ELM value set includes the codes for the laboratory Susceptibility test results.",
   "compose": {
     "include": [
       {
@@ -15,7 +15,7 @@
         "concept": [
           {
             "code": "29579-0",
-            "display": "Mycobacterial susceptibility panel by Method for Slow-growing mycobacteria" 
+            "display": "Mycobacterial susceptibility panel by Method for Slow-growing mycobacteria"
           }
         ]
       }

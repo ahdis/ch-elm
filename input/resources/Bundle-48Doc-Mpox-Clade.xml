@@ -135,7 +135,13 @@
         <performer>
           <reference value="urn:uuid:38bcf86c-d27b-41e8-a2c2-9abed00c0890"/>
         </performer>
-        <valueString value="Clade 1b"/>
+        <valueCodeableConcept>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="258368005"/>
+            <display value="Group 1B (qualifier value)"/>
+          </coding>
+        </valueCodeableConcept>
         <interpretation>
           <coding>
             <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"/>

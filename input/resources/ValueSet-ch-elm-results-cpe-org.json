@@ -1,0 +1,24 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ch-elm-results-cpe-org",
+  "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-cpe-org",
+  "version": "2025-03-12",
+  "name": "ChElmResultsCpeOrg",
+  "title": "CH ELM Results Cpe Org",
+  "status": "active",
+  "experimental": false,
+  "description": "The \"CH ELM Results Cpe Org\" organism group provides a curated set of codes representing specific organisms. Each code within this group has been selected to ensure precise representation and consistency in relation to the primary LOINC codes. Clients utilizing the \"CH ELM Results Cpe Org\" group should refer to the provided codes to accurately and uniformly capture and report organism-related information.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "56415008",
+            "display": "Klebsiella pneumoniae (organism)"
+          }
+        ]
+      }
+    ]
+  }
+}

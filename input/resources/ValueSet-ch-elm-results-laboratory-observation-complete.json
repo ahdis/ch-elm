@@ -1,13 +1,13 @@
 {
   "resourceType": "ValueSet",
-  "id": "ch-elm-results-laboratory-observation",
-  "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-laboratory-observation",
+  "id": "ch-elm-results-laboratory-observation-complete",
+  "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-laboratory-observation-complete",
   "version": "2025-03-12",
-  "name": "ChElmResultsLaboratoryObservation",
-  "title": "CH ELM Results Laboratory Observation",
+  "name": "ChElmResultsLaboratoryObservationComplete",
+  "title": "CH ELM Results Laboratory Observation Complete",
   "status": "active",
   "experimental": false,
-  "description": "This CH ELM value set includes the codes for the laboratory test results (organism).",
+  "description": "This CH ELM value set includes the codes for every type of laboratory test results (organism detection, genotyping, susceptibility).",
   "compose": {
     "include": [
       {
@@ -1516,6 +1516,14 @@
           {
             "code": "99094-5",
             "display": "Streptococcus pneumoniae DNA [Presence] in Cerebral spinal fluid by NAA with probe detection"
+          },
+          {
+            "code": "94053-6",
+            "display": "Mycobacterium tuberculosis complex resistance panel by Molecular genetics method"
+          },
+          {
+            "code": "29579-0",
+            "display": "Mycobacterial susceptibility panel by Method for Slow-growing mycobacteria"
           }
         ]
       },

@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "ch-elm-results-influenza-hxny-org",
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-influenza-hxny-org",
-  "version": "2025-03-04",
+  "version": "2025-03-12",
   "name": "ChElmResultsInfluenzaHxnyOrg",
   "title": "CH ELM Results Influenza Hxny Org",
   "status": "active",
@@ -13,6 +13,10 @@
       {
         "system": "http://snomed.info/sct",
         "concept": [
+          {
+            "code": "1354812007",
+            "display": "Influenza A virus subtype H1N1v (organism)"
+          },
           {
             "code": "446649001",
             "display": "Influenza A virus subtype H9 (organism)"

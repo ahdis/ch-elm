@@ -7,22 +7,5 @@
   "title": "CH ELM Results Component Gene CPE",
   "status": "active",
   "experimental": false,
-  "description": "The \"CH ELM Results Component Gene CPE\" provides a curated set of codes representing specific genes.",
-  "compose": {
-    "include": [
-      {
-        "system": "http://loinc.org",
-        "concept": [
-          {
-            "code": "LP441355-7",
-            "display": "OXA-23 carbapenemase"
-          },
-          {
-            "code": "63368-5",
-            "display": "Carbapenem resistance genes [Identifier] by NAA with probe detection"
-          }
-        ]
-      }
-    ]
-  }
+  "description": "The \"CH ELM Results Component Gene CPE\" provides a curated set of codes representing specific genes."
 }

@@ -2,12 +2,12 @@
   "resourceType": "ConceptMap",
   "id": "ch-elm-results-geno-to-component-code",
   "url": "http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-results-geno-to-component-code",
-  "version": "2025-01-21",
+  "version": "2025-03-12",
   "name": "ChElmResultsGenoToComponentCode",
-  "title": "CH ELM Results To Genotying Component code ValueSet",
+  "title": "CH ELM Results Genotype To Component Code",
   "status": "active",
   "experimental": false,
-  "description": "This CH ELM concept map specifies the ValueSet for component.code for each leading code",
+  "description": "This CH ELM concept map shows for each leading code defining genotype testing results its corresponding genotyp-valueset. The target code shows the URL of the value set containing the permitted genotype codes.",
   "jurisdiction": [
     {
       "coding": [

@@ -111,6 +111,15 @@ curl --request GET \
   --key $KEY \
   -o ../input/resources/ValueSet-$VALUESET.json
 
+VALUESET="ch-elm-observation-profile-vs"
+curl --request GET \
+  --url https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir/ValueSet/$VALUESET \
+  --header 'accept: application/fhir+json' \
+  --header 'user-agent: vscode-restclient' \
+  --cert $CERT \
+  --key $KEY \
+  -o ../input/resources/ValueSet-$VALUESET.json
+
 VALUESET="ch-elm-interpretation-codes-sero"
 curl --request GET \
   --url https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir/ValueSet/$VALUESET \
@@ -480,6 +489,87 @@ curl --request GET \
   --key $KEY \
   -o ../input/resources/ValueSet-$VALUESET.json
 
+VALUESET="ch-elm-results-component-vs"
+curl --request GET \
+  --url https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir/ValueSet/$VALUESET \
+  --header 'accept: application/fhir+json' \
+  --header 'user-agent: vscode-restclient' \
+  --cert $CERT \
+  --key $KEY \
+  -o ../input/resources/ValueSet-$VALUESET.json
+
+VALUESET="ch-elm-results-laboratory-observation-complete"
+curl --request GET \
+  --url https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir/ValueSet/$VALUESET \
+  --header 'accept: application/fhir+json' \
+  --header 'user-agent: vscode-restclient' \
+  --cert $CERT \
+  --key $KEY \
+  -o ../input/resources/ValueSet-$VALUESET.json
+
+VALUESET="ch-elm-results-laboratory-observation-geno"
+curl --request GET \
+  --url https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir/ValueSet/$VALUESET \
+  --header 'accept: application/fhir+json' \
+  --header 'user-agent: vscode-restclient' \
+  --cert $CERT \
+  --key $KEY \
+  -o ../input/resources/ValueSet-$VALUESET.json
+
+VALUESET="ch-elm-results-laboratory-observation-susc"
+curl --request GET \
+  --url https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir/ValueSet/$VALUESET \
+  --header 'accept: application/fhir+json' \
+  --header 'user-agent: vscode-restclient' \
+  --cert $CERT \
+  --key $KEY \
+  -o ../input/resources/ValueSet-$VALUESET.json
+
+VALUESET="ch-elm-results-component-gene-tb"
+curl --request GET \
+  --url https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir/ValueSet/$VALUESET \
+  --header 'accept: application/fhir+json' \
+  --header 'user-agent: vscode-restclient' \
+  --cert $CERT \
+  --key $KEY \
+  -o ../input/resources/ValueSet-$VALUESET.json
+
+VALUESET="ch-elm-results-component-antibiotic-tb"
+curl --request GET \
+  --url https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir/ValueSet/$VALUESET \
+  --header 'accept: application/fhir+json' \
+  --header 'user-agent: vscode-restclient' \
+  --cert $CERT \
+  --key $KEY \
+  -o ../input/resources/ValueSet-$VALUESET.json
+
+VALUESET="ch-elm-results-mpox-org"
+curl --request GET \
+  --url https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir/ValueSet/$VALUESET \
+  --header 'accept: application/fhir+json' \
+  --header 'user-agent: vscode-restclient' \
+  --cert $CERT \
+  --key $KEY \
+  -o ../input/resources/ValueSet-$VALUESET.json
+
+VALUESET="ch-elm-interpretation-codes-vs"
+curl --request GET \
+  --url https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir/ValueSet/$VALUESET \
+  --header 'accept: application/fhir+json' \
+  --header 'user-agent: vscode-restclient' \
+  --cert $CERT \
+  --key $KEY \
+  -o ../input/resources/ValueSet-$VALUESET.json
+
+VALUESET="ch-elm-interpretation-codes-vs"
+curl --request GET \
+  --url https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir/ValueSet/$VALUESET \
+  --header 'accept: application/fhir+json' \
+  --header 'user-agent: vscode-restclient' \
+  --cert $CERT \
+  --key $KEY \
+  -o ../input/resources/ValueSet-$VALUESET.json
+
 CONCEPTMAP="ch-elm-expecting-organism-specification-to-results-completion-vs"
 curl --request GET \
   --url https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir/ConceptMap/$CONCEPTMAP \
@@ -525,6 +615,51 @@ curl --request GET \
   --key $KEY \
   -o ../input/resources/ConceptMap-$CONCEPTMAP.json
 
+CONCEPTMAP="ch-elm-results-susc-to-component-code"
+curl --request GET \
+  --url https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir/ConceptMap/$CONCEPTMAP \
+  --header 'accept: application/fhir+json' \
+  --header 'user-agent: vscode-restclient' \
+  --cert $CERT \
+  --key $KEY \
+  -o ../input/resources/ConceptMap-$CONCEPTMAP.json
+
+CONCEPTMAP="ch-elm-results-susc-to-component-interpretation-code"
+curl --request GET \
+  --url https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir/ConceptMap/$CONCEPTMAP \
+  --header 'accept: application/fhir+json' \
+  --header 'user-agent: vscode-restclient' \
+  --cert $CERT \
+  --key $KEY \
+  -o ../input/resources/ConceptMap-$CONCEPTMAP.json
+
+CONCEPTMAP="ch-elm-results-susc-to-component-observation-profile"
+curl --request GET \
+  --url https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir/ConceptMap/$CONCEPTMAP \
+  --header 'accept: application/fhir+json' \
+  --header 'user-agent: vscode-restclient' \
+  --cert $CERT \
+  --key $KEY \
+  -o ../input/resources/ConceptMap-$CONCEPTMAP.json
+
+CONCEPTMAP="ch-elm-results-geno-to-component-code"
+curl --request GET \
+  --url https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir/ConceptMap/$CONCEPTMAP \
+  --header 'accept: application/fhir+json' \
+  --header 'user-agent: vscode-restclient' \
+  --cert $CERT \
+  --key $KEY \
+  -o ../input/resources/ConceptMap-$CONCEPTMAP.json
+
+CONCEPTMAP="ch-elm-results-geno-to-component-interpretation-code"
+curl --request GET \
+  --url https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir/ConceptMap/$CONCEPTMAP \
+  --header 'accept: application/fhir+json' \
+  --header 'user-agent: vscode-restclient' \
+  --cert $CERT \
+  --key $KEY \
+  -o ../input/resources/ConceptMap-$CONCEPTMAP.json
+
 CODESYSTEM="ch-elm-foph-business-rules"
 curl --request GET \
   --url https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir/CodeSystem/$CODESYSTEM \
@@ -553,6 +688,24 @@ curl --request GET \
   -o ../input/resources/CodeSystem-$CODESYSTEM.json
 
 CODESYSTEM="ch-elm-interpretation-codes-vs"
+curl --request GET \
+  --url https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir/CodeSystem/$CODESYSTEM \
+  --header 'accept: application/fhir+json' \
+  --header 'user-agent: vscode-restclient' \
+  --cert $CERT \
+  --key $KEY \
+  -o ../input/resources/CodeSystem-$CODESYSTEM.json
+
+CODESYSTEM="ch-elm-results-component-vs"
+curl --request GET \
+  --url https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir/CodeSystem/$CODESYSTEM \
+  --header 'accept: application/fhir+json' \
+  --header 'user-agent: vscode-restclient' \
+  --cert $CERT \
+  --key $KEY \
+  -o ../input/resources/CodeSystem-$CODESYSTEM.json
+
+CODESYSTEM="ch-elm-observation-profile-vs"
 curl --request GET \
   --url https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir/CodeSystem/$CODESYSTEM \
   --header 'accept: application/fhir+json' \

@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "ch-elm-interpretation-codes-avidity",
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-avidity",
-  "version": "2025-03-04",
+  "version": "2025-03-12",
   "name": "ChElmInterpretationCodesAvidity",
   "title": "CH ELM Interpretation Codes AVIDITY",
   "status": "active",

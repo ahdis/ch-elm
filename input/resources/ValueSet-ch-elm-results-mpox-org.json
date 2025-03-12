@@ -1,0 +1,36 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ch-elm-results-mpox-org",
+  "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-mpox-org",
+  "version": "2025-03-12",
+  "name": "ChElmResultsMpoxOrg",
+  "title": "CH ELM Results Mpox Org",
+  "status": "active",
+  "experimental": false,
+  "description": "The \"CH ELM Results Mpox Org\" organism group provides a curated set of codes representing specific organisms. Each code within this group has been selected to ensure precise representation and consistency in relation to the primary LOINC codes. Clients utilizing the \"CH ELM Results Mpox Org\" group should refer to the provided codes to accurately and uniformly capture and report organism-related information.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "258368005",
+            "display": "Group 1B (qualifier value)"
+          },
+          {
+            "code": "258372009",
+            "display": "Group 2B (qualifier value)"
+          },
+          {
+            "code": "258367000",
+            "display": "Group 1A (qualifier value)"
+          },
+          {
+            "code": "258371002",
+            "display": "Group 2A (qualifier value)"
+          }
+        ]
+      }
+    ]
+  }
+}

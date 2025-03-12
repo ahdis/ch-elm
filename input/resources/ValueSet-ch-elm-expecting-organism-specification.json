@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "ch-elm-expecting-organism-specification",
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-expecting-organism-specification",
-  "version": "2025-03-04",
+  "version": "2025-03-12",
   "name": "ChElmExpectingOrganismSpecification",
   "title": "CH ELM Expecting Organism Specification",
   "status": "active",
@@ -16,6 +16,10 @@
           {
             "code": "100911-7",
             "display": "Campylobacter sp [Presence] in Stool by Organism specific culture"
+          },
+          {
+            "code": "101003-2",
+            "display": "Monkeypox virus clade [Type] in Specimen by Sequencing"
           },
           {
             "code": "101219-4",

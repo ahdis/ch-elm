@@ -2,12 +2,12 @@
   "resourceType": "ValueSet",
   "id": "ch-elm-results-laboratory-observation-geno",
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-laboratory-observation-geno",
-  "version": "2024-01-15",
+  "version": "2025-03-12",
   "name": "ChElmResultsLaboratoryObservationGeno",
   "title": "CH ELM Results Laboratory Observation Genotyping",
   "status": "active",
   "experimental": false,
-  "description": "This CH ELM value set includes the codes for the laboratory test results (organism) for Genotyping.",
+  "description": "This CH ELM value set includes the codes for the laboratory genotyping test results.",
   "compose": {
     "include": [
       {
@@ -15,12 +15,10 @@
         "concept": [
           {
             "code": "94053-6",
-            "display": "Mycobacterium tuberculosis complex resistance panel by Molecular genetics method" 
+            "display": "Mycobacterium tuberculosis complex resistance panel by Molecular genetics method"
           }
         ]
       }
     ]
   }
 }
-
- 

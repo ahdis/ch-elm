@@ -2,7 +2,7 @@
   "resourceType": "ConceptMap",
   "id": "ch-elm-results-to-observation-profile",
   "url": "http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-results-to-observation-profile",
-  "version": "2025-03-04",
+  "version": "2025-03-12",
   "name": "ChElmResultsToObservationProfile",
   "title": "CH ELM Results To Observation Profile",
   "status": "active",
@@ -25,16 +25,6 @@
       "source": "http://loinc.org",
       "target": "http://fhir.ch/ig/ch-elm/CodeSystem/ch-elm-observation-profile-vs",
       "element": [
-        {
-          "code": "101003-2",
-          "display": "Monkeypox virus clade [Type] in Specimen by Sequencing",
-          "target": [
-            {
-              "code": "http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-observation-txt",
-              "equivalence": "relatedto"
-            }
-          ]
-        },
         {
           "code": "56475-7",
           "display": "Salmonella sp antigenic formula [Identifier] in Isolate by Agglutination",

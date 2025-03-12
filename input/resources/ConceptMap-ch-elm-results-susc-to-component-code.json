@@ -2,12 +2,12 @@
   "resourceType": "ConceptMap",
   "id": "ch-elm-results-susc-to-component-code",
   "url": "http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-results-susc-to-component-code",
-  "version": "2025-01-21",
+  "version": "2025-03-12",
   "name": "ChElmResultsSuscToComponentCode",
-  "title": "CH ELM Results To Susceptibility Component code ValueSet",
+  "title": "CH ELM Results Susceptibility To Component Code",
   "status": "active",
   "experimental": false,
-  "description": "This CH ELM concept map specifies the ValueSet for component.code for each leading code",
+  "description": "This CH ELM concept map shows for each leading code defining susceptibility testing results its corresponding antibiotic-valueset. The target code shows the URL of the value set containing the permitted antibiotic codes.",
   "jurisdiction": [
     {
       "coding": [
