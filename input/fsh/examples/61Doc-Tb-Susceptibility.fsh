@@ -11,8 +11,8 @@ Description: "Example for a CH ELM Document: Laboratory Report"
 * entry[=].resource = 61Comp-Susceptibility
 * entry[+].fullUrl = "http://test.fhir.ch/r4/DiagnosticReport/61DR-Susceptibility"
 * entry[=].resource = 61DR-Susceptibility
-* entry[+].fullUrl = "http://test.fhir.ch/r4/Patient/Pat-001"
-* entry[=].resource = Pat-001
+* entry[+].fullUrl = "http://test.fhir.ch/r4/Patient/Pat-003"
+* entry[=].resource = Pat-003
 * entry[+].fullUrl = "http://test.fhir.ch/r4/Observation/61Obs-Susceptibility"
 * entry[=].resource = 61Obs-Susceptibility
 * entry[+].fullUrl = "http://test.fhir.ch/r4/Specimen/61Spec-Susceptibility"
@@ -38,7 +38,7 @@ Usage: #inline
 * type.coding[0].version = "http://snomed.info/sct/2011000195101"
 * type.coding[=] = $sct#4241000179101 "Laborbericht"
 * type.coding[+] = $loinc#11502-2 "Laboratory report"
-* subject = Reference(Pat-001)
+* subject = Reference(Pat-003)
 * date = "2024-09-10T12:00:00+02:00"
 * author = Reference(1Org-Labor)
 * title = "Laborbericht vom 10.09.2024"
@@ -56,7 +56,7 @@ Usage: #inline
 * basedOn = Reference(61SR-Susceptibility)
 * status = #final
 * code = $loinc#11502-2 "Laboratory report"
-* subject = Reference(Pat-001)
+* subject = Reference(Pat-003)
 * performer = Reference(1Org-Labor)
 * specimen = Reference(61Spec-Susceptibility)
 * result = Reference(61Obs-Susceptibility)
@@ -68,14 +68,14 @@ Usage: #inline
 * status = #completed
 * intent = #order
 * code = $loinc#29579-0 "Mycobacterial susceptibility panel by Method for Slow-growing mycobacteria"
-* subject = Reference(Pat-001)
+* subject = Reference(Pat-003)
 * requester = Reference(PR-PeterHauser)
 * specimen = Reference(61Spec-Susceptibility)
 
 Instance: 61Spec-Susceptibility
 InstanceOf: ChElmSpecimen
 Usage: #inline
-* subject = Reference(Pat-001)
+* subject = Reference(Pat-003)
 * collection.collectedDateTime = "2024-09-08"
 
 Instance: 61Obs-Susceptibility
@@ -84,7 +84,7 @@ Usage: #inline
 * status = #final
 * category[laboratory] = $observation-category#laboratory "Laboratory"
 * code = $loinc#29579-0 "Mycobacterial susceptibility panel by Method for Slow-growing mycobacteria"
-* subject = Reference(Pat-001)
+* subject = Reference(Pat-003)
 * effectiveDateTime = "2024-09-10T14:20:00+02:00"
 * performer = Reference(1Org-Labor)
 * specimen = Reference(61Spec-Susceptibility)
