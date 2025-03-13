@@ -25,7 +25,8 @@ Description: "This CH ELM base profile constrains the Composition resource for t
 * section[lab-no-subsections] 0..1
 * section[lab-no-subsections].title 1..
 * section[lab-no-subsections].code 1..
-* section[lab-no-subsections].code = $loinc#18725-2 "Microbiology studies (set)" (exactly)
+// "Microbiology studies (set)"
+* section[lab-no-subsections].code = $loinc#18725-2
 * section[lab-no-subsections].entry 1..1
 * section[lab-no-subsections].entry only Reference(ChElmObservationResultsLaboratoryMicrobiology)
 * section[lab-no-subsections].section ..0
@@ -40,14 +41,16 @@ Description: "This CH ELM base profile constrains the Composition resource for t
 * section[lab-mst] 0..1
 * section[lab-mst].title 1..
 * section[lab-mst].code 1..
-* section[lab-mst].code = $loinc#18769-0 "Microbial susceptibility tests Set" (exactly)
+// "Microbial susceptibility tests Set"
+* section[lab-mst].code = $loinc#18769-0
 * section[lab-mst].entry 1..1
 * section[lab-mst].entry only Reference(ChElmObservationResultsLaboratorySusceptibility)
 * section[lab-mst].section ..0
 * section[lab-gt] 0..1
 * section[lab-gt].title 1..
 * section[lab-gt].code 1..
-* section[lab-gt].code = $sct#726528006 "Genotyping (qualifier value)" (exactly)
+// "Genotyping (qualifier value)"
+* section[lab-gt].code = $sct#726528006
 * section[lab-gt].entry 1..1
 * section[lab-gt].entry only Reference(ChElmObservationResultsLaboratoryGenotyping)
 * section[lab-gt].section ..0

@@ -43,7 +43,7 @@ Usage: #inline
 * author = Reference(1Org-Labor)
 * title = "Rapport de laboratoire du 12.09.2023"
 * section.title = "Résultats de l'analyse microbiologique"
-* section.code = $loinc#18725-2 "Microbiology studies (set)"
+* section.code = $loinc#18725-2
 * section.entry = Reference(7Obs-SARSCoV2)
 
 Instance: 7DR-SARSCoV2
