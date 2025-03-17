@@ -1,0 +1,52 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ch-elm-results-tub-org",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>CH ELM Results Tub Org</b><br />The &quot;CH ELM Results Tub Org&quot; organism group provides a curated set of codes representing specific organisms. Each code within this group has been selected to ensure precise representation and consistency in relation to the primary LOINC codes. Clients utilizing the &quot;CH ELM Results Tub Org&quot; group should refer to the provided codes to accurately and uniformly capture and report organism-related information.<br /></p></div>"
+  },
+  "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-tub-org",
+  "version": "2025-03-17",
+  "name": "ChElmResultsTubOrg",
+  "title": "CH ELM Results Tub Org",
+  "status": "active",
+  "experimental": false,
+  "description": "The \"CH ELM Results Tub Org\" organism group provides a curated set of codes representing specific organisms. Each code within this group has been selected to ensure precise representation and consistency in relation to the primary LOINC codes. Clients utilizing the \"CH ELM Results Tub Org\" group should refer to the provided codes to accurately and uniformly capture and report organism-related information.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "113861009",
+            "display": "Mycobacterium tuberculosis (organism)"
+          },
+          {
+            "code": "113858008",
+            "display": "Mycobacterium tuberculosis complex (organism)"
+          },
+          {
+            "code": "51320008",
+            "display": "Mycobacterium africanum (organism)"
+          },
+          {
+            "code": "27142009",
+            "display": "Mycobacterium bovis (organism)"
+          },
+          {
+            "code": "33610009",
+            "display": "BCG variant of Mycobacterium bovis (organism)"
+          },
+          {
+            "code": "430579009",
+            "display": "Mycobacterium caprae (organism)"
+          },
+          {
+            "code": "110379001",
+            "display": "Mycobacterium, non-tuberculosis (organism)"
+          }
+        ]
+      }
+    ]
+  }
+}
