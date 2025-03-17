@@ -465,6 +465,15 @@ See the examples in chapter 2.2 to learn how to use the resource profiles for di
             </td>
         </tr>
         <tr>
+            <td>Tuberculosis</td>
+            <td>Mycobacterium sp identified in Bronchial specimen by Organism specific culture</td>
+            <td>9823-6</td>
+            <td>
+                <a href="Bundle-65Doc-Tuberculosis.json.html">JSON</a>, 
+                <a href="Bundle-65Doc-Tuberculosis.xml.html">XML</a>
+            </td>
+        </tr>
+        <tr>
             <td>Yellow fever</td>
             <td>Yellow fever virus IgM Ab [Presence] in Serum</td>
             <td>41216-3</td>

@@ -6,6 +6,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 * [#139](https://github.com/ahdis/ch-elm/issues/139) HIV code validation & documentation
 * [#142](https://github.com/ahdis/ch-elm/issues/142) Constraint denominator to strictly positive values
 * Updated ValueSets and updated example for [Monkeypox virus clade [Type] in Specimen by Sequencinq](Bundle-48Doc-Mpox-Clade.json.html)
+* [#154](https://github.com/ahdis/ch-elm/issues/154) Add TB example on examples pages 
 
 ### 1.8.0 2025/02/04
 

@@ -12,7 +12,7 @@ curl --request GET \
   --key $KEY \
   -o ../input/resources/ValueSet-$VALUESET.json
 
-VALUESET="ch-elm-results-cpe-org"
+VALUESET="ch-elm-results-completion-vs"
 curl --request GET \
   --url https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir/ValueSet/$VALUESET \
   --header 'accept: application/fhir+json' \
@@ -21,7 +21,7 @@ curl --request GET \
   --key $KEY \
   -o ../input/resources/ValueSet-$VALUESET.json
 
-VALUESET="ch-elm-results-completion-vs"
+VALUESET="ch-elm-results-tub-org"
 curl --request GET \
   --url https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir/ValueSet/$VALUESET \
   --header 'accept: application/fhir+json' \
