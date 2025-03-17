@@ -6,7 +6,7 @@
       "linkId": "LaboratoryReport.Header.DocumentIdentifier",
       "answer": [
         {
-          "valueString": "ac01252d-6012-443f-9690-9291adb23433"
+          "valueString": "3401332d-6012-443f-9690-9331adb23aab"
         }
       ]
     },
@@ -14,7 +14,7 @@
       "linkId": "LaboratoryReport.Header.DocumentTimestamp",
       "answer": [
         {
-          "valueString": "2024-08-14T11:00:00+02:00"
+          "valueString": "2024-09-05T12:00:00+02:00"
         }
       ]
     },
@@ -30,7 +30,7 @@
       "linkId": "LaboratoryReport.Header.DocumentTitle",
       "answer": [
         {
-          "valueString": "Laborbericht vom 14.8.2024"
+          "valueString": "Laborbericht vom 2.9.2024"
         }
       ]
     },
@@ -70,7 +70,7 @@
       "linkId": "LaboratoryReport.Lab.OrderIdentifier",
       "answer": [
         {
-          "valueString": "50002755"
+          "valueString": "26500923622"
         }
       ]
     },
@@ -78,7 +78,7 @@
       "linkId": "LaboratoryReport.Orderer.OrganizationBER",
       "answer": [
         {
-          "valueString": "A99684215"
+          "valueString": "A74966168"
         }
       ]
     },
@@ -86,15 +86,7 @@
       "linkId": "LaboratoryReport.Orderer.OrganizationName",
       "answer": [
         {
-          "valueString": "Kantonsspital ABC"
-        }
-      ]
-    },
-    {
-      "linkId": "LaboratoryReport.Orderer.OrganizationDepartment",
-      "answer": [
-        {
-          "valueString": "Abteilung 2"
+          "valueString": "Praxis Dr. Hauser"
         }
       ]
     },
@@ -102,7 +94,7 @@
       "linkId": "LaboratoryReport.Orderer.Physician.GLN",
       "answer": [
         {
-          "valueString": "7601000234438"
+          "valueString": "7601000000514"
         }
       ]
     },
@@ -110,7 +102,7 @@
       "linkId": "LaboratoryReport.Orderer.Physician.Surname",
       "answer": [
         {
-          "valueString": "Giacometti"
+          "valueString": "Hauser"
         }
       ]
     },
@@ -118,7 +110,7 @@
       "linkId": "LaboratoryReport.Orderer.Physician.Givenname",
       "answer": [
         {
-          "valueString": "Monika"
+          "valueString": "Peter"
         }
       ]
     },
@@ -126,7 +118,7 @@
       "linkId": "LaboratoryReport.Orderer.Physician.Phone",
       "answer": [
         {
-          "valueString": "+41 79 111 44 55"
+          "valueString": "+41 79 222 33 44"
         }
       ]
     },
@@ -134,7 +126,7 @@
       "linkId": "LaboratoryReport.Orderer.Physician.Email",
       "answer": [
         {
-          "valueString": "m.giacometti@ks-abc.ch"
+          "valueString": "peter.hauser@hauserpraxis.ch"
         }
       ]
     },
@@ -142,15 +134,7 @@
       "linkId": "LaboratoryReport.Orderer.OrganizationAddress.StreetLine",
       "answer": [
         {
-          "valueString": "Aortastrasse 22"
-        }
-      ]
-    },
-    {
-      "linkId": "LaboratoryReport.Orderer.OrganizationAddress.PostBox",
-      "answer": [
-        {
-          "valueString": "Postfach 18"
+          "valueString": "Hauptstrasse 10"
         }
       ]
     },
@@ -158,7 +142,7 @@
       "linkId": "LaboratoryReport.Orderer.OrganizationAddress.ZipCode",
       "answer": [
         {
-          "valueString": "3000"
+          "valueString": "4500"
         }
       ]
     },
@@ -166,7 +150,7 @@
       "linkId": "LaboratoryReport.Orderer.OrganizationAddress.City",
       "answer": [
         {
-          "valueString": "Bern"
+          "valueString": "Solothurn"
         }
       ]
     },
@@ -174,7 +158,7 @@
       "linkId": "LaboratoryReport.Patient.OASI",
       "answer": [
         {
-          "valueString": "7562295883070"
+          "valueString": "7561234567897"
         }
       ]
     },
@@ -182,7 +166,7 @@
       "linkId": "LaboratoryReport.Patient.Surname",
       "answer": [
         {
-          "valueString": "M"
+          "valueString": "Dupont"
         }
       ]
     },
@@ -190,7 +174,7 @@
       "linkId": "LaboratoryReport.Patient.Givenname",
       "answer": [
         {
-          "valueString": "D"
+          "valueString": "Antoine"
         }
       ]
     },
@@ -198,7 +182,7 @@
       "linkId": "LaboratoryReport.Patient.Gender",
       "answer": [
         {
-          "valueString": "male"
+          "valueString": "female"
         }
       ]
     },
@@ -206,7 +190,23 @@
       "linkId": "LaboratoryReport.Patient.DateOfBirth",
       "answer": [
         {
-          "valueString": "1960-08-22"
+          "valueString": "1981-02-07"
+        }
+      ]
+    },
+    {
+      "linkId": "LaboratoryReport.Patient.Phone",
+      "answer": [
+        {
+          "valueString": "+41 76 222 55 22"
+        }
+      ]
+    },
+    {
+      "linkId": "LaboratoryReport.Patient.Address.StreetLine",
+      "answer": [
+        {
+          "valueString": "rue de la république 10"
         }
       ]
     },
@@ -214,7 +214,7 @@
       "linkId": "LaboratoryReport.Patient.Address.ZipCode",
       "answer": [
         {
-          "valueString": "3000"
+          "valueString": "1227"
         }
       ]
     },
@@ -222,7 +222,7 @@
       "linkId": "LaboratoryReport.Patient.Address.City",
       "answer": [
         {
-          "valueString": "Bern"
+          "valueString": "Carouge"
         }
       ]
     },
@@ -230,7 +230,7 @@
       "linkId": "LaboratoryReport.Patient.Address.Canton",
       "answer": [
         {
-          "valueString": "BE"
+          "valueString": "GE"
         }
       ]
     },
@@ -254,7 +254,7 @@
       "linkId": "LaboratoryReport.TestResult.ExecutionDateTime",
       "answer": [
         {
-          "valueString": "2024-08-12T09:15:00+02:00"
+          "valueString": "2024-07-25T14:20:00+02:00"
         }
       ]
     },
@@ -262,7 +262,7 @@
       "linkId": "LaboratoryReport.TestResult.Type.Code",
       "answer": [
         {
-          "valueString": "31828-7"
+          "valueString": "49612-5"
         }
       ]
     },
@@ -278,15 +278,7 @@
       "linkId": "LaboratoryReport.TestResult.Specimen.CollectionDateTime",
       "answer": [
         {
-          "valueString": "2024-08-10T09:15:00+02:00"
-        }
-      ]
-    },
-    {
-      "linkId": "LaboratoryReport.TestResult.Specimen.Type.Text",
-      "answer": [
-        {
-          "valueString": "Material declared by Observation.code or non-mandatory"
+          "valueString": "2024-08-22T14:20:00+02:00"
         }
       ]
     },
@@ -294,7 +286,7 @@
       "linkId": "LaboratoryReport.TestResult.Value.Code",
       "answer": [
         {
-          "valueString": "91508008"
+          "valueString": "73525009"
         }
       ]
     },

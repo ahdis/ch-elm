@@ -141,12 +141,6 @@
             <code value="51320008"/>
           </coding>
         </valueCodeableConcept>
-        <dataAbsentReason>
-          <coding>
-            <system value="http://terminology.hl7.org/CodeSystem/data-absent-reason"/>
-            <code value="not-applicable"/>
-          </coding>
-        </dataAbsentReason>
         <interpretation>
           <coding>
             <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"/>
