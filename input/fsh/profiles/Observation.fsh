@@ -37,13 +37,6 @@ Description: "This CH ELM base profile constrains the Observation resource for t
 * dataAbsentReason 0..1
 * dataAbsentReason ^short = "see also 'Guidance - Laboratory Result'"
 
-Profile: ChElmObservationResultsLaboratoryStrict
-Parent: ChElmObservationResultsLaboratory
-Id: ch-elm-observation-results-laboratory-strict
-Title: "CH ELM Observation Results: Laboratory (strict)"
-Description: "CH ELM profile for the Observation resource with a stricter validation mechanism than the base profile via binding strength reinforcement for the leading code element."
-* code from ChElmResultsLaboratoryObservationComplete (required)
-
 Profile: ChElmObservationResultsLaboratoryMicrobiology
 Parent: ChElmObservationResultsLaboratory
 Id: ch-elm-observation-results-laboratory-microbiology
@@ -153,12 +146,12 @@ Description: "Ratio as observation.component result, see also 'Guidance - Labora
 * component.valueQuantity.system = "http://unitsofmeasure.org"
 * component.valueQuantity.unit = #mg/L 
 
-Profile: ChElmObservationComponentTxt
-Parent: Observation
-Id: ch-elm-observation-component-txt
-Title: "CH ELM Observation Component Results: Text"
-Description: "Text as observation.component result, see also 'Guidance - Laboratory Result'"
-* component.valueString 0..1
+// Profile: ChElmObservationComponentTxt
+// Parent: Observation
+// Id: ch-elm-observation-component-txt
+// Title: "CH ELM Observation Component Results: Text"
+// Description: "Text as observation.component result, see also 'Guidance - Laboratory Result'"
+// * component.valueString 0..1
 
 Profile: ChElmObservationTxt
 Parent: Observation

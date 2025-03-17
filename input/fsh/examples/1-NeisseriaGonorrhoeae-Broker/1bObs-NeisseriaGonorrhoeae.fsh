@@ -1,5 +1,5 @@
 Instance: 1bObs-NeisseriaGonorrhoeae
-InstanceOf: ChElmObservationResultsLaboratoryStrict
+InstanceOf: ChElmObservationResultsLaboratoryMicrobiologyStrict
 Usage: #example
 Title: "1bObs - Neisseria Gonorrhoeae"
 Description: "Example for a CH ELM Observation Results: Laboratory"
