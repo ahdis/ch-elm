@@ -37,18 +37,20 @@ Depending on the organism (leading code), the requirement for how the patient’
 The complete overview of which characteristics are used for which organisms can be found in the ConceptMap [CH ELM Results To FOPH Patient Name Representation](ConceptMap-ch-elm-results-to-foph-patient-name-representation.html) and in the Ordinance of the FDHA on the Reporting of Observations of Communicable human diseases (SR 818.101.126) ([DE](https://www.fedlex.admin.ch/eli/cc/2015/892/de), [FR](https://www.fedlex.admin.ch/eli/cc/2015/892/fr), [IT](https://www.fedlex.admin.ch/eli/cc/2015/892/it)).   
 
 ### Laboratory Study Types
-The laboratory report is currently either of the type [organism detection](#organism-detection) (LOINC 18725-2 Microbiology studies (set)) or [resistance detection](#resistance-detection) (LOINC 18769-0 Microbial susceptibility tests Set). These types are defined in the [ValueSet CH ELM Lab Study Types](ValueSet-ch-elm-lab-study-types.html) and are represented in the `Composition.section.code` element of the respective document. 
 
-#### Organism Detection
-* `Composition.section.code` = LOINC 18725-2 Microbiology studies (set)
-* `Observation.value` = Positive/Negative ([CH ELM Results Coded Values Laboratory](ValueSet-ch-elm-results-coded-values-laboratory.html))
-* `Observation.interpretation` = Positive/Negative ([CH ELM Interpretation Codes Positive and Negative](ValueSet-ch-elm-interpretation-codes-pos-neg.html))
+The Laboratory Study Type indicates which type of test has been performed. It is indicated via the **composition.section.code** and allows for distinction between FHIR documents containing organism detection results from documents containing either genotype- or susceptibility results. The composition.section.code also defines which valueset has to be used for the observation.code (leading code). The available composition.section.codes are defined in the valueset [CH ELM Lab Study Types](ValueSet-ch-elm-lab-study-types.html).
 
-[Example](Bundle-1Doc-NeisseriaGonorrhoeae.html): Laboratory report for Neisseria gonorrhoeae
+The table below lists the composition.section.code with references to FHIR ex-ample documents and the depending observation.code-valuesets:
 
-#### Resistance Detection
-* `Composition.section.code` = LOINC 18769-0 Microbial susceptibility tests Set
-* `Observation.interpretation` = Resistant/Susceptible ([CH ELM Interpretation Codes Resistant and Susceptible](ValueSet-ch-elm-interpretation-codes-res-sus.html))
+| Laboratory Study Type | composition.section.code | Example | valueset to be used for the observation.code (leading code) |
+| --- | --- | --- | --- |
+| Organism detection (non-genotype/non-susceptiblity) | LOINC 18725-2  <br>(Microbiology studies (set)) | [1Doc - Neisseria Gonorrhoeae](Bundle-1Doc-NeisseriaGonorrhoeae.html) | [CH ELM Results Laboratory Observation](ValueSet-ch-elm-results-laboratory-observation.html) |
+| Susceptibility/Resistance detection | LOINC 18769-0  <br>(Microbial susceptibility tests Set) | [61Doc - Tuberculosis Susceptibility](Bundle-61Doc-Tb-Susceptibility.json.html) | [CH ELM Results Laboratory Observation Susceptibility](ValueSet-ch-elm-results-laboratory-observation-susc.html) |
+| Genotype/mutation detection | Snomed 726528006  <br>(Genotyping (qualifier value)) | [63Doc - Tuberculosis Genotyping](Bundle-63Doc-Tb-Genotyping.json.html) | [CH ELM Results Laboratory Observation Genotyping](ValueSet-ch-elm-results-laboratory-observation-geno.html) |
+
+It is not possible to mix organism-detection results, genotype (mutations) and susceptibility results within the same FHIR document. Use separate FHIR documents for each laboratory study type with its corresponding composition.section.code.
+
+**Important**: in the CH ELM Lab Project, almost every FHIR document is expected as of Lab Study Type “Microbiology studies (set)” (LOINC 18725-2). Only laboratories performing genotype or susceptibility tests for _Mycobacterium tuberculosis_ or carbapenemase producing enterobacteriaceace send their results as Lab Study Type “Genotyping” resp. “Microbial Susceptibility tests Set”.
 
 ### Laboratory Result
 
@@ -86,17 +88,16 @@ In some cases, the collection material must be explicitly specified.
 
 ##### Expecting Organism Specification
 In some cases, an additional organism must be specified.
-
-[Example Carbapenemase-producing Enterobacteriaceae (CPE)](Bundle-3Doc-CPE.html): The leading code (Observation.code = LOINC 85827-4) is completed by an additional code for the organism (Observation.valueCodeableConcept = SNOMED CT 56415008).
+Example: [Salmonellosis](Bundle-36Doc-Salmonella-paratyphi.json.html). The leading code (Observation.code = LOINC 49612-5) is completed by an additional code for the organism (Observation.valueCodeableConcept = SNOMED CT 73525009).
 
 1. Check if Observation.code is a member of the ConceptMap [CH ELM Expecting Organism Specification To Results Completion Vs](ConceptMap-ch-elm-expecting-organism-specification-to-results-completion-vs.html) (Source Code)
-   * NO: Observation.code does cover all axes, see section [Leading Code](#leading-code)
-   * YES: An additional code for the organism must be specified, continue with step 2
-      * Example Carbapenemase-producing Enterobacteriaceae (CPE): LOINC 85827-4 is a member of the ConceptMap 
-2. The mapping shows from which ValueSet the code for Observation.valueCodeableConcept has to come from (Target Code)   
-   * Example Carbapenemase-producing Enterobacteriaceae (CPE): http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-cpe-org
+    * NO: Observation.code does cover all axes, see section [Leading Code](#leading-code)
+    * YES: An additional code for the organism must be specified, continue with step 2
+        * Example “Salmonella sp DNA \[Presence\] in Specimen by NAA with probe detection” LOINC 49612-5 is a member of the ConceptMap
+2. The mapping shows from which ValueSet the code for Observation.valueCodeableConcept has to come from (Target Code)
+    * Example “Salmonella sp DNA \[Presence\] in Specimen by NAA with probe detection”: <http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-sal-org>
 3. Define Observation.valueCodeableConcept with a code from the ValueSet from step 2
-   * Example Carbapenemase-producing Enterobacteriaceae (CPE): Observation.valueCodeableConcept = SNOMED CT 56415008 from [ValueSet CH ELM Results CPE Org](ValueSet-ch-elm-results-cpe-org.html)     
+    * Example “Salmonella sp DNA \[Presence\] in Specimen by NAA with probe detection”: Observation.valueCodeableConcept = SNOMED CT 73525009 from valueset [CH ELM Results Sal Org](ValueSet-ch-elm-results-sal-org.html)
 
 {% include img.html img="expecting-organism-specification.png" caption="Fig. 8: Schematic illustration of the mechanism for the expecting organism specification (for simplicity, only the relevant elements are shown)" width="100%" %}  
 
@@ -111,3 +112,32 @@ In cases where certain test results like physical quantities, sequencing-/typing
 
 ### Multiplex Cases
 The exchange format defines the [FHIR document](document.html) for reporting to the FOPH so that **one document per organism per patient** is submitted. 
+
+### Genotype und Susceptibility test results
+
+For organisms of the _mycobacterium tuberculosis_ complex and for carbapenemase producing enterobacteriaceae, resistance mutations (genotyping) and antibiotics susceptibility (antibiogram) results are reported by (specialized) laboratories.
+
+Resistance and susceptibility tests cover multiple mutations/antibiotics and often generate multiple results that can be reported in the same document. Such documents differ from usual laboratory reports in two ways:
+
+- First, the study type, as indicated by the composition.section.code, must be either “Microbial susceptibility tests Set” or “Genotyping (qualifier value)”, as indicated in section [5.3](#laboratory-study-types)
+- Second, the observation resource must be completed with an observation.component entry that includes **one or many child-elements** of the following structure:
+
+| “component” : \[ |     |     |
+| --- |     |     | --- | --- |
+|     | {   |     |
+|     | code | code specifying the mutation or antibiotics |
+|     | interpretation | indicates, whether a specific mutation (POS/NEG) or antibiotics-resistance was found (Susceptible/Resistant) |
+|     | valueQuantity | if required, includes a quantity value like the applied antibiotics concentration. Otherwise indicate the dataAbsentReason-element. |
+|     | dataAbsentReason | if no valueQuantity is required/present, then the dataAbsentReason element must be present |
+|     | },  |     |
+|     | {...} | repetition of the component-elements as required |
+| \]  |     |     |
+
+See the examples [61Doc - Tuberculosis Susceptibility](Bundle-61Doc-Tb-Susceptibility.html) and [63Doc - Tuberculosis Genotyping](Bundle-63Doc-Tb-Genotyping.html) for how to implement this FHIR resource.
+
+Important points:
+
+- the observation.code defines the organism. The allowed codes must be part of the valuesets [CH ELM Results Laboratory Observation Susceptibility](ValueSet-ch-elm-results-laboratory-observation-susc.html) or [CH ELM Results Laboratory Observation Genotyping](ValueSet-ch-elm-results-laboratory-observation-geno.html)
+- the observation.interpretation is replaced by observation.component.interpretation
+- the component.valueQuantity is mandatory for susceptibility test results indicating the applied antibiotics concentration
+- the specimen can optionally be reported within specimen.type.code using a specimen code from the valueset [CH ELM Results Complete Spec](ValueSet-ch-elm-results-complete-spec.html)

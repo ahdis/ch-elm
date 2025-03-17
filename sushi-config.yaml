@@ -317,6 +317,10 @@ resources:
     name: 59Doc - EHEC
     description: Example Document for reporting EHEC toxin
     exampleCanonical: http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-document-strict
+  Bundle/65Doc-Tuberculosis:
+    name: 65Doc-Tuberculosis
+    description: Example document for reporting mycobacterium culture
+    exampleCanonical: http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-document-strict
   Binary/Test92-Bundle-WarningBerUidGln:
     extension:
       - url: http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format

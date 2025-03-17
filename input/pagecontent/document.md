@@ -481,7 +481,7 @@ See the examples in chapter 2.2 to learn how to use the resource profiles for di
                 <a href="Bundle-51Doc-Gelbfieber.json.html">JSON</a>, 
                 <a href="Bundle-51Doc-Gelbfieber.xml.html">XML</a>
             </td>
-        </tr>"
+        </tr>
         <tr>
             <td>Zika fever</td>
             <td>Zika virus IgM Ab [Presence] in Serum by Immunofluorescence</td>
@@ -566,8 +566,8 @@ See the examples in chapter 2.2 to learn how to use the resource profiles for di
             <td>Hantavirus RNA [Presence] in Blood by NAA with probe detection</td>
             <td>18725-2</td>
             <td>
-                <a href="Bundle-52Doc-Hantavirus.json.html"">JSON</a>, 
-                <a href="Bundle-52Doc-Hantavirus.xml.html"">XML</a>
+                <a href="Bundle-52Doc-Hantavirus.json.html">JSON</a>, 
+                <a href="Bundle-52Doc-Hantavirus.xml.html">XML</a>
             </td>
         </tr>
         <tr>
@@ -584,8 +584,8 @@ See the examples in chapter 2.2 to learn how to use the resource profiles for di
             <td>Legionella sp Ag [Presence] in Urine</td>
             <td>32781-7</td>
             <td>
-                <a href="Bundle-10Doc-Legionella.json.html#root">JSON</a>, 
-                <a href="Bundle-10Doc-Legionella.xml.html#root">XML</a>
+                <a href="Bundle-10Doc-Legionella.json.html">JSON</a>, 
+                <a href="Bundle-10Doc-Legionella.xml.html">XML</a>
             </td>
         </tr>
         <tr>
@@ -632,7 +632,7 @@ See the examples in chapter 2.2 to learn how to use the resource profiles for di
                 <a href="Bundle-57Doc-West-Nile.json.html">JSON</a>, 
                 <a href="Bundle-57Doc-West-Nile.xml.html">XML</a>
             </td>
-        </tr>"
+        </tr>
     </tbody>
 </table>
 
