@@ -2,7 +2,7 @@
   "resourceType": "ConceptMap",
   "id": "ch-elm-expecting-specimen-specification-to-results-completion-vs",
   "url": "http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-expecting-specimen-specification-to-results-completion-vs",
-  "version": "2025-03-12",
+  "version": "2025-03-18",
   "name": "ChElmExpectingSpecimenSpecificationToResultsCompletionVs",
   "title": "CH ELM Expecting Specimen Specification To Results Completion Vs",
   "status": "active",
@@ -25,16 +25,6 @@
       "source": "http://loinc.org",
       "target": "http://fhir.ch/ig/ch-elm/CodeSystem/ch-elm-results-completion-vs",
       "element": [
-        {
-          "code": "11545-1",
-          "display": "Microscopic observation [Identifier] in Specimen by Acid fast stain",
-          "target": [
-            {
-              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-tub-spec",
-              "equivalence": "relatedto"
-            }
-          ]
-        },
         {
           "code": "16134-9",
           "display": "Neisseria meningitidis [Presence] in Specimen by Organism specific culture",
@@ -106,16 +96,6 @@
           ]
         },
         {
-          "code": "38379-4",
-          "display": "Mycobacterium tuberculosis complex DNA [Presence] in Specimen by NAA with probe detection",
-          "target": [
-            {
-              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-tub-spec",
-              "equivalence": "relatedto"
-            }
-          ]
-        },
-        {
           "code": "43304-5",
           "display": "Chlamydia trachomatis rRNA [Presence] in Specimen by NAA with probe detection",
           "target": [
@@ -141,16 +121,6 @@
           "target": [
             {
               "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-sterile-spec",
-              "equivalence": "relatedto"
-            }
-          ]
-        },
-        {
-          "code": "543-9",
-          "display": "Mycobacterium sp identified in Specimen by Organism specific culture",
-          "target": [
-            {
-              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-tub-spec",
               "equivalence": "relatedto"
             }
           ]

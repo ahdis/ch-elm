@@ -2,7 +2,7 @@ Instance: 61Doc-Tb-Susceptibility
 InstanceOf: ChElmDocumentStrict
 Usage: #example
 Title: "61Doc - Tuberculosis Susceptibility"
-Description: "Example for a CH ELM Document: Laboratory Report"
+Description: "Example document for reporting microbial susceptibility pannels (antibiograms)"
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:2821b775-16f8-4910-bba8-1b7d99627f3e"
 * type = #document

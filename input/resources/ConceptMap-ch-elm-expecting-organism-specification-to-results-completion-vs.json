@@ -2,7 +2,7 @@
   "resourceType": "ConceptMap",
   "id": "ch-elm-expecting-organism-specification-to-results-completion-vs",
   "url": "http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-expecting-organism-specification-to-results-completion-vs",
-  "version": "2025-03-12",
+  "version": "2025-03-18",
   "name": "ChElmExpectingOrganismSpecificationToResultsCompletionVs",
   "title": "CH ELM Expecting Organism Specification To Results Completion Vs",
   "status": "active",

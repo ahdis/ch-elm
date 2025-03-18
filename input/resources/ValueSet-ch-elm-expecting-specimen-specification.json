@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "ch-elm-expecting-specimen-specification",
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-expecting-specimen-specification",
-  "version": "2025-03-12",
+  "version": "2025-03-18",
   "name": "ChElmExpectingSpecimenSpecification",
   "title": "CH ELM Expecting Specimen Specification",
   "status": "active",
@@ -13,10 +13,6 @@
       {
         "system": "http://loinc.org",
         "concept": [
-          {
-            "code": "11545-1",
-            "display": "Microscopic observation [Identifier] in Specimen by Acid fast stain"
-          },
           {
             "code": "16134-9",
             "display": "Neisseria meningitidis [Presence] in Specimen by Organism specific culture"
@@ -46,10 +42,6 @@
             "display": "Streptococcus sp identified in Specimen by Organism specific culture"
           },
           {
-            "code": "38379-4",
-            "display": "Mycobacterium tuberculosis complex DNA [Presence] in Specimen by NAA with probe detection"
-          },
-          {
             "code": "43304-5",
             "display": "Chlamydia trachomatis rRNA [Presence] in Specimen by NAA with probe detection"
           },
@@ -60,10 +52,6 @@
           {
             "code": "49672-9",
             "display": "Streptococcus pneumoniae DNA [Presence] in Specimen by NAA with probe detection"
-          },
-          {
-            "code": "543-9",
-            "display": "Mycobacterium sp identified in Specimen by Organism specific culture"
           },
           {
             "code": "58473-0",

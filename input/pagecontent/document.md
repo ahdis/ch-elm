@@ -861,3 +861,63 @@ See the examples in chapter 2.2 to learn how to use the resource profiles for di
         </tr>
     </tbody>
 </table>
+
+#### Microbial susceptibility tests set
+
+<table class="grid">
+    <colgroup> 
+        <col style="width:25%" /> 
+        <col style="width:50%" /> 
+        <col style="width:15%" /> 
+        <col style="width:10%" /> 
+    </colgroup> 
+    <thead>
+           <tr>
+            <th>Disease</th>
+            <th>observation.code display</th>
+            <th>LOINC observation.code<br />(leading code)</th>
+            <th>FHIR Document</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Tuberculosis</td>
+            <td>Mycobacterial susceptibility panel by Method for Slow-growing mycobacteria</td>
+            <td>29579-0</td>
+            <td>
+                <a href="Bundle-61Doc-Tb-Susceptibility.json.html">JSON</a>, 
+                <a href="Bundle-61Doc-Tb-Susceptibility.xml.html">XML</a>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+#### Genotyping
+
+<table class="grid">
+    <colgroup> 
+        <col style="width:25%" /> 
+        <col style="width:50%" /> 
+        <col style="width:15%" /> 
+        <col style="width:10%" /> 
+    </colgroup> 
+    <thead>
+           <tr>
+            <th>Disease</th>
+            <th>observation.code display</th>
+            <th>LOINC observation.code<br />(leading code)</th>
+            <th>FHIR Document</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Tuberculosis</td>
+            <td>Mycobacterium tuberculosis complex resistance panel by Molecular genetics method</td>
+            <td>94053-6</td>
+            <td>
+                <a href="Bundle-63Doc-Tb-Genotyping.json.html">JSON</a>, 
+                <a href="Bundle-63Doc-Tb-Genotyping.xml.html">XML</a>
+            </td>
+        </tr>
+    </tbody>
+</table>

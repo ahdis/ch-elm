@@ -88,6 +88,7 @@ Entry 'urn:uuid:4bfc6d09-f3ec-4d42-8e59-f5433de74510' isn't reachable by travers
 # input/resources/Bundle-15Doc-Measles-Seroconversion.xml ==
 Entry 'urn:uuid:46f41f51-6164-4cce-a229-93c4048a8278' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
 Entry 'urn:uuid:0f987ac6-72f0-4c69-bc3e-39c805d3de1c' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
+None of the codings provided are in the value set 'Observation Interpretation Codes' (http://hl7.org/fhir/ValueSet/observation-interpretation|4.0.1), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://snomed.info/sct#1290194006)
 
 # input/resources/Bundle-16Doc-Dengue-Titer.xml ==
 Entry 'urn:uuid:f11b136f-3d38-4330-b3a9-038f15670915' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
@@ -144,14 +145,16 @@ Entry 'urn:uuid:66c62457-104a-4a81-8fad-d76e6bbbf50d' isn't reachable by travers
 # input\resources\Bundle-29Doc-Rubella.xml ==
 Entry 'urn:uuid:1736e921-e851-49e9-ac2e-d66ecf8a2485' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
 Entry 'urn:uuid:b0ee488e-8fc6-43d3-96ed-3d7edcdcee54' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
+None of the codings provided are in the value set 'Observation Interpretation Codes' (http://hl7.org/fhir/ValueSet/observation-interpretation|4.0.1), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://snomed.info/sct#1290194006)
 
 == input/resources/Bundle-30Doc-Salmonella-enteritidis.xml ==
-Entry 'urn:uuid:2c305e50-e5e2-4947-a99d-95f4ec4856ec' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
-Entry 'urn:uuid:285392d7-5c98-4a6c-9a43-48871237b473' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
+Entry 'urn:uuid:cb61c412-20d7-4ede-a433-92da0b295821' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
+Entry 'urn:uuid:a584090c-66c8-43e4-9dc7-37f497089a02' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
 
 == input/resources/Bundle-32Doc-Rubella-avidity.xml ==
 Entry 'urn:uuid:0fdc0897-6abf-4b54-b3f0-96087f6e8153' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
 Entry 'urn:uuid:b0564da1-cc00-4022-86b3-4d35efaeb414' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
+None of the codings provided are in the value set 'Observation Interpretation Codes' (http://hl7.org/fhir/ValueSet/observation-interpretation|4.0.1), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://snomed.info/sct#62482003)
 
 == input/resources/Bundle-33Doc-Salmonella-valueString.xml ==
 Entry 'urn:uuid:bee31c1d-1ff8-4b97-ac63-18f050153ccf' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
@@ -261,6 +264,10 @@ Entry 'urn:uuid:c49f7bcc-40eb-4c23-a58e-90f74a4e1b44' isn't reachable by travers
 Entry 'urn:uuid:62ee45ab-fc08-4464-9c52-bbfcc4210bed' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
 Entry 'urn:uuid:ec00281a-19ff-41a5-94ef-91303db77c69' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
 
+== input/resources/Bundle-65Doc-Tuberculosis.xml ==
+Entry 'urn:uuid:3cbae724-89a1-4599-a77c-67a0e6a469be' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
+Entry 'urn:uuid:ef9dcad2-5a10-4530-98d6-a9efb5635a76' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
+
 # Terminology error during build, no impact
 Error from http://tx.fhir.org/r4: POST Stream too large%
 
@@ -274,3 +281,12 @@ Duplicate ID for contained resource: 4Doc-Campylobacter
 Duplicate ID for contained resource: 5Doc-TreponemaPallidum
 Duplicate ID for contained resource: 6Doc-Influenza
 Duplicate ID for contained resource: 7Doc-SARSCoV2
+
+# Errors from snapshot generation in upstream ig
+Profile http://hl7.org/fhir/tools/StructureDefinition/additional-binding|0.4.1, Element matches more than one slice - key, purpose
+
+# Errors from snapshot generation in upstream ig
+Slice 'Extension.extension:purpose': a matching slice is required, but not found (from http://hl7.org/fhir/tools/StructureDefinition/additional-binding|0.4.1). Note that other slices are allowed in addition to this required slice
+
+# Errors from snapshot generation in upstream ig
+The Profile 'http://hl7.org/fhir/tools/StructureDefinition/additional-binding|0.4.1' definition allows for the type id but found type code

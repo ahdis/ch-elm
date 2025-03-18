@@ -1,12 +1,8 @@
 {
   "resourceType": "ValueSet",
   "id": "ch-elm-results-tub-org",
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>CH ELM Results Tub Org</b><br />The &quot;CH ELM Results Tub Org&quot; organism group provides a curated set of codes representing specific organisms. Each code within this group has been selected to ensure precise representation and consistency in relation to the primary LOINC codes. Clients utilizing the &quot;CH ELM Results Tub Org&quot; group should refer to the provided codes to accurately and uniformly capture and report organism-related information.<br /></p></div>"
-  },
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-tub-org",
-  "version": "2025-03-17",
+  "version": "2025-03-18",
   "name": "ChElmResultsTubOrg",
   "title": "CH ELM Results Tub Org",
   "status": "active",

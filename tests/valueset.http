@@ -73,3 +73,9 @@ Accept: application/fhir+json
 GET https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir/ValueSet/ch-elm-interpretation-codes-resistant-susceptible HTTP/1.1
 Accept: application/fhir+json
 
+
+###
+GET https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir/ValueSet/ch-elm-results-tub-org HTTP/1.1
+Accept: application/fhir+json
+
+

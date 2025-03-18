@@ -2,7 +2,7 @@ Instance: 63Doc-Tb-Genotyping
 InstanceOf: ChElmDocumentStrict
 Usage: #example
 Title: "63Doc - Tuberculosis Genotyping"
-Description: "Example for a CH ELM Document: Laboratory Report"
+Description: "Example document for reporting genotyping analysis (resistance mutation)"
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:0ed5f82b-06e9-427b-8546-e841a33d49e8"
 * type = #document

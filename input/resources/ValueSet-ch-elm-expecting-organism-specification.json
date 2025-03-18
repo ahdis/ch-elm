@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "ch-elm-expecting-organism-specification",
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-expecting-organism-specification",
-  "version": "2025-03-12",
+  "version": "2025-03-18",
   "name": "ChElmExpectingOrganismSpecification",
   "title": "CH ELM Expecting Organism Specification",
   "status": "active",

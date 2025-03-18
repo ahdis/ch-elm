@@ -18,7 +18,7 @@ Alias:  $task-status =                          http://hl7.org/fhir/task-status
 Alias: $ch-elm-status =                           http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-status
 
 
-Alias: $data-absent-reason =                        http://hl7.org/fhir/StructureDefinition/data-absent-reason
+Alias: $data-absent-reason = http://hl7.org/fhir/StructureDefinition/data-absent-reason
 Alias: $data-absent-reason-cs =  http://terminology.hl7.org/CodeSystem/data-absent-reason
 Alias: $ch-elm-results-laboratory-observation = http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-laboratory-observation
 Alias: $ch-elm-results-laboratory-observation-geno = http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-laboratory-observation-geno
