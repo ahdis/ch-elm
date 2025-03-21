@@ -115,14 +115,15 @@ By default, valueQuantity elements are considered to be single measurements. For
 
 It is also possible to use the valueQuantity element to report a threshold instead of a measurement by supplying a valueQuantity.comparator element. For instance, assuming that a laboratory measured more than 65000 Copies/ml, without knowing the exact quantity, the following syntax can be used:
 
-      "valueQuantity" : {
-          "value" : 65000,
-          "comparator" : ">",
-          "unit" : "{Copies}/mL",
-          "system" : "http://unitsofmeasure.org",
-          "code" : "1/mL"
-        },
-
+```json
+"valueQuantity" : {
+    "value" : 65000,
+    "comparator" : ">",
+    "unit" : "{Copies}/mL",
+    "system" : "http://unitsofmeasure.org",
+    "code" : "1/mL"
+  },
+```
 
 
 ### Multiplex Cases
