@@ -109,6 +109,21 @@ are allowed (e.g. for Neisseria gonorrhoeae the [ValueSet: CH ELM Interpretation
 
 In cases where certain test results like physical quantities, sequencing-/typing results etc. or a series of test values with their associated measuring units and interpretations are to be transmitted, a specific observation profile is expected depending on the leading code. The [ConceptMap](ConceptMap-ch-elm-results-to-observation-profile.html) defines which profile has to be considered.
 
+#### Using comparators in valueQuantity
+
+By default, valueQuantity elements are considered to be single measurements. For instance, in this example, valueQuantity.value: 65168 indicates that 65168 Copies/ml were measured.
+
+It is also possible to use the valueQuantity element to report a threshold instead of a measurement by supplying a valueQuantity.comparator element. For instance, assuming that a laboratory measured more than 65000 Copies/ml, without knowing the exact quantity, the following syntax can be used:
+
+      "valueQuantity" : {
+          "value" : 65000,
+          "comparator" : ">",
+          "unit" : "{Copies}/mL",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "1/mL"
+        },
+
+
 
 ### Multiplex Cases
 The exchange format defines the [FHIR document](document.html) for reporting to the FOPH so that **one document per organism per patient** is submitted. 
