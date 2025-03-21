@@ -88,7 +88,7 @@ In some cases, the collection material must be explicitly specified.
 
 ##### Expecting Organism Specification
 In some cases, an additional organism must be specified.
-Example: [Salmonellosis](Bundle-36Doc-Salmonella-paratyphi.json.html). The leading code (Observation.code = LOINC 49612-5) is completed by an additional code for the organism (Observation.valueCodeableConcept = SNOMED CT 73525009).
+Example: [Salmonellosis](Bundle-30Doc-Salmonella-enteritidis.json.html). The leading code (Observation.code = LOINC 49612-5) is completed by an additional code for the organism (Observation.valueCodeableConcept = SNOMED CT 73525009).
 
 1. Check if Observation.code is a member of the ConceptMap [CH ELM Expecting Organism Specification To Results Completion Vs](ConceptMap-ch-elm-expecting-organism-specification-to-results-completion-vs.html) (Source Code)
     * NO: Observation.code does cover all axes, see section [Leading Code](#leading-code)
