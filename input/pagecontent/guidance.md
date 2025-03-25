@@ -88,7 +88,7 @@ In some cases, the collection material must be explicitly specified.
 
 ##### Expecting Organism Specification
 In some cases, an additional organism must be specified.
-Example: [Salmonellosis](Bundle-36Doc-Salmonella-paratyphi.json.html). The leading code (Observation.code = LOINC 49612-5) is completed by an additional code for the organism (Observation.valueCodeableConcept = SNOMED CT 73525009).
+Example: [Salmonellosis](Bundle-30Doc-Salmonella-enteritidis.json.html). The leading code (Observation.code = LOINC 49612-5) is completed by an additional code for the organism (Observation.valueCodeableConcept = SNOMED CT 73525009).
 
 1. Check if Observation.code is a member of the ConceptMap [CH ELM Expecting Organism Specification To Results Completion Vs](ConceptMap-ch-elm-expecting-organism-specification-to-results-completion-vs.html) (Source Code)
     * NO: Observation.code does cover all axes, see section [Leading Code](#leading-code)
@@ -108,6 +108,22 @@ are allowed (e.g. for Neisseria gonorrhoeae the [ValueSet: CH ELM Interpretation
 ##### Expecting observation profile
 
 In cases where certain test results like physical quantities, sequencing-/typing results etc. or a series of test values with their associated measuring units and interpretations are to be transmitted, a specific observation profile is expected depending on the leading code. The [ConceptMap](ConceptMap-ch-elm-results-to-observation-profile.html) defines which profile has to be considered.
+
+#### Using comparators in valueQuantity
+
+By default, valueQuantity elements are considered to be single measurements. For instance, in this example, valueQuantity.value: 65168 indicates that 65168 Copies/ml were measured.
+
+It is also possible to use the valueQuantity element to report a threshold instead of a measurement by supplying a valueQuantity.comparator element. For instance, assuming that a laboratory measured more than 65000 Copies/ml, without knowing the exact quantity, the following syntax can be used:
+
+```json
+"valueQuantity" : {
+    "value" : 65000,
+    "comparator" : ">",
+    "unit" : "{Copies}/mL",
+    "system" : "http://unitsofmeasure.org",
+    "code" : "1/mL"
+  },
+```
 
 
 ### Multiplex Cases
