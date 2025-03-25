@@ -139,7 +139,7 @@ Profile: ChElmObservationComponentConcentration
 Parent: Observation
 Id: ch-elm-observation-component-conc
 Title: "CH ELM Observation Component Results: Concentration"
-Description: "Ratio as observation.component result, see also 'Guidance - Laboratory Result'"
+Description: "Concentration as Quantity in observation.component result, see also 'Guidance - Laboratory Result'"
 * component.valueQuantity 1..1
 * component.valueQuantity.value 1..1
 * component.valueQuantity.code = #mg/L 

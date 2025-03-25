@@ -1,4 +1,9 @@
 All significant changes to this FHIR implementation guide will be documented on this page.   
+
+### 1.9.1 2025/03/26
+* [#153](https://github.com/ahdis/ch-elm/issues/153) CH ELM Observation Component Results: Concentration text correction
+* [#155](https://github.com/ahdis/ch-elm/issues/155) Make small text improvements for 1.9.1
+
 ### 1.9.0 2025/03/18
 * [#127](https://github.com/ahdis/ch-elm/issues/127) Susceptibility and genotyping
 * [#140](https://github.com/ahdis/ch-elm/issues/140) Do not use "not-performed" status 
