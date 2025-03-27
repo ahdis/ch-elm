@@ -67,8 +67,8 @@ Description: "This CH ELM base profile constrains the Patient resource for the p
 Profile: ChElmPatient
 Parent: ChElmPatientGeneral
 Id: ch-elm-patient
-Title: "CH ELM Patient"
-Description: "This CH ELM profile constrains the Patient resource for the purpose of laboratory orders and test reports."
+Title: "CH ELM Patient FullName"
+Description: "This CH ELM profile constrains the Patient resource with a full name."
 * . ^short = "CH ELM Patient"
 * name only CHCoreHumanName
 * name ^short = "Whether the personal data is transmitted by using initials, full name or a special combination is described under 'Guidance - Personal Data (Patient Name)'"
