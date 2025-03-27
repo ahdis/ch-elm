@@ -2,17 +2,17 @@ Profile: CHElmHumanName
 Parent: CHCoreHumanName
 Id: ch-elm-humanname
 Title: "Human Name"
-Description: "Name with extensions for data-absent-reason"
+Description: "Name with extensions for data-absent-reason for vct and hiv code"
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open
 * extension contains ChElmExtVctCode named vctcode 0..1 and ChElmExtHivCode named hivcode 0..1
-* family.extension contains $data-absent-reason named dataabsentreason 0..1
-* given.extension contains $data-absent-reason named dataabsentreason 0..1
+* family.extension contains $data-absent-reason named dataabsentreason 1..1
+* given.extension contains $data-absent-reason named dataabsentreason 1..1
 
-Profile: ChElmPatient
+Profile: ChElmPatientGeneral
 Parent: ChLabPatient
-Id: ch-elm-patient
+Id: ch-elm-patient-general
 Title: "CH ELM Patient"
 Description: "This CH ELM base profile constrains the Patient resource for the purpose of laboratory orders and test reports."
 * . ^short = "CH ELM Patient"
@@ -32,14 +32,7 @@ Description: "This CH ELM base profile constrains the Patient resource for the p
 * identifier[insuranceCardNumber] 0..0
 
 * name 1..1
-* name only CHElmHumanName
 * name ^short = "Whether the personal data is transmitted by using initials, full name or a special combination is described under 'Guidance - Personal Data (Patient Name)'"
-* name.family 1..
-* name.family ^short = "masked when using HIV/VCT-extensions (see IG guidance)."
-* name.family ^maxLength = 100
-* name.given 1..1
-* name.given ^short = "masked when using HIV/VCT-extensions (see IG guidance)."
-* name.given ^maxLength = 100
 
 * gender 1..
 
@@ -71,13 +64,33 @@ Description: "This CH ELM base profile constrains the Patient resource for the p
 * telecom[phone].value ^example.valueString = "+41 79 999 55 66"
 * telecom[phone].value ^maxLength = 25
 
+Profile: ChElmPatient
+Parent: ChElmPatientGeneral
+Id: ch-elm-patient
+Title: "CH ELM Patient"
+Description: "This CH ELM profile constrains the Patient resource for the purpose of laboratory orders and test reports."
+* . ^short = "CH ELM Patient"
+* name only CHCoreHumanName
+* name ^short = "Whether the personal data is transmitted by using initials, full name or a special combination is described under 'Guidance - Personal Data (Patient Name)'"
+* name.family 1..
+* name.family ^maxLength = 100
+* name.given 1..1
+* name.given ^maxLength = 100
+
 Profile: ChElmPatientVCT
-Parent: ChElmPatient
+Parent: ChElmPatientGeneral
 Title: "CH ELM Patient VCT"
 Description: "Patient representation via a VCT Code"
 * . ^short = "CH ELM Patient VCT"
 * identifier[AHVN13] 0..0
 * identifier[IDN] 0..0
+* name only CHElmHumanName
+* name.family 1..
+* name.family ^short = "masked when using HIV/VCT-extensions (see IG guidance)."
+* name.family ^maxLength = 100
+* name.given 1..1
+* name.given ^short = "masked when using HIV/VCT-extensions (see IG guidance)."
+* name.given ^maxLength = 100
 * name.extension[vctcode] 1.. 
 * name.extension[hivcode] ..0
 * name.family.extension[dataabsentreason] 1..
@@ -88,10 +101,17 @@ Description: "Patient representation via a VCT Code"
 * telecom ..0
 
 Profile: ChElmPatientHIV
-Parent: ChElmPatient
+Parent: ChElmPatientGeneral
 Title: "CH ELM Patient HIV"
 Description: "Patient representation for HIV"
 * . ^short = "CH ELM Patient HIV"
+* name only CHElmHumanName
+* name.family 1..
+* name.family ^short = "masked when using HIV/VCT-extensions (see IG guidance)."
+* name.family ^maxLength = 100
+* name.given 1..1
+* name.given ^short = "masked when using HIV/VCT-extensions (see IG guidance)."
+* name.given ^maxLength = 100
 * name.extension[vctcode] ..0 
 * name.extension[hivcode] 1..
 * name.family.extension[dataabsentreason] 1..
