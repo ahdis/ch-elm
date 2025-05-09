@@ -69,7 +69,7 @@
     },
     {
       "source": "http://snomed.info/sct",
-      "target": "http://fhir.ch/ig/ch-elm/CodesSystem/ch-elm-group",
+      "target": "http://fhir.ch/ig/ch-elm/CodeSystem/ch-elm-group",
       "element": [
         {
           "code": "19030005",
