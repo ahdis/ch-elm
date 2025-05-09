@@ -1,0 +1,32 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "ch-elm-group",
+  "url": "http://fhir.ch/ig/ch-elm/CodeSystem/ch-elm-group",
+  "version": "2025-03-18",
+  "name": "ChElmGroup",
+  "title": "CH ELM Group",
+  "status": "active",
+  "experimental": false,
+  "description": "The \"CH ELM Group\" group provides a curated set of codes representing specific disorders.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "CHE"
+        }
+      ]
+    }
+  ],
+  "caseSensitive": false,
+  "hierarchyMeaning": "is-a",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "Measles"
+    },
+    {
+      "code": "Listeriosis"
+    }  
+  ]
+}
