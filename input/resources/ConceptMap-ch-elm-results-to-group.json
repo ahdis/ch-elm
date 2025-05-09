@@ -1,0 +1,87 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "ch-elm-results-to-group",
+  "url": "http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-results-to-group",
+  "version": "2025-05-09",
+  "name": "ChElmResultsToGroup",
+  "title": "CH ELM Results To Group",
+  "status": "active",
+  "experimental": false,
+  "description": "This CH ELM concept map specifies the disorder codes for each leading code",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "CHE"
+        }
+      ]
+    }
+  ],
+  "sourceCanonical": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-laboratory-observation",
+  "targetCanonical": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-group",
+  "group": [
+    {
+      "source": "http://loinc.org",
+      "target": "http://fhir.ch/ig/ch-elm/CodeSystem/ch-elm-group",
+      "element": [
+        {
+          "code": "6609-2",
+          "display": "Listeria sp identified in Specimen by Organism specific culture",
+          "target": [
+            {
+              "code": "Listeriosis",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "82184-3",
+          "display": "Listeria monocytogenes DNA [Presence] in Cerebral spinal fluid by NAA with non-probe detection",
+          "target": [
+            {
+              "code": "Listeriosis",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "21503-8",
+          "display": "Measles virus IgM Ab [Presence] in Serum",
+          "target": [
+            {
+              "code": "Measles",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "14189004",
+          "display": "Measles virus IgG Ab [Titer] in Serum",
+          "target": [
+            {
+              "code": "Measles",
+              "equivalence": "relatedto"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "http://snomed.info/sct",
+      "target": "http://fhir.ch/ig/ch-elm/CodesSystem/ch-elm-group",
+      "element": [
+        {
+          "code": "19030005",
+          "display": "Human immunodeficiency virus (organism)",
+          "target": [
+            {
+              "code": "Measles",
+              "equivalence": "relatedto"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
