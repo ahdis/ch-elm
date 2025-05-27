@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "ch-elm-results-component-gene-tb",
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-component-gene-tb",
-  "version": "2025-03-18",
+  "version": "2025-05-27",
   "name": "ChElmResultsComponentGeneTb",
   "title": "CH ELM Results Gene Tb",
   "status": "active",

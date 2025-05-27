@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "ch-elm-results-mpx-sashec",
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-mpx-sashec",
-  "version": "2025-03-18",
+  "version": "2025-05-27",
   "name": "ChElmResultsMpxSashec",
   "title": "CH ELM Results Mpx Sashec",
   "status": "active",
