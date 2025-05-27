@@ -26,7 +26,9 @@ contact:
         value: https://www.bag.admin.ch/bag/en/home/das-bag/kontakt-standort.html
 
 dependencies:
-  hl7.terminology.r4: 6.3.0
+  hl7.terminology.r4:
+    uri: http://terminology.hl7.org/ImplementationGuide/hl7.terminology
+    version: 6.3.0  
   hl7.fhir.eu.laboratory: 0.1.1
   hl7.fhir.uv.ips: 1.1.0
   ch.fhir.ig.ch-lab-report: 2.0.0-ballot
