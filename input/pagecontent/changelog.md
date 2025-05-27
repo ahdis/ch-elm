@@ -1,5 +1,9 @@
 All significant changes to this FHIR implementation guide will be documented on this page.   
 
+### 1.10.0 2025/xx/xx
+* [#161](https://github.com/ahdis/ch-elm/issues/161) Updating dependencies to ch.fhir.ig.ch-lab-report: 2.0.0-ballot and ch.fhir.ig.ch-core: 6.0.0-ballot
+* [#135](https://github.com/ahdis/ch-elm/issues/135) Support for XK Kosovo in validator
+
 ### 1.9.1 2025/03/26
 * [#153](https://github.com/ahdis/ch-elm/issues/153) CH ELM Observation Component Results: Concentration text correction
 * [#155](https://github.com/ahdis/ch-elm/issues/155) Make small text improvements for 1.9.1

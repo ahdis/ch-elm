@@ -290,3 +290,6 @@ Slice 'Extension.extension:purpose': a matching slice is required, but not found
 
 # Errors from snapshot generation in upstream ig
 The Profile 'http://hl7.org/fhir/tools/StructureDefinition/additional-binding|0.4.1' definition allows for the type id but found type code
+
+# See [#135](https://github.com/ahdis/ch-elm/issues/135)
+The code 'XK' is not valid in the system urn:iso:std:iso:3166 (Unknown code 'XK' in the CodeSystem 'urn:iso:std:iso:3166' version '2018')
