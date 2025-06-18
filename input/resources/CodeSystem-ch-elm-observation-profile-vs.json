@@ -2,7 +2,7 @@
   "resourceType": "CodeSystem",
   "id": "ch-elm-observation-profile-vs",
   "url": "http://fhir.ch/ig/ch-elm/CodeSystem/ch-elm-observation-profile-vs",
-  "version": "2025-03-18",
+  "version": "2025-06-18",
   "name": "ChElmObservationProfileVs",
   "title": "CH ELM Observation Profile Vs",
   "status": "active",

@@ -664,12 +664,12 @@ See the examples in chapter 2.2 to learn how to use the resource profiles for di
             </td>
         </tr>
         <tr>
-            <td>Monkeypox</td>
-            <td>Monkeypox virus DNA [Presence] in Specimen by NAA with probe detection</td>
+            <td>Mpox</td>
+            <td>Mpox virus DNA [Presence] in Specimen by NAA with probe detection</td>
             <td>100383-9</td>
              <td>
-                <a href="Bundle-12Doc-Monkeypox.json.html">JSON</a>, 
-                <a href="Bundle-12Doc-Monkeypox.xml.html">XML</a>
+                <a href="Bundle-12Doc-Mpox.json.html">JSON</a>, 
+                <a href="Bundle-12Doc-Mpox.xml.html">XML</a>
             </td>
         </tr>
     </tbody>
@@ -733,8 +733,8 @@ See the examples in chapter 2.2 to learn how to use the resource profiles for di
             </td>
         </tr>
         <tr>
-            <td>Monkeypox</td>
-            <td>Monkeypox virus clade [Type] in Specimen by Sequencing</td>
+            <td>Mpox</td>
+            <td>Mpox virus clade [Type] in Specimen by Sequencing</td>
             <td>101003-2</td>
            <td>
                 <a href="Bundle-48Doc-Mpox-Clade.json.html">JSON</a>, 

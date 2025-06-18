@@ -1,5 +1,11 @@
 All significant changes to this FHIR implementation guide will be documented on this page.   
 
+### 1.10.0-cibuild 2025/06/24
+* [#161](https://github.com/ahdis/ch-elm/issues/161) Updating dependencies to ch.fhir.ig.ch-lab-report: 2.0.0-ballot and ch.fhir.ig.ch-core: 6.0.0-ballot
+* [#135](https://github.com/ahdis/ch-elm/issues/135) Support for XK Kosovo in validator
+* [#157](https://github.com/ahdis/ch-elm/issues/157) add new valueset component-vs
+* [#164](https://github.com/ahdis/ch-elm/issues/164) Monkepox --> Mpox
+
 ### 1.9.1 2025/03/26
 * [#153](https://github.com/ahdis/ch-elm/issues/153) CH ELM Observation Component Results: Concentration text correction
 * [#155](https://github.com/ahdis/ch-elm/issues/155) Make small text improvements for 1.9.1
@@ -10,7 +16,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 * [#141](https://github.com/ahdis/ch-elm/issues/141) Do not use ValueSet-ch-elm-interpretation-codes-pres-abs
 * [#139](https://github.com/ahdis/ch-elm/issues/139) HIV code validation & documentation
 * [#142](https://github.com/ahdis/ch-elm/issues/142) Constraint denominator to strictly positive values
-* Updated ValueSets and updated example for [Monkeypox virus clade [Type] in Specimen by Sequencinq](Bundle-48Doc-Mpox-Clade.json.html)
+* Updated ValueSets and updated example for [Mpox virus clade [Type] in Specimen by Sequencinq](Bundle-48Doc-Mpox-Clade.json.html)
 * [#154](https://github.com/ahdis/ch-elm/issues/154) Add TB example on examples pages 
 * [#148](https://github.com/ahdis/ch-elm/issues/148) CPE ValueSet should be removed
 
@@ -70,7 +76,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 * [#74](https://github.com/ahdis/ch-elm/issues/74): Check for BER and UIDB format
 * [#77](https://github.com/ahdis/ch-elm/issues/77): VCT and HIV Codes for patient (guidance)
 * [#82](https://github.com/ahdis/ch-elm/issues/82): Adapt menu structure
-* [#85](https://github.com/ahdis/ch-elm/issues/85): Laboratory reports for additional organisms (Hepatite B, Hepatite C, Legionella, Malaria, Monkeypox, Shigella)
+* [#85](https://github.com/ahdis/ch-elm/issues/85): Laboratory reports for additional organisms (Hepatite B, Hepatite C, Legionella, Malaria, Mpox, Shigella)
 
 ### 1.2.0 2024/03/28 
 

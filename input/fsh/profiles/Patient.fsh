@@ -65,6 +65,7 @@ Description: "This CH ELM base profile constrains the Patient resource for the p
 * address[home].state ^short = "sub-unit of country. canton-abbreviation is expected for a Swiss or Liechtenstein address." // kein Binding notwendig: constraint ch-addr-2 = For a Swiss address, a canton abbreviation from the value set 'eCH-0007 Canton Abbreviation' must be used.
 * address[home].country MS
 * address[home].country.extension[countrycode] 1.. // kein Binding notwendig: constraint ch-addr-1 = ISO Country Alpha-2 or ISO Country Alpha-3 code
+* address[home].country.extension[countrycode].valueCoding from $bfs-country-codes (required)
 
 * telecom[phone] ..1
 * telecom[phone].value ^example.label = "CH ELM"

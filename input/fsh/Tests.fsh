@@ -147,3 +147,29 @@ InstanceOf: TestScript
 * insert ActionAssertFhirPathTrue(Confirm that the returned resource is an OperationOutcome., [[is(FHIR.OperationOutcome)]])
 * insert ActionAssertFhirPathTrue(Confirm that we have errors., [[issue.where(severity='error' or severity='fatal').count()>0]])
 * insert ActionAssertFhirPathTrue(Check Constraint failed: ch-elm-observation-profile-loinc, [[issue.where(diagnostics.matches('Constraint failed: ch-elm-observation-profile-loinc')).count() > 0]])
+
+Instance: Test100-Kosovo
+InstanceOf: TestScript
+* url = "http://fhir.ch/ig/ch-elm/TestScript/Test100-Kosovo"
+* name = "Test100Kosovo"
+* status = #active
+* insert Fixture(inputdata, [[Binary/Test100-Bundle-Kosovo]])
+* test.name = "Test100Kosovo"
+* test.description = "Test100: Verify that XK iso country code is allowed for Kosovo"
+* insert ActionOperationValidate(http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-document-strict, inputdata)
+* insert ActionAssertResponseCodeOk
+* insert ActionAssertFhirPathTrue(Confirm that the returned resource is an OperationOutcome., [[is(FHIR.OperationOutcome)]])
+* insert ActionAssertFhirPathTrue(Confirm that we have errors., [[issue.where(severity='error' or severity='fatal').count()=0]])
+
+Instance: Test101-InvalidCountryCode
+InstanceOf: TestScript
+* url = "http://fhir.ch/ig/ch-elm/TestScript/Test101-InvalidCountryCode"
+* name = "Test101InvalidCountryCode"
+* status = #active
+* insert Fixture(inputdata, [[Binary/Test101-Bundle-InvalidCountryCode]])
+* test.name = "Test101InvalidCountryCode"
+* test.description = "Test101: Verify that XX raises an error for invalid country code"
+* insert ActionOperationValidate(http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-document-strict, inputdata)
+* insert ActionAssertResponseCodeOk
+* insert ActionAssertFhirPathTrue(Confirm that the returned resource is an OperationOutcome., [[is(FHIR.OperationOutcome)]])
+* insert ActionAssertFhirPathTrue(Confirm that we have errors., [[issue.where(severity='error' or severity='fatal').count()>0]])

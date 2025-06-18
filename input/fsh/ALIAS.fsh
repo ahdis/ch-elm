@@ -23,3 +23,5 @@ Alias: $data-absent-reason-cs =  http://terminology.hl7.org/CodeSystem/data-abse
 Alias: $ch-elm-results-laboratory-observation = http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-laboratory-observation
 Alias: $ch-elm-results-laboratory-observation-geno = http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-laboratory-observation-geno
 Alias: $ch-elm-results-laboratory-observation-susc = http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-laboratory-observation-susc
+
+Alias: $bfs-country-codes = http://fhir.ch/ig/ch-term/ValueSet/bfs-country-codes

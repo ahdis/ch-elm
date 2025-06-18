@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="12Doc-Monkeypox"/>
+  <id value="12Doc-Mpox"/>
   <identifier>
     <system value="urn:ietf:rfc:3986"/>
     <value value="urn:uuid:1901332d-6041-443f-9690-9291adb2cb3b"/>
