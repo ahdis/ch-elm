@@ -65,7 +65,7 @@ Entry 'urn:uuid:c0474d76-ea60-4540-8448-7472ff6d1f33' isn't reachable by travers
 Entry 'urn:uuid:602b8d60-9104-4737-86f6-7770b0eecdcb' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
 Entry 'urn:uuid:80fa1a58-c692-4a4b-98a3-764f79b8fc93' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
 
-# input/resources/Bundle-12Doc-Monkeypox.xml ==
+# input/resources/Bundle-12Doc-Mpox.xml ==
 Entry 'urn:uuid:4fbc55a0-588e-4f9f-8170-d5f61160e5aa' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
 Entry 'urn:uuid:ec48f270-f518-45c3-8e6d-4dde446a8821' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
 

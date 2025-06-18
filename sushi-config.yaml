@@ -12,8 +12,8 @@ status: active # draft | active | retired | unknown
 license: CC0-1.0
 copyright: CC0-1.0
 jurisdiction: urn:iso:std:iso:3166#CH
-date: 2025-05-27
-version: 1.10.0
+date: 2025-06-18
+version: 1.10.0-cibuild
 fhirVersion: 4.0.1
 copyrightYear: 2023+
 releaseLabel: ci-build # ci-build # release # ci-build # ci-build 
@@ -134,9 +134,9 @@ resources:
     name: 11Doc - Malaria
     description: Example Document for Malaria
     exampleCanonical: http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-document-strict
-  Bundle/12Doc-Monkeypox:
-    name: 12Doc - Monkeypox
-    description: Example Document for Monkeypox
+  Bundle/12Doc-Mpox:
+    name: 12Doc - Mpox
+    description: Example Document for Mpox
     exampleCanonical: http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-document-strict
   Bundle/13Doc-Shigella:
     name: 13Doc - Shigella
@@ -275,8 +275,8 @@ resources:
     description: Example Document for Variola
     exampleCanonical: http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-document-strict
   Bundle/48Doc-Mpox-Clade:
-    name: 48Doc - Monkeypox Clade
-    description: Example Document for Monkeypox Clade
+    name: 48Doc - Mpox Clade
+    description: Example Document for Mpox Clade
     exampleCanonical: http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-document-strict
   Bundle/49Doc-HIV:
     name: 49Doc - HIV
