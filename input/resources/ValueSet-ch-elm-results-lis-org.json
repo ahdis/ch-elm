@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "ch-elm-results-lis-org",
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-lis-org",
-  "version": "2025-05-27",
+  "version": "2025-06-18",
   "name": "ChElmResultsLisOrg",
   "title": "CH ELM Results Lis Org",
   "status": "active",
