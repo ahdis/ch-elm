@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "ch-elm-results-mpox-org",
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-mpox-org",
-  "version": "2025-06-18",
+  "version": "2025-06-19",
   "name": "ChElmResultsMpoxOrg",
   "title": "CH ELM Results Mpox Org",
   "status": "active",
@@ -28,6 +28,10 @@
           {
             "code": "258371002",
             "display": "Group 2A (qualifier value)"
+          },
+          {
+            "code": "1156316003",
+            "display": "Cannot be determined (qualifier value)"
           }
         ]
       }

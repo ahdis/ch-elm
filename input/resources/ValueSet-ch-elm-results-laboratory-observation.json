@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "ch-elm-results-laboratory-observation",
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-laboratory-observation",
-  "version": "2025-06-18",
+  "version": "2025-06-19",
   "name": "ChElmResultsLaboratoryObservation",
   "title": "CH ELM Results Laboratory Observation",
   "status": "active",
@@ -1284,6 +1284,10 @@
           {
             "code": "88629-1",
             "display": "Chikungunya virus IgM Ab [Presence] in Serum or Plasma by Immunoassay"
+          },
+          {
+            "code": "88875-0",
+            "display": "Measles virus genotype A vaccine strain N gene [Presence] in Specimen by NAA with probe detection"
           },
           {
             "code": "89596-1",

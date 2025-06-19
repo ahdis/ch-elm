@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "ch-elm-results-bot-spec",
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-bot-spec",
-  "version": "2025-06-18",
+  "version": "2025-06-19",
   "name": "ChElmResultsBotSpec",
   "title": "CH ELM Results Bot Spec",
   "status": "active",

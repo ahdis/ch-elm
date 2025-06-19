@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "ch-elm-results-pneu-org",
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-pneu-org",
-  "version": "2025-06-18",
+  "version": "2025-06-19",
   "name": "ChElmResultsPneuOrg",
   "title": "CH ELM Results Pneu Org",
   "status": "active",

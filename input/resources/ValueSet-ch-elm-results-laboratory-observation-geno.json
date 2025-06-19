@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "ch-elm-results-laboratory-observation-geno",
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-laboratory-observation-geno",
-  "version": "2025-06-18",
+  "version": "2025-06-19",
   "name": "ChElmResultsLaboratoryObservationGeno",
   "title": "CH ELM Results Laboratory Observation Genotyping",
   "status": "active",
