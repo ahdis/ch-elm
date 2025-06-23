@@ -2,7 +2,7 @@
   "resourceType": "ConceptMap",
   "id": "ch-elm-results-susc-to-component-code",
   "url": "http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-results-susc-to-component-code",
-  "version": "2025-06-19",
+  "version": "2025-06-23",
   "name": "ChElmResultsSuscToComponentCode",
   "title": "CH ELM Results Susceptibility To Component Code",
   "status": "active",

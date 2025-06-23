@@ -2,7 +2,7 @@
   "resourceType": "CodeSystem",
   "id": "ch-elm-results-completion-vs",
   "url": "http://fhir.ch/ig/ch-elm/CodeSystem/ch-elm-results-completion-vs",
-  "version": "2025-06-19",
+  "version": "2025-06-23",
   "name": "ChElmResultsCompletionVs",
   "title": "CH ELM Results Completion Vs",
   "status": "active",

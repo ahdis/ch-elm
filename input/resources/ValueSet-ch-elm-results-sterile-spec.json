@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "ch-elm-results-sterile-spec",
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-sterile-spec",
-  "version": "2025-06-19",
+  "version": "2025-06-23",
   "name": "ChElmResultsSterileSpec",
   "title": "CH ELM Results Sterile Spec",
   "status": "active",
