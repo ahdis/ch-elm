@@ -138,7 +138,7 @@ When the laboratory needs to discover DocumentReference Resources matching vario
 
 ##### Message Semantics
 
-The laboratory executes an HTTP search against the FOPHs DocumentReference URL. The search tar follows the FHIR HTTP specification, addressing the DocumentReference Resource [http://hl7.org/fhir/R4/http.html](http://hl7.org/fhir/R4/http.html):
+The laboratory executes an HTTP search against the FOPHs DocumentReference URL. The search querry follows the FHIR HTTP specification, addressing the DocumentReference Resource [http://hl7.org/fhir/R4/http.html](http://hl7.org/fhir/R4/http.html):
 
 ```
 [base]/DocumentReference?<query>
@@ -165,10 +165,10 @@ The parameters described below are optional. The FOPH must implement the paramet
 **date**:
 This parameter, of type date, specifies the time when the DocumentReference was created. See [http://hl7.org/fhir/R4/search.html#date](http://hl7.org/fhir/R4/search.html#date) for use of the date search type.
 
-**_lastUpdate**:
-The search parameter _lastUpdated can be used to select resources based on the last time they were changed. See [http://hl7.org/fhir/R4/search.html#lastUpdated](http://hl7.org/fhir/R4/search.html#lastUpdated]) for use of the _lastUpdate search type.
+**_lastUpdated**:
+The search parameter `_lastUpdated` can be used to select resources based on the last time they were changed. See [http://hl7.org/fhir/R4/search.html#lastUpdated](http://hl7.org/fhir/R4/search.html#lastUpdated]) for use of the ` `_lastUpdated` search type.
 
-for date and _lastUpdate the following [prefixes](http://hl7.org/fhir/R4/search.html#prefix) for parameter are supported: eq,ne,gt,ge,lt, le
+for date and `_lastUpdated` the following [prefixes](http://hl7.org/fhir/R4/search.html#prefix) for parameter are supported: eq,ne,gt,ge,lt, le
 
 **identifier**:
 This parameter, of type token, specifies an identifier for this DocumentReference and/or the contained document. The search results represent the results of a search on DocumentReference.identifier. 
@@ -201,7 +201,7 @@ The FHIR standard provides encodings for responses as either XML or JSON.
 
 ###### Example 
 ```
-GET http://[base]/DocumentReference?_lastUpdate=gt2023-10-02T08:00:00+02:00&elm-status=failed
+GET http://[base]/DocumentReference?_lastUpdated=gt2025-07-10&elm-status=failed
 ```
 
 ##### Actions
