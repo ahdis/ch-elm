@@ -2,7 +2,7 @@
   "resourceType": "ConceptMap",
   "id": "ch-elm-results-to-interpretation-code",
   "url": "http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-results-to-interpretation-code",
-  "version": "2025-06-23",
+  "version": "2025-07-31",
   "name": "ChElmResultsToInterpretationCode",
   "title": "CH ELM Results To Interpretation Code",
   "status": "active",
@@ -1291,6 +1291,16 @@
           "target": [
             {
               "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos-neg",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "40614-0",
+          "display": "Brucella sp Ab [Presence] in Serum by Agglutination",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
               "equivalence": "relatedto"
             }
           ]

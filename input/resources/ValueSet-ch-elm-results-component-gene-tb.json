@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "ch-elm-results-component-gene-tb",
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-component-gene-tb",
-  "version": "2025-06-23",
+  "version": "2025-07-31",
   "name": "ChElmResultsComponentGeneTb",
   "title": "CH ELM Results Gene Tb",
   "status": "active",
@@ -20,6 +20,14 @@
           {
             "code": "46244-0",
             "display": "Mycobacterium tuberculosis complex rpoB gene rifAMPin resistance mutation identified by Molecular method"
+          },
+          {
+            "code": "46245-7",
+            "display": "Mycobacterium tuberculosis pncA gene pyrazinamide resistance mutation [Identifier] by Molecular method"
+          },
+          {
+            "code": "46247-3",
+            "display": "Mycobacterium tuberculosis embB gene ethambutol resistance mutation [Identifier] by Molecular method"
           },
           {
             "code": "63072-3",

@@ -1,4 +1,6 @@
 All significant changes to this FHIR implementation guide will be documented on this page.   
+### 1.11.0 planned
+* [#173](https://github.com/ahdis/ch-elm/issues/173) FOPH code system
 
 ### 1.10.0 2025/06/24
 * [#161](https://github.com/ahdis/ch-elm/issues/161) Updating dependencies to ch.fhir.ig.ch-lab-report: 2.0.0-ballot and ch.fhir.ig.ch-core: 6.0.0-ballot
