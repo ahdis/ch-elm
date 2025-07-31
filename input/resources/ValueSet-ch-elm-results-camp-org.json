@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "ch-elm-results-camp-org",
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-camp-org",
-  "version": "2025-06-23",
+  "version": "2025-07-31",
   "name": "ChElmResultsCampOrg",
   "title": "CH ELM Results Camp Org",
   "status": "active",

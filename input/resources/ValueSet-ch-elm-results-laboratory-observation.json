@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "ch-elm-results-laboratory-observation",
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-laboratory-observation",
-  "version": "2025-06-23",
+  "version": "2025-07-31",
   "name": "ChElmResultsLaboratoryObservation",
   "title": "CH ELM Results Laboratory Observation",
   "status": "active",
@@ -520,6 +520,10 @@
           {
             "code": "39025-2",
             "display": "Influenza virus A hemagglutinin cDNA [Identifier] in Specimen by Sequencing"
+          },
+          {
+            "code": "40614-0",
+            "display": "Brucella sp Ab [Presence] in Serum by Agglutination"
           },
           {
             "code": "40669-4",
