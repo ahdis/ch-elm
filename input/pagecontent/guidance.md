@@ -157,3 +157,7 @@ Important points:
 - the observation.interpretation is replaced by observation.component.interpretation
 - the component.valueQuantity is mandatory for susceptibility test results indicating the applied antibiotics concentration
 - the specimen can optionally be reported within specimen.type.code using a specimen code from the valueset [CH ELM Results Complete Spec](ValueSet-ch-elm-results-complete-spec.html)
+
+### FOPH code system
+
+An FOPH proprietary code system exists alongside standard systems such as LOINC and Snomed CT. The aim is to be able to provide temporary unambigu-ous codes in situations where standards don't offer appropriate alternatives. In particular, this system is meant to be used at the start of a pandemic, if no standard code exists. The codes and their interpretation will be communicated by FOPH when appropriate
