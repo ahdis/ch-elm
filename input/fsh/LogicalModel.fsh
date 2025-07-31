@@ -5,7 +5,7 @@ Logical: ChElmLaboratoryReport
 Parent: Element
 Id: LaboratoryReport
 Title: "CH ELM Laboratory Report"
-Description: """The logical model represents the CH ELM laboratory report as an abstract data model. This data elements are defined by the ordinance of the Federal Office of Public Health (FOPH) and are then mapped to the FHIR document structure. 
+Description: """The logical model represents the CH ELM laboratory report as an abstract data model. These data elements are defined by the ordinance of the Federal Office of Public Health (FOPH) and are then mapped to the FHIR document structure. 
 
 Cardinalities:
 - The cardinalities in the logical model show the so-called 'best case'. This means that if these data are available, they must be submitted to the FOPH.
@@ -49,7 +49,7 @@ Cardinalities:
 * Orderer.OrganizationAddress.ZipCode 1..1 string "Zip code"
 * Orderer.OrganizationAddress.City 1..1 string "City"
 
-* Patient 1..1 Element "Patient -> Anhang 3 (Angaben zur betrofenen Person)"
+* Patient 1..1 Element "Patient -> Anhang 3 (Angaben zur betroffenen Person)"
 * Patient.Identifier 1..1 Identifier "Identifier"
 * Patient.Identifier.OASI 0..1 Identifier "Switzerland: Old-age and survivors's insurance (OASI) number"
 * Patient.Identifier.IDN 0..1 Identifier "Liechtenstein: Identification number (IDN)"
