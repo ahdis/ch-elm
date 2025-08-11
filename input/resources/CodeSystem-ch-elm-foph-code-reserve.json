@@ -2,7 +2,7 @@
   "resourceType": "CodeSystem",
   "id": "ch-elm-foph-code-reserve",
   "url": "http://fhir.ch/ig/ch-elm/CodeSystem/ch-elm-foph-code-reserve",
-  "version": "2025-07-31",
+  "version": "2025-08-11",
   "name": "ChElmFophCodeReserve",
   "title": "CH ELM FOPH Code Reserve",
   "status": "active",
@@ -19,47 +19,5 @@
     }
   ],
   "caseSensitive": false,
-  "content": "complete",
-  "concept": [
-    {
-      "code": "EP-100700-4",
-      "display": "FOPH emerging pathogen placeholder"
-    },
-    {
-      "code": "EP-100100-7",
-      "display": "FOPH emerging pathogen placeholder"
-    },
-    {
-      "code": "EP-101000-8",
-      "display": "FOPH emerging pathogen placeholder"
-    },
-    {
-      "code": "EP-100500-8",
-      "display": "FOPH emerging pathoden placeholder"
-    },
-    {
-      "code": "EP-100200-5",
-      "display": "FOPH emerging pathoden placeholder"
-    },
-    {
-      "code": "EP-100900-0",
-      "display": "FOPH emerging pathogen placeholder"
-    },
-    {
-      "code": "EP-100300-3",
-      "display": "FOPH emerging pathoden placeholder"
-    },
-    {
-      "code": "EP-100800-2",
-      "display": "FOPH emerging pathogen placeholder"
-    },
-    {
-      "code": "EP-100600-6",
-      "display": "FOPH emerging pathogen placeholder"
-    },
-    {
-      "code": "EP-100400-1",
-      "display": "FOPH emerging pathogen placeholder"
-    }
-  ]
+  "content": "complete"
 }

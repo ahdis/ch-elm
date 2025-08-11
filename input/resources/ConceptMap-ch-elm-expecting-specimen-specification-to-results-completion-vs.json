@@ -2,7 +2,7 @@
   "resourceType": "ConceptMap",
   "id": "ch-elm-expecting-specimen-specification-to-results-completion-vs",
   "url": "http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-expecting-specimen-specification-to-results-completion-vs",
-  "version": "2025-07-31",
+  "version": "2025-08-11",
   "name": "ChElmExpectingSpecimenSpecificationToResultsCompletionVs",
   "title": "CH ELM Expecting Specimen Specification To Results Completion Vs",
   "status": "active",

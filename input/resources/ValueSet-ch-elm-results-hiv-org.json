@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "ch-elm-results-hiv-org",
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-hiv-org",
-  "version": "2025-07-31",
+  "version": "2025-08-11",
   "name": "ChElmResultsHivOrg",
   "title": "CH ELM Results Hiv Org",
   "status": "active",
