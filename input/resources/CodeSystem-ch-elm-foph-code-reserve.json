@@ -1,7 +1,7 @@
 {
   "resourceType": "CodeSystem",
   "id": "ch-elm-foph-code-reserve",
-  "url": "http://fhir.ch/ig/ch-elm/CodeSystem/ch-elm-foph-code-reserve",
+  "url": "urn:oid:2.16.756.5.30.1.129.1.5.1",
   "version": "2025-08-11",
   "name": "ChElmFophCodeReserve",
   "title": "CH ELM FOPH Code Reserve",
