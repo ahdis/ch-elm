@@ -1,5 +1,5 @@
 All significant changes to this FHIR implementation guide will be documented on this page.   
-### 1.11.0 planned
+### 1.11.0-cibuild2 2025/08/12
 * [#173](https://github.com/ahdis/ch-elm/issues/173) FOPH code system
 
 ### 1.10.0 2025/06/24

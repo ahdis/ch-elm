@@ -301,7 +301,7 @@
                             "coding": [
                                 {
                                     "system": "http://fhir.ch/ig/ch-elm/CodeSystem/ch-elm-foph-code-reserve",
-                                    "code": "EP-100100-7"
+                                    "code": "to_be_communicated"
                                 }
                             ]
                         },
