@@ -1,4 +1,8 @@
 All significant changes to this FHIR implementation guide will be documented on this page.   
+
+### 1.12.0 2025/xx/xx
+* [#178](https://github.com/ahdis/ch-elm/issues/178) Track original orderer in 2nd ServiceRequest
+
 ### 1.11.0 2025/08/13
 * [#173](https://github.com/ahdis/ch-elm/issues/173) FOPH code system
 
