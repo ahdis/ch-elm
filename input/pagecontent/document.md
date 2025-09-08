@@ -921,3 +921,34 @@ See the examples in chapter 2.2 to learn how to use the resource profiles for di
         </tr>
     </tbody>
 </table>
+
+
+#### HIV recency
+
+<table class="grid">
+    <colgroup> 
+        <col style="width:25%" /> 
+        <col style="width:50%" /> 
+        <col style="width:15%" /> 
+        <col style="width:10%" /> 
+    </colgroup> 
+    <thead>
+           <tr>
+            <th>Disease</th>
+            <th>observation.code display</th>
+            <th>LOINC observation.code<br />(leading code)</th>
+            <th>FHIR Document</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>HIV recency</td>
+            <td>HIV 1 and 2 IgG Ab [Identifier] in Serum or Plasma by Immunoblot/td>
+            <td>77685-6</td>
+            <td>
+                <a href="Bundle-66Doc-Tb-HivRecency.json.html">JSON</a>, 
+                <a href="Bundle-66Doc-Tb-HivRecency.xml.html">XML</a>
+            </td>
+        </tr>
+    </tbody>
+</table>

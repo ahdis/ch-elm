@@ -21,7 +21,8 @@ Description: "This CH ELM base profile constrains the Composition resource for t
   * ^slicing.discriminator[2].type = #value
   * ^slicing.discriminator[2].path = "code"
   * ^slicing.rules = #closed
-* section contains lab-mst 0..1 and lab-gt 0..1
+* section contains lab-mst 0..1 and lab-gt 0..1 and lab-sero 0..1
+* section[lab-subsections] 0..0
 * section[lab-no-subsections] 0..1
 * section[lab-no-subsections].title 1..
 * section[lab-no-subsections].code 1..
@@ -44,7 +45,7 @@ Description: "This CH ELM base profile constrains the Composition resource for t
 // "Microbial susceptibility tests Set"
 * section[lab-mst].code = $loinc#18769-0
 * section[lab-mst].entry 1..1
-* section[lab-mst].entry only Reference(ChElmObservationResultsLaboratorySusceptibility)
+* section[lab-mst].entry only Reference(ChElmObservationResultsLaboratorySusceptibilityStrict)
 * section[lab-mst].section ..0
 * section[lab-gt] 0..1
 * section[lab-gt].title 1..
@@ -52,10 +53,13 @@ Description: "This CH ELM base profile constrains the Composition resource for t
 // "Genotyping (qualifier value)"
 * section[lab-gt].code = $sct#726528006
 * section[lab-gt].entry 1..1
-* section[lab-gt].entry only Reference(ChElmObservationResultsLaboratoryGenotyping)
+* section[lab-gt].entry only Reference(ChElmObservationResultsLaboratoryGenotypingStrict)
 * section[lab-gt].section ..0
-* section[lab-subsections] 0..0
-
+// Serology studies (set)
+* section[lab-sero].code = $loinc#18727-8
+* section[lab-sero].entry 1..1
+* section[lab-sero].entry only Reference(ChElmObservationResultsLaboratoryHivRecencyStrict)
+* section[lab-sero].section ..0
 
 Profile: ChElmCompositionStrict
 Parent: ChElmComposition

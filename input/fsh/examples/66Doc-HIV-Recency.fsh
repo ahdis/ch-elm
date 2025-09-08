@@ -1,8 +1,8 @@
-Instance: 66Doc-Tb-HivRecency
+Instance: 66Doc-HivRecency
 InstanceOf: ChElmDocumentStrict
 Usage: #example
 Title: "66Doc - HIV Recency"
-Description: "Example document for HIV Recency (Check title)"
+Description: "Example document for HIV Recency"
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:b9a8b9ee-9157-44af-b46e-8c683c69d6bd"
 * type = #document
@@ -128,7 +128,7 @@ Usage: #inline
 * component[=].valueQuantity.system = "http://unitsofmeasure.org"
 * component[=].valueQuantity.code = #[arb'U]
 
-* component[+].code = $sct#117749009 "Measurement of Human immunodeficiency virus 2 glycoprotein 105 antibody (procedure)"
+* component[+].code = $sct#117749009 "Measurement of Human immunodeficiency virus 1 protein 24 antibody (procedure)"
 * component[=].valueQuantity.value = 2
 * component[=].valueQuantity.unit = #[arb'U] 
 * component[=].valueQuantity.system = "http://unitsofmeasure.org"

@@ -1,6 +1,6 @@
 All significant changes to this FHIR implementation guide will be documented on this page.   
 ### 1.12.0 2025/xx/xx
-* [#162](https://github.com/ahdis/ch-elm/issues/162) add HIV recency as a new notification
+* [#162](https://github.com/ahdis/ch-elm/issues/162) add HIV recency as a new notification, Susceptibility and genotyping need to follow strict profile
 
 ### 1.11.0 2025/08/13
 * [#173](https://github.com/ahdis/ch-elm/issues/173) FOPH code system
