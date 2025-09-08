@@ -943,7 +943,7 @@ See the examples in chapter 2.2 to learn how to use the resource profiles for di
     <tbody>
         <tr>
             <td>HIV recency</td>
-            <td>HIV 1 and 2 IgG Ab [Identifier] in Serum or Plasma by Immunoblot/td>
+            <td>HIV 1 and 2 IgG Ab [Identifier] in Serum or Plasma by Immunoblot</td>
             <td>77685-6</td>
             <td>
                 <a href="Bundle-66Doc-Tb-HivRecency.json.html">JSON</a>, 
