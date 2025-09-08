@@ -307,3 +307,336 @@ Content-Type: application/fhir+json
 Accept: application/fhir+json
 
 < ./DocumentReference-falsche_ahv.json
+
+
+### $validate on DocumentReference
+POST http://localhost:8080/matchboxv3/fhir/$validate?profile=http://fhir.ch/ig/ch-elm/StructureDefinition/PublishDocumentReference HTTP/1.1
+Content-Type: application/fhir+json
+Accept: application/fhir+json
+
+{
+    "id": "1-DocumentReference",
+    "contained": [{
+            "id": "1Doc-Notifdis",
+            "resourceType": "Bundle",
+            "entry": [{
+                    "fullUrl": "http://test.fhir.ch/r4/Composition/1Comp-Notifdis",
+                    "resource": {
+                        "id": "1Comp-Notifdis",
+                        "language": "de-CH",
+                        "resourceType": "Composition",
+                        "author": [{
+                                "reference": "Organization/1Org-Labor"
+                            }
+                        ],
+                        "date": "2024-08-05T12:20:26+02:00",
+                        "identifier": {
+                            "system": "urn:ietf:rfc:3986",
+                            "value": "urn:uuid:e4a60355-72aa-4b30-9c8b-3d3f2c8e924d"
+                        },
+                        "section": [{
+                                "code": {
+                                    "coding": [{
+                                            "code": "18725-2",
+                                            "display": "Microbiology studies (set)",
+                                            "system": "http://loinc.org"
+                                        }
+                                    ]
+                                },
+                                "entry": [{
+                                        "reference": "Observation/1Obs-Notifdis"
+                                    }
+                                ],
+                                "title": "Analyseergebnisse der Untersuchung"
+                            }
+                        ],
+                        "status": "final",
+                        "subject": {
+                            "reference": "Patient/1Pat-DM"
+                        },
+                        "title": "Laborbericht vom 05.08.2024",
+                        "type": {
+                            "coding": [{
+                                    "code": "4241000179101",
+                                    "display": "Laborbericht",
+                                    "system": "http://snomed.info/sct",
+                                    "version": "http://snomed.info/sct/2011000195101"
+                                }, {
+                                    "code": "11502-2",
+                                    "display": "Laboratory report",
+                                    "system": "http://loinc.org"
+                                }
+                            ]
+                        }
+                    }
+                }, {
+                    "fullUrl": "http://test.fhir.ch/r4/DiagnosticReport/1DR-Notifdis",
+                    "resource": {
+                        "id": "1DR-Notifdis",
+                        "extension": [{
+                                "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.composition",
+                                "valueReference": {
+                                    "reference": "Composition/1Comp-Notifdis"
+                                }
+                            }
+                        ],
+                        "resourceType": "DiagnosticReport",
+                        "basedOn": [{
+                                "reference": "ServiceRequest/1SR-Order"
+                            }
+                        ],
+                        "code": {
+                            "coding": [{
+                                    "system": "http://loinc.org",
+                                    "code": "11502-2",
+                                    "display": "Laboratory report"
+                                }
+                            ]
+                        },
+                        "identifier": [{
+                                "system": "urn:ietf:rfc:3986",
+                                "value": "urn:uuid:e4a60355-72aa-4b30-9c8b-3d3f2c8e924d"
+                            }
+                        ],
+                        "performer": [{
+                                "reference": "Organization/1Org-Labor"
+                            }
+                        ],
+                        "result": [{
+                                "reference": "Observation/1Obs-Notifdis"
+                            }
+                        ],
+                        "specimen": [{
+                                "reference": "Specimen/1Spec-Specimen"
+                            }
+                        ],
+                        "status": "final",
+                        "subject": {
+                            "reference": "Patient/1Pat-DM"
+                        }
+                    }
+                }, {
+                    "fullUrl": "http://test.fhir.ch/r4/Patient/1Pat-DM",
+                    "resource": {
+                        "id": "1Pat-DM",
+                        "resourceType": "Patient",
+                        "address": [{
+                                "use": "home",
+                                "city": "F\u00fcllinsdorf",
+                                "state": "BL",
+                                "postalCode": "4414",
+                                "country": "CH",
+                                "_country": {
+                                    "extension": [{
+                                            "url": "http://hl7.org/fhir/StructureDefinition/iso21090-SC-coding",
+                                            "valueCoding": {
+                                                "system": "urn:iso:std:iso:3166",
+                                                "code": "CH"
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "birthDate": "2007-07-07",
+                        "gender": "female",
+                        "identifier": [{
+                                "system": "urn:oid:2.16.756.5.32",
+                                "value": "7568888888888"
+                            }
+                        ],
+                        "name": [{
+                                "family": "E",
+                                "given": ["J"]
+                            }
+                        ]
+                    }
+                }, {
+                    "fullUrl": "http://test.fhir.ch/r4/Observation/1Obs-Notifdis",
+                    "resource": {
+                        "id": "1Obs-Notifdis",
+                        "resourceType": "Observation",
+                        "code": {
+                            "coding": [{
+                                    "system": "http://loinc.org",
+                                    "code": "21190-4",
+                                    "display": "Chlamydia trachomatis DNA [Presence] in Cervix by NAA with probe detection"
+                                }
+                            ]
+                        },
+                        "category": [{
+                                "coding": [{
+                                        "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                        "code": "laboratory",
+                                        "display": "Laboratory"
+                                    }
+                                ]
+                            }
+                        ],
+                        "status": "final",
+                        "subject": {
+                            "reference": "Patient/1Pat-DM"
+                        },
+                        "effectiveDateTime": "2024-08-05T14:15:57+02:00",
+                        "performer": [{
+                                "reference": "Organization/1Org-Labor"
+                            }
+                        ],
+                        "valueCodeableConcept": {
+                            "coding": [{
+                                    "system": "http://loinc.org",
+                                    "code": "21190-4",
+                                    "display": "p"
+                                }
+                            ]
+                        },
+                        "interpretation": [{
+                                "coding": [{
+                                        "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                                        "code": "POS",
+                                        "display": "positive"
+                                    }
+                                ]
+                            }
+                        ],
+                        "specimen": {
+                            "reference": "Specimen/1Spec-Specimen"
+                        }
+                    }
+                }, {
+                    "fullUrl": "http://test.fhir.ch/r4/Specimen/1Spec-Specimen",
+                    "resource": {
+                        "id": "1Spec-Specimen",
+                        "resourceType": "Specimen",
+                        "collection": {
+                            "collectedDateTime": "2024-08-02T02:00:00+02:00"
+                        },
+                        "subject": {
+                            "reference": "Patient/1Pat-DM"
+                        },
+                        "type": {
+                            "text": "Material declared by Observation.code or non-mandatory"
+                        }
+                    }
+                }, {
+                    "fullUrl": "http://test.fhir.ch/r4/ServiceRequest/1SR-Order",
+                    "resource": {
+                        "id": "1SR-Order",
+                        "resourceType": "ServiceRequest",
+                        "code": {
+                            "coding": [{
+                                    "system": "http://loinc.org",
+                                    "code": "21190-4",
+                                    "display": "Chlamydia trachomatis DNA [Presence] in Cervix by NAA with probe detection"
+                                }
+                            ]
+                        },
+                        "identifier": [{
+                                "system": "http://fhir.lab.ch/order-identifier",
+                                "value": "Y240602640"
+                            }
+                        ],
+                        "intent": "order",
+                        "requester": {
+                            "reference": "PractitionerRole/1PR-P"
+                        },
+                        "specimen": [{
+                                "reference": "Specimen/1Spec-Specimen"
+                            }
+                        ],
+                        "status": "completed",
+                        "subject": {
+                            "reference": "Patient/1Pat-DM"
+                        }
+                    }
+                }, {
+                    "fullUrl": "http://test.fhir.ch/r4/PractitionerRole/1PR-P",
+                    "resource": {
+                        "id": "1PR-P",
+                        "resourceType": "PractitionerRole",
+                        "organization": {
+                            "reference": "Organization/1Org-P"
+                        },
+                        "practitioner": {
+                            "reference": "Practitioner/1Pract-P"
+                        }
+                    }
+                }, {
+                    "fullUrl": "http://test.fhir.ch/r4/Practitioner/1Pract-P",
+                    "resource": {
+                        "id": "1Pract-P",
+                        "resourceType": "Practitioner",
+                        "identifier": [{
+                                "system": "urn:oid:2.51.1.3",
+                                "value": "7601000362704"
+                            }
+                        ],
+                        "name": [{
+                                "family": "Amberg",
+                                "given": ["Franziska"]
+                            }
+                        ],
+                        "telecom": [{
+                                "system": "email",
+                                "value": "frauenpraxis.amberg-gairing@hin.ch"
+                            }, {
+                                "system": "phone",
+                                "value": "+41 61 926 80 60"
+                            }
+                        ]
+                    }
+                }, {
+                    "fullUrl": "http://test.fhir.ch/r4/Organization/1Org-Labor",
+                    "resource": {
+                        "id": "1Org-Labor",
+                        "resourceType": "Organization",
+                        "identifier": [{
+                                "system": "urn:oid:2.51.1.3",
+                                "value": "7601000218827"
+                            }
+                        ],
+                        "name": "labor team"
+                    }
+                }, {
+                    "fullUrl": "http://test.fhir.ch/r4/Organization/1Org-P",
+                    "resource": {
+                        "id": "1Org-P",
+                        "resourceType": "Organization",
+                        "address": [{
+                                "line": ["Wasserturmplatz 3"],
+                                "city": "Liestal",
+                                "postalCode": "4410"
+                            }
+                        ],
+                        "identifier": [{
+                                "system": "urn:oid:2.51.1.3",
+                                "value": "7601000362704"
+                            }
+                        ],
+                        "name": "Praxis Frauenpraxis Liestal"
+                    }
+                }
+            ],
+            "identifier": {
+                "system": "urn:ietf:rfc:3986",
+                "value": "urn:uuid:e4a60355-72aa-4b30-9c8b-3d3f2c8e924d"
+            },
+            "timestamp": "2024-08-05T12:20:26+02:00",
+            "type": "document"
+        }
+    ],
+    "resourceType": "DocumentReference",
+    "identifier": [{
+            "system": "urn:ietf:rfc:3986",
+            "value": "urn:uuid:e4a60355-72aa-4b30-9c8b-3d3f2c8e924d"
+        }
+    ],
+    "status": "current",
+    "content": [{
+            "attachment": {
+                "language": "de-CH",
+                "url": "#1Doc-Notifdis"
+            }
+        }
+    ]
+}
