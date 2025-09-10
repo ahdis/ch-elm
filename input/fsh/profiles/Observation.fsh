@@ -121,7 +121,7 @@ Description: "This CH ELM profile constrains the Observation resource for the pu
 * component 7..7
 * component.code  ^short = "see also 'Guidance - Laboratory Result'"
 * component.code 1..1
-* component.valueQuantity ^short = "Quantity if required by leading code, see also 'Guidance - Laboratory Result'"
+* component.valueQuantity ^short = "contains the band intensity value"
 * component ^slicing.discriminator.type = #value
 * component ^slicing.discriminator.path = "code"
 * component ^slicing.rules = #closed
