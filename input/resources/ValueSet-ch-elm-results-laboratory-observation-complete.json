@@ -1532,6 +1532,10 @@
           {
             "code": "29579-0",
             "display": "Mycobacterial susceptibility panel by Method for Slow-growing mycobacteria"
+          },
+          {
+            "code": "77685-6",
+            "display": "HIV 1 and 2 IgG Ab [Identifier] in Serum or Plasma by Immunoblot"
           }
         ]
       },

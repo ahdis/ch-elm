@@ -111,6 +111,38 @@ Title: "CH ELM Observation Results for Genotyping (strict)"
 Description: "CH ELM profile for the Observation resource with a stricter validation mechanism than the base profile via binding strength reinforcement for the leading code element."
 * code from $ch-elm-results-laboratory-observation-geno (required)
 
+Profile: ChElmObservationResultsLaboratoryHivRecencyStrict
+Parent: ChElmObservationResultsLaboratory
+Id: ch-elm-observation-results-hiv-recency-strict
+Title: "CH ELM Observation Results for HIV Recency Testing (strict)"
+Description: "This CH ELM profile constrains the Observation resource for the purpose of laboratory test reports for hiv recency."
+* code = $loinc#77685-6 "HIV 1 and 2 IgG Ab [Identifier] in Serum or Plasma by Immunoblot"
+* subject only Reference(ChElmPatientHIV)
+* component 7..7
+* component.code  ^short = "see also 'Guidance - Laboratory Result'"
+* component.code 1..1
+* component.valueQuantity ^short = "contains the band intensity value"
+* component ^slicing.discriminator.type = #value
+* component ^slicing.discriminator.path = "code"
+* component ^slicing.rules = #closed
+* component.valueQuantity 1..1
+* component.valueQuantity only ChElmQuantityArbU
+* component contains
+    gp120 1..1 and
+    gp41 1..1 and
+    p31 1..1 and
+    p24 1..1 and
+    p17 1..1 and
+    gp105 1..1 and
+    gp36 1..1
+* component[gp120].code = $sct#118040000 "Measurement of Human immunodeficiency virus 1 glycoprotein 120 antibody (procedure)"
+* component[gp41].code = $sct#118044009 "Measurement of Human immunodeficiency virus 1 glycoprotein 41 antibody (procedure)"
+* component[p31].code = $sct#118052007 "Measurement of Human immunodeficiency virus 1 protein 31 antibody (procedure)"
+* component[p24].code = $sct#117749009 "Measurement of Human immunodeficiency virus 1 protein 24 antibody (procedure)"
+* component[p17].code = $sct#118047002 "Measurement of Human immunodeficiency virus 1 protein 17 antibody (procedure)"
+* component[gp105].code = $sct#118062000 "Measurement of Human immunodeficiency virus 2 glycoprotein 105 antibody (procedure)"
+* component[gp36].code = $sct#118067006 "Measurement of Human immunodeficiency virus 2 glycoprotein 36 antibody (procedure)"
+
 Profile: ChElmObservationVirl
 Parent: Observation
 Id: ch-elm-observation-pq-virl
@@ -159,3 +191,12 @@ Id: ch-elm-observation-txt
 Title: "CH ELM Observation Results: Text"
 Description: "Text as observation result, see also 'Guidance - Laboratory Result'"
 * valueString 1..1
+
+Profile: ChElmQuantityArbU
+Parent: http://hl7.eu/fhir/laboratory/StructureDefinition/Quantity-eu-lab
+Id: ch-elm-quantity-arbu
+Title: "CH ELM Quantity arb'U"
+Description: "Quantity with unit arb'U and system http://unitsofmeasure.org"
+* value 1..1
+* unit = #[arb'U]
+* code = #[arb'U]
