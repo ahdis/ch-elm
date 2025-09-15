@@ -36,7 +36,7 @@ Salmonella spp. was found in a blood sample. A report of the findings is sent to
 
 #### Neisseria meningitidis
 
-A cerebrospinal fluid sample was sent by the district hospital on an emergency basis and examined directly under the microscope. Gram-negative diplococci were found. This finding of an infection with Neisseria meningitidis must be reported within one day [JSON](Bundle-17Doc-Neisseria.json.html). Further processing (culture, genome sequence) is carried out by the National Centre for Meningococci (secondary laboratory), which in turn sends a complete report together with the order number of the primary laboratory (50002610 in the example) to the Reporting Systems Section of the FOPH [JSON](Bundle-14Doc-Neisseriameningitidis-confirmationtest.json.html).
+A cerebrospinal fluid sample was sent by the district hospital on an emergency basis and examined directly under the microscope. Gram-negative diplococci were found. This finding of an infection with Neisseria meningitidis must be reported within one day [JSON](Bundle-17Doc-Neisseria.json.html). Further processing (culture, genome sequence) is carried out by the National Centre for Meningococci (secondary laboratory), which in turn sends a complete report together with the order number of the primary laboratory (50002610 in the example) to the Reporting Systems Section of the FOPH [JSON](Bundle-14Doc-Neisseriameningitidis-confirmationtest.json.html). If further ordering information about the primary lab is available this can be added too [JSON](Bundle-14Doc-Neisseriameningitidis-confirmationtest-originalorder.json.html).
 
 ### Scenario 3 - Reporting pathway when passing on a laboratory order
 

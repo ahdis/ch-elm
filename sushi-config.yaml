@@ -12,11 +12,11 @@ status: active # draft | active | retired | unknown
 license: CC0-1.0
 copyright: CC0-1.0
 jurisdiction: urn:iso:std:iso:3166#CH
-date: 2025-08-13
-version: 1.11.0
+date: 2025-09-08
+version: 1.12.0
 fhirVersion: 4.0.1
 copyrightYear: 2023+
-releaseLabel: release # ci-build # release # ci-build 
+releaseLabel: ci-build # release # ci-build # release # ci-build 
 publisher:
   name: Federal Office of Public Health FOPH
 contact:
@@ -146,6 +146,10 @@ resources:
   Bundle/14Doc-Neisseriameningitidis-confirmationtest:
     name: 14Doc - Neisseria meningitidis - confirmation test
     description: Example Document for a confirmation test of Neisseria meningitidis by secondary lab (reference laboratory)
+    exampleCanonical: http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-document-strict
+  Bundle/14Doc-Neisseriameningitidis-confirmationtest-originalorder:
+    name: 14Doc - Neisseria meningitidis - confirmation test with original order
+    description: Example Document for a confirmation test of Neisseria meningitidis by secondary lab (reference laboratory) with original order information
     exampleCanonical: http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-document-strict
   Bundle/15Doc-Measles-Seroconversion:
     name: 15Doc - Measles Seroconversion

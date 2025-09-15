@@ -25,15 +25,15 @@ Description: "This CH ELM base profile constrains the Bundle resource for the pu
 * entry[Specimen].resource only ChElmSpecimen
 * entry[Specimen] 1..1
 * entry[Specimen].resource 1..
-* entry[ServiceRequest].resource only ChElmServiceRequestLaboratoryOrder
-* entry[ServiceRequest] 1..1
+* entry[ServiceRequest].resource only ChLabReportServiceRequest
+* entry[ServiceRequest] 1..2
 * entry[ServiceRequest].resource 1..
 * entry[PractitionerRole].resource only ChElmPractitionerRoleOrderer
-* entry[PractitionerRole] 1..1
+* entry[PractitionerRole] 1..2
 * entry[Practitioner].resource only ChElmPractitionerOrderer
-* entry[Practitioner] 0..1
+* entry[Practitioner] 0..2
 * entry[Organization].resource only $ch-core-organization
-* entry[Organization] 1..3
+* entry[Organization] 1..4
 
 
 Profile: ChElmDocumentStrict
