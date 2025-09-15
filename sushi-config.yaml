@@ -147,6 +147,10 @@ resources:
     name: 14Doc - Neisseria meningitidis - confirmation test
     description: Example Document for a confirmation test of Neisseria meningitidis by secondary lab (reference laboratory)
     exampleCanonical: http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-document-strict
+  Bundle/14Doc-Neisseriameningitidis-confirmationtest-originalorder:
+    name: 14Doc - Neisseria meningitidis - confirmation test with original order
+    description: Example Document for a confirmation test of Neisseria meningitidis by secondary lab (reference laboratory) with original order information
+    exampleCanonical: http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-document-strict
   Bundle/15Doc-Measles-Seroconversion:
     name: 15Doc - Measles Seroconversion
     description: Example Document Measles Seroconversion

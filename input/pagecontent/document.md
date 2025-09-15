@@ -859,6 +859,15 @@ See the examples in chapter 2.2 to learn how to use the resource profiles for di
                 <a href="Bundle-14Doc-Neisseriameningitidis-confirmationtest.xml.html">XML</a>
             </td>
         </tr>
+        <tr>
+            <td>Meningococcal disease - confirmation test by reference laboratory with additional original order information</td>
+            <td>Neisseria meningitidis [Presence] in Cerebral spinal fluid by Organism specific culture</td>
+            <td>86581-6</td>
+            <td>
+                <a href="Bundle-14Doc-Neisseriameningitidis-confirmationtest-originalorder.json.html">JSON</a>, 
+                <a href="Bundle-14Doc-Neisseriameningitidis-confirmationtest-originalorder.xml.html">XML</a>
+            </td>
+        </tr>
     </tbody>
 </table>
 
