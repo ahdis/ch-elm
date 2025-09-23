@@ -306,13 +306,7 @@
         </identifier>
         <status value="completed"/>
         <intent value="order"/>
-        <code>
-          <coding>
-            <system value="http://loinc.org"/>
-            <code value="14357-8"/>
-          </coding>
-        </code>
-        <subject>
+       <subject>
           <reference value="urn:uuid:49e08f02-546e-4121-8482-1c21763403e6"/>
         </subject>
         <requester>
