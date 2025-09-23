@@ -162,3 +162,8 @@ Invariant: ch-elm-denominator-greater-zero
 Description: "denominator must be greater than zero in ratio"
 Severity: #error
 Expression: "value.denominator.value > 0"
+
+Invariant: ch-elm-value-ge-zero
+Description: "value must be greater than or equal zero"
+Severity: #error
+Expression: "value >= 0"
