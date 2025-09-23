@@ -121,6 +121,7 @@ Description: "This CH ELM profile constrains the Observation resource for the pu
 * component 7..7
 * component.code  ^short = "see also 'Guidance - Laboratory Result'"
 * component.code 1..1
+* component.code from $ch-elm-results-component-hiv-recency (required)
 * component.valueQuantity ^short = "contains the band intensity value"
 * component ^slicing.discriminator.type = #value
 * component ^slicing.discriminator.path = "code"
@@ -197,6 +198,7 @@ Parent: http://hl7.eu/fhir/laboratory/StructureDefinition/Quantity-eu-lab
 Id: ch-elm-quantity-arbu
 Title: "CH ELM Quantity arb'U"
 Description: "Quantity with unit arb'U and system http://unitsofmeasure.org"
+* obeys ch-elm-value-ge-zero
 * value 1..1
 * unit = #[arb'U]
 * code = #[arb'U]
