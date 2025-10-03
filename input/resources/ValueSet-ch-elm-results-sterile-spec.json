@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "ch-elm-results-sterile-spec",
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-sterile-spec",
-  "version": "2025-08-11",
+  "version": "2025-10-02",
   "name": "ChElmResultsSterileSpec",
   "title": "CH ELM Results Sterile Spec",
   "status": "active",
@@ -13,6 +13,10 @@
       {
         "system": "http://snomed.info/sct",
         "concept": [
+          {
+            "code": "258415003",
+            "display": "Biopsy specimen (specimen)"
+          },
           {
             "code": "119359002",
             "display": "Bone marrow specimen (specimen)"
@@ -38,6 +42,14 @@
             "display": "Tissue specimen from placenta (specimen)"
           },
           {
+            "code": "258589002",
+            "display": "Lymph node specimen (specimen)"
+          },
+          {
+            "code": "258542004",
+            "display": "Heart valve specimen (specimen)"
+          },
+          {
             "code": "258450006",
             "display": "Cerebrospinal fluid specimen (specimen)"
           },
@@ -50,8 +62,44 @@
             "display": "Peritoneal fluid specimen (specimen)"
           },
           {
+            "code": "119396006",
+            "display": "Specimen from endometrium (specimen)"
+          },
+          {
+            "code": "119373006",
+            "display": "Amniotic fluid specimen (specimen)"
+          },
+          {
+            "code": "119371008",
+            "display": "Specimen from abscess (specimen)"
+          },
+          {
+            "code": "119398007",
+            "display": "Specimen from brain (specimen)"
+          },
+          {
             "code": "430268003",
             "display": "Specimen from bone (specimen)"
+          },
+          {
+            "code": "119364003",
+            "display": "Serum specimen (specimen)"
+          },
+          {
+            "code": "119386002",
+            "display": "Specimen from prostate (specimen)"
+          },
+          {
+            "code": "122592007",
+            "display": "Acellular blood (serum or plasma) specimen (specimen)"
+          },
+          {
+            "code": "119361006",
+            "display": "Plasma specimen (specimen)"
+          },
+          {
+            "code": "119300005",
+            "display": "Specimen from blood product (specimen)"
           },
           {
             "code": "122556008",

@@ -2,7 +2,7 @@
   "resourceType": "ConceptMap",
   "id": "ch-elm-results-susc-to-component-observation-profile",
   "url": "http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-results-susc-to-component-observation-profile",
-  "version": "2025-08-11",
+  "version": "2025-10-02",
   "name": "ChElmResultsSuscToComponentObservationProfile",
   "title": "CH ELM Results Susceptibility To Component Observation Profile",
   "status": "active",

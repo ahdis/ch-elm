@@ -2,7 +2,7 @@
   "resourceType": "CodeSystem",
   "id": "ch-elm-foph-business-rules",
   "url": "http://fhir.ch/ig/ch-elm/CodeSystem/ch-elm-foph-business-rules",
-  "version": "2025-08-11",
+  "version": "2025-10-02",
   "name": "ChElmFophBusinessRules",
   "title": "CH ELM FOPH Business Rules",
   "status": "active",
@@ -65,10 +65,6 @@
         {
           "code": "FOPH-018",
           "display": "The combination of postal code & city in the organization orderer address element could not be found in the FOPH location database."
-        },
-        {
-          "code": "FOPH-015",
-          "display": "For VCT patients, the identifier (OASI/AHV/ID-N) must not be reported."
         },
         {
           "code": "FOPH-001",

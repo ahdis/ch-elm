@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "ch-elm-results-cjd-org",
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-cjd-org",
-  "version": "2025-08-11",
+  "version": "2025-10-02",
   "name": "ChElmResultsCjdOrg",
   "title": "CH ELM Results Cjd Org",
   "status": "active",
