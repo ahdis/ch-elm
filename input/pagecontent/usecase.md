@@ -28,7 +28,7 @@ This reporting pathway applies to pathogens such as [Salmonella spp.](#salmonell
 
 {% include img.html img="scenario2.png" caption="Fig. 2: Reporting pathway for confirmation tests" width="60%" %}
 
-Secondary Laboratories reporting to the FOPH shall include the ordering id of the Primary Laboratory in their report.”
+Secondary Laboratories reporting to the FOPH shall include the ordering id and the orderer (name, contact information) of the Primary Laboratory in their report.
 
 #### Salmonella spp.
 

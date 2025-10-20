@@ -129,7 +129,7 @@ It is also possible to use the valueQuantity element to report a threshold inste
 ### Multiplex Cases
 The exchange format defines the [FHIR document](document.html) for reporting to the FOPH so that **one document per organism per patient** is submitted. 
 
-### Genotype und Susceptibility test results
+### Genotype and Susceptibility test results
 
 For organisms of the _mycobacterium tuberculosis_ complex and for carbapenemase producing enterobacteriaceae, resistance mutations (genotyping) and antibiotics susceptibility (antibiogram) results are reported by (specialized) laboratories.
 
