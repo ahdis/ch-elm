@@ -2,7 +2,7 @@
   "resourceType": "ConceptMap",
   "id": "ch-elm-results-geno-to-component-interpretation-code",
   "url": "http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-results-geno-to-component-interpretation-code",
-  "version": "2025-10-02",
+  "version": "2025-10-21",
   "name": "ChElmResultsGenoToComponentInterpretationCode",
   "title": "CH ELM Results Genotyping To Component Interpretation Code",
   "status": "active",

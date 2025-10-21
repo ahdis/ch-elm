@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "ch-elm-results-maldi-tof-org",
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-maldi-tof-org",
-  "version": "2025-10-02",
+  "version": "2025-10-21",
   "name": "ChElmResultsMaldiTofOrg",
   "title": "CH ELM Results Maldi-tof Org",
   "status": "active",

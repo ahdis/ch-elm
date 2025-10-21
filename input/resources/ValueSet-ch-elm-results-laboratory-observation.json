@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "ch-elm-results-laboratory-observation",
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-laboratory-observation",
-  "version": "2025-10-02",
+  "version": "2025-10-21",
   "name": "ChElmResultsLaboratoryObservation",
   "title": "CH ELM Results Laboratory Observation",
   "status": "active",
@@ -1088,6 +1088,10 @@
           {
             "code": "77028-9",
             "display": "Influenza virus A H1 2009 pandemic RNA [Presence] in Nasopharynx by NAA with probe detection"
+          },
+          {
+            "code": "77685-6",
+            "display": "HIV 1 and 2 IgG Ab [Identifier] in Serum or Plasma by Immunoblot"
           },
           {
             "code": "77955-3",

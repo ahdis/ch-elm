@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "ch-elm-foph-patient-name-representation",
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-foph-patient-name-representation",
-  "version": "2025-10-02",
+  "version": "2025-10-21",
   "name": "ChElmFophPatientNameRepresentation",
   "title": "CH ELM FOPH Patient Name Representation",
   "status": "active",

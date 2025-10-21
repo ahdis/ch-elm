@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "ch-elm-results-laboratory-observation-susc",
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-laboratory-observation-susc",
-  "version": "2025-10-02",
+  "version": "2025-10-21",
   "name": "ChElmResultsLaboratoryObservationSusc",
   "title": "CH ELM Results Laboratory Observation Susceptibility",
   "status": "active",

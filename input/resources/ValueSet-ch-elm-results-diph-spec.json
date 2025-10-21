@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "ch-elm-results-diph-spec",
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-diph-spec",
-  "version": "2025-10-02",
+  "version": "2025-10-21",
   "name": "ChElmResultsDiphSpec",
   "title": "CH ELM Results Diph Spec",
   "status": "active",

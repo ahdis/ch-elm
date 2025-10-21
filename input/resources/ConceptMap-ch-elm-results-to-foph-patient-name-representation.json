@@ -2,7 +2,7 @@
   "resourceType": "ConceptMap",
   "id": "ch-elm-results-to-foph-patient-name-representation",
   "url": "http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-results-to-foph-patient-name-representation",
-  "version": "2025-10-02",
+  "version": "2025-10-21",
   "name": "ChElmResultsToFophPatientNameRepresentation",
   "title": "CH ELM Results To FOPH Patient Name Representation",
   "status": "active",
@@ -2711,6 +2711,16 @@
           "target": [
             {
               "code": "initials",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "77685-6",
+          "display": "HIV 1 and 2 IgG Ab [Identifier] in Serum or Plasma by Immunoblot",
+          "target": [
+            {
+              "code": "hiv-code",
               "equivalence": "relatedto"
             }
           ]

@@ -2,7 +2,7 @@
   "resourceType": "ConceptMap",
   "id": "ch-elm-results-to-observation-profile",
   "url": "http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-results-to-observation-profile",
-  "version": "2025-10-02",
+  "version": "2025-10-21",
   "name": "ChElmResultsToObservationProfile",
   "title": "CH ELM Results To Observation Profile",
   "status": "active",
@@ -41,6 +41,16 @@
           "target": [
             {
               "code": "http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-observation-pq-virl",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "77685-6",
+          "display": "HIV 1 and 2 IgG Ab [Identifier] in Serum or Plasma by Immunoblot",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-observation-hiv-rec",
               "equivalence": "relatedto"
             }
           ]

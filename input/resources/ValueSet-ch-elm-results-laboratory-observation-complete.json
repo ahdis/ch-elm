@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "ch-elm-results-laboratory-observation-complete",
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-laboratory-observation-complete",
-  "version": "2025-10-02",
+  "version": "2025-10-21",
   "name": "ChElmResultsLaboratoryObservationComplete",
   "title": "CH ELM Results Laboratory Observation Complete",
   "status": "active",
@@ -1090,6 +1090,10 @@
             "display": "Influenza virus A H1 2009 pandemic RNA [Presence] in Nasopharynx by NAA with probe detection"
           },
           {
+            "code": "77685-6",
+            "display": "HIV 1 and 2 IgG Ab [Identifier] in Serum or Plasma by Immunoblot"
+          },
+          {
             "code": "77955-3",
             "display": "Yellow fever virus IgM Ab [Presence] in Serum by Immunofluorescence"
           },
@@ -1532,10 +1536,6 @@
           {
             "code": "29579-0",
             "display": "Mycobacterial susceptibility panel by Method for Slow-growing mycobacteria"
-          },
-          {
-            "code": "77685-6",
-            "display": "HIV 1 and 2 IgG Ab [Identifier] in Serum or Plasma by Immunoblot"
           }
         ]
       },
