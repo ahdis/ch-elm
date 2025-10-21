@@ -1,23 +1,28 @@
 All significant changes to this FHIR implementation guide will be documented on this page.   
-### 1.12.0 2025/xx/xx
+### 1.12.0 2025/10/21
+
 * [#162](https://github.com/ahdis/ch-elm/issues/162) add HIV recency as a new notification, Susceptibility and genotyping need to follow strict profile
 * [#178](https://github.com/ahdis/ch-elm/issues/178) Track original orderer in 2nd ServiceRequest
 * Updated Valuesets (ch-elm-results-sterile-spec)
 
 ### 1.11.0 2025/08/13
+
 * [#173](https://github.com/ahdis/ch-elm/issues/173) FOPH code system
 
 ### 1.10.0 2025/xx/xx
+
 * [#161](https://github.com/ahdis/ch-elm/issues/161) Updating dependencies to ch.fhir.ig.ch-lab-report: 2.0.0-ballot and ch.fhir.ig.ch-core: 6.0.0-ballot
 * [#135](https://github.com/ahdis/ch-elm/issues/135) Support for XK Kosovo in validator
 * [#157](https://github.com/ahdis/ch-elm/issues/157) add new valueset component-vs
 * [#164](https://github.com/ahdis/ch-elm/issues/164) Monkepox --> Mpox
 
 ### 1.9.1 2025/03/26
+
 * [#153](https://github.com/ahdis/ch-elm/issues/153) CH ELM Observation Component Results: Concentration text correction
 * [#155](https://github.com/ahdis/ch-elm/issues/155) Make small text improvements for 1.9.1
 
 ### 1.9.0 2025/03/18
+
 * [#127](https://github.com/ahdis/ch-elm/issues/127) Susceptibility and genotyping
 * [#140](https://github.com/ahdis/ch-elm/issues/140) Do not use "not-performed" status 
 * [#141](https://github.com/ahdis/ch-elm/issues/141) Do not use ValueSet-ch-elm-interpretation-codes-pres-abs

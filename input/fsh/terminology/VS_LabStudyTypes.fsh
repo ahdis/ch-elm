@@ -5,10 +5,7 @@ Description: "This CH ELM value set includes the codes for the laboratory specia
 * ^status = #active
 * ^experimental = false
 
-// Neisseria Gonorrhoeae, etc.
 * $loinc#18725-2 "Microbiology studies (set)"
-
-// Neisseria meningitidis, Mycobacterium spp., Carbapenemase bildende Enterobacteriaceae, Streptococcus pneumoniae, Haemophilus influenzae, etc. 
 * $loinc#18769-0 "Microbial susceptibility tests Set" 
-
+* $loinc#18727-8 "Serology studies (set)"
 * $sct#726528006 "Genotyping (qualifier value)"

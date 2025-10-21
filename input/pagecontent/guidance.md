@@ -38,7 +38,7 @@ The complete overview of which characteristics are used for which organisms can 
 
 ### Laboratory Study Types
 
-The Laboratory Study Type indicates which type of test has been performed. It is indicated via the **composition.section.code** and allows for distinction between FHIR documents containing organism detection results from documents containing either genotype- or susceptibility results. The composition.section.code also defines which valueset has to be used for the observation.code (leading code). The available composition.section.codes are defined in the valueset [CH ELM Lab Study Types](ValueSet-ch-elm-lab-study-types.html).
+The Laboratory Study Type indicates which type of test has been performed. It is indicated via the **composition.section.code** and allows for distinction between FHIR documents containing organism detection results from documents containing genotype-, susceptibility- or HIV recency results. The composition.section.code also defines which valueset has to be used for the observation.code (leading code). The available composition.section.codes are defined in the valueset [CH ELM Lab Study Types](ValueSet-ch-elm-lab-study-types.html).
 
 The table below lists the composition.section.code with references to FHIR ex-ample documents and the depending observation.code-valuesets:
 
@@ -47,10 +47,11 @@ The table below lists the composition.section.code with references to FHIR ex-am
 | Organism detection (non-genotype/non-susceptiblity) | LOINC 18725-2  <br>(Microbiology studies (set)) | [1Doc - Neisseria Gonorrhoeae](Bundle-1Doc-NeisseriaGonorrhoeae.html) | [CH ELM Results Laboratory Observation](ValueSet-ch-elm-results-laboratory-observation.html) |
 | Susceptibility/Resistance detection | LOINC 18769-0  <br>(Microbial susceptibility tests Set) | [61Doc - Tuberculosis Susceptibility](Bundle-61Doc-Tb-Susceptibility.json.html) | [CH ELM Results Laboratory Observation Susceptibility](ValueSet-ch-elm-results-laboratory-observation-susc.html) |
 | Genotype/mutation detection | Snomed 726528006  <br>(Genotyping (qualifier value)) | [63Doc - Tuberculosis Genotyping](Bundle-63Doc-Tb-Genotyping.json.html) | [CH ELM Results Laboratory Observation Genotyping](ValueSet-ch-elm-results-laboratory-observation-geno.html) |
+| HIV recency determination | LOINC 18727-8 <br>(Serology studies (set)) | [66Doc - HivRecency](Bundle-66Doc-HivRecency.json.html) | always use the observation.code LOINC 77685-6 "HIV 1 and 2 IgG Ab [Identifier] in Serum or Plasma by Immunoblot" |
 
-It is not possible to mix organism-detection results, genotype (mutations) and susceptibility results within the same FHIR document. Use separate FHIR documents for each laboratory study type with its corresponding composition.section.code.
+It is not possible to mix organism-detection results, genotype/susceptibility and HIV-recency results within the same FHIR document. Use separate FHIR documents for each laboratory study type with its corresponding composition.section.code.
 
-**Important**: in the CH ELM Lab Project, almost every FHIR document is expected as of Lab Study Type “Microbiology studies (set)” (LOINC 18725-2). Only laboratories performing genotype or susceptibility tests for _Mycobacterium tuberculosis_ or carbapenemase producing enterobacteriaceace send their results as Lab Study Type “Genotyping” resp. “Microbial Susceptibility tests Set”.
+**Important**: in the CH ELM Lab Project, almost every FHIR document is expected as of Lab Study Type “Microbiology studies (set)” (LOINC 18725-2). Only laboratories performing genotype, susceptibility or HIV-recency tests send their results as Lab Study Type “Genotyping”, “Microbial Susceptibility tests Set” or “Serology studies (set)”.
 
 ### Laboratory Result
 
@@ -131,7 +132,7 @@ The exchange format defines the [FHIR document](document.html) for reporting to 
 
 ### Genotype and Susceptibility test results
 
-For organisms of the _mycobacterium tuberculosis_ complex and for carbapenemase producing enterobacteriaceae, resistance mutations (genotyping) and antibiotics susceptibility (antibiogram) results are reported by (specialized) laboratories.
+For organisms of the _mycobacterium tuberculosis_ complex, resistance mutations (genotyping) and antibiotics susceptibility (antibiogram) results are reported by (specialized) laboratories.
 
 Resistance and susceptibility tests cover multiple mutations/antibiotics and often generate multiple results that can be reported in the same document. Such documents differ from usual laboratory reports in two ways:
 
@@ -156,6 +157,33 @@ Important points:
 - the observation.code defines the organism. The allowed codes must be part of the valuesets [CH ELM Results Laboratory Observation Susceptibility](ValueSet-ch-elm-results-laboratory-observation-susc.html) or [CH ELM Results Laboratory Observation Genotyping](ValueSet-ch-elm-results-laboratory-observation-geno.html)
 - the observation.interpretation is replaced by observation.component.interpretation
 - the component.valueQuantity is mandatory for susceptibility test results indicating the applied antibiotics concentration
+- the specimen can optionally be reported within specimen.type.code using a specimen code from the valueset [CH ELM Results Complete Spec](ValueSet-ch-elm-results-complete-spec.html)
+
+### HIV recency test results
+
+HIV recency determination is carried out by a few designated laboratories. The testing consists of seven band values that always must be reported together. The FHIR document structure therefore differs from usual laboratory reports in two ways:
+
+- First, the study type, as indicated by the composition.section.code, must be “18727-8 Serology studies (set)” as indicated in section [5.3](#laboratory-study-types)
+- Second, the observation resource must be completed with an observation.component entry that includes seven child-elements of the following structure:
+
+
+| “component” : \[ |     |     |
+| --- |     |     | --- | --- |
+|     | {   |     |
+|     | code | Snomed CT code specifying the measured serological band |
+|     | valueQuantity | contains the measured band-value as decimal number and the unit-code "[arb'U]" |
+|     | },  |     |
+|     | {...} | repetition of the component-elements as required |
+| \]  |     |     |
+ 
+See the profile [CH ELM Observation Results for HIV Recency Testing](StructureDefinition-ch-elm-observation-results-hiv-recency-strict.html) and example [66Doc-HivRecency](Bundle-66Doc-HivRecency.json.html) for how to implement this FHIR resource.
+
+Important points:
+
+- for the observation.code always use LOINC 77685-6 "HIV 1 and 2 IgG Ab [Identifier] in Serum or Plasma by Immunoblot" (no dedicated valueset available)
+- the FHIR elements observation.interpretation  and observation.component.interpretation can be omitted (the recency-interpretation is determined by FOPH internal algorithms)
+- the component-array must contain exactly seven entries corresponding to the seven measured serological bands
+- component.valueQuantity is mandatory
 - the specimen can optionally be reported within specimen.type.code using a specimen code from the valueset [CH ELM Results Complete Spec](ValueSet-ch-elm-results-complete-spec.html)
 
 ### FOPH code system
