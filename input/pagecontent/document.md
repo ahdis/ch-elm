@@ -955,8 +955,8 @@ See the examples in chapter 2.2 to learn how to use the resource profiles for di
             <td>HIV 1 and 2 IgG Ab [Identifier] in Serum or Plasma by Immunoblot</td>
             <td>77685-6</td>
             <td>
-                <a href="Bundle-66Doc-Tb-HivRecency.json.html">JSON</a>, 
-                <a href="Bundle-66Doc-Tb-HivRecency.xml.html">XML</a>
+                <a href="Bundle-66Doc-HivRecency.json.html">JSON</a>, 
+                <a href="Bundle-66Doc-HivRecency.xml.html">XML</a>
             </td>
         </tr>
     </tbody>
