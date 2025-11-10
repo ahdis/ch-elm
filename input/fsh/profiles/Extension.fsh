@@ -13,7 +13,7 @@ Description: "This CH ELM extension enables the representation of a department (
 Extension: ChElmExtVctCode
 Id: ch-elm-ext-vct-code
 Title: "CH ELM Extension: VCT code"
-Description: "This CH ELM extension enables to proivde the VCT Code."
+Description: "This CH ELM extension enables to provide the VCT Code."
 * ^context[+].type = #element
 * ^context[=].expression = "HumanName"
 * . ^short = "CH ELM Extension: VCT Code"
@@ -25,7 +25,7 @@ Description: "This CH ELM extension enables to proivde the VCT Code."
 Extension: ChElmExtHivCode
 Id: ch-elm-ext-hiv-code
 Title: "CH ELM Extension: HIV code"
-Description: "This CH ELM extension enables to proivde the HIV Code."
+Description: "This CH ELM extension enables to provide the HIV Code."
 * ^context[+].type = #element
 * ^context[=].expression = "HumanName"
 * . ^short = "CH ELM Extension: HIV Code"
