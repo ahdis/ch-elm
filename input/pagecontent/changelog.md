@@ -2,6 +2,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 ### 1.13.0 unreleased
 
 * [#182](https://github.com/ahdis/ch-elm/issues/182) fix typo and links
+* [#168](https://github.com/ahdis/ch-elm/issues/168) add optional physician address to logical model
 
 ### 1.12.0 2025/10/21
 
