@@ -2,7 +2,7 @@
   "resourceType": "CodeSystem",
   "id": "ch-elm-foph-business-rules",
   "url": "http://fhir.ch/ig/ch-elm/CodeSystem/ch-elm-foph-business-rules",
-  "version": "2025-10-21",
+  "version": "2025-11-10",
   "name": "ChElmFophBusinessRules",
   "title": "CH ELM FOPH Business Rules",
   "status": "active",
@@ -49,6 +49,10 @@
         {
           "code": "FOPH-005",
           "display": "The required anonymization for the reported organism was violated. The following field(s) are affected: %fields%"
+        },
+        {
+          "code": "FOPH-022",
+          "display": "Received multiple service requests without a basedOn attribute. Only the data contained in the service request referenced by the basedOn attribute in the DiagnosticReport are imported. If you want to specify an original orderer use the basedOn attribute on the primary service request to reference the secondary service request."
         },
         {
           "code": "FOPH-011",

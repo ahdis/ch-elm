@@ -2,7 +2,7 @@
   "resourceType": "CodeSystem",
   "id": "ch-elm-foph-code-reserve",
   "url": "urn:oid:2.16.756.5.30.1.129.1.5.1",
-  "version": "2025-08-11",
+  "version": "2025-11-10",
   "name": "ChElmFophCodeReserve",
   "title": "CH ELM FOPH Code Reserve",
   "status": "active",

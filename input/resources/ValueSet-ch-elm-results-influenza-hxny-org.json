@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "ch-elm-results-influenza-hxny-org",
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-influenza-hxny-org",
-  "version": "2025-10-21",
+  "version": "2025-11-10",
   "name": "ChElmResultsInfluenzaHxnyOrg",
   "title": "CH ELM Results Influenza Hxny Org",
   "status": "active",
@@ -16,6 +16,10 @@
           {
             "code": "446397006",
             "display": "Influenza A virus subtype H2 (organism)"
+          },
+          {
+            "code": "446645007",
+            "display": "Influenza A virus subtype H3 (organism)"
           },
           {
             "code": "1354812007",

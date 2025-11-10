@@ -2,7 +2,7 @@
   "resourceType": "ConceptMap",
   "id": "ch-elm-results-to-foph-patient-name-representation",
   "url": "http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-results-to-foph-patient-name-representation",
-  "version": "2025-10-21",
+  "version": "2025-11-10",
   "name": "ChElmResultsToFophPatientNameRepresentation",
   "title": "CH ELM Results To FOPH Patient Name Representation",
   "status": "active",
@@ -110,7 +110,7 @@
           "display": "Plasmodium vivax+ovale DNA [Presence] in Blood by NAA with non-probe detection",
           "target": [
             {
-              "code": "initials",
+              "code": "full-name",
               "equivalence": "relatedto"
             }
           ]
@@ -820,7 +820,7 @@
           "display": "West Nile virus IgG Ab [Presence] in Serum by Immunoassay",
           "target": [
             {
-              "code": "initials",
+              "code": "full-name",
               "equivalence": "relatedto"
             }
           ]
@@ -890,7 +890,7 @@
           "display": "West Nile virus IgM Ab [Presence] in Cerebral spinal fluid",
           "target": [
             {
-              "code": "initials",
+              "code": "full-name",
               "equivalence": "relatedto"
             }
           ]
@@ -1190,7 +1190,7 @@
           "display": "West Nile virus RNA [Presence] in Blood by NAA with probe detection",
           "target": [
             {
-              "code": "initials",
+              "code": "full-name",
               "equivalence": "relatedto"
             }
           ]
@@ -1200,7 +1200,7 @@
           "display": "West Nile virus RNA [Presence] in Cerebral spinal fluid by NAA with probe detection",
           "target": [
             {
-              "code": "initials",
+              "code": "full-name",
               "equivalence": "relatedto"
             }
           ]
@@ -1340,7 +1340,7 @@
           "display": "Plasmodium falciparum DNA [Presence] in Blood by NAA with probe detection",
           "target": [
             {
-              "code": "initials",
+              "code": "full-name",
               "equivalence": "relatedto"
             }
           ]
@@ -1350,7 +1350,7 @@
           "display": "Plasmodium malariae DNA [Presence] in Blood by NAA with probe detection",
           "target": [
             {
-              "code": "initials",
+              "code": "full-name",
               "equivalence": "relatedto"
             }
           ]
@@ -1360,7 +1360,7 @@
           "display": "Plasmodium ovale DNA [Presence] in Blood by NAA with probe detection",
           "target": [
             {
-              "code": "initials",
+              "code": "full-name",
               "equivalence": "relatedto"
             }
           ]
@@ -1370,7 +1370,7 @@
           "display": "Plasmodium vivax DNA [Presence] in Blood by NAA with probe detection",
           "target": [
             {
-              "code": "initials",
+              "code": "full-name",
               "equivalence": "relatedto"
             }
           ]
@@ -1580,7 +1580,7 @@
           "display": "Plasmodium sp DNA [Presence] in Blood by NAA with probe detection",
           "target": [
             {
-              "code": "initials",
+              "code": "full-name",
               "equivalence": "relatedto"
             }
           ]
@@ -1750,7 +1750,7 @@
           "display": "Plasmodium sp Ag [Presence] in Blood",
           "target": [
             {
-              "code": "initials",
+              "code": "full-name",
               "equivalence": "relatedto"
             }
           ]
@@ -1780,7 +1780,7 @@
           "display": "Plasmodium sp [Presence] in Blood by Light microscopy",
           "target": [
             {
-              "code": "initials",
+              "code": "full-name",
               "equivalence": "relatedto"
             }
           ]
@@ -2550,7 +2550,7 @@
           "display": "Plasmodium knowlesi DNA [Presence] in Blood by NAA with probe detection",
           "target": [
             {
-              "code": "initials",
+              "code": "full-name",
               "equivalence": "relatedto"
             }
           ]
@@ -2560,7 +2560,7 @@
           "display": "Plasmodium sp Ag [Identifier] in Blood by Rapid immunoassay",
           "target": [
             {
-              "code": "initials",
+              "code": "full-name",
               "equivalence": "relatedto"
             }
           ]
@@ -2680,7 +2680,7 @@
           "display": "Plasmodium falciparum Ag [Presence] in Blood by Rapid immunoassay",
           "target": [
             {
-              "code": "initials",
+              "code": "full-name",
               "equivalence": "relatedto"
             }
           ]
@@ -2911,6 +2911,16 @@
           "target": [
             {
               "code": "initials",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "81868-2",
+          "display": "PRNP gene targeted mutation analysis in Blood or Tissue by Molecular genetics method",
+          "target": [
+            {
+              "code": "full-name",
               "equivalence": "relatedto"
             }
           ]
@@ -3520,7 +3530,7 @@
           "display": "West Nile virus neutralizing antibody [Presence] in Specimen by Neutralization test",
           "target": [
             {
-              "code": "initials",
+              "code": "full-name",
               "equivalence": "relatedto"
             }
           ]

@@ -13,7 +13,7 @@ license: CC0-1.0
 copyright: CC0-1.0
 jurisdiction: urn:iso:std:iso:3166#CH
 date: 2025-10-21
-version: 1.12.0
+version: 1.13.0-cibuild
 fhirVersion: 4.0.1
 copyrightYear: 2023+
 releaseLabel: release # ci-build 

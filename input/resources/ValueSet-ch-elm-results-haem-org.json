@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "ch-elm-results-haem-org",
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-haem-org",
-  "version": "2025-10-21",
+  "version": "2025-11-10",
   "name": "ChElmResultsHaemOrg",
   "title": "CH ELM Results Haem Org",
   "status": "active",

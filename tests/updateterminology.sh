@@ -570,6 +570,15 @@ curl --request GET \
   --key $KEY \
   -o ../input/resources/ValueSet-$VALUESET.json
 
+VALUESET="ch-elm-results-lis-spec"
+curl --request GET \
+  --url https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir/ValueSet/$VALUESET \
+  --header 'accept: application/fhir+json' \
+  --header 'user-agent: vscode-restclient' \
+  --cert $CERT \
+  --key $KEY \
+  -o ../input/resources/ValueSet-$VALUESET.json
+
 CONCEPTMAP="ch-elm-expecting-organism-specification-to-results-completion-vs"
 curl --request GET \
   --url https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir/ConceptMap/$CONCEPTMAP \

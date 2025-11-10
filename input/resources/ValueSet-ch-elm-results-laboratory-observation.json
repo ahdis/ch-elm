@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "ch-elm-results-laboratory-observation",
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-laboratory-observation",
-  "version": "2025-10-21",
+  "version": "2025-11-10",
   "name": "ChElmResultsLaboratoryObservation",
   "title": "CH ELM Results Laboratory Observation",
   "status": "active",
@@ -1168,6 +1168,10 @@
           {
             "code": "81656-1",
             "display": "Campylobacter coli+jejuni tuf gene [Presence] in Stool by NAA with probe detection"
+          },
+          {
+            "code": "81868-2",
+            "display": "PRNP gene targeted mutation analysis in Blood or Tissue by Molecular genetics method"
           },
           {
             "code": "82184-3",

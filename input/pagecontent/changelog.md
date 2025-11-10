@@ -3,6 +3,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 
 * [#182](https://github.com/ahdis/ch-elm/issues/182) fix typo and links
 * [#168](https://github.com/ahdis/ch-elm/issues/168) add optional physician address to logical model
+* new ValueSet http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-lis-spec
 
 ### 1.12.0 2025/10/21
 

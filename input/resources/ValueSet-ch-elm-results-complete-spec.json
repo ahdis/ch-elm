@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "ch-elm-results-complete-spec",
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-complete-spec",
-  "version": "2025-10-21",
+  "version": "2025-11-10",
   "name": "ChElmResultsCompleteSpec",
   "title": "CH ELM Results Complete Spec",
   "status": "active",
@@ -38,12 +38,20 @@
             "display": "Body fluid specimen (specimen)"
           },
           {
+            "code": "119340004",
+            "display": "Meconium specimen (specimen)"
+          },
+          {
             "code": "418932006",
             "display": "Oral Swab (specimen)"
           },
           {
             "code": "119401005",
             "display": "Specimen from conjunctiva (specimen)"
+          },
+          {
+            "code": "127479004",
+            "display": "Specimen from uterus (specimen)"
           },
           {
             "code": "119378002",
@@ -192,6 +200,10 @@
           {
             "code": "119399004",
             "display": "Specimen from eye (specimen)"
+          },
+          {
+            "code": "309502007",
+            "display": "Fetus specimen (specimen)"
           },
           {
             "code": "119297000",

@@ -2,7 +2,7 @@
   "resourceType": "ConceptMap",
   "id": "ch-elm-expecting-specimen-specification-to-results-completion-vs",
   "url": "http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-expecting-specimen-specification-to-results-completion-vs",
-  "version": "2025-10-21",
+  "version": "2025-11-10",
   "name": "ChElmExpectingSpecimenSpecificationToResultsCompletionVs",
   "title": "CH ELM Expecting Specimen Specification To Results Completion Vs",
   "status": "active",
@@ -150,7 +150,7 @@
           "display": "Listeria monocytogenes DNA [Presence] in Specimen by NAA with probe detection",
           "target": [
             {
-              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-sterile-spec",
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-lis-spec",
               "equivalence": "relatedto"
             }
           ]
@@ -180,7 +180,7 @@
           "display": "Listeria sp identified in Specimen by Organism specific culture",
           "target": [
             {
-              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-sterile-spec",
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-lis-spec",
               "equivalence": "relatedto"
             }
           ]

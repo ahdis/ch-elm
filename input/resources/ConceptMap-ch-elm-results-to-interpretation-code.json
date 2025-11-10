@@ -2,7 +2,7 @@
   "resourceType": "ConceptMap",
   "id": "ch-elm-results-to-interpretation-code",
   "url": "http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-results-to-interpretation-code",
-  "version": "2025-10-21",
+  "version": "2025-11-10",
   "name": "ChElmResultsToInterpretationCode",
   "title": "CH ELM Results To Interpretation Code",
   "status": "active",
@@ -160,7 +160,7 @@
           "display": "Abnormal Prion Protein [Presence] in Cerebral spinal fluid by RT-QuIC",
           "target": [
             {
-              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos-neg",
               "equivalence": "relatedto"
             }
           ]
@@ -1240,7 +1240,7 @@
           "display": "Transmissible spongiform encephalopathy [Presence] in Brain by Light microscopy",
           "target": [
             {
-              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos-neg",
               "equivalence": "relatedto"
             }
           ]
@@ -2610,7 +2610,7 @@
           "display": "Transmissible spongiform encephalopathy [Identifier] in Brain by Light microscopy",
           "target": [
             {
-              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos-neg",
               "equivalence": "relatedto"
             }
           ]
@@ -2898,6 +2898,16 @@
         {
           "code": "81656-1",
           "display": "Campylobacter coli+jejuni tuf gene [Presence] in Stool by NAA with probe detection",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "81868-2",
+          "display": "PRNP gene targeted mutation analysis in Blood or Tissue by Molecular genetics method",
           "target": [
             {
               "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",

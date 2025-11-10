@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "ch-elm-results-component-antibiotic-tb",
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-component-antibiotic-tb",
-  "version": "2025-10-21",
+  "version": "2025-11-10",
   "name": "ChElmResultsComponentAntibioticTb",
   "title": "CH ELM Results Antibiotic Tb",
   "status": "active",
