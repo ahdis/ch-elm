@@ -54,9 +54,9 @@ Description: "This CH ELM value set includes the codes for the laboratory specia
 * ^status = #active
 * ^experimental = false
 
-* $task-status#in-progress "in-progress"
-* $task-status#failed "failed"
-* $task-status#completed "completed"
+* $task-status#in-progress "In Progress"
+* $task-status#failed "Failed"
+* $task-status#completed "Completed"
 
 Extension: ChExtElmStatus
 Id: ch-ext-elm-status

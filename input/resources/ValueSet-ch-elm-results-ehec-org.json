@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "ch-elm-results-ehec-org",
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-ehec-org",
-  "version": "2025-11-10",
+  "version": "2025-11-12",
   "name": "ChElmResultsEhecOrg",
   "title": "CH ELM Results Ehec Org",
   "status": "active",

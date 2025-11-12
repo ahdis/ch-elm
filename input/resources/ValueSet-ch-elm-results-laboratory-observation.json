@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "ch-elm-results-laboratory-observation",
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-laboratory-observation",
-  "version": "2025-11-10",
+  "version": "2025-11-12",
   "name": "ChElmResultsLaboratoryObservation",
   "title": "CH ELM Results Laboratory Observation",
   "status": "active",
@@ -1557,6 +1557,15 @@
           {
             "code": "89293008",
             "display": "Human immunodeficiency virus type I (organism)"
+          }
+        ]
+      },
+      {
+        "system": "urn:oid:2.16.756.5.30.1.129.1.5.1",
+        "concept": [
+          {
+            "code": "EP-100100-7",
+            "display": "FOPH emerging pathogen placeholder"
           }
         ]
       }

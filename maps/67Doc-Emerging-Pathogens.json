@@ -1,0 +1,286 @@
+{
+    "resourceType": "QuestionnaireResponse",
+    "status": "completed",
+    "item": [
+        {
+            "linkId": "LaboratoryReport.Header.DocumentIdentifier",
+            "answer": [
+                {
+                    "valueString": "ea0a27a6-7693-49df-83be-3b298143aef6"
+                }
+            ]
+        },
+        {
+            "linkId": "LaboratoryReport.Header.DocumentTimestamp",
+            "answer": [
+                {
+                    "valueString": "2025-11-11T12:34:56+02:00"
+                }
+            ]
+        },
+        {
+            "linkId": "LaboratoryReport.Header.DocumentLanguage",
+            "answer": [
+                {
+                    "valueString": "de-CH"
+                }
+            ]
+        },
+        {
+            "linkId": "LaboratoryReport.Header.DocumentTitle",
+            "answer": [
+                {
+                    "valueString": "Laborbericht vom 11.11.2025"
+                }
+            ]
+        },
+        {
+            "linkId": "LaboratoryReport.Header.DocumentSectionTitle",
+            "answer": [
+                {
+                    "valueString": "Analyseergebnisse der mikrobiologischen Untersuchung"
+                }
+            ]
+        },
+        {
+            "linkId": "LaboratoryReport.Author.OrganizationGLN",
+            "answer": [
+                {
+                    "valueString": "7601002331470"
+                }
+            ]
+        },
+        {
+            "linkId": "LaboratoryReport.Lab.OrganizationGLN",
+            "answer": [
+                {
+                    "valueString": "7601002331470"
+                }
+            ]
+        },
+        {
+            "linkId": "LaboratoryReport.Lab.OrganizationName",
+            "answer": [
+                {
+                    "valueString": "SanLab"
+                }
+            ]
+        },
+        {
+            "linkId": "LaboratoryReport.Lab.OrderIdentifier",
+            "answer": [
+                {
+                    "valueString": "36500923689"
+                }
+            ]
+        },
+        {
+            "linkId": "LaboratoryReport.Orderer.OrganizationBER",
+            "answer": [
+                {
+                    "valueString": "A74966168"
+                }
+            ]
+        },
+        {
+            "linkId": "LaboratoryReport.Orderer.OrganizationName",
+            "answer": [
+                {
+                    "valueString": "Praxis Dr. Hauser"
+                }
+            ]
+        },
+        {
+            "linkId": "LaboratoryReport.Orderer.Physician.GLN",
+            "answer": [
+                {
+                    "valueString": "7601000000514"
+                }
+            ]
+        },
+        {
+            "linkId": "LaboratoryReport.Orderer.Physician.Surname",
+            "answer": [
+                {
+                    "valueString": "Hauser"
+                }
+            ]
+        },
+        {
+            "linkId": "LaboratoryReport.Orderer.Physician.Givenname",
+            "answer": [
+                {
+                    "valueString": "Peter"
+                }
+            ]
+        },
+        {
+            "linkId": "LaboratoryReport.Orderer.Physician.Phone",
+            "answer": [
+                {
+                    "valueString": "+41 79 222 33 44"
+                }
+            ]
+        },
+        {
+            "linkId": "LaboratoryReport.Orderer.Physician.Email",
+            "answer": [
+                {
+                    "valueString": "peter.hauser@hauserpraxis.ch"
+                }
+            ]
+        },
+        {
+            "linkId": "LaboratoryReport.Orderer.OrganizationAddress.StreetLine",
+            "answer": [
+                {
+                    "valueString": "Hauptstrasse 10"
+                }
+            ]
+        },
+        {
+            "linkId": "LaboratoryReport.Orderer.OrganizationAddress.ZipCode",
+            "answer": [
+                {
+                    "valueString": "4500"
+                }
+            ]
+        },
+        {
+            "linkId": "LaboratoryReport.Orderer.OrganizationAddress.City",
+            "answer": [
+                {
+                    "valueString": "Solothurn"
+                }
+            ]
+        },
+        {
+            "linkId": "LaboratoryReport.Patient.OASI",
+            "answer": [
+                {
+                    "valueString": "7561234567866"
+                }
+            ]
+        },
+        {
+            "linkId": "LaboratoryReport.Patient.Givenname",
+            "answer": [
+                {
+                    "valueString": "Dupont"
+                }
+            ]
+        },
+        {
+            "linkId": "LaboratoryReport.Patient.Gender",
+            "answer": [
+                {
+                    "valueString": "Antoine"
+                }
+            ]
+        },
+        {
+            "linkId": "LaboratoryReport.Patient.DateOfBirth",
+            "answer": [
+                {
+                    "valueString": "1981-02-07"
+                }
+            ]
+        },
+        {
+            "linkId": "LaboratoryReport.Patient.Phone",
+            "answer": [
+                {
+                    "valueString": "41762225522"
+                }
+            ]
+        },
+        {
+            "linkId": "LaboratoryReport.Patient.Address.StreetLine",
+            "answer": [
+                {
+                    "valueString": "Rue de la république 10"
+                }
+            ]
+        },
+        {
+            "linkId": "LaboratoryReport.Patient.Address.ZipCode",
+            "answer": [
+                {
+                    "valueString": "1227"
+                }
+            ]
+        },
+        {
+            "linkId": "LaboratoryReport.Patient.Address.City",
+            "answer": [
+                {
+                    "valueString": "Carouge"
+                }
+            ]
+        },
+        {
+            "linkId": "LaboratoryReport.Patient.Address.Canton",
+            "answer": [
+                {
+                    "valueString": "GE"
+                }
+            ]
+        },
+        {
+            "linkId": "LaboratoryReport.Patient.Address.Country",
+            "answer": [
+                {
+                    "valueString": "CH"
+                }
+            ]
+        },
+        {
+            "linkId": "LaboratoryReport.TestResult.StudyType",
+            "answer": [
+                {
+                    "valueString": "18725-2"
+                }
+            ]
+        },
+        {
+            "linkId": "LaboratoryReport.TestResult.ExecutionDateTime",
+            "answer": [
+                {
+                    "valueString": "2025-11-11T10:34:56+02:00"
+                }
+            ]
+        },
+        {
+            "linkId": "LaboratoryReport.TestResult.Type.Code",
+            "answer": [
+                {
+                    "valueString": "EP-100100-7"
+                }
+            ]
+        },
+        {
+            "linkId": "LaboratoryReport.TestResult.Type.CodeSystem",
+            "answer": [
+                {
+                    "valueString": "FOPH"
+                }
+            ]
+        },
+        {
+            "linkId": "LaboratoryReport.TestResult.Specimen.CollectionDateTime",
+            "answer": [
+                {
+                    "valueString": "2025-11-10T12:34:56+02:00"
+                }
+            ]
+        },
+        {
+            "linkId": "LaboratoryReport.Id",
+            "answer": [
+                {
+                    "valueString": "67Doc-Emerging-Pathogens"
+                }
+            ]
+        }
+    ]
+}
