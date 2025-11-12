@@ -139,6 +139,12 @@
         <performer>
           <reference value="urn:uuid:4f8832ab-7ba0-4576-abac-813bb7dadb20"/>
         </performer>
+        <dataAbsentReason>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/data-absent-reason"/>
+            <code value="not-applicable"/>
+          </coding>
+        </dataAbsentReason>
         <interpretation>
           <coding>
             <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"/>
