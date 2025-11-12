@@ -335,10 +335,6 @@ resources:
     name: 67Doc-Emerging-Pathogen
     description: Example document for FOPH emerging pathogen reporting
     exampleCanonical: http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-document-strict
-  DocumentReference/example-foph-code:
-    name: Publishing with a FOPH code
-    description: Example Publication with an FOPH code
-    exampleCanonical: http://fhir.ch/ig/ch-elm/StructureDefinition/PublishDocumentReference
   Binary/Test92-Bundle-WarningBerUidGln:
     extension:
       - url: http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format
