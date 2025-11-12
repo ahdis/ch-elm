@@ -1572,18 +1572,6 @@
         "system": "urn:oid:2.16.756.5.30.1.129.1.5.1",
         "concept": [
           {
-            "code": "EP-000001-8",
-            "display": "Motaba virus in Specimen by Sequencing"
-          },
-          {
-            "code": "EP-000002-6",
-            "display": "Motaba virus in Specimen by NAA"
-          },
-          {
-            "code": "EP-000003-4",
-            "display": "Motaba virus Variant Alpha in Specimen by NAA"
-          },
-          {
             "code": "EP-100100-7",
             "display": "FOPH emerging pathogen placeholder"
           }
