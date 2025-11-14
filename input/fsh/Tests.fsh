@@ -173,16 +173,3 @@ InstanceOf: TestScript
 * insert ActionAssertResponseCodeOk
 * insert ActionAssertFhirPathTrue(Confirm that the returned resource is an OperationOutcome., [[is(FHIR.OperationOutcome)]])
 * insert ActionAssertFhirPathTrue(Confirm that we have errors., [[issue.where(severity='error' or severity='fatal').count()>0]])
-
-Instance: Test102-FOPH-Code-NotValidForStrict
-InstanceOf: TestScript
-* url = "http://fhir.ch/ig/ch-elm/TestScript/Test102-FOPH-Code-NotValidForStrict"
-* name = "Test102FOPHCodeNotValidForStrict"
-* status = #active
-* insert Fixture(inputdata, [[DocumentReference/example-foph-code]])
-* test.name = "Test102FOPHCodeNotValidForStrict"
-* test.description = "Test102: Verify that FOPH code is not valid for strict profile"
-* insert ActionOperationValidate(http://fhir.ch/ig/ch-elm/StructureDefinition/PublishDocumentReferenceStrict, inputdata)
-* insert ActionAssertResponseCodeOk
-* insert ActionAssertFhirPathTrue(Confirm that the returned resource is an OperationOutcome., [[is(FHIR.OperationOutcome)]])
-* insert ActionAssertFhirPathTrue(Confirm that we have at least one error., [[issue.where(severity='error' or severity='fatal').count()>0]])

@@ -2,7 +2,7 @@
   "resourceType": "ConceptMap",
   "id": "ch-elm-results-to-foph-patient-name-representation",
   "url": "http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-results-to-foph-patient-name-representation",
-  "version": "2025-11-10",
+  "version": "2025-11-12",
   "name": "ChElmResultsToFophPatientNameRepresentation",
   "title": "CH ELM Results To FOPH Patient Name Representation",
   "status": "active",
@@ -3877,6 +3877,22 @@
           "target": [
             {
               "code": "hiv-code",
+              "equivalence": "relatedto"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "urn:oid:2.16.756.5.30.1.129.1.5.1",
+      "target": "http://fhir.ch/ig/ch-elm/CodeSystem/ch-elm-foph-patient-name-representation",
+      "element": [
+        {
+          "code": "EP-100100-7",
+          "display": "FOPH emerging pathogen placeholder",
+          "target": [
+            {
+              "code": "conditional",
               "equivalence": "relatedto"
             }
           ]

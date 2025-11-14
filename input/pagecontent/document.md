@@ -961,3 +961,34 @@ See the examples in chapter 2.2 to learn how to use the resource profiles for di
         </tr>
     </tbody>
 </table>
+
+
+#### FOPH Emergening Pathogen
+
+<table class="grid">
+    <colgroup> 
+        <col style="width:25%" /> 
+        <col style="width:50%" /> 
+        <col style="width:15%" /> 
+        <col style="width:10%" /> 
+    </colgroup> 
+    <thead>
+           <tr>
+            <th>Disease</th>
+            <th>observation.code display</th>
+            <th>FOPH observation.code<br />(leading code)</th>
+            <th>FHIR Document</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Emergenging Pathogen</td>
+            <td>FOPH emerging pathogen placeholder</td>
+            <td>EP-100100-7</td>
+            <td>
+                <a href="Bundle-67Doc-Emerging-Pathogen.json.html">JSON</a>, 
+                <a href="Bundle-67Doc-Emerging-Pathogen.xml.html">XML</a>
+            </td>
+        </tr>
+    </tbody>
+</table>

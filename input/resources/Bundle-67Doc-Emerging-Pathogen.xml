@@ -1,0 +1,307 @@
+<Bundle 
+  xmlns="http://hl7.org/fhir">
+  <id value="67Doc-Emerging-Pathogen"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:uuid:ea0a27a6-7693-49df-83be-3b298143aef6"/>
+  </identifier>
+  <type value="document"/>
+  <timestamp value="2025-11-11T12:34:56+02:00"/>
+  <entry>
+    <fullUrl value="urn:uuid:dfa1ff7e-4dae-494a-bb4f-3a9510986d20"/>
+    <resource>
+      <Composition>
+        <id value="dfa1ff7e-4dae-494a-bb4f-3a9510986d20"/>
+        <language value="de-CH"/>
+        <identifier>
+          <system value="urn:ietf:rfc:3986"/>
+          <value value="urn:uuid:ea0a27a6-7693-49df-83be-3b298143aef6"/>
+        </identifier>
+        <status value="final"/>
+        <type>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/2011000195101"/>
+            <code value="4241000179101"/>
+            <display value="Laborbericht"/>
+          </coding>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="11502-2"/>
+            <display value="Laboratory report"/>
+          </coding>
+        </type>
+        <subject>
+          <reference value="urn:uuid:713c0756-48dc-4df0-9dec-50327bfd228d"/>
+        </subject>
+        <date value="2025-11-11T12:34:56+02:00"/>
+        <author>
+          <reference value="urn:uuid:4f8832ab-7ba0-4576-abac-813bb7dadb20"/>
+        </author>
+        <title value="Laborbericht vom 11.11.2025"/>
+        <section>
+          <title value="Analyseergebnisse der mikrobiologischen Untersuchung"/>
+          <code>
+            <coding>
+              <system value="http://loinc.org"/>
+              <code value="18725-2"/>
+              <display value="Microbiology studies (set)"/>
+            </coding>
+          </code>
+          <entry>
+            <reference value="urn:uuid:666da738-7102-46fa-b936-e6c10b433a0a"/>
+          </entry>
+        </section>
+      </Composition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:713c0756-48dc-4df0-9dec-50327bfd228d"/>
+    <resource>
+      <Patient>
+        <id value="713c0756-48dc-4df0-9dec-50327bfd228d"/>
+        <identifier>
+          <system value="urn:oid:2.16.756.5.32"/>
+          <value value="7561234567866"/>
+        </identifier>
+        <name>
+          <family value="Dupont"/>
+          <given value="Antoine"/>
+        </name>
+        <telecom>
+          <system value="phone"/>
+          <value value="41762225522"/>
+        </telecom>
+        <gender value="female"/>
+        <birthDate value="1981-02-07"/>
+        <address>
+          <use value="home"/>
+          <line value="Rue de la république 10">
+            <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
+              <valueString value="Rue de la république"/>
+            </extension>
+            <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
+              <valueString value="10"/>
+            </extension>
+          </line>
+          <city value="Carouge"/>
+          <state value="GE"/>
+          <postalCode value="1227"/>
+          <country value="CH">
+            <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-SC-coding">
+              <valueCoding>
+                <system value="urn:iso:std:iso:3166"/>
+                <code value="CH"/>
+              </valueCoding>
+            </extension>
+          </country>
+        </address>
+      </Patient>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:4f8832ab-7ba0-4576-abac-813bb7dadb20"/>
+    <resource>
+      <Organization>
+        <id value="4f8832ab-7ba0-4576-abac-813bb7dadb20"/>
+        <identifier>
+          <system value="urn:oid:2.51.1.3"/>
+          <value value="7601002331470"/>
+        </identifier>
+        <name value="SanLab"/>
+      </Organization>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:666da738-7102-46fa-b936-e6c10b433a0a"/>
+    <resource>
+      <Observation>
+        <id value="666da738-7102-46fa-b936-e6c10b433a0a"/>
+        <status value="final"/>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="laboratory"/>
+            <display value="Laboratory"/>
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="urn:oid:2.16.756.5.30.1.129.1.5.1"/>
+            <code value="EP-100100-7"/>
+            <display value="FOPH emerging pathogen placeholder"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="urn:uuid:713c0756-48dc-4df0-9dec-50327bfd228d"/>
+        </subject>
+        <effectiveDateTime value="2025-11-11T10:34:56+02:00"/>
+        <performer>
+          <reference value="urn:uuid:4f8832ab-7ba0-4576-abac-813bb7dadb20"/>
+        </performer>
+        <dataAbsentReason>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/data-absent-reason"/>
+            <code value="not-applicable"/>
+          </coding>
+        </dataAbsentReason>
+        <interpretation>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"/>
+            <code value="POS"/>
+            <display value="Positive"/>
+          </coding>
+        </interpretation>
+        <specimen>
+          <reference value="urn:uuid:2299d300-4f95-4dec-b6e1-cd1daaa3acb0"/>
+        </specimen>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:6b062c48-93d1-4956-a31b-bf809a593398"/>
+    <resource>
+      <Practitioner>
+        <id value="6b062c48-93d1-4956-a31b-bf809a593398"/>
+        <identifier>
+          <system value="urn:oid:2.51.1.3"/>
+          <value value="7601000000514"/>
+        </identifier>
+        <name>
+          <family value="Hauser"/>
+          <given value="Peter"/>
+        </name>
+        <telecom>
+          <system value="phone"/>
+          <value value="+41 79 222 33 44"/>
+        </telecom>
+        <telecom>
+          <system value="email"/>
+          <value value="peter.hauser@hauserpraxis.ch"/>
+        </telecom>
+      </Practitioner>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:dd941e76-7414-480c-beba-e6eefe3a3166"/>
+    <resource>
+      <Organization>
+        <id value="dd941e76-7414-480c-beba-e6eefe3a3166"/>
+        <identifier>
+          <system value="urn:oid:2.16.756.5.45"/>
+          <value value="A74966168"/>
+        </identifier>
+        <name value="Praxis Dr. Hauser"/>
+        <address>
+          <line value="Hauptstrasse 10">
+            <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
+              <valueString value="Hauptstrasse"/>
+            </extension>
+            <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
+              <valueString value="10"/>
+            </extension>
+          </line>
+          <city value="Solothurn"/>
+          <postalCode value="4500"/>
+        </address>
+      </Organization>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:4ee72b6c-58c6-4e8a-a575-ca364e66aae0"/>
+    <resource>
+      <PractitionerRole>
+        <id value="4ee72b6c-58c6-4e8a-a575-ca364e66aae0"/>
+        <practitioner>
+          <reference value="urn:uuid:6b062c48-93d1-4956-a31b-bf809a593398"/>
+        </practitioner>
+        <organization>
+          <reference value="urn:uuid:dd941e76-7414-480c-beba-e6eefe3a3166"/>
+        </organization>
+      </PractitionerRole>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:2299d300-4f95-4dec-b6e1-cd1daaa3acb0"/>
+    <resource>
+      <Specimen>
+        <id value="2299d300-4f95-4dec-b6e1-cd1daaa3acb0"/>
+        <subject>
+          <reference value="urn:uuid:713c0756-48dc-4df0-9dec-50327bfd228d"/>
+        </subject>
+        <collection>
+          <collectedDateTime value="2025-11-10T12:34:56+02:00"/>
+        </collection>
+      </Specimen>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:ac88082c-6ec2-4a13-b2f8-ec3c96795b83"/>
+    <resource>
+      <ServiceRequest>
+        <id value="ac88082c-6ec2-4a13-b2f8-ec3c96795b83"/>
+        <identifier>
+          <value value="36500923689"/>
+        </identifier>
+        <status value="completed"/>
+        <intent value="order"/>
+        <code>
+          <coding>
+            <system value="urn:oid:2.16.756.5.30.1.129.1.5.1"/>
+            <code value="EP-100100-7"/>
+            <display value="FOPH emerging pathogen placeholder"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="urn:uuid:713c0756-48dc-4df0-9dec-50327bfd228d"/>
+        </subject>
+        <requester>
+          <reference value="urn:uuid:4ee72b6c-58c6-4e8a-a575-ca364e66aae0"/>
+        </requester>
+        <specimen>
+          <reference value="urn:uuid:2299d300-4f95-4dec-b6e1-cd1daaa3acb0"/>
+        </specimen>
+      </ServiceRequest>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:95c69bc1-db89-4746-92ff-40c45007003c"/>
+    <resource>
+      <DiagnosticReport>
+        <id value="95c69bc1-db89-4746-92ff-40c45007003c"/>
+        <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.composition">
+          <valueReference>
+            <reference value="urn:uuid:dfa1ff7e-4dae-494a-bb4f-3a9510986d20"/>
+          </valueReference>
+        </extension>
+        <identifier>
+          <system value="urn:ietf:rfc:3986"/>
+          <value value="urn:uuid:ea0a27a6-7693-49df-83be-3b298143aef6"/>
+        </identifier>
+        <basedOn>
+          <reference value="urn:uuid:ac88082c-6ec2-4a13-b2f8-ec3c96795b83"/>
+        </basedOn>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="11502-2"/>
+            <display value="Laboratory report"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="urn:uuid:713c0756-48dc-4df0-9dec-50327bfd228d"/>
+        </subject>
+        <performer>
+          <reference value="urn:uuid:4f8832ab-7ba0-4576-abac-813bb7dadb20"/>
+        </performer>
+        <specimen>
+          <reference value="urn:uuid:2299d300-4f95-4dec-b6e1-cd1daaa3acb0"/>
+        </specimen>
+        <result>
+          <reference value="urn:uuid:666da738-7102-46fa-b936-e6c10b433a0a"/>
+        </result>
+      </DiagnosticReport>
+    </resource>
+  </entry>
+</Bundle>
