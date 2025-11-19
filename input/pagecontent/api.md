@@ -176,6 +176,8 @@ This parameter, of type token, specifies an identifier for this DocumentReferenc
 **elm-status**:
 This [parameter](SearchParameter-SearchParameter-ch-elm-status.html), of type token, specifies the status of the processing of the report at the FOPH. It can be either in-progress, failed or completed, see [ValueSet](ValueSet-ch-elm-status.html). Only one status per query is supported, you cannot query for multiple (e.g. failed, complete).
 
+*A note on timezones*: timestamp values are interpreted as UTC. Although we recommend not to specify any timezone information specifically, it is possible to add timezone information on a querry by following the XML format (see the [HL7 documentation](http://hl7.org/fhir/R4/search.html#date) for more details). You may have to handle escaping of special characters like `+` or `-` if you go down that road...
+
 ###### Managing Returned Resources 
 
 **Sorting**
