@@ -2,7 +2,7 @@
   "resourceType": "ConceptMap",
   "id": "ch-elm-results-to-observation-profile",
   "url": "http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-results-to-observation-profile",
-  "version": "2025-11-12",
+  "version": "2025-11-20",
   "name": "ChElmResultsToObservationProfile",
   "title": "CH ELM Results To Observation Profile",
   "status": "active",

@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "ch-elm-results-ebol-org",
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-ebol-org",
-  "version": "2025-11-12",
+  "version": "2025-11-20",
   "name": "ChElmResultsEbolOrg",
   "title": "CH ELM Results Ebol Org",
   "status": "active",

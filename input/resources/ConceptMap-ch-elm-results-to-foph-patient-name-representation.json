@@ -2,7 +2,7 @@
   "resourceType": "ConceptMap",
   "id": "ch-elm-results-to-foph-patient-name-representation",
   "url": "http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-results-to-foph-patient-name-representation",
-  "version": "2025-11-12",
+  "version": "2025-11-20",
   "name": "ChElmResultsToFophPatientNameRepresentation",
   "title": "CH ELM Results To FOPH Patient Name Representation",
   "status": "active",
@@ -3892,7 +3892,97 @@
           "display": "FOPH emerging pathogen placeholder",
           "target": [
             {
-              "code": "conditional",
+              "code": "initials",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "EP-100200-5",
+          "display": "FOPH emerging pathogen placeholder",
+          "target": [
+            {
+              "code": "initials",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "EP-100300-3",
+          "display": "FOPH emerging pathogen placeholder",
+          "target": [
+            {
+              "code": "initials",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "EP-100400-1",
+          "display": "FOPH emerging pathogen placeholder",
+          "target": [
+            {
+              "code": "initials",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "EP-100500-8",
+          "display": "FOPH emerging pathogen placeholder",
+          "target": [
+            {
+              "code": "initials",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "EP-100600-6",
+          "display": "FOPH emerging pathogen placeholder",
+          "target": [
+            {
+              "code": "initials",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "EP-100700-4",
+          "display": "FOPH emerging pathogen placeholder",
+          "target": [
+            {
+              "code": "initials",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "EP-100800-2",
+          "display": "FOPH emerging pathogen placeholder",
+          "target": [
+            {
+              "code": "initials",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "EP-100900-0",
+          "display": "FOPH emerging pathogen placeholder",
+          "target": [
+            {
+              "code": "initials",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "EP-101000-8",
+          "display": "FOPH emerging pathogen placeholder",
+          "target": [
+            {
+              "code": "initials",
               "equivalence": "relatedto"
             }
           ]

@@ -63,19 +63,27 @@
         <id value="53d74b79-32de-4bf2-91a6-8f94d0def5eb"/>
         <identifier>
           <system value="urn:oid:2.16.756.5.32"/>
-          <value value="7562295883070"/>
+          <value value="7561234567897"/>
         </identifier>
         <name>
-          <family value="M"/>
-          <given value="D"/>
+          <family value="Dupont"/>
+          <given value="Antoine"/>
         </name>
-        <gender value="male"/>
-        <birthDate value="1960-08-22"/>
+        <gender value="female"/>
+        <birthDate value="1981-02-07"/>
         <address>
           <use value="home"/>
-          <city value="Bern"/>
-          <state value="BE"/>
-          <postalCode value="3000"/>
+          <line value="rue de la république 10">
+            <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
+              <valueString value="rue de la république"/>
+            </extension>
+            <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
+              <valueString value="10"/>
+            </extension>
+          </line>
+          <city value="Carouge"/>
+          <state value="GE"/>
+          <postalCode value="1227"/>
           <country value="CH">
             <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-SC-coding">
               <valueCoding>

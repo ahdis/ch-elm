@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "ch-elm-results-mpox-org",
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-mpox-org",
-  "version": "2025-11-12",
+  "version": "2025-11-20",
   "name": "ChElmResultsMpoxOrg",
   "title": "CH ELM Results Mpox Org",
   "status": "active",
