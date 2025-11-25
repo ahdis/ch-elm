@@ -1,11 +1,11 @@
 All significant changes to this FHIR implementation guide will be documented on this page.   
-### 1.13.0 unreleased
+### 1.13.0 2025/11/25
 
 * [#182](https://github.com/ahdis/ch-elm/issues/182) fix typo and links
 * [#168](https://github.com/ahdis/ch-elm/issues/168) add optional physician address to logical model
 * new ValueSet http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-lis-spec
 * [#183](https://github.com/ahdis/ch-elm/issues/183) Add example for FOPH Code for release
-* [#187] ValueSet update and adjust example Malaria / Westnile with fullname
+* [#187](https://github.com/ahdis/ch-elm/issues/187) ValueSet update and adjust example Malaria / Westnile with fullname
 
 ### 1.12.0 2025/10/21
 
