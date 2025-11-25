@@ -17,7 +17,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 
 * [#173](https://github.com/ahdis/ch-elm/issues/173) FOPH code system
 
-### 1.10.0 2025/xx/xx
+### 1.10.0 2025/06/23
 
 * [#161](https://github.com/ahdis/ch-elm/issues/161) Updating dependencies to ch.fhir.ig.ch-lab-report: 2.0.0-ballot and ch.fhir.ig.ch-core: 6.0.0-ballot
 * [#135](https://github.com/ahdis/ch-elm/issues/135) Support for XK Kosovo in validator
