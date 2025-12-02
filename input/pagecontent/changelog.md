@@ -1,4 +1,8 @@
 All significant changes to this FHIR implementation guide will be documented on this page.   
+### 1.14.0
+
+* [#158](https://github.com/ahdis/ch-elm/issues/158) update IG dependency overview
+
 ### 1.13.0 2025/11/25
 
 * [#182](https://github.com/ahdis/ch-elm/issues/182) fix typo and links
