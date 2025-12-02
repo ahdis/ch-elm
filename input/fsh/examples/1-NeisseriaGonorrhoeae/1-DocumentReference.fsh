@@ -55,9 +55,9 @@ Description: "Reporting Neisseria Gonorhoeae"
 Instance: 1-OperationOutcome
 InstanceOf: OperationOutcome
 Usage: #inline
-* issue.severity = #error
-* issue.code = #not-supported
-* issue.details.text = "unknown type of laboratory report"
+* issue[0].severity = #error
+* issue[0].code = #not-supported
+* issue[0].details.text = "unknown type of laboratory report"
 
 Instance: 1-DocumentReferenceResponseFailed
 InstanceOf: PublishDocumentReferenceResponse

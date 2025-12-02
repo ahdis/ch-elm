@@ -82,8 +82,7 @@ Usage: #inline
 * address[home].state = "SO"
 * address[home].postalCode = "4552"
 * address[home].country = "CH"
-* address[home].country.extension.url = "http://hl7.org/fhir/StructureDefinition/iso21090-SC-coding"
-* address[home].country.extension.valueCoding = urn:iso:std:iso:3166#CH
+* address[home].country.extension[countrycode].valueCoding = urn:iso:std:iso:3166#CH
 
 Instance: 1ed18b09-bd72-4825-86c4-adfb102a260c // VCT
 InstanceOf: ChElmObservationResultsLaboratory

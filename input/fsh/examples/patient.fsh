@@ -17,8 +17,7 @@ Description: "Example for a CH ELM Patient - full name (and full address)"
 * address[home].city = "Bern"
 * address[home].state = "BE"
 * address[home].country = "CH"
-* address[home].country.extension.url = "http://hl7.org/fhir/StructureDefinition/iso21090-SC-coding"
-* address[home].country.extension.valueCoding = urn:iso:std:iso:3166#CH
+* address[home].country.extension[countrycode].valueCoding = urn:iso:std:iso:3166#CH
 
 
 Instance: Pat-005
@@ -37,8 +36,7 @@ Description: "Example for a CH ELM Patient - initials"
 * address[home].city = "Bern"
 * address[home].state = "BE"
 * address[home].country = "CH"
-* address[home].country.extension.url = "http://hl7.org/fhir/StructureDefinition/iso21090-SC-coding"
-* address[home].country.extension.valueCoding = urn:iso:std:iso:3166#CH
+* address[home].country.extension[countrycode].valueCoding = urn:iso:std:iso:3166#CH
 
 Instance: Pat-VCT
 InstanceOf: ChElmPatientVCT
@@ -53,8 +51,7 @@ Description: "Example for a CH ELM Patient with VCT Code"
 * address[home].city = "Bern"
 * address[home].state = "BE"
 * address[home].country = "CH"
-* address[home].country.extension.url = "http://hl7.org/fhir/StructureDefinition/iso21090-SC-coding"
-* address[home].country.extension.valueCoding = urn:iso:std:iso:3166#CH
+* address[home].country.extension[countrycode].valueCoding = urn:iso:std:iso:3166#CH
 
 Instance: Pat-004
 InstanceOf: ChElmPatientHIV
@@ -75,8 +72,7 @@ Description: "Example for a CH ELM Patient - special case HIV/AIDS"
 * address[home].city = "Bern"
 * address[home].state = "BE"
 * address[home].country = "CH"
-* address[home].country.extension.url = "http://hl7.org/fhir/StructureDefinition/iso21090-SC-coding"
-* address[home].country.extension.valueCoding = urn:iso:std:iso:3166#CH 
+* address[home].country.extension[countrycode].valueCoding = urn:iso:std:iso:3166#CH 
 
 
 
@@ -93,8 +89,7 @@ Description: "Example for a CH ELM Patient - IDN Liechtenstein"
 * birthDate = "2000-09-14"
 * address[home].state = "FL"
 * address[home].country = "LI"
-* address[home].country.extension.url = "http://hl7.org/fhir/StructureDefinition/iso21090-SC-coding"
-* address[home].country.extension.valueCoding = urn:iso:std:iso:3166#LI
+* address[home].country.extension[countrycode].valueCoding = urn:iso:std:iso:3166#LI
 
 
 Instance: Pat-002
@@ -136,5 +131,4 @@ Description: "Example for a CH ELM Patient - full name"
 * address[home].city = "Carouge"
 * address[home].state = "GE"
 * address[home].country = "CH"
-* address[home].country.extension.url = "http://hl7.org/fhir/StructureDefinition/iso21090-SC-coding"
-* address[home].country.extension.valueCoding = urn:iso:std:iso:3166#CH
+* address[home].country.extension[countrycode].valueCoding = urn:iso:std:iso:3166#CH
