@@ -26,7 +26,7 @@ contact:
         value: https://www.bag.admin.ch/bag/en/home/das-bag/kontakt-standort.html
 
 dependencies:
-  ch.fhir.ig.ch-term: dev
+  ch.fhir.ig.ch-term: current
   ch.fhir.ig.ch-core: current
   ch.fhir.ig.ch-lab-report: current
   ch.fhir.ig.ch-ips: current
