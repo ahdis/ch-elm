@@ -21,7 +21,7 @@ Depending on the organism (leading code), the requirement for how the patient’
    * [Example](Patient-Pat-VCT.json.html): kste12345 (Patient.name.extension = kste12345, Patient.name.family/Patient.name.given = masked, no telecom and no street address)
 * **HIV Code**
    * Organism: HIV/AIDS
-   * Basic principle: Take the first letter of the first name and add the number of letters of the first name. E.g. Samuel -> S6. This value need to be provided in the [CH ELM Extension: HIV code](SStructureDefinition-ch-elm-ext-hiv-code.html) and Patient.name.family, Patient.name.given need to be masked.
+   * Basic principle: Take the first letter of the first name and add the number of letters of the first name. E.g. Samuel -> S6. This value need to be provided in the [CH ELM Extension: HIV code](StructureDefinition-ch-elm-ext-hiv-code.html) and Patient.name.family, Patient.name.given need to be masked.
    * Special cases:
      - If there are more than 9 letters, put 0. E.g. Christopher -> C0
      - Multi-part given name with a hyphen, use only the first part. E.g. Hans-Jakob -> H4

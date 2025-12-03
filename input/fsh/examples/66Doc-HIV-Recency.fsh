@@ -46,7 +46,7 @@ Usage: #inline
 * address.state = "GE"
 * address.postalCode = "1227"
 * address.country = "CH"
-* address.country.extension.url = "http://hl7.org/fhir/StructureDefinition/iso21090-SC-coding"
+* address.country.extension.url = "http://hl7.org/fhir/StructureDefinition/iso21090-codedString"
 * address.country.extension.valueCoding = urn:iso:std:iso:3166#CH
 
 Instance: 66Comp-HivRecency

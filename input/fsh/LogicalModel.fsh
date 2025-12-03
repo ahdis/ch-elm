@@ -149,7 +149,7 @@ Target: "hl7.org/fhir/r4"
 * Patient.Address.ZipCode -> "Bundle.entry[0].resource.subject.resolve().address.where(use='home').postalCode"
 * Patient.Address.City -> "Bundle.entry[0].resource.subject.resolve().address.where(use='home').city"
 * Patient.Address.Canton -> "Bundle.entry[0].resource.subject.resolve().address.where(use='home').state"
-* Patient.Address.Country -> "Bundle.entry[0].resource.subject.resolve().address.where(use='home').country.extension.where(url='http://hl7.org/fhir/StructureDefinition/iso21090-SC-coding').value.code"
+* Patient.Address.Country -> "Bundle.entry[0].resource.subject.resolve().address.where(use='home').country.extension.where(url='http://hl7.org/fhir/StructureDefinition/iso21090-codedString').value.code"
 
 * TestResult -> "Bundle.entry[0].resource.section"
 * TestResult.StudyType -> "Bundle.entry[0].resource.section.code.coding.where(system='http://loinc.org')"

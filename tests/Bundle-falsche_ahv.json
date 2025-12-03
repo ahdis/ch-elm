@@ -159,7 +159,7 @@
             "_country": {
               "extension": [
                 {
-                  "url": "http://hl7.org/fhir/StructureDefinition/iso21090-SC-coding",
+                  "url": "http://hl7.org/fhir/StructureDefinition/iso21090-codedString",
                   "valueCoding": {
                     "system": "urn:iso:std:iso:3166",
                     "code": "CH"
