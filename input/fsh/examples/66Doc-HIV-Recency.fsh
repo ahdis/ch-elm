@@ -33,12 +33,12 @@ InstanceOf: ChElmPatientHIV
 Usage: #inline
 * identifier.system = "urn:oid:2.16.756.5.32"
 * identifier.value = "7561234567897"
-* name.extension.url = "http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-ext-hiv-code"
-* name.extension.valueString = "H5"
-* name.family.extension.url = "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
-* name.family.extension.valueCode = #masked
-* name.given.extension.url = "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
-* name.given.extension.valueCode = #masked
+* name.extension[hivcode].url = "http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-ext-hiv-code"
+* name.extension[hivcode].valueString = "H5"
+* name.family.extension[dataabsentreason].url = "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+* name.family.extension[dataabsentreason].valueCode = #masked
+* name.given.extension[dataabsentreason].url = "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+* name.given.extension[dataabsentreason].valueCode = #masked
 * gender = #female
 * birthDate = "1981-02-07"
 * address.use = #home
@@ -46,8 +46,7 @@ Usage: #inline
 * address.state = "GE"
 * address.postalCode = "1227"
 * address.country = "CH"
-* address.country.extension.url = "http://hl7.org/fhir/StructureDefinition/iso21090-codedString"
-* address.country.extension.valueCoding = urn:iso:std:iso:3166#CH
+* address.country.extension[countrycode].valueCoding = urn:iso:std:iso:3166#CH
 
 Instance: 66Comp-HivRecency
 InstanceOf: ChElmComposition
@@ -63,9 +62,9 @@ Usage: #inline
 * date = "2025-03-17T12:00:00+02:00"
 * author = Reference(1Org-Labor)
 * title = "Laborbericht vom 17.03.2025"
-* section.title = "Analyseergebnisse der mikrobiologischen Untersuchung"
-* section.code = $loinc#18727-8 "Serology studies (set)"
-* section.entry = Reference(66Obs-HivRecency)
+* section[lab-sero].title = "Analyseergebnisse der mikrobiologischen Untersuchung"
+* section[lab-sero].code = $loinc#18727-8 "Serology studies (set)"
+* section[lab-sero].entry = Reference(66Obs-HivRecency)
 
 Instance: 66DR-HivRecency
 InstanceOf: ChElmDiagnosticReport

@@ -42,9 +42,9 @@ Usage: #inline
 * date = "2024-09-10T12:00:00+02:00"
 * author = Reference(1Org-Labor)
 * title = "Laborbericht vom 10.09.2024"
-* section.title = "Genotyping"
-* section.code = $sct#726528006 "Genotyping (qualifier value)"
-* section.entry = Reference(63Obs-Genotyping)
+* section[lab-gt].title = "Genotyping"
+* section[lab-gt].code = $sct#726528006 "Genotyping (qualifier value)"
+* section[lab-gt].entry = Reference(63Obs-Genotyping)
 
 Instance: 63DR-Genotyping
 InstanceOf: ChElmDiagnosticReport
