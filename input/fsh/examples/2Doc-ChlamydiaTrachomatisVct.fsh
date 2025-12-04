@@ -45,10 +45,10 @@ Usage: #inline
 * author = Reference(urn:uuid:8b9163cc-4894-462c-8060-b9b01f705a8b) // Organization: Author & Lab
 * author.type = "Organization"
 * title = "Laborbericht vom 05.08.2023"
-* section.title = "Analyseergebnisse der mikrobiologischen Untersuchung"
-* section.code = $loinc#18725-2 "Microbiology studies (set)"
-* section.entry = Reference(urn:uuid:1ed18b09-bd72-4825-86c4-adfb102a260c)
-* section.entry.type = "Observation"
+* section[lab-no-subsections].title = "Analyseergebnisse der mikrobiologischen Untersuchung"
+* section[lab-no-subsections].code = $loinc#18725-2 "Microbiology studies (set)"
+* section[lab-no-subsections].entry = Reference(urn:uuid:1ed18b09-bd72-4825-86c4-adfb102a260c)
+* section[lab-no-subsections].entry.type = "Observation"
 
 Instance: 9f5bb881-80f5-4962-8885-df6439ebe154 // VCT
 InstanceOf: ChElmDiagnosticReport
@@ -82,8 +82,7 @@ Usage: #inline
 * address[home].state = "SO"
 * address[home].postalCode = "4552"
 * address[home].country = "CH"
-* address[home].country.extension.url = "http://hl7.org/fhir/StructureDefinition/iso21090-SC-coding"
-* address[home].country.extension.valueCoding = urn:iso:std:iso:3166#CH
+* address[home].country.extension[countrycode].valueCoding = urn:iso:std:iso:3166#CH
 
 Instance: 1ed18b09-bd72-4825-86c4-adfb102a260c // VCT
 InstanceOf: ChElmObservationResultsLaboratory

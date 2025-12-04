@@ -34,6 +34,7 @@ Instance: Test92-WarningBerUidGln
 InstanceOf: TestScript
 * url = "http://fhir.ch/ig/ch-elm/TestScript/Test92-WarningBerUidGln"
 * name = "Test92WarningBerUidGln"
+* description = "Test92: Verify that warnings for incorrect BER, UID and GLN are raised"
 * status = #active
 * insert Fixture(inputdata, [[Binary/Test92-Bundle-WarningBerUidGln]])
 * test.name = "Test92"
@@ -54,6 +55,7 @@ Instance: Test93-Error-FullName-Influenca
 InstanceOf: TestScript
 * url = "http://fhir.ch/ig/ch-elm/TestScript/Test93-Error-FullName-Influenca"
 * name = "Test93ErrorFullNameInfluenca"
+* description = "Test script to verify error if full name is provided by Influenca (must be initials)"
 * status = #active
 * insert Fixture(inputdata, [[Binary/Test93-DocumentReference-Error-FullName-Influenca]])
 * test.name = "Test93"
@@ -68,6 +70,7 @@ Instance: Test94-Ignore-Source-Warning
 InstanceOf: TestScript
 * url = "http://fhir.ch/ig/ch-elm/TestScript/Test94-Ignore-Source-Warning"
 * name = "Test94IgnoreSourceWarning"
+* description = "Test script to verify that warning Binding for path (.+) has no source, so can't be checked"
 * status = #active
 * insert Fixture(inputdata, [[DocumentReference/Publish-1Doc-NeisseriaGonorrhoeae]])
 * test.name = "Test94"
@@ -82,6 +85,7 @@ Instance: Test95-Ignore-Observation-Interpretation-Codes-Warning
 InstanceOf: TestScript
 * url = "http://fhir.ch/ig/ch-elm/TestScript/Test95-Ignore-Observation-Interpretation-Codes-Warning"
 * name = "Test95IgnoreObservationInterpretationCodesWarning"
+* description = "Test script to verify that warning None of the codings provided are in the value set 'Observation Interpretation Codes' is ignored"
 * status = #active
 * insert Fixture(inputdata, [[Bundle/15Doc-Measles-Seroconversion]])
 * test.name = "Test95"
@@ -96,6 +100,7 @@ Instance: Test96-Ignore-Slice-Patient-Eu-Lab-Information
 InstanceOf: TestScript
 * url = "http://fhir.ch/ig/ch-elm/TestScript/Test96-Ignore-Slice-Patient-Eu-Lab-Information"
 * name = "Test96IgnoreObservationInterpretationCodesInformation"
+* description = "Test script to verify that Information This element does not match any known slice defined in the profile http://hl7.eu/fhir/laboratory/StructureDefinition/Patient-eu-lab is ignored"
 * status = #active
 * insert Fixture(inputdata, [[DocumentReference/Publish-2Doc-ChlamydiaTrachomatis-Vct]])
 * test.name = "Test96"
@@ -110,6 +115,7 @@ Instance: Test97-CoaxiellaNoRatio
 InstanceOf: TestScript
 * url = "http://fhir.ch/ig/ch-elm/TestScript/Test97-CoaxiellaNoRatio"
 * name = "Test97CoaxiellaNoRatio"
+* description = "Test97: Verify that error for missing ratio is raised"
 * status = #active
 * insert Fixture(inputdata, [[Binary/Test97-Bundle-CoaxiellaNoRatio]])
 * test.name = "Test97"
@@ -124,6 +130,7 @@ Instance: Test98-HivInvalidCode
 InstanceOf: TestScript
 * url = "http://fhir.ch/ig/ch-elm/TestScript/Test98-HivInvalidCode"
 * name = "Test98HivInvalidCode"
+* description = "Test98: Verify that error for invalid hiv code is raised"
 * status = #active
 * insert Fixture(inputdata, [[Binary/Test98-Bundle-HivInvalidCode]])
 * test.name = "Test98"
@@ -138,6 +145,7 @@ Instance: Test99-CoaxiellaZeroDenominator
 InstanceOf: TestScript
 * url = "http://fhir.ch/ig/ch-elm/TestScript/Test99-CoaxiellaZeroDenominator"
 * name = "Test99CoaxiellaZeroDenominator"
+* description = "Test99: Verify that error for denominator not positive is raised"
 * status = #active
 * insert Fixture(inputdata, [[Binary/Test99-Bundle-CoaxiellaZeroDenominator]])
 * test.name = "Test99"
@@ -152,6 +160,7 @@ Instance: Test100-Kosovo
 InstanceOf: TestScript
 * url = "http://fhir.ch/ig/ch-elm/TestScript/Test100-Kosovo"
 * name = "Test100Kosovo"
+* description = "Test100: Verify that XK iso country code is allowed for Kosovo"
 * status = #active
 * insert Fixture(inputdata, [[Binary/Test100-Bundle-Kosovo]])
 * test.name = "Test100Kosovo"
@@ -165,6 +174,7 @@ Instance: Test101-InvalidCountryCode
 InstanceOf: TestScript
 * url = "http://fhir.ch/ig/ch-elm/TestScript/Test101-InvalidCountryCode"
 * name = "Test101InvalidCountryCode"
+* description = "Test101: Verify that XX raises an error for invalid country code"
 * status = #active
 * insert Fixture(inputdata, [[Binary/Test101-Bundle-InvalidCountryCode]])
 * test.name = "Test101InvalidCountryCode"

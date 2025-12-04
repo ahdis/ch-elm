@@ -167,3 +167,8 @@ Invariant: ch-elm-value-ge-zero
 Description: "value must be greater than or equal zero"
 Severity: #error
 Expression: "value >= 0"
+
+Invariant: ch-elm-patient-address-require-countrycode
+Description: "patient requires country code in address"
+Severity: #error
+Expression: "address.country.all(extension.where(url='http://hl7.org/fhir/StructureDefinition/iso21090-codedString').exists() or extension.where(url='http://hl7.org/fhir/StructureDefinition/iso21090-SC-coding').exists())"

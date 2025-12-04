@@ -42,9 +42,9 @@ Usage: #inline
 * date = "2023-09-12T08:30:00+02:00"
 * author = Reference(1Org-Labor)
 * title = "Rapport de laboratoire du 12.09.2023"
-* section.title = "Résultats de l'analyse microbiologique"
-* section.code = $loinc#18725-2
-* section.entry = Reference(7Obs-SARSCoV2)
+* section[lab-no-subsections].title = "Résultats de l'analyse microbiologique"
+* section[lab-no-subsections].code = $loinc#18725-2
+* section[lab-no-subsections].entry = Reference(7Obs-SARSCoV2)
 
 Instance: 7DR-SARSCoV2
 InstanceOf: ChElmDiagnosticReport

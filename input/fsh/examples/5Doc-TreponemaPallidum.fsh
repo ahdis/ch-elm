@@ -42,9 +42,9 @@ Usage: #inline
 * date = "2023-09-15T11:00:00+02:00"
 * author = Reference(1Org-Labor)
 * title = "Laborbericht vom 15.09.2023"
-* section.title = "Analyseergebnisse der mikrobiologischen Untersuchung"
-* section.code = $loinc#18725-2 "Microbiology studies (set)"
-* section.entry = Reference(5Obs-TreponemaPallidum)
+* section[lab-no-subsections].title = "Analyseergebnisse der mikrobiologischen Untersuchung"
+* section[lab-no-subsections].code = $loinc#18725-2 "Microbiology studies (set)"
+* section[lab-no-subsections].entry = Reference(5Obs-TreponemaPallidum)
 
 Instance: 5DR-TreponemaPallidum
 InstanceOf: ChElmDiagnosticReport

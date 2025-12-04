@@ -166,7 +166,7 @@ group QrToBundleItems(source qr : QuestionnaireResponse, target bundle : Bundle,
    qr.item as item where linkId='LaboratoryReport.Patient.Address.City' -> patient.address as address, address.use = 'home', address.city = (%item.answer.value) then {
       qr.item as item where linkId='LaboratoryReport.Patient.Address.Canton' -> address.state = (%item.answer.value)  "LaboratoryReport-Patient-Address-Canton";  
       qr.item as item where linkId='LaboratoryReport.Patient.Address.Country' -> address.country = (%item.answer.value) as country,
-         country.extension as extension, extension.url = 'http://hl7.org/fhir/StructureDefinition/iso21090-SC-coding', extension.value = create('Coding') as coding, 
+         country.extension as extension, extension.url = 'http://hl7.org/fhir/StructureDefinition/iso21090-codedString', extension.value = create('Coding') as coding, 
          coding.system = 'urn:iso:std:iso:3166', coding.code = (%item.answer.value)  "LaboratoryReport-Patient.Address.Country";  
       qr.item as item where linkId='LaboratoryReport.Patient.Address.ZipCode' -> address.postalCode = (%item.answer.value)  "LaboratoryReport-Patient-Address-ZipCode";  
       qr.item as item where linkId='LaboratoryReport.Patient.Address.Line' ->  address.line = (%item.answer.value) "LaboratoryReport-Patient-Address-Line";

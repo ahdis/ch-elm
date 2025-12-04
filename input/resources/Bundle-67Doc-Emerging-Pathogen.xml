@@ -88,7 +88,7 @@
           <state value="GE"/>
           <postalCode value="1227"/>
           <country value="CH">
-            <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-SC-coding">
+            <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-codedString">
               <valueCoding>
                 <system value="urn:iso:std:iso:3166"/>
                 <code value="CH"/>

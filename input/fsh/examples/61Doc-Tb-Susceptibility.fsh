@@ -42,9 +42,9 @@ Usage: #inline
 * date = "2024-09-10T12:00:00+02:00"
 * author = Reference(1Org-Labor)
 * title = "Laborbericht vom 10.09.2024"
-* section.title = "Resistenztestung"
-* section.code = $loinc#18769-0 "Microbial susceptibility tests Set"
-* section.entry = Reference(61Obs-Susceptibility)
+* section[lab-mst].title = "Resistenztestung"
+* section[lab-mst].code = $loinc#18769-0 "Microbial susceptibility tests Set"
+* section[lab-mst].entry = Reference(61Obs-Susceptibility)
 
 Instance: 61DR-Susceptibility
 InstanceOf: ChElmDiagnosticReport

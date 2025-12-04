@@ -17,6 +17,7 @@ Alias: $ch-core-organization =                      http://fhir.ch/ig/ch-core/St
 Alias:  $task-status =                          http://hl7.org/fhir/task-status
 Alias: $ch-elm-status =                           http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-status
 
+Alias: $country-deprecated = http://hl7.org/fhir/StructureDefinition/iso21090-SC-coding
 
 Alias: $data-absent-reason = http://hl7.org/fhir/StructureDefinition/data-absent-reason
 Alias: $data-absent-reason-cs =  http://terminology.hl7.org/CodeSystem/data-absent-reason
