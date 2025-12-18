@@ -26,12 +26,12 @@ contact:
         value: https://www.bag.admin.ch/bag/en/home/das-bag/kontakt-standort.html
 
 dependencies:
-  ch.fhir.ig.ch-term: current
-  ch.fhir.ig.ch-core: current
-  ch.fhir.ig.ch-lab-report: current
-  ch.fhir.ig.ch-ips: current
+  ch.fhir.ig.ch-term: 3.3.x
+  ch.fhir.ig.ch-core: 6.0.0
+  ch.fhir.ig.ch-lab-report: 2.0.0
+  ch.fhir.ig.ch-ips: 2.0.0
   hl7.fhir.eu.laboratory: 0.1.1
-  hl7.fhir.uv.ips: 2.0.0 
+  hl7.fhir.uv.ips: 2.0.0
 pages:
   index.md:
     title: Home
