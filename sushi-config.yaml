@@ -13,10 +13,10 @@ license: CC0-1.0
 copyright: CC0-1.0
 jurisdiction: urn:iso:std:iso:3166#CH
 date: 2025-11-25
-version: 1.13.0
+version: 1.14.0-cibuild
 fhirVersion: 4.0.1
 copyrightYear: 2023+
-releaseLabel: release # ci-build 
+releaseLabel: ci-build # release # ci-build 
 publisher:
   name: Federal Office of Public Health FOPH
 contact:
@@ -26,14 +26,12 @@ contact:
         value: https://www.bag.admin.ch/bag/en/home/das-bag/kontakt-standort.html
 
 dependencies:
-  hl7.terminology.r4:
-    uri: http://terminology.hl7.org/ImplementationGuide/hl7.terminology
-    version: 6.3.0  
+  ch.fhir.ig.ch-term: 3.3.x
+  ch.fhir.ig.ch-core: 6.0.0
+  ch.fhir.ig.ch-lab-report: 2.0.0
+  ch.fhir.ig.ch-ips: 2.0.0
   hl7.fhir.eu.laboratory: 0.1.1
-  hl7.fhir.uv.ips: 1.1.0
-  ch.fhir.ig.ch-lab-report: 2.0.0-ballot
-  ch.fhir.ig.ch-core: 6.0.0-ballot
-  hl7.fhir.uv.extensions.r4: 5.2.0
+  hl7.fhir.uv.ips: 2.0.0
 pages:
   index.md:
     title: Home
@@ -99,8 +97,7 @@ parameters:
     - urn:oid:2.16.840.1.113883.6.316
     - urn:oid:2.16.756.5.30.1.127.3.10.10
     - urn:oid:2.16.756.5.30.1.129.1.5.1
-    - http://fhir.ch/ig/ch-term/ValueSet/bfs-country-codes
-
+  pin-canonicals: pin-multiples  
   excludettl: true
 #  apply-version: false
 #  default-version: true

@@ -55,16 +55,16 @@ Description: "Reporting Neisseria Gonorhoeae"
 Instance: 1-OperationOutcome
 InstanceOf: OperationOutcome
 Usage: #inline
-* issue.severity = #error
-* issue.code = #not-supported
-* issue.details.text = "unknown type of laboratory report"
+* issue[0].severity = #error
+* issue[0].code = #not-supported
+* issue[0].details.text = "unknown type of laboratory report"
 
 Instance: 1-DocumentReferenceResponseFailed
 InstanceOf: PublishDocumentReferenceResponse
 Usage: #example
 Title: "Publish Response for Neisseria Gonorhoeae failed"
 Description: "Reporting Neisseria Gonorhoeae"
-* contained = 1-OperationOutcome
+* contained[OperationOutcome] = 1-OperationOutcome
 * extension[chextelmstatus].extension[status].url = "status"
 * extension[chextelmstatus].extension[status].valueCode = $task-status#failed
 * extension[chextelmstatus].extension[outcome].url = "outcome"
