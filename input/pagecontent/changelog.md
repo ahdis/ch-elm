@@ -4,6 +4,10 @@ All significant changes to this FHIR implementation guide will be documented on 
 * [#188](https://github.com/ahdis/ch-elm/issues/188) Update to news CH IG Version for LAB (2.0.0): **IMPORTANT: Use for country code extension http://hl7.org/fhir/StructureDefinition/iso21090-codedString instead of deprecated http://hl7.org/fhir/StructureDefinition/iso21090-SC-coding, all examples have been updated
 * [#158](https://github.com/ahdis/ch-elm/issues/158) update IG dependency overview
 
+### 1.13.1 2026/01/18
+
+* CodeSystem/ValueSet update for FOPH Code
+
 ### 1.13.0 2025/11/25
 
 * [#182](https://github.com/ahdis/ch-elm/issues/182) fix typo and links

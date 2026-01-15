@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "ch-elm-results-tul-org",
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-tul-org",
-  "version": "2025-11-20",
+  "version": "2026-01-15",
   "name": "ChElmResultsTulOrg",
   "title": "CH ELM Results Tul Org",
   "status": "active",
