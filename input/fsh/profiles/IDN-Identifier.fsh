@@ -14,5 +14,5 @@ Description: "Identifier holding the IDN Liechtenstein. It is a 13-digit number 
 
 Invariant: idn-length
 Description: "IDN must be 13 digits long"
-Severity: #error
+Severity: #warning
 Expression: "value.matches('^[0-9]{13}$')"
