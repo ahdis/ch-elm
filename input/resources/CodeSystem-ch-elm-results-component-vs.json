@@ -2,7 +2,7 @@
   "resourceType": "CodeSystem",
   "id": "ch-elm-results-component-vs",
   "url": "http://fhir.ch/ig/ch-elm/CodeSystem/ch-elm-results-component-vs",
-  "version": "2025-11-20",
+  "version": "2026-01-15",
   "name": "ChElmResultsComponentVs",
   "title": "CH ELM Results Component Vs",
   "status": "active",

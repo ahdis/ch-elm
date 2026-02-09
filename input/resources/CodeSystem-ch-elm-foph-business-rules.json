@@ -2,7 +2,7 @@
   "resourceType": "CodeSystem",
   "id": "ch-elm-foph-business-rules",
   "url": "http://fhir.ch/ig/ch-elm/CodeSystem/ch-elm-foph-business-rules",
-  "version": "2025-11-20",
+  "version": "2026-01-15",
   "name": "ChElmFophBusinessRules",
   "title": "CH ELM FOPH Business Rules",
   "status": "active",
@@ -51,6 +51,10 @@
           "display": "The required anonymization for the reported organism was violated. The following field(s) are affected: %fields%"
         },
         {
+          "code": "FOPH-020",
+          "display": "The effectiveDateTime-element indicates that the test was executed more than %testExecutionDateRejectionThresholdInDays% days ago. Assuming that this test has already been reported, the document is considered a duplicate. Duplicates are accepted on ABN/Test but not on the productive environment."
+        },
+        {
           "code": "FOPH-022",
           "display": "Received multiple service requests without a basedOn attribute. Only the data contained in the service request referenced by the basedOn attribute in the DiagnosticReport are imported. If you want to specify an original orderer use the basedOn attribute on the primary service request to reference the secondary service request."
         },
@@ -69,6 +73,10 @@
         {
           "code": "FOPH-018",
           "display": "The combination of postal code & city in the organization orderer address element could not be found in the FOPH location database."
+        },
+        {
+          "code": "FOPH-021",
+          "display": "Identical laboratory-test data are already stored in the FOPH database. The document is therefore considered a duplicate. Duplicates are accepted on ABN/Test but not on the productive environment."
         },
         {
           "code": "FOPH-001",

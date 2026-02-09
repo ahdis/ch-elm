@@ -2,7 +2,7 @@
   "resourceType": "CodeSystem",
   "id": "ch-elm-foph-code-reserve",
   "url": "urn:oid:2.16.756.5.30.1.129.1.5.1",
-  "version": "2025-11-20",
+  "version": "2026-01-15",
   "name": "ChElmFophCodeReserve",
   "title": "CH ELM FOPH Code Reserve",
   "status": "active",
@@ -23,43 +23,43 @@
   "concept": [
     {
       "code": "EP-100700-4",
-      "display": "FOPH emerging pathogen placeholder"
+      "display": "FOPH emerging pathogen placeholder 7"
     },
     {
       "code": "EP-100100-7",
-      "display": "FOPH emerging pathogen placeholder"
+      "display": "FOPH emerging pathogen placeholder 1"
     },
     {
       "code": "EP-101000-8",
-      "display": "FOPH emerging pathogen placeholder"
+      "display": "FOPH emerging pathogen placeholder 10"
     },
     {
       "code": "EP-100500-8",
-      "display": "FOPH emerging pathogen placeholder"
+      "display": "FOPH emerging pathogen placeholder 5"
     },
     {
       "code": "EP-100200-5",
-      "display": "FOPH emerging pathogen placeholder"
+      "display": "FOPH emerging pathogen placeholder 2"
     },
     {
       "code": "EP-100900-0",
-      "display": "FOPH emerging pathogen placeholder"
+      "display": "FOPH emerging pathogen placeholder 9"
     },
     {
       "code": "EP-100300-3",
-      "display": "FOPH emerging pathogen placeholder"
+      "display": "FOPH emerging pathogen placeholder 3"
     },
     {
       "code": "EP-100800-2",
-      "display": "FOPH emerging pathogen placeholder"
+      "display": "FOPH emerging pathogen placeholder 8"
     },
     {
       "code": "EP-100600-6",
-      "display": "FOPH emerging pathogen placeholder"
+      "display": "FOPH emerging pathogen placeholder 6"
     },
     {
       "code": "EP-100400-1",
-      "display": "FOPH emerging pathogen placeholder"
+      "display": "FOPH emerging pathogen placeholder 4"
     }
   ]
 }
