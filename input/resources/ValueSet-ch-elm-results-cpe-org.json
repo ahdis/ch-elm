@@ -1,0 +1,48 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ch-elm-results-cpe-org",
+  "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-cpe-org",
+  "version": "2026-01-15",
+  "name": "ChElmResultsCpeOrg",
+  "title": "CH ELM Results CPE Organism",
+  "status": "active",
+  "experimental": false,
+  "description": "The \"CH ELM Results CPE Organism\" value set provides codes for specifying the organism in CPE (Carbapenemase-producing Enterobacterales) observations. These codes represent organisms not already covered by the observation.code leading codes.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "700398000",
+            "display": "Acinetobacter bereziniae (organism)"
+          },
+          {
+            "code": "114263005",
+            "display": "Citrobacter farmeri (organism)"
+          },
+          {
+            "code": "6265002",
+            "display": "Citrobacter freundii (organism)"
+          },
+          {
+            "code": "114264004",
+            "display": "Citrobacter koseri (organism)"
+          },
+          {
+            "code": "112283007",
+            "display": "Escherichia coli (organism)"
+          },
+          {
+            "code": "56415008",
+            "display": "Klebsiella pneumoniae (organism)"
+          },
+          {
+            "code": "4298009",
+            "display": "Shigella sonnei (organism)"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -38,6 +38,11 @@ Description: "If Observation.code is a member of http://fhir.ch/ig/ch-elm/ValueS
 Severity: #error
 Expression: "code.memberOf('http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-expecting-organism-specification') implies (value.exists() and (value as CodeableConcept).exists() and (value as CodeableConcept).memberOf('http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-expecting-organism-specification-to-results-completion-vs'.resolve().group.where(source='http://loinc.org').element.where(code=%context.code.coding.where(system='http://loinc.org').first().code).target.first().code))"
 
+Invariant: ch-elm-expecting-cpe-organism-specification
+Description: "If Observation.code is a member of http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-expecting-cpe-organism-specification, then Observation.valueCodeableConcept must be a member of the mapped ValueSet in http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-expecting-cpe-organism-spec-to-results-completion-vs for Genotypes or Susceptibility"
+Severity: #error
+Expression: "code.memberOf('http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-expecting-cpe-organism-specification') implies (value.exists().not() or (value as CodeableConcept).exists() and (value as CodeableConcept).memberOf('http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-expecting-cpe-organism-spec-to-results-completion-vs'.resolve().group.where(source='http://snomed.info/sct').element.where(code=%context.code.coding.where(system='http://snomed.info/sct').first().code).target.first().code))"
+
 Invariant: ch-elm-resolveableurl
 Description: "Must resolve to the contained bundle."
 Severity: #error

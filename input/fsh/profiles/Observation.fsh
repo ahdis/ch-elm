@@ -73,6 +73,7 @@ Description: "This CH ELM profile constrains the Observation resource for the pu
 * obeys ch-elm-component-interpretation-code-susc-snomedct
 * obeys ch-elm-component-observation-profile-susc-loinc
 * obeys ch-elm-component-observation-profile-susc-snomedct
+* obeys ch-elm-expecting-cpe-organism-specification
 * code from $ch-elm-results-laboratory-observation-susc (extensible)
 * component 1..*
 * component.code  ^short = "see also 'Guidance - Laboratory Result'"
@@ -96,6 +97,7 @@ Description: "This CH ELM profile constrains the Observation resource for the pu
 * obeys ch-elm-component-code-geno-snomedct
 * obeys ch-elm-component-interpretation-code-geno-loinc
 * obeys ch-elm-component-interpretation-code-geno-snomedct
+* obeys ch-elm-expecting-cpe-organism-specification
 * code from $ch-elm-results-laboratory-observation-geno (extensible)
 * component 1..*
 * component.code  ^short = "see also 'Guidance - Laboratory Result'"

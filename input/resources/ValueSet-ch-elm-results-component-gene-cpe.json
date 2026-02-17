@@ -2,10 +2,35 @@
   "resourceType": "ValueSet",
   "id": "ch-elm-results-component-gene-cpe",
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-component-gene-cpe",
-  "version": "2025-01-21",
+  "version": "2026-01-15",
   "name": "ChElmResultsComponentGeneCpe",
   "title": "CH ELM Results Component Gene CPE",
   "status": "active",
   "experimental": false,
-  "description": "The \"CH ELM Results Component Gene CPE\" provides a curated set of codes representing specific genes."
+  "description": "The \"CH ELM Results Component Gene CPE\" provides a curated set of codes representing specific CPE resistance genes.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "85498-4",
+            "display": "Carbapenem resistance blaIMP gene [Presence] by Molecular method"
+          },
+          {
+            "code": "73982-1",
+            "display": "Carbapenem resistance blaNDM gene [Presence] by Molecular method"
+          },
+          {
+            "code": "85827-4",
+            "display": "Carbapenem resistance bla OXA-48-like gene [Presence] by Molecular method"
+          },
+          {
+            "code": "LP113695-3",
+            "display": "Carbapenem resistance genes"
+          }
+        ]
+      }
+    ]
+  }
 }

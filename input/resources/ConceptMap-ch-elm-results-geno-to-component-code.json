@@ -36,6 +36,102 @@
           ]
         }
       ]
+    },
+    {
+      "source": "http://snomed.info/sct",
+      "target": "http://fhir.ch/ig/ch-elm/CodeSystem/ch-elm-results-component-vs",
+      "element": [
+        {
+          "code": "1085501000112104",
+          "display": "Carbapenemase-producing Acinetobacter (organism)",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-component-gene-cpe",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "1086201000112108",
+          "display": "Carbapenemase-producing Acinetobacter ursingii (organism)",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-component-gene-cpe",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "734352006",
+          "display": "Carbapenemase-producing Klebsiella aerogenes (organism)",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-component-gene-cpe",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "734350003",
+          "display": "Carbapenemase-producing bacteria (organism)",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-component-gene-cpe",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "1359810002",
+          "display": "Carbapenemase-producing Cronobacter (organism)",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-component-gene-cpe",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "1359809007",
+          "display": "Carbapenemase-producing Moraxellaceae (organism)",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-component-gene-cpe",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "1359811003",
+          "display": "Carbapenemase-producing Escherichia (organism)",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-component-gene-cpe",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "737528008",
+          "display": "Carbapenemase-producing Escherichia coli (organism)",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-component-gene-cpe",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "1108301000112108",
+          "display": "Carbapenemase-producing Shigella (organism)",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-component-gene-cpe",
+              "equivalence": "relatedto"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
