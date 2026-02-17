@@ -2,10 +2,23 @@
   "resourceType": "ValueSet",
   "id": "ch-elm-results-component-antibiotic-cpe",
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-component-antibiotic-cpe",
-  "version": "2025-01-21",
+  "version": "2026-01-15",
   "name": "ChElmResultsComponentAntibioticCpe",
   "title": "CH ELM Results Component Antibiotic for CPE",
   "status": "active",
   "experimental": false,
-  "description": "The \"CH ELM Results Component Antibitics\" oprovides a curated set of codes representing specific antibiotics."
+  "description": "The \"CH ELM Results Component Antibiotic for CPE\" provides a curated set of codes representing specific antibiotics for CPE susceptibility testing.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "88462-7",
+            "display": "Carbapenem [Susceptibility]"
+          }
+        ]
+      }
+    ]
+  }
 }

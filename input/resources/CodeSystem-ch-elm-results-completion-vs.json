@@ -140,6 +140,9 @@
     },
     {
       "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-virus-cult-org"
+    },
+    {
+      "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-cpe-org"
     }
   ]
 }
