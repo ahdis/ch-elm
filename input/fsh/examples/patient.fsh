@@ -45,6 +45,10 @@ Title: "Pat - VCT"
 Description: "Example for a CH ELM Patient with VCT Code"
 * gender = #male
 * name.extension[vctcode].valueString = "kste12345"
+* name.family.extension[dataabsentreason].url = "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+* name.family.extension[dataabsentreason].valueCode = #masked
+* name.given.extension[dataabsentreason].url = "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+* name.given.extension[dataabsentreason].valueCode = #masked
 * birthDate = "1966-08-22"
 * address[home].use = #home
 * address[home].postalCode = "3000"
