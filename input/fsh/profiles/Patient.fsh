@@ -18,7 +18,7 @@ Description: "This CH ELM base profile constrains the Patient resource for the p
 * obeys ch-elm-patient-address-require-countrycode
 * . ^short = "CH ELM Patient"
 
-* identifier ..1 MS
+* identifier ..2 MS
 
 * identifier contains IDN 0..1 MS
 * identifier[AHVN13] ..1 MS
@@ -29,23 +29,23 @@ Description: "This CH ELM base profile constrains the Patient resource for the p
 * identifier[IDN] ^patternIdentifier.system = "urn:oid:2.16.438.10.20.10.10.1.2.1"
 
 * identifier[EPR-SPID] 0..0
-* identifier[LocalPid] 0..0
+* identifier[LocalPid] 0..1
 * identifier[insuranceCardNumber] 0..0
 
 * name 1..1
 * name only CHElmHumanName
 * name ^short = "Whether the personal data is transmitted by using initials, full name or a special combination is described under 'Guidance - Personal Data (Patient Name)'"
 * name.family 1..
-* name.family ^short = "masked when using HIV/VCT-extensions (see IG guidance)."
+* name.family ^short = "masked when using HIV/VCT-extensions or unknown (see IG guidance)."
 * name.family ^maxLength = 100
 * name.given 1..1
-* name.given ^short = "masked when using HIV/VCT-extensions (see IG guidance)."
+* name.given ^short = "masked when using HIV/VCT-extensions or unknown (see IG guidance)."
 * name.given ^maxLength = 100
 
 * gender 1..
 
 * birthDate 1..
-* birthDate obeys ch-elm-dateTime
+* birthDate.extension contains $data-absent-reason named dataabsentreason 0..1
 
 * address ..1 MS
 * address ^slicing.discriminator[0].type = #value
@@ -78,16 +78,19 @@ Description: "This CH ELM base profile constrains the Patient resource for the p
 Profile: ChElmPatientVCT
 Parent: ChElmPatient
 Title: "CH ELM Patient VCT"
-Description: "Patient representation via a VCT Code"
+Description: "Patient representation via a VCT Code extension or local pid"
+* obeys ch-elm-patient-vctorlocalpid
 * . ^short = "CH ELM Patient VCT"
+* identifier ..1 MS
 * identifier[AHVN13] 0..0
 * identifier[IDN] 0..0
-* name.extension[vctcode] 1.. 
+* identifier[LocalPid] 0..1
+* name.extension[vctcode] 0..1 
 * name.extension[hivcode] ..0
 * name.family.extension[dataabsentreason] 1..
-* name.family.extension[dataabsentreason].valueCode = #masked
+// * name.family.extension[dataabsentreason].valueCode = #masked -> we allow also others as unknown with the new definition
 * name.given.extension[dataabsentreason] 1..
-* name.given.extension[dataabsentreason].valueCode = #masked
+// * name.given.extension[dataabsentreason].valueCode = #masked -> we allow also others as unknown with the new definition
 * address[home].line ..0
 * telecom ..0
 
@@ -96,6 +99,7 @@ Parent: ChElmPatient
 Title: "CH ELM Patient HIV"
 Description: "Patient representation for HIV"
 * . ^short = "CH ELM Patient HIV"
+* identifier ..1 MS
 * name.extension[vctcode] ..0 
 * name.extension[hivcode] 1..
 * name.family.extension[dataabsentreason] 1..

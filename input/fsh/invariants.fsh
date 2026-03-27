@@ -23,6 +23,11 @@ Description: "If Observation.code is a member of http://fhir.ch/ig/ch-elm/ValueS
 Severity: #error
 Expression: "code.memberOf('http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-expecting-specimen-specification') implies (specimen.resolve().exists() and specimen.resolve().type.exists() and specimen.resolve().type.memberOf('http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-expecting-specimen-specification-to-results-completion-vs'.resolve().group.where(source='http://loinc.org').element.where(code=%context.code.coding.where(system='http://loinc.org').first().code).target.first().code))"
 
+Invariant: ch-elm-patient-birthdate
+Description: "If a Patient entry has a birthDate set, it must be >= 1900-01-01 and before the Bundle's creation date (timestamp)."
+Severity: #error
+Expression: "entry.resource.ofType(Patient).where(birthDate.exists()).all(birthDate >= @1900-01-01 and birthDate < %resource.timestamp)"
+
 Invariant: ch-elm-leading-code
 Description: "The ServiceRequest.code and the Observation.code are in general equal."
 Severity: #warning
@@ -141,7 +146,7 @@ Expression: "'http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-results-geno-to-compone
 Invariant: name-initials
 Description: "a name with initials"
 Severity: #error
-Expression: "given.exists() and given.first().exists() and (''+given.first()).length() = 1 and family.exists() and (''+family).length() = 1"
+Expression: "(given.exists() and given.first().exists() and ((''+given.first()).length() = 1) or given.extension.where(url='http://hl7.org/fhir/StructureDefinition/data-absent-reason').exists() and (''+given.first()).length() = 0) and (family.exists() and family.first().exists() and ((''+family.first()).length() = 1) or family.extension.where(url='http://hl7.org/fhir/StructureDefinition/data-absent-reason').exists() and (''+family.first()).length() = 0)"
 
 Invariant: ch-elm-practioner-zsr-check-length
 Description: "invalid ZSR number, cannot be processed, must be exactly one letter and 6 digits long"
@@ -172,3 +177,8 @@ Invariant: ch-elm-patient-address-require-countrycode
 Description: "patient requires country code in address"
 Severity: #error
 Expression: "address.country.all(extension.where(url='http://hl7.org/fhir/StructureDefinition/iso21090-codedString').exists() or extension.where(url='http://hl7.org/fhir/StructureDefinition/iso21090-SC-coding').exists())"
+
+Invariant: ch-elm-patient-vctorlocalpid
+Description: "patient requires either vct extension or local pid"
+Severity: #error
+Expression: "name.extension.where(url='http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-ext-vct-code').exists() xor identifier[0].type.coding[0].where(code='MR').exists()"
