@@ -18,7 +18,7 @@ Depending on the organism (leading code), the requirement for how the patient’
 * **VCT Code**
    * Organism: Neisseria gonorrhoeae, Chlamydia trachomatis, Treponema pallidum
    * see Profile [CH ELM Patient VCT](StructureDefinition-ChElmPatientVCT.html) 
-   * [Example](Patient-Pat-VCT.json.html): kste12345 (Patient.name.extension = kste12345, Patient.name.family/Patient.name.given = masked, no telecom and no street address)
+   * [Example](Patient-Pat-VCT.json.html): kste12345 (Patient.identifier.value = kste12345, Patient.name.family/Patient.name.given = unknown, no telecom and no street address)
 * **HIV Code**
    * Organism: HIV/AIDS
    * Basic principle: Take the first letter of the first name and add the number of letters of the first name. E.g. Samuel -> S6. This value need to be provided in the [CH ELM Extension: HIV code](StructureDefinition-ch-elm-ext-hiv-code.html) and Patient.name.family, Patient.name.given need to be masked.
@@ -33,6 +33,9 @@ Depending on the organism (leading code), the requirement for how the patient’
    * [Example](Patient-Pat-004.json.html): E5 (Patient.name.extension = E5, Patient.name.family/Patient.name.given = masked, no telecom and no street address)
 * **Conditional**
    * The patient's identification cannot determined directly based on the leading code. Consult the implementation guideline for further information.
+
+### Unknown Personal data (name, birthdate)
+If personal data is unknown but required, the [Data Absent Reason extension](https://hl7.org/fhir/extensions/StructureDefinition-data-absent-reason.html) is allowed on [name.family and/or name.given](Patient-Pat-UnknownName.json.html) and [birthDate](Patient-Pat-UnknownBirthDate.html). In addition a [partial birthdate](Patient-Pat-PartialBirthDate.html) (e.g. only a year or year/month) is allowed.
 
 The complete overview of which characteristics are used for which organisms can be found in the ConceptMap [CH ELM Results To FOPH Patient Name Representation](ConceptMap-ch-elm-results-to-foph-patient-name-representation.html) and in the Ordinance of the FDHA on the Reporting of Observations of Communicable human diseases (SR 818.101.126) ([DE](https://www.fedlex.admin.ch/eli/cc/2015/892/de), [FR](https://www.fedlex.admin.ch/eli/cc/2015/892/fr), [IT](https://www.fedlex.admin.ch/eli/cc/2015/892/it)).   
 

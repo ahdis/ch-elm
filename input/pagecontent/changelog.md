@@ -1,8 +1,9 @@
 All significant changes to this FHIR implementation guide will be documented on this page.   
 ### 1.14.0 cibuild
 
-* [#198](https://github.com/ahdis/ch-elm/issues/198) birthDate unknown, partial or checked
-* [#199](https://github.com/ahdis/ch-elm/issues/199) dataAbsentReason for name, add localPID
+* [#198](https://github.com/ahdis/ch-elm/issues/198) birthDate unknown, partial and validation
+* [#199](https://github.com/ahdis/ch-elm/issues/199) dataAbsentReason for name
+* [#199](https://github.com/ahdis/ch-elm/issues/199) VCT extension deprecated, use localPID instead of VCT extension
 * [#188](https://github.com/ahdis/ch-elm/issues/188) Update to news CH IG Version for LAB (2.0.0): **IMPORTANT: Use for country code extension http://hl7.org/fhir/StructureDefinition/iso21090-codedString instead of deprecated http://hl7.org/fhir/StructureDefinition/iso21090-SC-coding, all examples have been updated
 * [#158](https://github.com/ahdis/ch-elm/issues/158) update IG dependency overview
 * [#193](https://github.com/ahdis/ch-elm/issues/193) Change IDN identifier validation from error to warning

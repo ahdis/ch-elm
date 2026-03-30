@@ -112,6 +112,14 @@ instanceOptions:
   setMetaProfile: never
 
 resources:
+  Bundle/UnknownPatientNameBirthDate:
+    name: Example Document with unknown patient name and birthdate
+    description: Laboratory Report where patient name and birthdate are unknown
+    exampleCanonical: http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-document-strict
+  Bundle/2Doc-ChlamydiaTrachomatis-Vct-Deprecated:
+    name: 2Doc - Chlamydia Trachomatis (VCT Deprecated)
+    description: Laboratory Report collection material in addition to the leading LOINC code and Patient with Patient VCT code, note VCT code is deprecated in name.extension, use identifier
+    exampleCanonical: http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-document-strict
   Bundle/3Doc-CPE:
     name: Carbapenemase-producing Enterobacteriaceae
     description: Example Document for reporting Carbapenemase-producing Enterobacteriaceae

@@ -74,11 +74,13 @@ Usage: #inline
 Instance: d43ab324-dc02-4f8b-abcd-279808dcc315
 InstanceOf: ChElmPatientVCT
 Usage: #inline
-* name.extension[vctcode].valueString = "kste12345"
+* identifier.type = $v2-0203#MR
+* identifier.system = "urn:oid:2.999.1.2.3.4"
+* identifier.value = "kste12345"
 * name.family.extension[dataabsentreason].url = "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
-* name.family.extension[dataabsentreason].valueCode = #masked
+* name.family.extension[dataabsentreason].valueCode = #unknown
 * name.given.extension[dataabsentreason].url = "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
-* name.given.extension[dataabsentreason].valueCode = #masked
+* name.given.extension[dataabsentreason].valueCode = #unknown
 * gender = #female
 * birthDate = "1985-10-17"
 * address[home].use = #home

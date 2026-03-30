@@ -26,7 +26,7 @@ Expression: "code.memberOf('http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-expecting-s
 Invariant: ch-elm-patient-birthdate
 Description: "If a Patient entry has a birthDate set, it must be >= 1900-01-01 and before the Bundle's creation date (timestamp)."
 Severity: #error
-Expression: "entry.resource.ofType(Patient).where(birthDate.exists()).all(birthDate >= @1900-01-01 and birthDate < %resource.timestamp)"
+Expression: "entry.resource.ofType(Patient).where(birthDate.exists() and birthDate.hasValue()).all(birthDate >= @1900-01-01 and birthDate < %resource.timestamp)"
 
 Invariant: ch-elm-leading-code
 Description: "The ServiceRequest.code and the Observation.code are in general equal."
