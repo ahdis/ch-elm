@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "ch-elm-results-laboratory-observation",
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-laboratory-observation",
-  "version": "2026-01-15",
+  "version": "2026-03-30",
   "name": "ChElmResultsLaboratoryObservation",
   "title": "CH ELM Results Laboratory Observation",
   "status": "active",
@@ -208,6 +208,10 @@
           {
             "code": "17563-8",
             "display": "Salmonella sp identified in Specimen by Organism specific culture"
+          },
+          {
+            "code": "17576-0",
+            "display": "Shigella sp identified in Specimen by Organism specific culture"
           },
           {
             "code": "17735-2",
