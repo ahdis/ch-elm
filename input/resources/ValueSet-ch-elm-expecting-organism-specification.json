@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "ch-elm-expecting-organism-specification",
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-expecting-organism-specification",
-  "version": "2026-01-15",
+  "version": "2026-03-30",
   "name": "ChElmExpectingOrganismSpecification",
   "title": "CH ELM Expecting Organism Specification",
   "status": "active",
@@ -36,6 +36,10 @@
           {
             "code": "17563-8",
             "display": "Salmonella sp identified in Specimen by Organism specific culture"
+          },
+          {
+            "code": "17576-0",
+            "display": "Shigella sp identified in Specimen by Organism specific culture"
           },
           {
             "code": "22826-2",

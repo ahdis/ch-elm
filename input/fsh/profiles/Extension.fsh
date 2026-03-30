@@ -17,7 +17,7 @@ Description: "This CH ELM extension enables to provide the VCT Code. Retired. Ue
 * ^context[+].type = #element
 * ^context[=].expression = "HumanName"
 * . ^short = "CH ELM Extension: VCT Code"
-* status = #retired
+* ^status = #retired
 * value[x] 1..
 * value[x] only string
 * valueString ^short = "Name of the VCT Code"

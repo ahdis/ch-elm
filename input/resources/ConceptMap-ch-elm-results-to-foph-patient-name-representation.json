@@ -2,7 +2,7 @@
   "resourceType": "ConceptMap",
   "id": "ch-elm-results-to-foph-patient-name-representation",
   "url": "http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-results-to-foph-patient-name-representation",
-  "version": "2026-01-15",
+  "version": "2026-03-30",
   "name": "ChElmResultsToFophPatientNameRepresentation",
   "title": "CH ELM Results To FOPH Patient Name Representation",
   "status": "active",
@@ -508,6 +508,16 @@
         {
           "code": "17563-8",
           "display": "Salmonella sp identified in Specimen by Organism specific culture",
+          "target": [
+            {
+              "code": "full-name",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "17576-0",
+          "display": "Shigella sp identified in Specimen by Organism specific culture",
           "target": [
             {
               "code": "full-name",
