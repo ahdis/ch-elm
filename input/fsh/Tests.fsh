@@ -183,3 +183,17 @@ InstanceOf: TestScript
 * insert ActionAssertResponseCodeOk
 * insert ActionAssertFhirPathTrue(Confirm that the returned resource is an OperationOutcome., [[is(FHIR.OperationOutcome)]])
 * insert ActionAssertFhirPathTrue(Confirm that we have errors., [[issue.where(severity='error' or severity='fatal').count()>0]])
+
+Instance: Test102-BirthDateFuture
+InstanceOf: TestScript
+* url = "http://fhir.ch/ig/ch-elm/TestScript/Test102-BirthDateFuture"
+* name = "Test102BirthDateFuture"
+* description = "Test102: Verify that Birthdate in the future raises an error"
+* status = #active
+* insert Fixture(inputdata, [[Binary/Test102-Bundle-BirthDateFuture]])
+* test.name = "Test102BirthDateFuture"
+* test.description = "Test102: Verify that BirthDate in the future raises an error"
+* insert ActionOperationValidate(http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-document-strict, inputdata)
+* insert ActionAssertResponseCodeOk
+* insert ActionAssertFhirPathTrue(Confirm that the returned resource is an OperationOutcome., [[is(FHIR.OperationOutcome)]])
+* insert ActionAssertFhirPathTrue(Confirm that we have errors., [[issue.where(severity='error' or severity='fatal').count()>0]])

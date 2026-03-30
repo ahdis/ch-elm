@@ -44,6 +44,27 @@ Usage: #example
 Title: "Pat - VCT"
 Description: "Example for a CH ELM Patient with VCT Code"
 * gender = #male
+* identifier.type = $v2-0203#MR
+* identifier.system = "urn:oid:2.999.1.2.3.4"
+* identifier.value = "kste12345"
+* name.family.extension[dataabsentreason].url = "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+* name.family.extension[dataabsentreason].valueCode = #unknown
+* name.given.extension[dataabsentreason].url = "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+* name.given.extension[dataabsentreason].valueCode = #unknown
+* birthDate = "1966-08-22"
+* address[home].use = #home
+* address[home].postalCode = "3000"
+* address[home].city = "Bern"
+* address[home].state = "BE"
+* address[home].country = "CH"
+* address[home].country.extension[countrycode].valueCoding = urn:iso:std:iso:3166#CH
+
+Instance: Pat-VCT-Deprecated
+InstanceOf: ChElmPatientVCT
+Usage: #example
+Title: "Pat - VCT"
+Description: "Example for a CH ELM Patient with VCT Code (Deprecated)"
+* gender = #male
 * name.extension[vctcode].valueString = "kste12345"
 * name.family.extension[dataabsentreason].url = "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
 * name.family.extension[dataabsentreason].valueCode = #masked
@@ -122,6 +143,78 @@ Description: "Example for a CH ELM Patient - full name"
 * identifier[AHVN13].value = "7561234567866"
 * name.family = "Dupont"
 * name.given = "Antoine"
+* birthDate = "1981-02-07"
+* telecom.system = #phone
+* telecom.value = "+41 76 222 55 22"
+* address[home].use = #home
+* address[home].line = "Rue de la république 10"
+* address[home].line.extension[streetName].valueString = "Rue de la république"
+* address[home].line.extension[houseNumber].valueString = "10"
+* address[home].postalCode = "1227"
+* address[home].city = "Carouge"
+* address[home].state = "GE"
+* address[home].country = "CH"
+* address[home].country.extension[countrycode].valueCoding = urn:iso:std:iso:3166#CH
+
+Instance: Pat-UnknownBirthDate
+InstanceOf: ChElmPatient
+Usage: #example
+Title: "Pat - Antoine Dupont (unknown birthdate)"
+Description: "Example for a CH ELM Patient - unknown birthdate"
+* gender = #female
+* identifier[AHVN13].system = "urn:oid:2.16.756.5.32"
+* identifier[AHVN13].value = "7561234567866"
+* name.family = "Dupont"
+* name.given = "Antoine"
+* birthDate.extension[dataabsentreason].url = "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+* birthDate.extension[dataabsentreason].valueCode = #unknown
+* telecom.system = #phone
+* telecom.value = "+41 76 222 55 22"
+* address[home].use = #home
+* address[home].line = "Rue de la république 10"
+* address[home].line.extension[streetName].valueString = "Rue de la république"
+* address[home].line.extension[houseNumber].valueString = "10"
+* address[home].postalCode = "1227"
+* address[home].city = "Carouge"
+* address[home].state = "GE"
+* address[home].country = "CH"
+* address[home].country.extension[countrycode].valueCoding = urn:iso:std:iso:3166#CH
+
+Instance: Pat-PartialBirthDate
+InstanceOf: ChElmPatient
+Usage: #example
+Title: "Pat - Antoine Dupont (partial birthdate)"
+Description: "Example for a CH ELM Patient - partial birthdate"
+* gender = #female
+* identifier[AHVN13].system = "urn:oid:2.16.756.5.32"
+* identifier[AHVN13].value = "7561234567866"
+* name.family = "Dupont"
+* name.given = "Antoine"
+* birthDate = "1981"
+* telecom.system = #phone
+* telecom.value = "+41 76 222 55 22"
+* address[home].use = #home
+* address[home].line = "Rue de la république 10"
+* address[home].line.extension[streetName].valueString = "Rue de la république"
+* address[home].line.extension[houseNumber].valueString = "10"
+* address[home].postalCode = "1227"
+* address[home].city = "Carouge"
+* address[home].state = "GE"
+* address[home].country = "CH"
+* address[home].country.extension[countrycode].valueCoding = urn:iso:std:iso:3166#CH
+
+Instance: Pat-UnknownName
+InstanceOf: ChElmPatient
+Usage: #example
+Title: "Pat - Antoine Dupont (unknown name)"
+Description: "Example for a CH ELM Patient - unknown name"
+* gender = #female
+* identifier[AHVN13].system = "urn:oid:2.16.756.5.32"
+* identifier[AHVN13].value = "7561234567866"
+* name.family.extension[dataabsentreason].url = "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+* name.family.extension[dataabsentreason].valueCode = #unknown
+* name.given.extension[dataabsentreason].url = "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+* name.given.extension[dataabsentreason].valueCode = #unknown
 * birthDate = "1981-02-07"
 * telecom.system = #phone
 * telecom.value = "+41 76 222 55 22"

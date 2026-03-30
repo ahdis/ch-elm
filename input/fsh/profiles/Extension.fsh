@@ -13,10 +13,11 @@ Description: "This CH ELM extension enables the representation of a department (
 Extension: ChElmExtVctCode
 Id: ch-elm-ext-vct-code
 Title: "CH ELM Extension: VCT code"
-Description: "This CH ELM extension enables to provide the VCT Code."
+Description: "This CH ELM extension enables to provide the VCT Code. Retired. Ues identifier instead (see Guidance)"
 * ^context[+].type = #element
 * ^context[=].expression = "HumanName"
 * . ^short = "CH ELM Extension: VCT Code"
+* status = #retired
 * value[x] 1..
 * value[x] only string
 * valueString ^short = "Name of the VCT Code"
