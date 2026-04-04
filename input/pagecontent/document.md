@@ -894,8 +894,26 @@ See the examples in chapter 2.2 to learn how to use the resource profiles for di
             <td>Mycobacterial susceptibility panel by Method for Slow-growing mycobacteria</td>
             <td>29579-0</td>
             <td>
-                <a href="Bundle-61Doc-Tb-Susceptibility.json.html">JSON</a>, 
+                <a href="Bundle-61Doc-Tb-Susceptibility.json.html">JSON</a>,
                 <a href="Bundle-61Doc-Tb-Susceptibility.xml.html">XML</a>
+            </td>
+        </tr>
+        <tr>
+            <td>CPE - no observation.value, 1 antibiotic component</td>
+            <td>Carbapenemase-producing Acinetobacter ursingii (organism)</td>
+            <td>1086201000112108</td>
+            <td>
+                <a href="Bundle-71Doc-CPE-Susceptibility-Default.json.html">JSON</a>,
+                <a href="Bundle-71Doc-CPE-Susceptibility-Default.xml.html">XML</a>
+            </td>
+        </tr>
+        <tr>
+            <td>CPE - with observation.value (organism specification), 1 antibiotic component</td>
+            <td>Carbapenemase-producing Acinetobacter (organism)</td>
+            <td>1085501000112104</td>
+            <td>
+                <a href="Bundle-72Doc-CPE-Susceptibility-ObsValue.json.html">JSON</a>,
+                <a href="Bundle-72Doc-CPE-Susceptibility-ObsValue.xml.html">XML</a>
             </td>
         </tr>
     </tbody>
@@ -924,8 +942,35 @@ See the examples in chapter 2.2 to learn how to use the resource profiles for di
             <td>Mycobacterium tuberculosis complex resistance panel by Molecular genetics method</td>
             <td>94053-6</td>
             <td>
-                <a href="Bundle-63Doc-Tb-Genotyping.json.html">JSON</a>, 
+                <a href="Bundle-63Doc-Tb-Genotyping.json.html">JSON</a>,
                 <a href="Bundle-63Doc-Tb-Genotyping.xml.html">XML</a>
+            </td>
+        </tr>
+        <tr>
+            <td>CPE - no observation.value, 2 gene components</td>
+            <td>Carbapenemase-producing Acinetobacter ursingii (organism)</td>
+            <td>1086201000112108</td>
+            <td>
+                <a href="Bundle-68Doc-CPE-Genotyping-Default.json.html">JSON</a>,
+                <a href="Bundle-68Doc-CPE-Genotyping-Default.xml.html">XML</a>
+            </td>
+        </tr>
+        <tr>
+            <td>CPE - with observation.value (organism specification), 2 gene components</td>
+            <td>Carbapenemase-producing Acinetobacter (organism)</td>
+            <td>1085501000112104</td>
+            <td>
+                <a href="Bundle-69Doc-CPE-Genotyping-ObsValue.json.html">JSON</a>,
+                <a href="Bundle-69Doc-CPE-Genotyping-ObsValue.xml.html">XML</a>
+            </td>
+        </tr>
+        <tr>
+            <td>CPE - with observation.value, 1 generic component with freetext</td>
+            <td>Carbapenemase-producing Acinetobacter (organism)</td>
+            <td>1085501000112104</td>
+            <td>
+                <a href="Bundle-70Doc-CPE-Genotyping-Freetext.json.html">JSON</a>,
+                <a href="Bundle-70Doc-CPE-Genotyping-Freetext.xml.html">XML</a>
             </td>
         </tr>
     </tbody>
