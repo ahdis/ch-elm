@@ -146,7 +146,7 @@ Expression: "'http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-results-geno-to-compone
 Invariant: name-initials
 Description: "a name with initials"
 Severity: #error
-Expression: "(given.exists() and given.first().exists() and ((''+given.first()).length() = 1) or given.extension.where(url='http://hl7.org/fhir/StructureDefinition/data-absent-reason').exists() and (''+given.first()).length() = 0) and (family.exists() and family.first().exists() and ((''+family.first()).length() = 1) or family.extension.where(url='http://hl7.org/fhir/StructureDefinition/data-absent-reason').exists() and (''+family.first()).length() = 0)"
+Expression: "(given.hasValue() and (''+given.first()).length() = 1 or given.hasValue().not() and given.extension.where(url='http://hl7.org/fhir/StructureDefinition/data-absent-reason').exists()) and (family.hasValue() and (''+family.first()).length() = 1 or family.hasValue().not() and family.extension.where(url='http://hl7.org/fhir/StructureDefinition/data-absent-reason').exists())"
 
 Invariant: ch-elm-practioner-zsr-check-length
 Description: "invalid ZSR number, cannot be processed, must be exactly one letter and 6 digits long"
@@ -178,7 +178,7 @@ Description: "patient requires country code in address"
 Severity: #error
 Expression: "address.country.all(extension.where(url='http://hl7.org/fhir/StructureDefinition/iso21090-codedString').exists() or extension.where(url='http://hl7.org/fhir/StructureDefinition/iso21090-SC-coding').exists())"
 
-Invariant: ch-elm-patient-vctorlocalpid
-Description: "patient requires either vct extension or local pid"
+Invariant: ch-elm-patient-nameorlocalpid
+Description: "patient requires either name or local pid, but not both"
 Severity: #error
-Expression: "name.extension.where(url='http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-ext-vct-code').exists() xor identifier[0].type.coding[0].where(code='MR').exists()"
+Expression: "identifier.where(type.coding[0].code='MR').exists() implies name.where(given.hasValue() or family.hasValue()).empty()"

@@ -37,7 +37,10 @@ Depending on the organism (leading code), the requirement for how the patient’
 ### Unknown Personal data (name, birthdate)
 If personal data is unknown but required, the [Data Absent Reason extension](https://hl7.org/fhir/extensions/StructureDefinition-data-absent-reason.html) is allowed on [name.family and/or name.given](Patient-Pat-UnknownName.json.html) and [birthDate](Patient-Pat-UnknownBirthDate.html). In addition a [partial birthdate](Patient-Pat-PartialBirthDate.html) (e.g. only a year or year/month) is allowed.
 
-The complete overview of which characteristics are used for which organisms can be found in the ConceptMap [CH ELM Results To FOPH Patient Name Representation](ConceptMap-ch-elm-results-to-foph-patient-name-representation.html) and in the Ordinance of the FDHA on the Reporting of Observations of Communicable human diseases (SR 818.101.126) ([DE](https://www.fedlex.admin.ch/eli/cc/2015/892/de), [FR](https://www.fedlex.admin.ch/eli/cc/2015/892/fr), [IT](https://www.fedlex.admin.ch/eli/cc/2015/892/it)).   
+The complete overview of which characteristics are used for which organisms can be found in the ConceptMap [CH ELM Results To FOPH Patient Name Representation](ConceptMap-ch-elm-results-to-foph-patient-name-representation.html) and in the Ordinance of the FDHA on the Reporting of Observations of Communicable human diseases (SR 818.101.126) ([DE](https://www.fedlex.admin.ch/eli/cc/2015/892/de), [FR](https://www.fedlex.admin.ch/eli/cc/2015/892/fr), [IT](https://www.fedlex.admin.ch/eli/cc/2015/892/it)).
+
+In cases personal data is unknown but a local patient identifier is available, the [local patient identifier](Patient-Pat-VCT.json.html) can be specified. But specifying name and local patient identifier is not allowed. 
+
 
 ### Laboratory Study Types
 

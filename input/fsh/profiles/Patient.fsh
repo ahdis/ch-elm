@@ -16,6 +16,8 @@ Id: ch-elm-patient
 Title: "CH ELM Patient"
 Description: "This CH ELM base profile constrains the Patient resource for the purpose of laboratory orders and test reports."
 * obeys ch-elm-patient-address-require-countrycode
+* obeys ch-elm-patient-nameorlocalpid
+
 * . ^short = "CH ELM Patient"
 
 * identifier ..2 MS
@@ -79,7 +81,6 @@ Profile: ChElmPatientVCT
 Parent: ChElmPatient
 Title: "CH ELM Patient VCT"
 Description: "Patient representation via a VCT Code extension or local pid"
-* obeys ch-elm-patient-vctorlocalpid
 * . ^short = "CH ELM Patient VCT"
 * identifier ..1 MS
 * identifier[AHVN13] 0..0

@@ -41,7 +41,7 @@ Description: "Example for a CH ELM Patient - initials"
 Instance: Pat-VCT
 InstanceOf: ChElmPatientVCT
 Usage: #example
-Title: "Pat - VCT"
+Title: "Pat - VCT with localpid"
 Description: "Example for a CH ELM Patient with VCT Code"
 * gender = #male
 * identifier.type = $v2-0203#MR
@@ -62,7 +62,7 @@ Description: "Example for a CH ELM Patient with VCT Code"
 Instance: Pat-VCT-Deprecated
 InstanceOf: ChElmPatientVCT
 Usage: #example
-Title: "Pat - VCT"
+Title: "Pat - VCT with extension (deprecated)"
 Description: "Example for a CH ELM Patient with VCT Code (Deprecated)"
 * gender = #male
 * name.extension[vctcode].valueString = "kste12345"
@@ -81,7 +81,7 @@ Description: "Example for a CH ELM Patient with VCT Code (Deprecated)"
 Instance: Pat-004
 InstanceOf: ChElmPatientHIV
 Usage: #example
-Title: "Pat - E5"
+Title: "Pat - HIV"
 Description: "Example for a CH ELM Patient - special case HIV/AIDS"
 * gender = #male
 * identifier[AHVN13].system = "urn:oid:2.16.756.5.32"
