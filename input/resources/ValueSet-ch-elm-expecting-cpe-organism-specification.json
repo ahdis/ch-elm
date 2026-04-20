@@ -1,0 +1,28 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ch-elm-expecting-cpe-organism-specification",
+  "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-expecting-cpe-organism-specification",
+  "version": "2026-02-17",
+  "name": "ChElmExpectingCpeOrganismSpecification",
+  "title": "CH ELM Expecting CPE Organism Specification",
+  "status": "active",
+  "experimental": false,
+  "description": "This CH ELM value set includes the leading codes for the laboratory test results, which should be completed by another code for the expecting organism for CPE.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "734350003",
+            "display": "Carbapenemase-producing bacteria (organism)"
+          },
+          {
+            "code": "1108301000112108",
+            "display": "Carbapenemase-producing Shigella (organism)"
+          }
+        ]
+      }
+    ]
+  }
+}

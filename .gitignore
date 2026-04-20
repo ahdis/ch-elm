@@ -15,3 +15,9 @@ fsh-generated/**
 www/*   
 !www/package-list.json   
 !www/publish.ini
+
+
+*.docx
+*.xlsx
+
+.DS_Store

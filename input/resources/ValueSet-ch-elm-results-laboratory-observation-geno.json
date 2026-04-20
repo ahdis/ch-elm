@@ -18,6 +18,47 @@
             "display": "Mycobacterium tuberculosis complex resistance panel by Molecular genetics method"
           }
         ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "1085501000112104",
+            "display": "Carbapenemase-producing Acinetobacter (organism)"
+          },
+          {
+            "code": "1086201000112108",
+            "display": "Carbapenemase-producing Acinetobacter ursingii (organism)"
+          },
+          {
+            "code": "734352006",
+            "display": "Carbapenemase-producing Klebsiella aerogenes (organism)"
+          },
+          {
+            "code": "734350003",
+            "display": "Carbapenemase-producing bacteria (organism)"
+          },
+          {
+            "code": "1359810002",
+            "display": "Carbapenemase-producing Cronobacter (organism)"
+          },
+          {
+            "code": "1359809007",
+            "display": "Carbapenemase-producing Moraxellaceae (organism)"
+          },
+          {
+            "code": "1359811003",
+            "display": "Carbapenemase-producing Escherichia (organism)"
+          },
+          {
+            "code": "737528008",
+            "display": "Carbapenemase-producing Escherichia coli (organism)"
+          },
+          {
+            "code": "1108301000112108",
+            "display": "Carbapenemase-producing Shigella (organism)"
+          }
+        ]
       }
     ]
   }

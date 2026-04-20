@@ -1,0 +1,51 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "ch-elm-expecting-cpe-organism-spec-to-results-completion-vs",
+  "url": "http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-expecting-cpe-organism-spec-to-results-completion-vs",
+  "version": "2026-01-15",
+  "name": "ChElmExpectingCpeOrganismSpecificationToResultsCompletionVs",
+  "title": "CH ELM Expecting CPE Organism Specification To Results Completion Vs",
+  "status": "active",
+  "experimental": false,
+  "description": "This CH ELM concept map shows which CPE leading codes can optionally be completed by an additional code to specify the organism. Unlike the mandatory organism specification concept map, specifying the organism is optional for CPE. The target code shows the URL of the value set containing the permitted codes for the organism specification. This concept map applies to both CPE genotyping and CPE susceptibility.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "CHE"
+        }
+      ]
+    }
+  ],
+  "sourceCanonical": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-cpe-organism-specification",
+  "targetCanonical": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-completion-vs",
+  "group": [
+    {
+      "source": "http://snomed.info/sct",
+      "target": "http://fhir.ch/ig/ch-elm/CodeSystem/ch-elm-results-completion-vs",
+      "element": [
+        {
+          "code": "734350003",
+          "display": "Carbapenemase-producing bacteria (organism)",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-cpe-org",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "1108301000112108",
+          "display": "Carbapenemase-producing Shigella (organism)",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-cpe-org",
+              "equivalence": "relatedto"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
