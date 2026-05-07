@@ -1,5 +1,9 @@
 All significant changes to this FHIR implementation guide will be documented on this page.   
 
+### 1.13.2 2026/05/97
+
+* ValueSet update for FOPH Code
+
 ### 1.13.1 2026/01/18
 
 * CodeSystem/ValueSet update for FOPH Code
