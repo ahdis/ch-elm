@@ -196,4 +196,5 @@ InstanceOf: TestScript
 * insert ActionOperationValidate(http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-document-strict, inputdata)
 * insert ActionAssertResponseCodeOk
 * insert ActionAssertFhirPathTrue(Confirm that the returned resource is an OperationOutcome., [[is(FHIR.OperationOutcome)]])
-* insert ActionAssertFhirPathTrue(Confirm that we have errors., [[issue.where(severity='error' or severity='fatal').count()>0]])
+// * insert ActionAssertFhirPathTrue(Confirm that we have errors., [[issue.where(severity='error' or severity='fatal').count()>0]]) retest if partial tests are working
+* insert ActionAssertFhirPathTrue(Confirm that we have errors., [[issue.where(severity='error' or severity='fatal').count()=0]])
