@@ -266,6 +266,15 @@ Entry 'urn:uuid:c49f7bcc-40eb-4c23-a58e-90f74a4e1b44' isn't reachable by travers
 Entry 'urn:uuid:62ee45ab-fc08-4464-9c52-bbfcc4210bed' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
 Entry 'urn:uuid:ec00281a-19ff-41a5-94ef-91303db77c69' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
 
+# input/resources/Bundle-ChlamydiaPatientMissingBirthdate.json
+Entry 'http://test.fhir.ch/r4/DiagnosticReport/1DR-6bbaf2a32e73449b9121549fa05eb606' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
+
+# input/resources/Bundle-ChlamydiaPatientMissingNameGiven.json
+Entry 'http://test.fhir.ch/r4/DiagnosticReport/1DR-6bbaf2a32e73449b9121549fa05eb606' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
+
+# input/resources/Bundle-ChlamydiaPatientPartialBirthdate.json 
+Entry 'http://test.fhir.ch/r4/DiagnosticReport/1DR-6bbaf2a32e73449b9121549fa05eb606' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
+
 # fsh-generated/resources/Bundle-61Doc-Tb-Susceptibility.json
 Entry 'http://test.fhir.ch/r4/DiagnosticReport/61DR-Susceptibility' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
 
