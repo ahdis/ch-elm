@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "ch-elm-results-mal-org",
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-mal-org",
-  "version": "2026-03-30",
+  "version": "2026-05-07",
   "name": "ChElmResultsMalOrg",
   "title": "CH ELM Results Mal Org",
   "status": "active",
@@ -19,7 +19,7 @@
           },
           {
             "code": "74746009",
-            "display": "Plasmodium vivax (organism)"
+            "display": "Plasmodium vivax (organism) "
           },
           {
             "code": "49918008",

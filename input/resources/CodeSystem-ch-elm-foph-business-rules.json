@@ -2,7 +2,7 @@
   "resourceType": "CodeSystem",
   "id": "ch-elm-foph-business-rules",
   "url": "http://fhir.ch/ig/ch-elm/CodeSystem/ch-elm-foph-business-rules",
-  "version": "2026-03-30",
+  "version": "2026-05-07",
   "name": "ChElmFophBusinessRules",
   "title": "CH ELM FOPH Business Rules",
   "status": "active",
@@ -55,12 +55,12 @@
           "display": "The required anonymization for the reported organism was violated. The following field(s) are affected: %fields%"
         },
         {
-          "code": "FOPH-020",
-          "display": "The element “effectiveDateTime” indicates that the test was performed more than 360 days ago. Assuming that this test has already been reported within the expected reporting deadline, this transmission is considered a misdelivery. Please contact FOPH if you believe that this document must still be processed."
-        },
-        {
           "code": "FOPH-022",
           "display": "Received multiple service requests without a basedOn attribute. Only the data contained in the service request referenced by the basedOn attribute in the DiagnosticReport are imported. If you want to specify an original orderer use the basedOn attribute on the primary service request to reference the secondary service request."
+        },
+        {
+          "code": "FOPH-023",
+          "display": "Local patient identifier (MR type) is present, but patient name fields do not have dataAbsentReason. Names should not be transmitted when using local identifiers."
         },
         {
           "code": "FOPH-011",
@@ -104,6 +104,10 @@
         {
           "code": "FOPH-002",
           "display": "Generic Error"
+        },
+        {
+          "code": "FOPH-020",
+          "display": "The effectiveDateTime-element indicates that the test was executed more than %testExecutionDateRejectionThresholdInDays% days ago. Assuming that this test has already been reported, the document is considered a duplicate. Please contact FOPH if you believe that this document must still be processed."
         },
         {
           "code": "FOPH-007",

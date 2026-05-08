@@ -2,10 +2,11 @@
   "resourceType": "ValueSet",
   "id": "ch-elm-results-tub-gen-org",
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-tub-gen-org",
-  "version": "2026-03-30",
+  "version": "2026-05-07",
   "name": "ChElmResultsTubGenOrg",
   "title": "CH ELM Results Tub Gen Org",
   "status": "active",
   "experimental": false,
-  "description": "The \"CH ELM Results Tub Gen Org\" organism group provides a curated set of codes representing specific organisms. Each code within this group has been selected to ensure precise representation and consistency in relation to the primary LOINC codes. Clients utilizing the \"CH ELM Results Tub Gen Org\" group should refer to the provided codes to accurately and uniformly capture and report organism-related information."
+  "description": "The \"CH ELM Results Tub Gen Org\" organism group provides a curated set of codes representing specific organisms. Each code within this group has been selected to ensure precise representation and consistency in relation to the primary LOINC codes. Clients utilizing the \"CH ELM Results Tub Gen Org\" group should refer to the provided codes to accurately and uniformly capture and report organism-related information.",
+  "compose": {}
 }

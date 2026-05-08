@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "ch-elm-results-hanta-org",
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-hanta-org",
-  "version": "2026-03-30",
+  "version": "2026-05-07",
   "name": "ChElmResultsHantaOrg",
   "title": "CH ELM Results Hanta Org",
   "status": "active",
@@ -13,10 +13,6 @@
       {
         "system": "http://snomed.info/sct",
         "concept": [
-          {
-            "code": "35439004",
-            "display": "Seoul virus (organism)"
-          },
           {
             "code": "40754006",
             "display": "Puumala virus (organism)"
@@ -32,6 +28,10 @@
           {
             "code": "49445003",
             "display": "Genus Hantavirus (organism)"
+          },
+          {
+            "code": "442001008",
+            "display": "Andes virus (organism)"
           },
           {
             "code": "116662007",

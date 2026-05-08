@@ -2,7 +2,7 @@
   "resourceType": "CodeSystem",
   "id": "ch-elm-foph-patient-name-representation",
   "url": "http://fhir.ch/ig/ch-elm/CodeSystem/ch-elm-foph-patient-name-representation",
-  "version": "2026-03-30",
+  "version": "2026-05-07",
   "name": "ChElmFophPatientNameRepresentation",
   "title": "CH ELM FOPH Patient Name Representation",
   "status": "active",

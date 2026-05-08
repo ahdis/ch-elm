@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "ch-elm-results-diph-org",
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-diph-org",
-  "version": "2026-03-30",
+  "version": "2026-05-07",
   "name": "ChElmResultsDiphOrg",
   "title": "CH ELM Results Diph Org",
   "status": "active",
@@ -35,7 +35,7 @@
           },
           {
             "code": "77086004",
-            "display": "Genus Corynebacterium (organism)"
+            "display": "Genus Corynebacterium (organism) "
           },
           {
             "code": "83675005",

@@ -2,12 +2,12 @@
   "resourceType": "ConceptMap",
   "id": "ch-elm-results-to-interpretation-code",
   "url": "http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-results-to-interpretation-code",
-  "version": "2026-03-30",
+  "version": "2026-05-07",
   "name": "ChElmResultsToInterpretationCode",
   "title": "CH ELM Results To Interpretation Code",
   "status": "active",
   "experimental": false,
-  "description": "This CH ELM concept map specifies the interpretation codes for each leading code. E.g. if positive, positive and negative or resistant-susceptible values are allowed",
+  "description": "This CH ELM concept map specifies the interpretation codes for each leading code. E.g. if positive, positive and negative or resistant-susceptible values are allowed  ",
   "jurisdiction": [
     {
       "coding": [
@@ -3863,7 +3863,7 @@
         },
         {
           "code": "734351004",
-          "display": "Carbapenemase-producing Enterobacteriaceae (organism)",
+          "display": "Carbapenemase-producing Enterobacteriaceae (organism) ",
           "target": [
             {
               "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",

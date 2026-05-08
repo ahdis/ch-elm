@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "ch-elm-results-shi-nent-org",
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-shi-nent-org",
-  "version": "2026-03-30",
+  "version": "2026-05-07",
   "name": "ChElmResultsShiNentOrg",
   "title": "CH ELM Results Shi Nent Org",
   "status": "active",
@@ -167,7 +167,7 @@
           },
           {
             "code": "473764841000087103",
-            "display": "Shigella flexneri 5b (organism)"
+            "display": " Shigella flexneri 5b (organism)"
           },
           {
             "code": "125007006",

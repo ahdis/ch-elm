@@ -2,10 +2,11 @@
   "resourceType": "ValueSet",
   "id": "ch-elm-results-tub-spec",
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-tub-spec",
-  "version": "2026-03-30",
+  "version": "2026-05-07",
   "name": "ChElmResultsTubSpec",
   "title": "CH ELM Results Tub Spec",
   "status": "active",
   "experimental": false,
-  "description": "The \"CH ELM Results Tub Spec\" material group provides a curated set of codes representing specific materials. Each code within this group is selected to ensure consistency and accuracy for medical coding related to the primary LOINC codes. Clients using the \"CH ELM Results Tub Spec\" group should refer to the provided codes to ensure they capture and report material information correctly and consistently."
+  "description": "The \"CH ELM Results Tub Spec\" material group provides a curated set of codes representing specific materials. Each code within this group is selected to ensure consistency and accuracy for medical coding related to the primary LOINC codes. Clients using the \"CH ELM Results Tub Spec\" group should refer to the provided codes to ensure they capture and report material information correctly and consistently.",
+  "compose": {}
 }

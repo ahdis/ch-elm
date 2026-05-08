@@ -2,10 +2,11 @@
   "resourceType": "ValueSet",
   "id": "ch-elm-results-diph-spec",
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-diph-spec",
-  "version": "2026-03-30",
+  "version": "2026-05-07",
   "name": "ChElmResultsDiphSpec",
   "title": "CH ELM Results Diph Spec",
   "status": "active",
   "experimental": false,
-  "description": "The \"CH ELM Results Diph Spec\" material group provides a curated set of codes representing specific materials. Each code within this group is selected to ensure consistency and accuracy for medical coding related to the primary LOINC codes. Clients using the \"CH ELM Results Diph Spec\" group should refer to the provided codes to ensure they capture and report material information correctly and consistently."
+  "description": "The \"CH ELM Results Diph Spec\" material group provides a curated set of codes representing specific materials. Each code within this group is selected to ensure consistency and accuracy for medical coding related to the primary LOINC codes. Clients using the \"CH ELM Results Diph Spec\" group should refer to the provided codes to ensure they capture and report material information correctly and consistently.",
+  "compose": {}
 }

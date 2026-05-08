@@ -675,36 +675,6 @@ See the examples in chapter 2.2 to learn how to use the resource profiles for di
     </tbody>
 </table>
 
-##### Example of a VCT Patient with specimen specification
-
-<table class="grid">
-    <colgroup> 
-        <col style="width:25%" /> 
-        <col style="width:50%" /> 
-        <col style="width:15%" /> 
-        <col style="width:10%" /> 
-    </colgroup> 
-    <thead>
-          <tr>
-            <th>Disease</th>
-            <th>observation.code display</th>
-            <th>LOINC observation.code<br />(leading code)</th>
-            <th>FHIR Document</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Chlamydiosis</td>
-            <td>Chlamydia trachomatis [Presence] in Specimen by Organism specific culture</td>
-            <td>6349-5</td>
-           <td>
-                <a href="Bundle-2Doc-ChlamydiaTrachomatis-Vct.json.html">JSON</a>, 
-                <a href="Bundle-2Doc-ChlamydiaTrachomatis-Vct.xml.html">XML</a>
-            </td>
-        </tr>
-    </tbody>
-</table>
-
 ##### Example of quantity, ratio or text observation values (non-coded)
 
 <table class="grid">
@@ -988,6 +958,63 @@ See the examples in chapter 2.2 to learn how to use the resource profiles for di
             <td>
                 <a href="Bundle-67Doc-Emerging-Pathogen.json.html">JSON</a>, 
                 <a href="Bundle-67Doc-Emerging-Pathogen.xml.html">XML</a>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+#### Missing Patient attributes (name/birthdate)
+
+<table class="grid">
+    <colgroup> 
+        <col style="width:25%" /> 
+        <col style="width:50%" /> 
+        <col style="width:15%" /> 
+        <col style="width:10%" /> 
+    </colgroup> 
+    <thead>
+           <tr>
+            <th>Disease</th>
+            <th>observation.code display</th>
+            <th>LOINC observation.code<br />(leading code)</th>
+            <th>FHIR Document</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Chlamydiosis - patient missing given name</td>
+            <td>Chlamydia trachomatis [Presence] in Specimen by Organism specific culture</td>
+            <td>6349-5</td>
+            <td>
+                <a href="Bundle-ChlamydiaPatientMissingNameGiven.json.html">JSON</a>, 
+                <a href="Bundle-ChlamydiaPatientMissingNameGiven.xml.html">XML</a>
+            </td>
+        </tr>
+        <tr>
+            <td>Chlamydiosis - patient missing birthdate</td>
+            <td>Chlamydia trachomatis [Presence] in Specimen by Organism specific culture</td>
+            <td>6349-5</td>
+            <td>
+                <a href="Bundle-ChlamydiaPatientMissingBirthdate.json.html">JSON</a>, 
+                <a href="Bundle-ChlamydiaPatientMissingBirthdate.xml.html">XML</a>
+            </td>
+        </tr>
+        <tr>
+            <td>Chlamydiosis - patient with partial birthdate</td>
+            <td>Chlamydia trachomatis [Presence] in Specimen by Organism specific culture</td>
+            <td>6349-5</td>
+            <td>
+                <a href="Bundle-ChlamydiaPatientPartialBirthdate.json.html">JSON</a>, 
+                <a href="Bundle-ChlamydiaPatientPartialBirthdate.xml.html">XML</a>
+            </td>
+        </tr>
+        <tr>
+            <td>Chlamydiosis - VCT patient (name-code instead of real name)</td>
+            <td>Chlamydia trachomatis [Presence] in Specimen by Organism specific culture</td>
+            <td>6349-5</td>
+            <td>
+                <a href="Bundle-2Doc-ChlamydiaTrachomatis-Vct.json.html">JSON</a>, 
+                <a href="Bundle-2Doc-ChlamydiaTrachomatis-Vct.xml.html">XML</a>
             </td>
         </tr>
     </tbody>
