@@ -933,7 +933,7 @@ See the examples in chapter 2.2 to learn how to use the resource profiles for di
 </table>
 
 
-#### FOPH Emergening Pathogen
+#### FOPH Emerging Pathogen
 
 <table class="grid">
     <colgroup> 
