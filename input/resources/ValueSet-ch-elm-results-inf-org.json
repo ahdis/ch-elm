@@ -2,11 +2,10 @@
   "resourceType": "ValueSet",
   "id": "ch-elm-results-inf-org",
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-inf-org",
-  "version": "2026-05-07",
+  "version": "2026-05-12",
   "name": "ChElmResultsInfOrg",
   "title": "CH ELM Results Inf Org",
   "status": "active",
   "experimental": false,
-  "description": "The \"CH ELM Results Inf Org\" organism group provides a curated set of codes representing specific organisms. Each code within this group has been selected to ensure precise representation and consistency in relation to the primary LOINC codes. Clients utilizing the \"CH ELM Results Inf Org\" group should refer to the provided codes to accurately and uniformly capture and report organism-related information.",
-  "compose": {}
+  "description": "The \"CH ELM Results Inf Org\" organism group provides a curated set of codes representing specific organisms. Each code within this group has been selected to ensure precise representation and consistency in relation to the primary LOINC codes. Clients utilizing the \"CH ELM Results Inf Org\" group should refer to the provided codes to accurately and uniformly capture and report organism-related information."
 }

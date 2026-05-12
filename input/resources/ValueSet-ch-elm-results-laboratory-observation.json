@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "ch-elm-results-laboratory-observation",
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-laboratory-observation",
-  "version": "2026-05-07",
+  "version": "2026-05-12",
   "name": "ChElmResultsLaboratoryObservation",
   "title": "CH ELM Results Laboratory Observation",
   "status": "active",
@@ -1556,7 +1556,7 @@
           },
           {
             "code": "734351004",
-            "display": "Carbapenemase-producing Enterobacteriaceae (organism) "
+            "display": "Carbapenemase-producing Enterobacteriaceae (organism)"
           },
           {
             "code": "89293008",

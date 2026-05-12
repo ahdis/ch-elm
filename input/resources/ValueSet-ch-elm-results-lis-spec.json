@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "ch-elm-results-lis-spec",
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-lis-spec",
-  "version": "2026-05-07",
+  "version": "2026-05-12",
   "name": "ChElmResultsLisSpec",
   "title": "CH ELM Results Lis Spec",
   "status": "active",
@@ -119,11 +119,11 @@
           },
           {
             "code": "119364003",
-            "display": "Serum specimen (specimen) "
+            "display": "Serum specimen (specimen)"
           },
           {
             "code": "418564007",
-            "display": "Pleural fluid specimen (specimen) "
+            "display": "Pleural fluid specimen (specimen)"
           },
           {
             "code": "122571007",

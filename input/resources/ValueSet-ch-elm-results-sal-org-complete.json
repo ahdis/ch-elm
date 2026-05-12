@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "ch-elm-results-sal-org-complete",
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-sal-org-complete",
-  "version": "2026-05-07",
+  "version": "2026-05-12",
   "name": "ChElmResultsSalOrgComplete",
   "title": "CH ELM Results Sal Org Complete",
   "status": "active",
@@ -691,7 +691,7 @@
           },
           {
             "code": "39664003",
-            "display": "Salmonella Kottbus (organism) "
+            "display": "Salmonella Kottbus (organism)"
           },
           {
             "code": "55395003",
@@ -1099,7 +1099,7 @@
           },
           {
             "code": "5929008",
-            "display": "Salmonella Virchow (organism) "
+            "display": "Salmonella Virchow (organism)"
           },
           {
             "code": "14145004",
@@ -3211,7 +3211,7 @@
           },
           {
             "code": "398423006",
-            "display": "Salmonella IIIb 61:l,v:1,5,7:[z57] (organism) "
+            "display": "Salmonella IIIb 61:l,v:1,5,7:[z57] (organism)"
           },
           {
             "code": "115408009",
@@ -4099,7 +4099,7 @@
           },
           {
             "code": "56632001",
-            "display": "Salmonella Durham (organism) "
+            "display": "Salmonella Durham (organism)"
           },
           {
             "code": "86097004",
@@ -5535,7 +5535,7 @@
           },
           {
             "code": "712764007",
-            "display": "Salmonella species not Salmonella typhi (organism) "
+            "display": "Salmonella species not Salmonella typhi (organism)"
           },
           {
             "code": "9952003",
@@ -7423,7 +7423,7 @@
           },
           {
             "code": "47508001",
-            "display": "Salmonella Johannesburg (organism) "
+            "display": "Salmonella Johannesburg (organism)"
           },
           {
             "code": "404472007",

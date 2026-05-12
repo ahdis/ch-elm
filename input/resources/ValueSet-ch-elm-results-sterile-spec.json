@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "ch-elm-results-sterile-spec",
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-sterile-spec",
-  "version": "2026-05-07",
+  "version": "2026-05-12",
   "name": "ChElmResultsSterileSpec",
   "title": "CH ELM Results Sterile Spec",
   "status": "active",
@@ -83,7 +83,7 @@
           },
           {
             "code": "119364003",
-            "display": "Serum specimen (specimen) "
+            "display": "Serum specimen (specimen)"
           },
           {
             "code": "119386002",
@@ -107,7 +107,7 @@
           },
           {
             "code": "418564007",
-            "display": "Pleural fluid specimen (specimen) "
+            "display": "Pleural fluid specimen (specimen)"
           },
           {
             "code": "119332005",

@@ -2,7 +2,7 @@
   "resourceType": "ConceptMap",
   "id": "ch-elm-results-to-foph-patient-name-representation",
   "url": "http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-results-to-foph-patient-name-representation",
-  "version": "2026-05-07",
+  "version": "2026-05-12",
   "name": "ChElmResultsToFophPatientNameRepresentation",
   "title": "CH ELM Results To FOPH Patient Name Representation",
   "status": "active",
@@ -3873,7 +3873,7 @@
         },
         {
           "code": "734351004",
-          "display": "Carbapenemase-producing Enterobacteriaceae (organism) ",
+          "display": "Carbapenemase-producing Enterobacteriaceae (organism)",
           "target": [
             {
               "code": "full-name",

@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "ch-elm-results-chol-org",
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-chol-org",
-  "version": "2026-05-07",
+  "version": "2026-05-12",
   "name": "ChElmResultsCholOrg",
   "title": "CH ELM Results Chol Org",
   "status": "active",
@@ -39,7 +39,7 @@
           },
           {
             "code": "302573004",
-            "display": "Vibrio cholerae O1 El Tor Ogawa (organism) "
+            "display": "Vibrio cholerae O1 El Tor Ogawa (organism)"
           },
           {
             "code": "415819003",
@@ -59,7 +59,7 @@
           },
           {
             "code": "58735003",
-            "display": "Vibrio cholerae, El Tor biotype (organism) "
+            "display": "Vibrio cholerae, El Tor biotype (organism)"
           }
         ]
       }

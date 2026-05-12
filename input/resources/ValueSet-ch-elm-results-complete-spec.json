@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "ch-elm-results-complete-spec",
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-complete-spec",
-  "version": "2026-05-07",
+  "version": "2026-05-12",
   "name": "ChElmResultsCompleteSpec",
   "title": "CH ELM Results Complete Spec",
   "status": "active",
@@ -147,11 +147,11 @@
           },
           {
             "code": "119364003",
-            "display": "Serum specimen (specimen) "
+            "display": "Serum specimen (specimen)"
           },
           {
             "code": "418564007",
-            "display": "Pleural fluid specimen (specimen) "
+            "display": "Pleural fluid specimen (specimen)"
           },
           {
             "code": "119303007",
@@ -191,11 +191,11 @@
           },
           {
             "code": "119295008",
-            "display": "Specimen obtained by aspiration (specimen) "
+            "display": "Specimen obtained by aspiration (specimen)"
           },
           {
             "code": "447154002",
-            "display": "Specimen from nose (specimen) "
+            "display": "Specimen from nose (specimen)"
           },
           {
             "code": "119399004",
@@ -227,7 +227,7 @@
           },
           {
             "code": "119376003",
-            "display": "Tissue specimen (specimen) "
+            "display": "Tissue specimen (specimen)"
           },
           {
             "code": "119343002",
