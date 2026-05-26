@@ -138,34 +138,7 @@ curl --request GET \
   --key $KEY \
   -o ../input/resources/ValueSet-$VALUESET.json
 
-VALUESET="ch-elm-results-bot-spec"
-curl --request GET \
-  --url https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir/ValueSet/$VALUESET \
-  --header 'accept: application/fhir+json' \
-  --header 'user-agent: vscode-restclient' \
-  --cert $CERT \
-  --key $KEY \
-  -o ../input/resources/ValueSet-$VALUESET.json
-
 VALUESET="ch-elm-results-complete-spec"
-curl --request GET \
-  --url https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir/ValueSet/$VALUESET \
-  --header 'accept: application/fhir+json' \
-  --header 'user-agent: vscode-restclient' \
-  --cert $CERT \
-  --key $KEY \
-  -o ../input/resources/ValueSet-$VALUESET.json
-
-VALUESET="ch-elm-results-diph-spec"
-curl --request GET \
-  --url https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir/ValueSet/$VALUESET \
-  --header 'accept: application/fhir+json' \
-  --header 'user-agent: vscode-restclient' \
-  --cert $CERT \
-  --key $KEY \
-  -o ../input/resources/ValueSet-$VALUESET.json
-
-VALUESET="ch-elm-results-diph-spec"
 curl --request GET \
   --url https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir/ValueSet/$VALUESET \
   --header 'accept: application/fhir+json' \
@@ -192,34 +165,7 @@ curl --request GET \
   --key $KEY \
   -o ../input/resources/ValueSet-$VALUESET.json
 
-VALUESET="ch-elm-results-tub-spec"
-curl --request GET \
-  --url https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir/ValueSet/$VALUESET \
-  --header 'accept: application/fhir+json' \
-  --header 'user-agent: vscode-restclient' \
-  --cert $CERT \
-  --key $KEY \
-  -o ../input/resources/ValueSet-$VALUESET.json
-
-VALUESET="ch-elm-results-bot-org"
-curl --request GET \
-  --url https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir/ValueSet/$VALUESET \
-  --header 'accept: application/fhir+json' \
-  --header 'user-agent: vscode-restclient' \
-  --cert $CERT \
-  --key $KEY \
-  -o ../input/resources/ValueSet-$VALUESET.json
-
 VALUESET="ch-elm-results-bru-org"
-curl --request GET \
-  --url https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir/ValueSet/$VALUESET \
-  --header 'accept: application/fhir+json' \
-  --header 'user-agent: vscode-restclient' \
-  --cert $CERT \
-  --key $KEY \
-  -o ../input/resources/ValueSet-$VALUESET.json
-
-VALUESET="ch-elm-results-camp-diar-org"
 curl --request GET \
   --url https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir/ValueSet/$VALUESET \
   --header 'accept: application/fhir+json' \
@@ -264,24 +210,6 @@ curl --request GET \
   --key $KEY \
   -o ../input/resources/ValueSet-$VALUESET.json
 
-VALUESET="ch-elm-results-ebol-org"
-curl --request GET \
-  --url https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir/ValueSet/$VALUESET \
-  --header 'accept: application/fhir+json' \
-  --header 'user-agent: vscode-restclient' \
-  --cert $CERT \
-  --key $KEY \
-  -o ../input/resources/ValueSet-$VALUESET.json
-
-VALUESET="ch-elm-results-ehec-org"
-curl --request GET \
-  --url https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir/ValueSet/$VALUESET \
-  --header 'accept: application/fhir+json' \
-  --header 'user-agent: vscode-restclient' \
-  --cert $CERT \
-  --key $KEY \
-  -o ../input/resources/ValueSet-$VALUESET.json
-
 VALUESET="ch-elm-results-ehec-tox-org"
 curl --request GET \
   --url https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir/ValueSet/$VALUESET \
@@ -292,24 +220,6 @@ curl --request GET \
   -o ../input/resources/ValueSet-$VALUESET.json
 
 VALUESET="ch-elm-results-haem-org"
-curl --request GET \
-  --url https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir/ValueSet/$VALUESET \
-  --header 'accept: application/fhir+json' \
-  --header 'user-agent: vscode-restclient' \
-  --cert $CERT \
-  --key $KEY \
-  -o ../input/resources/ValueSet-$VALUESET.json
-
-VALUESET="ch-elm-results-hiv-org"
-curl --request GET \
-  --url https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir/ValueSet/$VALUESET \
-  --header 'accept: application/fhir+json' \
-  --header 'user-agent: vscode-restclient' \
-  --cert $CERT \
-  --key $KEY \
-  -o ../input/resources/ValueSet-$VALUESET.json
-
-VALUESET="ch-elm-results-inf-org"
 curl --request GET \
   --url https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir/ValueSet/$VALUESET \
   --header 'accept: application/fhir+json' \
@@ -372,33 +282,6 @@ curl --request GET \
   --key $KEY \
   -o ../input/resources/ValueSet-$VALUESET.json
 
-VALUESET="ch-elm-results-mpx-ctng"
-curl --request GET \
-  --url https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir/ValueSet/$VALUESET \
-  --header 'accept: application/fhir+json' \
-  --header 'user-agent: vscode-restclient' \
-  --cert $CERT \
-  --key $KEY \
-  -o ../input/resources/ValueSet-$VALUESET.json
-
-VALUESET="ch-elm-results-mpx-sash"
-curl --request GET \
-  --url https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir/ValueSet/$VALUESET \
-  --header 'accept: application/fhir+json' \
-  --header 'user-agent: vscode-restclient' \
-  --cert $CERT \
-  --key $KEY \
-  -o ../input/resources/ValueSet-$VALUESET.json
-
-VALUESET="ch-elm-results-mpx-sashec"
-curl --request GET \
-  --url https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir/ValueSet/$VALUESET \
-  --header 'accept: application/fhir+json' \
-  --header 'user-agent: vscode-restclient' \
-  --cert $CERT \
-  --key $KEY \
-  -o ../input/resources/ValueSet-$VALUESET.json
-
 VALUESET="ch-elm-results-pneu-org"
 curl --request GET \
   --url https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir/ValueSet/$VALUESET \
@@ -436,15 +319,6 @@ curl --request GET \
   -o ../input/resources/ValueSet-$VALUESET.json
 
 VALUESET="ch-elm-results-shi-org"
-curl --request GET \
-  --url https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir/ValueSet/$VALUESET \
-  --header 'accept: application/fhir+json' \
-  --header 'user-agent: vscode-restclient' \
-  --cert $CERT \
-  --key $KEY \
-  -o ../input/resources/ValueSet-$VALUESET.json
-
-VALUESET="ch-elm-results-tub-gen-org"
 curl --request GET \
   --url https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir/ValueSet/$VALUESET \
   --header 'accept: application/fhir+json' \

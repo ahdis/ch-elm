@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "ch-elm-results-sal-org-complete",
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-sal-org-complete",
-  "version": "2026-05-12",
+  "version": "2026-05-26",
   "name": "ChElmResultsSalOrgComplete",
   "title": "CH ELM Results Sal Org Complete",
   "status": "active",
@@ -1303,7 +1303,7 @@
           },
           {
             "code": "5595000",
-            "display": "Salmonella Typhi (organism)"
+            "display": "Salmonella Typhi"
           },
           {
             "code": "398377009",

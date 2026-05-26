@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "ch-elm-results-shi-nent-org",
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-shi-nent-org",
-  "version": "2026-05-12",
+  "version": "2026-05-26",
   "name": "ChElmResultsShiNentOrg",
   "title": "CH ELM Results Shi Nent Org",
   "status": "active",
@@ -13,6 +13,10 @@
       {
         "system": "http://snomed.info/sct",
         "concept": [
+          {
+            "code": "55462008",
+            "display": "Shigella boydii (organism)"
+          },
           {
             "code": "125029005",
             "display": "Shigella boydii, serovar 8 (organism)"
@@ -62,12 +66,20 @@
             "display": "Shigella boydii, serovar 10 (organism)"
           },
           {
+            "code": "125021008",
+            "display": "Shigella flexneri, serovar Y (organism)"
+          },
+          {
             "code": "124995002",
             "display": "Shigella dysenteriae, serovar 1 (organism)"
           },
           {
             "code": "125034009",
             "display": "Shigella boydii, serovar 13 (organism)"
+          },
+          {
+            "code": "85729005",
+            "display": "Shigella flexneri (organism)"
           },
           {
             "code": "125006002",
@@ -110,6 +122,14 @@
             "display": "Shigella boydii, serovar 4 (organism)"
           },
           {
+            "code": "4298009",
+            "display": "Shigella sonnei (organism)"
+          },
+          {
+            "code": "125020009",
+            "display": "Shigella flexneri, serovar X (organism)"
+          },
+          {
             "code": "125028002",
             "display": "Shigella boydii, serovar 7 (organism)"
           },
@@ -124,6 +144,10 @@
           {
             "code": "406495000",
             "display": "Shigella dysenteriae 12 (organism)"
+          },
+          {
+            "code": "43612004",
+            "display": "Shigella dysenteriae (organism)"
           },
           {
             "code": "406496004",
@@ -152,6 +176,10 @@
           {
             "code": "125019003",
             "display": "Shigella flexneri, serovar 6 (organism)"
+          },
+          {
+            "code": "77352002",
+            "display": "Genus Shigella (organism)"
           },
           {
             "code": "406488009",

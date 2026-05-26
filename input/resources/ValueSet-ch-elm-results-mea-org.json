@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "ch-elm-results-mea-org",
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-mea-org",
-  "version": "2026-05-12",
+  "version": "2026-05-26",
   "name": "ChElmResultsMeaOrg",
   "title": "CH ELM Results Mea Org",
   "status": "active",
@@ -23,7 +23,7 @@
           },
           {
             "code": "52584002",
-            "display": "Measles virus (organism)"
+            "display": "Measles virus"
           },
           {
             "code": "427073007",

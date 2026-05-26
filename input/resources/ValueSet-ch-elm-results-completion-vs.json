@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "ch-elm-results-completion-vs",
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-completion-vs",
-  "version": "2026-05-12",
+  "version": "2026-05-26",
   "name": "ChElmResultsCompletionVs",
   "title": "CH ELM Results Completion Vs",
   "status": "active",
@@ -14,13 +14,7 @@
         "system": "http://fhir.ch/ig/ch-elm/CodeSystem/ch-elm-results-completion-vs",
         "concept": [
           {
-            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-bot-spec"
-          },
-          {
             "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-complete-spec"
-          },
-          {
-            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-diph-spec"
           },
           {
             "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-geni-spec"
@@ -32,16 +26,7 @@
             "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-sterile-spec"
           },
           {
-            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-tub-spec"
-          },
-          {
-            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-bot-org"
-          },
-          {
             "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-bru-org"
-          },
-          {
-            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-camp-diar-org"
           },
           {
             "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-camp-org"
@@ -56,12 +41,6 @@
             "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-diph-org"
           },
           {
-            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-ebol-org"
-          },
-          {
-            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-ehec-org"
-          },
-          {
             "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-ehec-tox-org"
           },
           {
@@ -69,12 +48,6 @@
           },
           {
             "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-hanta-org"
-          },
-          {
-            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-hiv-org"
-          },
-          {
-            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-inf-org"
           },
           {
             "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-influenza-hxny-org"
@@ -101,15 +74,6 @@
             "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-mpox-org"
           },
           {
-            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-mpx-ctng"
-          },
-          {
-            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-mpx-sash"
-          },
-          {
-            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-mpx-sashec"
-          },
-          {
             "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-pneu-org"
           },
           {
@@ -123,9 +87,6 @@
           },
           {
             "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-shi-org"
-          },
-          {
-            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-tub-gen-org"
           },
           {
             "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-tub-org"
