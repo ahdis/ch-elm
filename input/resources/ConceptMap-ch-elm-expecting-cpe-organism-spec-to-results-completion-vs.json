@@ -18,7 +18,7 @@
       ]
     }
   ],
-  "sourceCanonical": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-cpe-organism-specification",
+  "sourceCanonical": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-expecting-cpe-organism-specification",
   "targetCanonical": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-completion-vs",
   "group": [
     {
