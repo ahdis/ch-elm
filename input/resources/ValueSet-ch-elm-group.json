@@ -1,0 +1,16 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ch-elm-group",
+  "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-group",
+  "version": "2025-05-09",
+  "name": "ChElmGroup",
+  "title": "CH ELM Group",
+  "status": "draft",
+  "experimental": false,
+  "description": "The \"CH ELM Group\"   provides a curated set of codes representing specific disorders. ",
+  "compose" : {
+    "include" : [{
+      "system" : "http://fhir.ch/ig/ch-elm/CodeSystem/ch-elm-group"
+    }]
+  }
+}
