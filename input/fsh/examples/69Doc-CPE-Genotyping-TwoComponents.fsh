@@ -1,24 +1,24 @@
-Instance: 70Doc-CPE-Genotyping-Freetext
+Instance: 69Doc-CPE-Genotyping-TwoComponents
 InstanceOf: ChElmDocumentStrict
 Usage: #example
-Title: "70Doc - CPE Genotyping Freetext"
-Description: "Example for a CH ELM Document: CPE Genotyping with leading code, 1 observation.value code, 1 generic component code with freetext valueString"
+Title: "69Doc - CPE Genotyping with Observation Value"
+Description: "Example for a CH ELM Document: CPE Genotyping with leading code, 2 component codes"
 * identifier.system = "urn:ietf:rfc:3986"
-* identifier.value = "urn:uuid:b9a8b9ee-9157-44af-b46e-afef3c69d6bd"
+* identifier.value = "urn:uuid:b9a8b9ee-9157-44af-b46e-9fef3c69d6bd"
 * type = #document
 * timestamp = "2026-01-17T12:00:00+02:00"
-* entry[0].fullUrl = "http://test.fhir.ch/r4/Composition/70Comp-Genotyping-Freetext"
-* entry[=].resource = 70Comp-Genotyping-Freetext
-* entry[+].fullUrl = "http://test.fhir.ch/r4/DiagnosticReport/70DR-Genotyping-Freetext"
-* entry[=].resource = 70DR-Genotyping-Freetext
+* entry[0].fullUrl = "http://test.fhir.ch/r4/Composition/69Comp-Genotyping-ObsValue"
+* entry[=].resource = 69Comp-Genotyping-ObsValue
+* entry[+].fullUrl = "http://test.fhir.ch/r4/DiagnosticReport/69DR-Genotyping-ObsValue"
+* entry[=].resource = 69DR-Genotyping-ObsValue
 * entry[+].fullUrl = "http://test.fhir.ch/r4/Patient/68Pat"
 * entry[=].resource = 68Pat
-* entry[+].fullUrl = "http://test.fhir.ch/r4/Observation/70Obs-Genotyping-Freetext"
-* entry[=].resource = 70Obs-Genotyping-Freetext
-* entry[+].fullUrl = "http://test.fhir.ch/r4/Specimen/70Spec-Genotyping-Freetext"
-* entry[=].resource = 70Spec-Genotyping-Freetext
-* entry[+].fullUrl = "http://test.fhir.ch/r4/ServiceRequest/70SR-Genotyping-Freetext"
-* entry[=].resource = 70SR-Genotyping-Freetext
+* entry[+].fullUrl = "http://test.fhir.ch/r4/Observation/69Obs-Genotyping-ObsValue"
+* entry[=].resource = 69Obs-Genotyping-ObsValue
+* entry[+].fullUrl = "http://test.fhir.ch/r4/Specimen/69Spec-Genotyping-ObsValue"
+* entry[=].resource = 69Spec-Genotyping-ObsValue
+* entry[+].fullUrl = "http://test.fhir.ch/r4/ServiceRequest/69SR-Genotyping-ObsValue"
+* entry[=].resource = 69SR-Genotyping-ObsValue
 * entry[+].fullUrl = "http://test.fhir.ch/r4/Organization/1Org-Labor"
 * entry[=].resource = 1Org-Labor
 * entry[+].fullUrl = "http://test.fhir.ch/r4/PractitionerRole/PR-PeterHauser"
@@ -28,12 +28,12 @@ Description: "Example for a CH ELM Document: CPE Genotyping with leading code, 1
 * entry[+].fullUrl = "http://test.fhir.ch/r4/Organization/Org-PeterHauser"
 * entry[=].resource = Org-PeterHauser
 
-Instance: 70Comp-Genotyping-Freetext
+Instance: 69Comp-Genotyping-ObsValue
 InstanceOf: ChElmComposition
 Usage: #inline
 * language = #de-CH
 * identifier.system = "urn:ietf:rfc:3986"
-* identifier.value = "urn:uuid:b9a8b9ee-9157-44af-b46e-afef3c69d6bd"
+* identifier.value = "urn:uuid:b9a8b9ee-9157-44af-b46e-9fef3c69d6bd"
 * status = #final
 * type.coding[0].version = "http://snomed.info/sct/2011000195101"
 * type.coding[=] = $sct#4241000179101 "Laborbericht"
@@ -44,53 +44,57 @@ Usage: #inline
 * title = "Laborbericht vom 17.1.2026"
 * section.title = "Analyseergebnisse der CPE Resistenzbestimmung"
 * section.code = $sct#726528006 "Genotyping (qualifier value)"
-* section.entry = Reference(70Obs-Genotyping-Freetext)
+* section.entry = Reference(69Obs-Genotyping-ObsValue)
 
-Instance: 70DR-Genotyping-Freetext
+Instance: 69DR-Genotyping-ObsValue
 InstanceOf: ChElmDiagnosticReport
 Usage: #inline
 * extension[DiagnosticReportCompositionR5].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.composition"
-* extension[DiagnosticReportCompositionR5].valueReference = Reference(Composition/70Comp-Genotyping-Freetext)
+* extension[DiagnosticReportCompositionR5].valueReference = Reference(Composition/69Comp-Genotyping-ObsValue)
 * identifier.system = "urn:ietf:rfc:3986"
-* identifier.value = "urn:uuid:b9a8b9ee-9157-44af-b46e-afef3c69d6bd"
-* basedOn = Reference(70SR-Genotyping-Freetext)
+* identifier.value = "urn:uuid:b9a8b9ee-9157-44af-b46e-9fef3c69d6bd"
+* basedOn = Reference(69SR-Genotyping-ObsValue)
 * status = #final
 * code = $loinc#11502-2 "Laboratory report"
 * subject = Reference(68Pat)
 * performer = Reference(1Org-Labor)
-* specimen = Reference(70Spec-Genotyping-Freetext)
-* result = Reference(70Obs-Genotyping-Freetext)
+* specimen = Reference(69Spec-Genotyping-ObsValue)
+* result = Reference(69Obs-Genotyping-ObsValue)
 
-Instance: 70SR-Genotyping-Freetext
+Instance: 69SR-Genotyping-ObsValue
 InstanceOf: ChElmServiceRequestLaboratoryOrder
 Usage: #inline
 * identifier.value = "36500923675"
 * status = #completed
 * intent = #order
-* code = $sct#1085501000112104 "Carbapenemase-producing Acinetobacter (organism)"
+* code = $sct#737528008 "Carbapenemase-producing Escherichia coli (organism)"
 * subject = Reference(68Pat)
 * requester = Reference(PR-PeterHauser)
-* specimen = Reference(70Spec-Genotyping-Freetext)
+* specimen = Reference(69Spec-Genotyping-ObsValue)
 
-Instance: 70Spec-Genotyping-Freetext
+Instance: 69Spec-Genotyping-ObsValue
 InstanceOf: ChElmSpecimen
 Usage: #inline
 * type = $sct#258527002 "Anal swab (specimen)"
 * subject = Reference(68Pat)
 * collection.collectedDateTime = "2026-01-15T14:20:00+02:00"
 
-Instance: 70Obs-Genotyping-Freetext
+Instance: 69Obs-Genotyping-ObsValue
 InstanceOf: ChElmObservationResultsLaboratory
 Usage: #inline
 * status = #final
 * category[laboratory] = $observation-category#laboratory "Laboratory"
-* code = $sct#1085501000112104 "Carbapenemase-producing Acinetobacter (organism)"
+* code = $sct#737528008 "Carbapenemase-producing Escherichia coli (organism)"
 * subject = Reference(68Pat)
 * effectiveDateTime = "2026-01-17T14:20:00+02:00"
 * performer = Reference(1Org-Labor)
 * valueCodeableConcept = $sct#700398000 "Acinetobacter bereziniae (organism)"
-* specimen = Reference(70Spec-Genotyping-Freetext)
+* specimen = Reference(69Spec-Genotyping-ObsValue)
 
-* component[0].code = $loinc#LP113695-3 "Carbapenem resistance genes"
-* component[=].valueString = "alpha centauri"
+* component[0].code = $loinc#85503-1 "Carbapenem resistance blaOXA-48 gene [Presence] by Molecular method"
+* component[=].dataAbsentReason = $data-absent-reason-cs#not-applicable
+* component[=].interpretation = $v3-ObservationInterpretation#POS "Positive"
+
+* component[+].code = $loinc#85501-5 "Carbapenem resistance blaVIM gene [Presence] by Molecular method"
+* component[=].dataAbsentReason = $data-absent-reason-cs#not-applicable
 * component[=].interpretation = $v3-ObservationInterpretation#POS "Positive"

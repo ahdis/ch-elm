@@ -8,7 +8,7 @@ http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-results-susc-to-compoment-observation
 
 2. component.interpretation - mapped observation.code zu interpretation code value set
 
-   genotyping: present / absent (are the snomed codes right?) ttp://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pre-abs
+   genotyping: present / absent (are the snomed codes right?) http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pre-abs
 
 
 need to describe the requirements how to add component results for susc/geno  

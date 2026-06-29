@@ -2,7 +2,7 @@ Instance: 68Doc-CPE-Genotyping-Default
 InstanceOf: ChElmDocumentStrict
 Usage: #example
 Title: "68Doc - CPE Genotyping Default"
-Description: "Example for a CH ELM Document: CPE Genotyping with leading code, no observation.value, 2 component codes"
+Description: "Example for a CH ELM Document: CPE Genotyping with leading code, no observation.value, 1 component code"
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:b9a8b9ee-9157-44af-b46e-8fef3c69d6bd"
 * type = #document
@@ -88,7 +88,7 @@ Usage: #inline
 * identifier.value = "36500923675"
 * status = #completed
 * intent = #order
-* code = $sct#1086201000112108 "Carbapenemase-producing Acinetobacter ursingii (organism)"
+* code = $sct#737528008 "Carbapenemase-producing Escherichia coli (organism)"
 * subject = Reference(68Pat)
 * requester = Reference(PR-PeterHauser)
 * specimen = Reference(68Spec-Genotyping-Default)
@@ -105,16 +105,12 @@ InstanceOf: ChElmObservationResultsLaboratory
 Usage: #inline
 * status = #final
 * category[laboratory] = $observation-category#laboratory "Laboratory"
-* code = $sct#1086201000112108 "Carbapenemase-producing Acinetobacter ursingii (organism)"
+* code = $sct#737528008 "Carbapenemase-producing Escherichia coli (organism)"
 * subject = Reference(68Pat)
 * effectiveDateTime = "2026-01-17T14:20:00+02:00"
 * performer = Reference(1Org-Labor)
 * specimen = Reference(68Spec-Genotyping-Default)
 
-* component[0].code = $loinc#85498-4 "Carbapenem resistance blaIMP gene [Presence] by Molecular method"
-* component[=].dataAbsentReason = $data-absent-reason-cs#not-applicable
-* component[=].interpretation = $v3-ObservationInterpretation#POS "Positive"
-
-* component[+].code = $loinc#85827-4 "Carbapenem resistance bla OXA-48-like gene [Presence] by Molecular method"
+* component[0].code = $loinc#85503-1 "Carbapenem resistance blaOXA-48 gene [Presence] by Molecular method"
 * component[=].dataAbsentReason = $data-absent-reason-cs#not-applicable
 * component[=].interpretation = $v3-ObservationInterpretation#POS "Positive"

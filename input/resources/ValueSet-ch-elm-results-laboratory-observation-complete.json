@@ -1569,7 +1569,15 @@
           {
             "code": "89293008",
             "display": "Human immunodeficiency virus type I (organism)"
-          }
+          },
+          {
+            "code": "737528008",
+            "display": "Carbapenemase-producing Acinetobacter ursingii (organism)"
+          }, 
+          {
+            "code": "1085501000112104",
+            "display": "Carbapenemase-producing Acinetobacter (organism)"
+          }   
         ]
       },
       {

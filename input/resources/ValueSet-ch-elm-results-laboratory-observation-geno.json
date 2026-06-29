@@ -27,8 +27,8 @@
             "display": "Carbapenemase-producing Acinetobacter (organism)"
           },
           {
-            "code": "1086201000112108",
-            "display": "Carbapenemase-producing Acinetobacter ursingii (organism)"
+            "code": "737528008",
+            "display": "Carbapenemase-producing Escherichia coli (organism)"
           },
           {
             "code": "734352006",
@@ -49,10 +49,6 @@
           {
             "code": "1359811003",
             "display": "Carbapenemase-producing Escherichia (organism)"
-          },
-          {
-            "code": "737528008",
-            "display": "Carbapenemase-producing Escherichia coli (organism)"
           },
           {
             "code": "1108301000112108",

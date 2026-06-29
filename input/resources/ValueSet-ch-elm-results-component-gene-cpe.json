@@ -14,16 +14,12 @@
         "system": "http://loinc.org",
         "concept": [
           {
-            "code": "85498-4",
-            "display": "Carbapenem resistance blaIMP gene [Presence] by Molecular method"
+            "code": "85503-1",
+            "display": "Carbapenem resistance blaOXA-48 gene [Presence] by Molecular method"
           },
           {
-            "code": "73982-1",
-            "display": "Carbapenem resistance blaNDM gene [Presence] by Molecular method"
-          },
-          {
-            "code": "85827-4",
-            "display": "Carbapenem resistance bla OXA-48-like gene [Presence] by Molecular method"
+            "code": "85501-5",
+            "display": "Carbapenem resistance blaVIM gene [Presence] by Molecular method"
           },
           {
             "code": "LP113695-3",

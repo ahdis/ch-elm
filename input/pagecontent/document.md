@@ -868,24 +868,6 @@ See the examples in chapter 2.2 to learn how to use the resource profiles for di
                 <a href="Bundle-61Doc-Tb-Susceptibility.xml.html">XML</a>
             </td>
         </tr>
-        <tr>
-            <td>CPE - no observation.value, 1 antibiotic component</td>
-            <td>Carbapenemase-producing Acinetobacter ursingii (organism)</td>
-            <td>1086201000112108</td>
-            <td>
-                <a href="Bundle-71Doc-CPE-Susceptibility-Default.json.html">JSON</a>,
-                <a href="Bundle-71Doc-CPE-Susceptibility-Default.xml.html">XML</a>
-            </td>
-        </tr>
-        <tr>
-            <td>CPE - with observation.value (organism specification), 1 antibiotic component</td>
-            <td>Carbapenemase-producing Acinetobacter (organism)</td>
-            <td>1085501000112104</td>
-            <td>
-                <a href="Bundle-72Doc-CPE-Susceptibility-ObsValue.json.html">JSON</a>,
-                <a href="Bundle-72Doc-CPE-Susceptibility-ObsValue.xml.html">XML</a>
-            </td>
-        </tr>
     </tbody>
 </table>
 
@@ -917,30 +899,30 @@ See the examples in chapter 2.2 to learn how to use the resource profiles for di
             </td>
         </tr>
         <tr>
-            <td>CPE - no observation.value, 2 gene components</td>
-            <td>Carbapenemase-producing Acinetobacter ursingii (organism)</td>
-            <td>1086201000112108</td>
+            <td>CPE - 1 gene component</td>
+            <td>Carbapenemase-producing Escherichia coli (organism)</td>
+            <td>737528008</td>
             <td>
                 <a href="Bundle-68Doc-CPE-Genotyping-Default.json.html">JSON</a>,
                 <a href="Bundle-68Doc-CPE-Genotyping-Default.xml.html">XML</a>
             </td>
         </tr>
         <tr>
-            <td>CPE - with observation.value (organism specification), 2 gene components</td>
-            <td>Carbapenemase-producing Acinetobacter (organism)</td>
-            <td>1085501000112104</td>
+            <td>CPE - 2 gene components</td>
+            <td>Carbapenemase-producing Escherichia coli (organism)</td>
+            <td>737528008</td>
             <td>
-                <a href="Bundle-69Doc-CPE-Genotyping-ObsValue.json.html">JSON</a>,
-                <a href="Bundle-69Doc-CPE-Genotyping-ObsValue.xml.html">XML</a>
+                <a href="Bundle-69Doc-CPE-Genotyping-TwoComponents.json.html">JSON</a>,
+                <a href="Bundle-69Doc-CPE-Genotyping-TwoComponents.xml.html">XML</a>
             </td>
         </tr>
         <tr>
-            <td>CPE - with observation.value, 1 generic component with freetext</td>
-            <td>Carbapenemase-producing Acinetobacter (organism)</td>
-            <td>1085501000112104</td>
+            <td>CPE - 1 gene component, 1 generic component with freetext</td>
+            <td>Carbapenemase-producing Escherichia coli (organism)</td>
+            <td>737528008</td>
             <td>
-                <a href="Bundle-70Doc-CPE-Genotyping-Freetext.json.html">JSON</a>,
-                <a href="Bundle-70Doc-CPE-Genotyping-Freetext.xml.html">XML</a>
+                <a href="Bundle-70Doc-CPE-Genotyping-TwoComponentsFreetext.json.html">JSON</a>,
+                <a href="Bundle-70Doc-CPE-Genotyping-TwoComponentsFreetext.xml.html">XML</a>
             </td>
         </tr>
     </tbody>
