@@ -2,7 +2,8 @@ All significant changes to this FHIR implementation guide will be documented on 
 
 ### 1.50.0 2026/07/xx
 
-* added RSV examples
+* added CPE (valid from 2027)
+* added RSV examples (valid from 2027)
 * additional rule for birthdate validation [#198](https://github.com/ahdis/ch-elm/issues/198) 
 
 ### 1.14.1 2026/07/01
