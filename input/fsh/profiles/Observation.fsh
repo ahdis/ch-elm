@@ -96,6 +96,8 @@ Description: "This CH ELM profile constrains the Observation resource for the pu
 * obeys ch-elm-component-code-geno-snomedct
 * obeys ch-elm-component-interpretation-code-geno-loinc
 * obeys ch-elm-component-interpretation-code-geno-snomedct
+* obeys ch-elm-component-observation-profile-geno-loinc
+* obeys ch-elm-component-observation-profile-geno-snomedct
 * code from $ch-elm-results-laboratory-observation-geno (extensible)
 * component 1..*
 * component.code  ^short = "see also 'Guidance - Laboratory Result'"
@@ -179,12 +181,14 @@ Description: "Concentration as Quantity in observation.component result, see als
 * component.valueQuantity.system = "http://unitsofmeasure.org"
 * component.valueQuantity.unit = #mg/L 
 
-// Profile: ChElmObservationComponentTxt
-// Parent: Observation
-// Id: ch-elm-observation-component-txt
-// Title: "CH ELM Observation Component Results: Text"
-// Description: "Text as observation.component result, see also 'Guidance - Laboratory Result'"
-// * component.valueString 0..1
+Profile: ChElmObservationComponentCpeTxt
+Parent: Observation
+Id: ch-elm-observation-component-cpe-txt
+Title: "CH ELM Observation Component Results: Text"
+Description: "Text as observation.component result, if component.code is LP113695-3"
+* obeys ch-elm-component-code-cpe-txt-loinc
+* component.valueString 0..1
+
 
 Profile: ChElmObservationTxt
 Parent: Observation

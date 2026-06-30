@@ -1,0 +1,41 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "ch-elm-results-geno-to-component-observation-profile",
+  "url": "http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-results-geno-to-component-observation-profile",
+  "version": "2026-05-26",
+  "name": "ChElmResultsGenoToComponentObservationProfile",
+  "title": "CH ELM Results Genotyping To Component Observation Profile",
+  "status": "active",
+  "experimental": false,
+  "description": "This CH ELM concept map specifies the ValuesSet for component.code for each leading code.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "CHE"
+        }
+      ]
+    }
+  ],
+  "sourceCanonical": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-laboratory-observation-geno",
+  "targetCanonical": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-observation-profile-vs",
+  "group": [
+    {
+      "source": "http://snomed.info/sct",
+      "target": "http://fhir.ch/ig/ch-elm/CodeSystem/ch-elm-observation-profile-vs",
+      "element": [
+        {
+          "code": "737528008",
+          "display": "Carbapenemase-producing Escherichia coli (organism)",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-observation-component-cpe-txt",
+              "equivalence": "relatedto"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

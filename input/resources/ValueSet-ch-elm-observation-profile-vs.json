@@ -32,6 +32,9 @@
             "code": "http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-observation-component-conc"
           },
           {
+            "code": "http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-observation-component-cpe-txt"
+          },
+          {
             "code": "http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-observation-pq-ab"
           }
         ]

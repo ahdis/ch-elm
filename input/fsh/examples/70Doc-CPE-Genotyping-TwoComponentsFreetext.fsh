@@ -88,7 +88,6 @@ Usage: #inline
 * subject = Reference(68Pat)
 * effectiveDateTime = "2026-01-17T14:20:00+02:00"
 * performer = Reference(1Org-Labor)
-* valueCodeableConcept = $sct#700398000 "Acinetobacter bereziniae (organism)"
 * specimen = Reference(70Spec-Genotyping-Freetext)
 
 * component[0].code = $loinc#85503-1 "Carbapenem resistance blaOXA-48 gene [Presence] by Molecular method"
