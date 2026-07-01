@@ -340,6 +340,14 @@ resources:
     name: 67Doc-Emerging-Pathogen
     description: Example document for FOPH emerging pathogen reporting
     exampleCanonical: http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-document-strict
+  Bundle/71Doc-RSV:
+    name: 71Doc-RSV
+    description: Example Document for RSV
+    exampleCanonical: http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-document-strict
+  Bundle/72Doc-RSV:
+    name: 72Doc-RSV
+    description: Example Document for RSV with Specimen
+    exampleCanonical: http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-document-strict
   Bundle/ChlamydiaPatientMissingNameGiven:
     name: Chlamydia - Patient missing name.given
     description: Example document for Chlamydiosis where patient name.given is missing
