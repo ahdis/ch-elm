@@ -178,9 +178,9 @@
         <id value="4111c240-51de-4795-952b-49ff2b3eb3f7"/>
         <identifier>
           <system value="urn:oid:2.16.756.5.45"/>
-          <value value="7601888888884"/>
+          <value value="A99684215"/>
         </identifier>
-        <name value="Kantonsspital ABC"/>
+        <name value="A99684215 ABC"/>
         <address>
           <line value="Aortastrasse 22">
             <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
