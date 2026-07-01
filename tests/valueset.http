@@ -28,8 +28,22 @@ Accept: application/fhir+json
 
 
 ###
-GET https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir/ValueSet/ch-elm-results-completion-vs HTTP/1.1
+GET https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir/ValueSet/ch-elm-results-component-gene-cpe HTTP/1.1
 Accept: application/fhir+json
+
+###
+GET https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir/ValueSet/ch-elm-results-component-gene-cpe
+Accept: application/fhir+json
+
+###
+GET https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir/ValueSet/ch-elm-interpretation-codes-vs
+
+###
+GET https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir/ConceptMap/ch-elm-results-geno-to-component-code
+
+###
+GET https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir/ConceptMap/ch-elm-results-geno-to-component-interpretation-code
+
 
 ###
 GET https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir/ValueSet/ch-elm-results-geni-spec HTTP/1.1
@@ -44,7 +58,7 @@ GET https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir/ValueSet/ch-elm-results-l
 Accept: application/fhir+json
 
 ###
-GET https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir/ValueSet/ch-elm-results-laboratory-observation HTTP/1.1
+GET https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir/ValueSet/ch-elm-results-geno-to-component-interpretation-code HTTP/1.1
 Accept: application/fhir+json
 
 

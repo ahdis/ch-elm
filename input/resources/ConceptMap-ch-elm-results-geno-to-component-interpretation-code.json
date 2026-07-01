@@ -36,6 +36,22 @@
           ]
         }
       ]
+    },
+    {
+      "source": "http://snomed.info/sct",
+      "target": "http://fhir.ch/ig/ch-elm/CodeSystem/ch-elm-interpretation-codes-vs",
+      "element": [
+        {
+          "code": "737528008",
+          "display": "Carbapenemase-producing Escherichia coli (organism)",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
+              "equivalence": "relatedto"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
