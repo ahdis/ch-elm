@@ -41,9 +41,6 @@
             "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-diph-org"
           },
           {
-            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-ehec-tox-org"
-          },
-          {
             "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-haem-org"
           },
           {
