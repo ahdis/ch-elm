@@ -1,4 +1,9 @@
 All significant changes to this FHIR implementation guide will be documented on this page.   
+
+### 1.14.1 2026/07/27
+
+* Additional codes for CH ELM Results Sal Org Complete
+
 ### 1.14.0 2026/05/26
 
 * [#205](https://github.com/ahdis/ch-elm/issues/205) remove empty ValueSets

@@ -2,7 +2,7 @@
   "resourceType": "ConceptMap",
   "id": "ch-elm-results-to-interpretation-code",
   "url": "http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-results-to-interpretation-code",
-  "version": "2026-05-26",
+  "version": "2026-07-01",
   "name": "ChElmResultsToInterpretationCode",
   "title": "CH ELM Results To Interpretation Code",
   "status": "active",
@@ -1906,6 +1906,16 @@
           ]
         },
         {
+          "code": "539-7",
+          "display": "Mycobacterium sp identified in Sputum by Organism specific culture",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos-neg",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
           "code": "53917-1",
           "display": "Streptococcus pneumoniae DNA [Presence] in Blood by NAA with probe detection",
           "target": [
@@ -1971,16 +1981,6 @@
           "target": [
             {
               "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
-              "equivalence": "relatedto"
-            }
-          ]
-        },
-        {
-          "code": "539-7",
-          "display": "Mycobacterium sp identified in Sputum by Organism specific culture",
-          "target": [
-            {
-              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos-neg",
               "equivalence": "relatedto"
             }
           ]
