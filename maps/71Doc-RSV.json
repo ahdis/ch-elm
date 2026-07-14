@@ -1,0 +1,326 @@
+{
+    "resourceType": "QuestionnaireResponse",
+    "status": "completed",
+    "item": [
+        {
+            "linkId": "LaboratoryReport.Header.DocumentIdentifier",
+            "answer": [
+                {
+                    "valueString": "1901332d-6012-443f-9690-9291adb2cb3b"
+                }
+            ]
+        },
+        {
+            "linkId": "LaboratoryReport.Header.DocumentTimestamp",
+            "answer": [
+                {
+                    "valueString": "2023-09-20T07:35:00+02:00"
+                }
+            ]
+        },
+        {
+            "linkId": "LaboratoryReport.Header.DocumentLanguage",
+            "answer": [
+                {
+                    "valueString": "de-CH"
+                }
+            ]
+        },
+        {
+            "linkId": "LaboratoryReport.Header.DocumentTitle",
+            "answer": [
+                {
+                    "valueString": "Laborbericht vom 20.09.2023"
+                }
+            ]
+        },
+        {
+            "linkId": "LaboratoryReport.Header.DocumentSectionTitle",
+            "answer": [
+                {
+                    "valueString": "Analyseergebnisse der mikrobiologischen Untersuchung"
+                }
+            ]
+        },
+        {
+            "linkId": "LaboratoryReport.Author.OrganizationGLN",
+            "answer": [
+                {
+                    "valueString": "7601002331470"
+                }
+            ]
+        },
+        {
+            "linkId": "LaboratoryReport.Lab.OrganizationGLN",
+            "answer": [
+                {
+                    "valueString": "7601002331470"
+                }
+            ]
+        },
+        {
+            "linkId": "LaboratoryReport.Lab.OrganizationName",
+            "answer": [
+                {
+                    "valueString": "SanLab"
+                }
+            ]
+        },
+        {
+            "linkId": "LaboratoryReport.Lab.OrderIdentifier",
+            "answer": [
+                {
+                    "valueString": "26955847714"
+                }
+            ]
+        },
+        {
+            "linkId": "LaboratoryReport.Orderer.OrganizationBER",
+            "answer": [
+                {
+                    "valueString": "7601888888884"
+                }
+            ]
+        },
+        {
+            "linkId": "LaboratoryReport.Orderer.OrganizationName",
+            "answer": [
+                {
+                    "valueString": "Kantonsspital ABC"
+                }
+            ]
+        },
+        {
+            "linkId": "LaboratoryReport.Orderer.OrganizationDepartment",
+            "answer": [
+                {
+                    "valueString": "Abteilung 2"
+                }
+            ]
+        },
+        {
+            "linkId": "LaboratoryReport.Orderer.Physician.GLN",
+            "answer": [
+                {
+                    "valueString": "7601000234438"
+                }
+            ]
+        },
+        {
+            "linkId": "LaboratoryReport.Orderer.Physician.Surname",
+            "answer": [
+                {
+                    "valueString": "Giacometti"
+                }
+            ]
+        },
+        {
+            "linkId": "LaboratoryReport.Orderer.Physician.Givenname",
+            "answer": [
+                {
+                    "valueString": "Monika"
+                }
+            ]
+        },
+        {
+            "linkId": "LaboratoryReport.Orderer.Physician.Phone",
+            "answer": [
+                {
+                    "valueString": "+41 79 111 44 55"
+                }
+            ]
+        },
+        {
+            "linkId": "LaboratoryReport.Orderer.Physician.Email",
+            "answer": [
+                {
+                    "valueString": "m.giacometti@ks-abc.ch"
+                }
+            ]
+        },
+        {
+            "linkId": "LaboratoryReport.Orderer.OrganizationAddress.StreetLine",
+            "answer": [
+                {
+                    "valueString": "Aortastrasse 22"
+                }
+            ]
+        },
+        {
+            "linkId": "LaboratoryReport.Orderer.OrganizationAddress.PostBox",
+            "answer": [
+                {
+                    "valueString": "Postfach 18"
+                }
+            ]
+        },
+        {
+            "linkId": "LaboratoryReport.Orderer.OrganizationAddress.ZipCode",
+            "answer": [
+                {
+                    "valueString": "3000"
+                }
+            ]
+        },
+        {
+            "linkId": "LaboratoryReport.Orderer.OrganizationAddress.City",
+            "answer": [
+                {
+                    "valueString": "Bern"
+                }
+            ]
+        },
+        {
+            "linkId": "LaboratoryReport.Patient.OASI",
+            "answer": [
+                {
+                    "valueString": "7561733446723"
+                }
+            ]
+        },
+        {
+            "linkId": "LaboratoryReport.Patient.Surname",
+            "answer": [
+                {
+                    "valueString": "F"
+                }
+            ]
+        },
+        {
+            "linkId": "LaboratoryReport.Patient.Givenname",
+            "answer": [
+                {
+                    "valueString": "H"
+                }
+            ]
+        },
+        {
+            "linkId": "LaboratoryReport.Patient.Gender",
+            "answer": [
+                {
+                    "valueString": "female"
+                }
+            ]
+        },
+        {
+            "linkId": "LaboratoryReport.Patient.DateOfBirth",
+            "answer": [
+                {
+                    "valueString": "1985-10-17"
+                }
+            ]
+        },
+        {
+            "linkId": "LaboratoryReport.Patient.Address.ZipCode",
+            "answer": [
+                {
+                    "valueString": "4552"
+                }
+            ]
+        },
+        {
+            "linkId": "LaboratoryReport.Patient.Address.City",
+            "answer": [
+                {
+                    "valueString": "Derendingen"
+                }
+            ]
+        },
+        {
+            "linkId": "LaboratoryReport.Patient.Address.Canton",
+            "answer": [
+                {
+                    "valueString": "SO"
+                }
+            ]
+        },
+        {
+            "linkId": "LaboratoryReport.Patient.Address.Country",
+            "answer": [
+                {
+                    "valueString": "CH"
+                }
+            ]
+        },
+        {
+            "linkId": "LaboratoryReport.TestResult.StudyType",
+            "answer": [
+                {
+                    "valueString": "18725-2"
+                }
+            ]
+        },
+        {
+            "linkId": "LaboratoryReport.TestResult.ExecutionDateTime",
+            "answer": [
+                {
+                    "valueString": "2023-09-19T17:50:00+02:00"
+                }
+            ]
+        },
+        {
+            "linkId": "LaboratoryReport.TestResult.Type.Code",
+            "answer": [
+                {
+                    "valueString": "105211-7"
+                }
+            ]
+        },
+        {
+            "linkId": "LaboratoryReport.TestResult.Type.CodeSystem",
+            "answer": [
+                {
+                    "valueString": "LOINC"
+                }
+            ]
+        },
+        {
+            "linkId": "LaboratoryReport.TestResult.Specimen.CollectionDateTime",
+            "answer": [
+                {
+                    "valueString": "2026-06-17"
+                }
+            ]
+        },
+        {
+            "linkId": "LaboratoryReport.TestResult.Value.Code",
+            "answer": [
+                {
+                    "valueString": "10828004"
+                }
+            ]
+        },
+        {
+            "linkId": "LaboratoryReport.TestResult.Value.CodeSystem",
+            "answer": [
+                {
+                    "valueString": "SNOMED CT"
+                }
+            ]
+        },
+        {
+            "linkId": "LaboratoryReport.TestResult.Interpretation.Code",
+            "answer": [
+                {
+                    "valueString": "POS"
+                }
+            ]
+        },
+        {
+            "linkId": "LaboratoryReport.TestResult.Interpretation.CodeSystem",
+            "answer": [
+                {
+                    "valueString": "HL7 CodeSystem ObservationInterpretation"
+                }
+            ]
+        },
+        {
+            "linkId": "LaboratoryReport.Id",
+            "answer": [
+                {
+                    "valueString": "71Doc-RSV"
+                }
+            ]
+        }
+    ]
+}

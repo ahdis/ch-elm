@@ -429,6 +429,15 @@ See the examples in chapter 2.2 to learn how to use the resource profiles for di
             </td>
         </tr>
         <tr>
+            <td>RSV</td>
+            <td>Respiratory syncytial virus RNA [Presence] in Bronchial specimen by NAA with probe detection</td>
+            <td>105211-7</td>
+            <td>
+                <a href="Bundle-71Doc-RSV.json.html">JSON</a>, 
+                <a href="Bundle-71Doc-RSV.json.html">XML</a>
+            </td>
+        </tr>
+        <tr>
             <td>SARS</td>
             <td>SARS coronavirus RNA [Presence] in Specimen by NAA with probe detection</td>
             <td>41458-1</td>
@@ -670,6 +679,15 @@ See the examples in chapter 2.2 to learn how to use the resource profiles for di
              <td>
                 <a href="Bundle-12Doc-Mpox.json.html">JSON</a>, 
                 <a href="Bundle-12Doc-Mpox.xml.html">XML</a>
+            </td>
+        </tr>
+        <tr>
+            <td>RSV</td>
+            <td>Respiratory syncytial virus RNA [Presence] in Specimen by NAA with probe detection</td>
+            <td>40988-8</td>
+            <td>
+                <a href="Bundle-72Doc-RSV.json.html">JSON</a>, 
+                <a href="Bundle-72Doc-RSV.json.html">XML</a>
             </td>
         </tr>
     </tbody>

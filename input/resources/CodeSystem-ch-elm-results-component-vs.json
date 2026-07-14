@@ -2,7 +2,7 @@
   "resourceType": "CodeSystem",
   "id": "ch-elm-results-component-vs",
   "url": "http://fhir.ch/ig/ch-elm/CodeSystem/ch-elm-results-component-vs",
-  "version": "2026-07-01",
+  "version": "2026-07-14",
   "name": "ChElmResultsComponentVs",
   "title": "CH ELM Results Component Vs",
   "status": "active",
@@ -26,9 +26,6 @@
     },
     {
       "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-component-gene-tb"
-    },
-    {
-      "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-component-antibiotic-cpe"
     },
     {
       "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-component-antibiotic-tb"
