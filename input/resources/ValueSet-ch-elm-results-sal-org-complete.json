@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "ch-elm-results-sal-org-complete",
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-sal-org-complete",
-  "version": "2026-05-26",
+  "version": "2026-07-14",
   "name": "ChElmResultsSalOrgComplete",
   "title": "CH ELM Results Sal Org Complete",
   "status": "active",
@@ -1826,6 +1826,10 @@
             "display": "Salmonella Athinai (organism)"
           },
           {
+            "code": "23131001",
+            "display": "Salmonella Ajiobo (organism)"
+          },
+          {
             "code": "114382003",
             "display": "Salmonella IIIb 6,14:l,v:z53 (organism)"
           },
@@ -2548,6 +2552,10 @@
           {
             "code": "81030003",
             "display": "Salmonella Masembe (organism)"
+          },
+          {
+            "code": "62136003",
+            "display": "Salmonella Dublin (organism)"
           },
           {
             "code": "11903004",
@@ -5922,6 +5930,10 @@
             "display": "Salmonella Osnabrueck (organism)"
           },
           {
+            "code": "31564006",
+            "display": "Salmonella Claibornei (organism)"
+          },
+          {
             "code": "398481005",
             "display": "Salmonella IIIb 60:k:z (organism)"
           },
@@ -7252,6 +7264,10 @@
           {
             "code": "114426004",
             "display": "Salmonella II 17:b:e,n,x,z15 (organism)"
+          },
+          {
+            "code": "398559003",
+            "display": "Salmonella group O:9 (organism)"
           },
           {
             "code": "114465001",

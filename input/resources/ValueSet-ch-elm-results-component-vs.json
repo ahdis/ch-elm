@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "ch-elm-results-component-vs",
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-component-vs",
-  "version": "2026-05-26",
+  "version": "2026-07-14",
   "name": "ChElmResultsComponentVs",
   "title": "CH ELM Results Component Vs",
   "status": "active",
