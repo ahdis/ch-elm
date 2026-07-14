@@ -882,7 +882,7 @@ See the examples in chapter 2.2 to learn how to use the resource profiles for di
             <td>Mycobacterial susceptibility panel by Method for Slow-growing mycobacteria</td>
             <td>29579-0</td>
             <td>
-                <a href="Bundle-61Doc-Tb-Susceptibility.json.html">JSON</a>, 
+                <a href="Bundle-61Doc-Tb-Susceptibility.json.html">JSON</a>,
                 <a href="Bundle-61Doc-Tb-Susceptibility.xml.html">XML</a>
             </td>
         </tr>
@@ -912,8 +912,35 @@ See the examples in chapter 2.2 to learn how to use the resource profiles for di
             <td>Mycobacterium tuberculosis complex resistance panel by Molecular genetics method</td>
             <td>94053-6</td>
             <td>
-                <a href="Bundle-63Doc-Tb-Genotyping.json.html">JSON</a>, 
+                <a href="Bundle-63Doc-Tb-Genotyping.json.html">JSON</a>,
                 <a href="Bundle-63Doc-Tb-Genotyping.xml.html">XML</a>
+            </td>
+        </tr>
+        <tr>
+            <td>CPE - 1 gene component</td>
+            <td>Carbapenemase-producing Escherichia coli (organism)</td>
+            <td>737528008</td>
+            <td>
+                <a href="Bundle-68Doc-CPE-Genotyping-Default.json.html">JSON</a>,
+                <a href="Bundle-68Doc-CPE-Genotyping-Default.xml.html">XML</a>
+            </td>
+        </tr>
+        <tr>
+            <td>CPE - 2 gene components</td>
+            <td>Carbapenemase-producing Escherichia coli (organism)</td>
+            <td>737528008</td>
+            <td>
+                <a href="Bundle-69Doc-CPE-Genotyping-TwoComponents.json.html">JSON</a>,
+                <a href="Bundle-69Doc-CPE-Genotyping-TwoComponents.xml.html">XML</a>
+            </td>
+        </tr>
+        <tr>
+            <td>CPE - 1 gene component, 1 generic component with freetext</td>
+            <td>Carbapenemase-producing Escherichia coli (organism)</td>
+            <td>737528008</td>
+            <td>
+                <a href="Bundle-70Doc-CPE-Genotyping-TwoComponentsFreetext.json.html">JSON</a>,
+                <a href="Bundle-70Doc-CPE-Genotyping-TwoComponentsFreetext.xml.html">XML</a>
             </td>
         </tr>
     </tbody>

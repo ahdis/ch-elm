@@ -133,6 +133,16 @@ Description: "If Observation.code is mapped in http://fhir.ch/ig/ch-elm/ConceptM
 Severity: #error
 Expression: "'http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-results-susc-to-component-observation-profile'.resolve().group.where(source='http://snomed.info/sct').element.where(code=%context.code.coding.where(system='http://snomed.info/sct').first().code).exists() implies conformsTo('http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-results-susc-to-component-observation-profile'.resolve().group.where(source='http://snomed.info/sct').element.where(code=%context.code.coding.where(system='http://snomed.info/sct').first().code).target.first().code)"
 
+Invariant: ch-elm-component-observation-profile-geno-loinc
+Description: "If Observation.code is mapped in http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-results-geno-to-component-observation-profile, then the observation must be conform to the mapped profile for genotyping testing"
+Severity: #error
+Expression: "'http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-results-susc-to-component-observation-profile'.resolve().group.where(source='http://loinc.org').element.where(code=%context.code.coding.where(system='http://loinc.org').first().code).exists() implies conformsTo('http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-results-geno-to-component-observation-profile'.resolve().group.where(source='http://loinc.org').element.where(code=%context.code.coding.where(system='http://loinc.org').first().code).target.first().code)"
+
+Invariant: ch-elm-component-observation-profile-geno-snomedct
+Description: "If Observation.code is mapped in http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-results-geno-to-component-observation-profile, then the component.code code must be a member of the mapped ValueSet for genotyping testing"
+Severity: #error
+Expression: "'http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-results-geno-to-component-observation-profile'.resolve().group.where(source='http://snomed.info/sct').element.where(code=%context.code.coding.where(system='http://snomed.info/sct').first().code).exists() implies conformsTo('http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-results-geno-to-component-observation-profile'.resolve().group.where(source='http://snomed.info/sct').element.where(code=%context.code.coding.where(system='http://snomed.info/sct').first().code).target.first().code)"
+
 Invariant: ch-elm-component-interpretation-code-geno-loinc
 Description: "If Observation.code is mapped in http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-results-geno-to-component-interpretation-code, then the component.interpretation code must be a member of the mapped ValueSet for genotyping testing"
 Severity: #error
@@ -142,6 +152,11 @@ Invariant: ch-elm-component-interpretation-code-geno-snomedct
 Description: "If Observation.code is mapped in http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-results-geno-to-component-interpretation-code, then the component.interpretation code must be a member of the mapped ValueSet for genotyping testing"
 Severity: #error
 Expression: "'http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-results-geno-to-component-interpretation-code'.resolve().group.where(source='http://snomed.info/sct').element.where(code=%context.code.coding.where(system='http://snomed.info/sct').first().code).exists() implies component.interpretation.all(memberOf('http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-results-geno-to-component-interpretation-code'.resolve().group.where(source='http://snomed.info/sct').element.where(code=%context.code.coding.where(system='http://snomed.info/sct').first().code).target.first().code))"
+
+Invariant: ch-elm-component-code-cpe-txt-loinc
+Description: "If code is LP113695-3, then valueString must be provided"
+Severity: #error
+Expression: "component.where(code.coding.where(system='http://loinc.org' and code='LP113695-3').exists()).all((value as string).exists() and (value as string).length() > 0)"
 
 Invariant: name-initials
 Description: "a name with initials"

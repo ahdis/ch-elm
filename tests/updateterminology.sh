@@ -399,6 +399,15 @@ curl --request GET \
   --key $KEY \
   -o ../input/resources/ValueSet-$VALUESET.json
 
+VALUESET="ch-elm-results-component-gene-cpe"
+curl --request GET \
+  --url https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir/ValueSet/$VALUESET \
+  --header 'accept: application/fhir+json' \
+  --header 'user-agent: vscode-restclient' \
+  --cert $CERT \
+  --key $KEY \
+  -o ../input/resources/ValueSet-$VALUESET.json
+
 VALUESET="ch-elm-results-component-antibiotic-tb"
 curl --request GET \
   --url https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir/ValueSet/$VALUESET \
@@ -409,15 +418,6 @@ curl --request GET \
   -o ../input/resources/ValueSet-$VALUESET.json
 
 VALUESET="ch-elm-results-mpox-org"
-curl --request GET \
-  --url https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir/ValueSet/$VALUESET \
-  --header 'accept: application/fhir+json' \
-  --header 'user-agent: vscode-restclient' \
-  --cert $CERT \
-  --key $KEY \
-  -o ../input/resources/ValueSet-$VALUESET.json
-
-VALUESET="ch-elm-interpretation-codes-vs"
 curl --request GET \
   --url https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir/ValueSet/$VALUESET \
   --header 'accept: application/fhir+json' \
@@ -535,6 +535,15 @@ curl --request GET \
   -o ../input/resources/ConceptMap-$CONCEPTMAP.json
 
 CONCEPTMAP="ch-elm-results-geno-to-component-interpretation-code"
+curl --request GET \
+  --url https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir/ConceptMap/$CONCEPTMAP \
+  --header 'accept: application/fhir+json' \
+  --header 'user-agent: vscode-restclient' \
+  --cert $CERT \
+  --key $KEY \
+  -o ../input/resources/ConceptMap-$CONCEPTMAP.json
+
+CONCEPTMAP="ch-elm-results-geno-to-component-observation-profile"
 curl --request GET \
   --url https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir/ConceptMap/$CONCEPTMAP \
   --header 'accept: application/fhir+json' \

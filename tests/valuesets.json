@@ -150,20 +150,6 @@
         }
       },
       {
-        "fullUrl": "https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir/ValueSet?url=http%3A%2F%2Ffhir.ch%2Fig%2Fch-elm%2FValueSet%2Fch-elm-results-cpe-org",
-        "resource": {
-          "resourceType": "ValueSet",
-          "id": "ChElmResultsCpeOrg-2023-11-08",
-          "text": {
-            "status": "generated",
-            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>The &quot;cpe_org&quot; organism group provides a curated set of codes representing specific organisms. Each code within this group has been selected to ensure precise representation and consistency in relation to the primary LOINC codes. Clients utilizing the &quot;cpe_org&quot; group should refer to the provided codes to accurately and uniformly capture and report organism-related information.<br /></p></div>"
-          },
-          "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-cpe-org",
-          "name": "ChElmResultsCpeOrg",
-          "status": "active"
-        }
-      },
-      {
         "fullUrl": "https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir/ValueSet?url=http%3A%2F%2Ffhir.ch%2Fig%2Fch-elm%2FValueSet%2Fch-elm-results-diph-org",
         "resource": {
           "resourceType": "ValueSet",

@@ -8,27 +8,27 @@ http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-results-susc-to-compoment-observation
 
 2. component.interpretation - mapped observation.code zu interpretation code value set
 
-   genotyping: present / absent (are the snomed codes right?) ttp://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pre-abs
+   genotyping: present / absent (are the snomed codes right?) http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pre-abs
 
 
 need to describe the requirements how to add component results for susc/geno  
 
 
-### New Value Sets Table
+
+
+### Value Sets Table
 
 | Study type | Pathogen | Code location | Description | Name |
 |------------|----------|---------------|-------------|------|
 | All | all | composition.section.code | List of all the study types | http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-study-type |
 | Antibiogram | all | observation.code | List of antibiogram pathogens | http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-laboratory-observation-susc.html |
 | Antibiogram | TB | observation.component.code | List of TB antibiotics | http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-component-antibiotic-tb |
-| Antibiogram | CPE | observation.component.code | List of CPE antibiotics | http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-component-antibiotic-cpe |
 | Antibiogram | TB | observation.component.interpretation | List of TB interpretations (susceptible, resistent) | http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-res-sus |
-| Antibiogram | CPE | observation.component.interpretation | List of CPE interpretations (resistent) | http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-res |
 | Genotyping | all | observation.code | List of genotyping pathogens | http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-laboratory-observation-geno |
 | Genotyping | TB | observation.component.code | List of TB mutations | http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-component-gene-tb |
 | Genotyping | CPE | observation.component.code | List of CPE mutations | http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-component-gene-cpe |
 | Genotyping | TB | observation.component.interpretation | List of TB interpretation (positive negative) as HL7 codes | http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos-neg |
-| Genotyping | CPE | observation.component.interpretation | List of CPE interpretation (positive negative) as HL7 codes | http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos-neg |
+| Genotyping | CPE | observation.component.interpretation | List of CPE interpretation (positive) as HL7 codes | http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos |
 | All | all | observation.code | List of all observation codes for all study types | http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-laboratory-observation-complete |
 | Microbiology | TB | observation.interpretation | List of interpretation for "standard" TB report as HL7 codes | http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos-neg |
 
