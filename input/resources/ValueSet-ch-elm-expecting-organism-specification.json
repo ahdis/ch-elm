@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "ch-elm-expecting-organism-specification",
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-expecting-organism-specification",
-  "version": "2026-07-01",
+  "version": "2026-07-14",
   "name": "ChElmExpectingOrganismSpecification",
   "title": "CH ELM Expecting Organism Specification",
   "status": "active",
@@ -28,6 +28,10 @@
           {
             "code": "104376-9",
             "display": "Diphtheria toxin DNA [Presence] in Specimen by NAA with probe detection"
+          },
+          {
+            "code": "108111-6",
+            "display": "Hantavirus RNA [Presence] in Specimen by NAA with probe detection"
           },
           {
             "code": "14357-8",
