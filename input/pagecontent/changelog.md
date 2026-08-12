@@ -1,6 +1,6 @@
 All significant changes to this FHIR implementation guide will be documented on this page.   
 
-### 1.50.0 2026/07/xx
+### 1.50.0 2026/08/12
 
 * added CPE (valid from 2027)
 * added RSV examples (valid from 2027)

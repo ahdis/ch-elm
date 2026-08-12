@@ -2,7 +2,7 @@
   "resourceType": "ConceptMap",
   "id": "ch-elm-results-geno-to-component-observation-profile",
   "url": "http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-results-geno-to-component-observation-profile",
-  "version": "2026-07-14",
+  "version": "2026-08-12",
   "name": "ChElmResultsGenoToComponentObservationProfile",
   "title": "CH ELM Results Genotyping To Component Obersvation Profile",
   "status": "active",

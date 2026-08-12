@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "ch-elm-results-component-gene-cpe",
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-component-gene-cpe",
-  "version": "2026-07-14",
+  "version": "2026-08-12",
   "name": "ChElmResultsComponentGeneCpe",
   "title": "CH ELM Results Gene Cpe",
   "status": "active",
