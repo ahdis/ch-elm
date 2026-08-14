@@ -1,10 +1,15 @@
 All significant changes to this FHIR implementation guide will be documented on this page.   
 
-### 1.50.0 2026/08/12
+### 1.15.1 2026/08/14
+
+* [#207](https://github.com/ahdis/ch-elm/issues/207) increase limit of vct code to 100 characters  
+
+
+### 1.15.0 2026/08/12
 
 * added CPE (valid from 2027)
 * added RSV examples (valid from 2027)
-* additional rule for birthdate validation [#198](https://github.com/ahdis/ch-elm/issues/198) 
+* [#198](https://github.com/ahdis/ch-elm/issues/198) additional rule for birthdate validation  
 
 ### 1.14.1 2026/07/01
 

@@ -21,7 +21,7 @@ Description: "This CH ELM extension enables to provide the VCT Code. Retired. Ue
 * value[x] 1..
 * value[x] only string
 * valueString ^short = "Name of the VCT Code"
-* valueString ^maxLength = 20
+* valueString ^maxLength = 100
 
 Extension: ChElmExtHivCode
 Id: ch-elm-ext-hiv-code
