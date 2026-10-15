@@ -32,6 +32,7 @@ dependencies:
   ch.fhir.ig.ch-ips: 2.0.0
   hl7.fhir.eu.laboratory: 0.1.1
   hl7.fhir.uv.ips: 2.0.0
+  hl7.fhir.uv.xver-r5.r4: 0.1.0
 pages:
   index.md:
     title: Home
@@ -401,3 +402,15 @@ resources:
     name: Test99 Bundle - Coxiella without zero denominator should raise an error
     description: Coxiella with zero denomiator should raise an error
     exampleCanonical: http://hl7.org/fhir/StructureDefinition/Binary
+  # CodeSystems provided by the FOPH server share their title with the ValueSet, the table of contents needs unique names.
+  # Remove these overrides once FOPH gives the CodeSystems distinct titles on the server.
+  CodeSystem/ch-elm-foph-patient-name-representation:
+    name: CH ELM FOPH Patient Name Representation (CodeSystem)
+  CodeSystem/ch-elm-interpretation-codes-vs:
+    name: CH ELM Interpretation Codes Vs (CodeSystem)
+  CodeSystem/ch-elm-observation-profile-vs:
+    name: CH ELM Observation Profile Vs (CodeSystem)
+  CodeSystem/ch-elm-results-completion-vs:
+    name: CH ELM Results Completion Vs (CodeSystem)
+  CodeSystem/ch-elm-results-component-vs:
+    name: CH ELM Results Component Vs (CodeSystem)

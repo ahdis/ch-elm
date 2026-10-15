@@ -12,7 +12,7 @@ The specification herewith documented is work in progress. No liability can be i
 
 </div>
 
-**Download**: You can download this implementation guide in [npm format](https://confluence.hl7.org/display/FHIR/NPM+Package+Specification) from [here](package.tgz).
+**Download**: You can download this implementation guide in [npm format](https://confluence.hl7.org/display/FHIR/NPM+Package+Specification) from [here](../package.tgz).
 
 ### Implementation Support for Laboratories
 
@@ -20,13 +20,13 @@ This guide supports you as a laboratory in the following way:
 - [Use cases](usecase.html) describe the different scenarios with respective example reports for specific organisms, e.g. for Neisseria gonorrhoeae in [xml](Bundle-1Doc-NeisseriaGonorrhoeae.xml.html) or [json](Bundle-1Doc-NeisseriaGonorrhoeae.json.html), you choose if you want to provide the FHIR laboratory report in xml or json format.
 - What needs to be defined in the laboratory report is defined in [FHIR document](document.html), profiles define the constraints on FHIR resources which need to be included in the report, see the overview [here](profiles.html).
 - The data elements defined by the ordinance of the Federal Office of Public Health (FOPH) for the report are defined in the [logical model](StructureDefinition-LaboratoryReport.html) and are then [mapped](StructureDefinition-LaboratoryReport-mappings.html) to the FHIR document structure.  
-- Value sets for the [terminology](terminology.html) are provided as FHIR resources which you can directly import from the [npm package](package.tgz).   
+- Value sets for the [terminology](terminology.html) are provided as FHIR resources which you can directly import from the [npm package](../package.tgz).   
 - The [laboratory report](document.html) is sent to the FOPH by a [FHIR RESTful web API endpoint](api.html).
 - Further documentation for specific topics can be found on [guidance](guidance.html) and/or by contacting the FOPH directly.
 
 [FHIR R4](https://hl7.org/fhir/R4/index.html) has a huge implementation community and offers various libraries to support the implementation of FHIR based solutions, for creating the FHIR document or providing a client for doing the FHIR API calls. For java we recommend [hapi-fhir](https://hapifhir.io/), for .NET [firely-net-sdk](https://github.com/FirelyTeam/firely-net-sdk), but there are also multiple other [options](https://confluence.hl7.org/display/FHIR/Open+Source+Implementations). If you have questions about general FHIR questions do not hesitate to ask in [chat.fhir.org](https://chat.fhir.org/).
 
-To check if your report is valid to the requirements of this implementation guide you can check it with the [FHIR Validator](https://confluence.hl7.org/display/FHIR/Using+the+FHIR+Validator) providing this [package](package.tgz) as a parameter and specifying the profile `http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-document-strict`.
+To check if your report is valid to the requirements of this implementation guide you can check it with the [FHIR Validator](https://confluence.hl7.org/display/FHIR/Using+the+FHIR+Validator) providing this [package](../package.tgz) as a parameter and specifying the profile `http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-document-strict`.
 
 Since the FHIR API is standardized you can test your client also against a public FHIR test server like [hapi](https://hapi.fhir.org/baseR4/swagger-ui/). 
 

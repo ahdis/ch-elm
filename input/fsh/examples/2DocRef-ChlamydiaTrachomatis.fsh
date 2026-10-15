@@ -13,7 +13,7 @@ Description: "Reporting Chlamydia Trachomatis"
 Instance: 2-DocumentReference
 InstanceOf: PublishDocumentReference
 Usage: #example
-Title: "Publish 2Doc-ChlamydiaTrachomatis (Strict)"
+Title: "Publish 2Doc-ChlamydiaTrachomatis"
 Description: "Reporting Chlamydia Trachomatis"
 * contained = 2Doc-ChlamydiaTrachomatis
 * status = #current
