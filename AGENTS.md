@@ -28,7 +28,7 @@
 - Generated: `fsh-generated/`, `output/`, `temp/`. Do not edit by hand.
 
 ## Build, Test, and Development Commands
-- Prerequisites: Java 11+, Jekyll (for IG building)
+- Prerequisites: Java 17+, Jekyll and SUSHI, or Docker (see "Building the IG" in README.md)
 - `npm run update:publisher`: Download/refresh HL7 IG Publisher.
 - `npm run build:ig`: Build the Implementation Guide once (runs `./scripts/_genonce.sh`).
 - `npm run build:ig:continuous`: Rebuild on change (runs `./scripts/_gencontinuous.sh`).
