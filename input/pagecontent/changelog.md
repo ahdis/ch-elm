@@ -1,5 +1,10 @@
 All significant changes to this FHIR implementation guide will be documented on this page.   
 
+### 1.15.2 2026/xx/xx
+
+* build fixes for SUSHI 3.20.1, the current CH IG template and IG Publisher 3.0.0: dependency on hl7.fhir.uv.xver-r5.r4 for the R5 DiagnosticReport.composition extension, unique titles in the table of contents, package download links
+* logical model: Patient.Identifier and TestResult.Specimen.Type are grouping elements of type Element
+
 ### 1.15.1 2026/08/14
 
 * [#207](https://github.com/ahdis/ch-elm/issues/207) increase limit of vct code to 100 characters  

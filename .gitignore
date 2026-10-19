@@ -21,3 +21,13 @@ www/*
 *.xlsx
 
 .DS_Store
+
+# HL7 helper scripts that _updatePublisher.sh copies into the root
+/_build.bat
+/_build.sh
+/_gencontinuous.bat
+/_gencontinuous.sh
+/_genonce.bat
+/_genonce.sh
+/_updatePublisher.bat
+/_updatePublisher.sh

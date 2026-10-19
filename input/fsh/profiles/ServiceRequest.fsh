@@ -25,9 +25,9 @@ Description: "This CH ELM base profile constrains the ServiceRequest resource fo
 Profile: ChElmServicePreviousRequestLaboratoryOrder
 Parent: ChLabReportServiceRequest
 Id: ch-elm-servicerequest-previous-laboratory-order
-Title: "CH ELM ServiceRequest: Laboratory Order"
+Title: "CH ELM ServiceRequest: Previous Laboratory Order"
 Description: "This CH ELM base profile constrains the ServiceRequest resource for the purpose of the previous laboratory order."
-* . ^short = "CH ELM ServiceRequest: Laboratory Order"
+* . ^short = "CH ELM ServiceRequest: Previous Laboratory Order"
 * status = #completed
 * intent = #order
 * identifier.extension contains $data-absent-reason named dataabsentreason 0..1

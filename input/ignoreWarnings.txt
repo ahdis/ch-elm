@@ -31,6 +31,12 @@ The extension http://hl7.org/fhir/StructureDefinition/regex|%
 # Dependency defined in derived LAB IGs
 This IG is for FHIR version 4.0.1, while the package 'hl7.fhir.eu.extensions#0.1.1' is for FHIR version 5.0.0
 
+# Cross-version extension DiagnosticReport.composition (hl7.fhir.uv.xver-r5.r4) allows both the R5 Composition profile and Composition
+%among choices: http://hl7.org/fhir/5.0/StructureDefinition/profile-Composition|0.1.0, http://hl7.org/fhir/StructureDefinition/Composition|4.0.1
+
+# IG Publisher 3.0.0 renders DocumentReference attachments with an <h4> heading on the example pages, remove once the publisher is fixed
+The page skips a heading level: <h4> 'Attachments' follows <h2> 'Example DocumentReference: %
+
 # Support deprecated extension for backwards compatibility
 The extension http://hl7.org/fhir/StructureDefinition/iso21090-SC-coding|%
 

@@ -1,8 +1,8 @@
 Instance: 1cPR-KsAbc
 InstanceOf: ChElmPractitionerRoleOrderer
 Usage: #example
-Title: "1PR - Monika Giacometti @ Kantonsspital ABC"
-Description: "Example for a CH ELM PractitionerRole: Orderer where the organization is not known, only the prtactitioner"
+Title: "1cPR - Giacometti (organization unknown)"
+Description: "Example for a CH ELM PractitionerRole: Orderer where the organization is not known, only the practitioner"
 * practitioner = Reference(1cPract-KsAbc)
 
 Instance: 1cPract-KsAbc

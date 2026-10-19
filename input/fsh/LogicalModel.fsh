@@ -55,7 +55,7 @@ Cardinalities:
 * Orderer.OrganizationAddress.City 1..1 string "City"
 
 * Patient 1..1 Element "Patient -> Anhang 3 (Angaben zur betroffenen Person)"
-* Patient.Identifier 1..1 Identifier "Identifier"
+* Patient.Identifier 1..1 Element "Identifier"
 * Patient.Identifier.OASI 0..1 Identifier "Switzerland: Old-age and survivors's insurance (OASI) number"
 * Patient.Identifier.IDN 0..1 Identifier "Liechtenstein: Identification number (IDN)"
 * Patient.Surname 1..1 string "Surname (or initials)"
@@ -78,7 +78,7 @@ Cardinalities:
 * TestResult.Type.CodeSystem 1..1 uri "Identity fo the terminology system"
 * TestResult.Specimen 1..1 Element "Test sample"
 * TestResult.Specimen.CollectionDateTime 1..1 dateTime "Date (-time) of sample collection"
-* TestResult.Specimen.Type 1..1 code "Collection material"
+* TestResult.Specimen.Type 1..1 Element "Collection material"
 * TestResult.Specimen.Type.Code 0..1 code "Coded data"
 * TestResult.Specimen.Type.CodeSystem 0..1 uri "Identity fo the terminology system"
 * TestResult.Value 1..1 Element "Acutal test result"
