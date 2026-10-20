@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "ch-elm-results-laboratory-observation",
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-laboratory-observation",
-  "version": "2026-08-12",
+  "version": "2026-10-20",
   "name": "ChElmResultsLaboratoryObservation",
   "title": "CH ELM Results Laboratory Observation",
   "status": "active",
@@ -151,7 +151,7 @@
           },
           {
             "code": "107242-0",
-            "display": "Tick-borne encephalitis virus Ab [Interpretation] in Serum or Plasma"
+            "display": "Tick borne encephalitis virus Ab [Interpretation] in Serum or Plasma"
           },
           {
             "code": "108111-6",
