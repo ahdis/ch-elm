@@ -1,0 +1,7 @@
+# Terminology from the FOPH server is stored as the server returns it: CRLF line
+# endings, no final newline (see tests/updateterminology.sh). -text stops
+# core.autocrlf from converting newly added files to LF, which would mix line
+# endings in input/resources.
+input/resources/ValueSet-*.json -text
+input/resources/ConceptMap-*.json -text
+input/resources/CodeSystem-*.json -text

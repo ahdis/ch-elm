@@ -23,7 +23,10 @@ The pages are written to `output/en/`, the QA report to `output/qa.html`.
 
 ## Terminology handling
 
-Terminology is handled by the FOPH directly on the ABN environment.
+The FOPH maintains the terminology on the ABN environment. `tests/updateterminology.sh` downloads its ValueSets, ConceptMaps and CodeSystems into `input/resources`. It needs curl, jq and the ABN client certificate:
 
-To update the current ValueSets and CodeSystem in the FHIR Implementation Guide there is a script in tests/updateterminology.sh which will
-call the ABN environment API and copy the resources into the input/resources folder. 
+```bash
+ELM_CERT=~/.certs/infreport-client.cer ELM_KEY=~/.certs/infreport-client.key tests/updateterminology.sh
+```
+
+Files where only the version date changed are skipped, `--all` rewrites them anyway. The script header explains how to extract the certificate and key from a `.p12` file.
