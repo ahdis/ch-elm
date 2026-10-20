@@ -10,7 +10,13 @@
 # only overwritten if more than the version changed, because the server sets the
 # version to the date of the download. Pass --all to overwrite them anyway.
 #
-# Usage: ELM_CERT=/path/to/client.cer ELM_KEY=/path/to/client.key tests/updateterminology.sh [--all]
+# Pass --date YYYY-MM-DD to download the terminology as it will be on that date,
+# for example to leave out codes whose validity ends before it. ValueSets and
+# ConceptMaps are then read through their canonical URL with that date as
+# version. Resources the server does not resolve by canonical URL (most
+# CodeSystems and a few others) are read as of today, with a warning.
+#
+# Usage: ELM_CERT=/path/to/client.cer ELM_KEY=/path/to/client.key tests/updateterminology.sh [--all] [--date YYYY-MM-DD]
 # Requires curl and jq.
 #
 # To extract the certificate and key from a .p12 file (OpenSSL 3; omit -legacy
@@ -24,12 +30,28 @@ set -euo pipefail
 BASE_URL="https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir"
 TYPES="ValueSet ConceptMap CodeSystem"
 
+usage() {
+  echo "usage: $0 [--all] [--date YYYY-MM-DD]" >&2
+  exit 1
+}
+
 ALL=false
-case "${1:-}" in
-  "") ;;
-  --all) ALL=true ;;
-  *) echo "usage: $0 [--all]" >&2; exit 1 ;;
-esac
+DATE=""
+while [ $# -gt 0 ]; do
+  case "$1" in
+    --all) ALL=true ;;
+    --date)
+      [ $# -ge 2 ] || usage
+      DATE="$2"
+      shift
+      ;;
+    *) usage ;;
+  esac
+  shift
+done
+if [ -n "$DATE" ] && ! [[ "$DATE" =~ ^[0-9]{4}-[0-9]{2}-[0-9]{2}$ ]]; then
+  usage
+fi
 
 : "${ELM_CERT:?must point to the client certificate}"
 : "${ELM_KEY:?must point to the client key}"
@@ -45,11 +67,34 @@ mkdir "$WORK/out"
 : > "$WORK/done"
 : > "$WORK/empty"
 
+# fetch URL OUTPUT [CURL ARGS...] prints the HTTP status.
 fetch() {
+  local url="$1" output="$2"
+  shift 2
   curl --silent --show-error \
     --cert "$ELM_CERT" --key "$ELM_KEY" \
     --header 'accept: application/fhir+json' \
-    --output "$2" --write-out '%{http_code}' "$1"
+    --output "$output" --write-out '%{http_code}' "$@" "$url"
+}
+
+# Reads $type/$id into $2, as of $DATE if set and supported by the server.
+read_resource() {
+  local type="${1%%/*}" id="${1#*/}" status
+  if [ -n "$DATE" ]; then
+    local canonical="http://fhir.ch/ig/ch-elm/$type/$id"
+    status="$(fetch "$BASE_URL/$type" "$WORK/dated.json" --get --data-urlencode "url=$canonical|$DATE")"
+    if [ "$status" != 200 ]; then
+      echo "$status"
+      return
+    fi
+    if jq -e --arg url "$canonical" 'any(.entry[]?; .resource.url == $url)' "$WORK/dated.json" > /dev/null; then
+      jq --arg url "$canonical" 'first(.entry[] | select(.resource.url == $url)) | .resource' "$WORK/dated.json" > "$2"
+      echo 200
+      return
+    fi
+    echo "warning: $type/$id not available for $DATE, read as of today" >&2
+  fi
+  fetch "$BASE_URL/$type/$id" "$2"
 }
 
 for type in $TYPES; do
@@ -97,7 +142,7 @@ while true; do
       exit 1
     fi
     resource="$WORK/resource.json"
-    status="$(fetch "$BASE_URL/$type/$id" "$resource")"
+    status="$(read_resource "$type/$id" "$resource")"
     case "$status" in
       200) ;;
       404 | 410)

@@ -29,4 +29,4 @@ The FOPH maintains the terminology on the ABN environment. `tests/updateterminol
 ELM_CERT=~/.certs/infreport-client.cer ELM_KEY=~/.certs/infreport-client.key tests/updateterminology.sh
 ```
 
-Files where only the version date changed are skipped, `--all` rewrites them anyway. The script header explains how to extract the certificate and key from a `.p12` file.
+Files where only the version date changed are skipped, `--all` rewrites them anyway. `--date 2027-01-01` downloads the terminology as it will be on that date, for example when a code's validity ends before a release. The script header explains how to extract the certificate and key from a `.p12` file.
