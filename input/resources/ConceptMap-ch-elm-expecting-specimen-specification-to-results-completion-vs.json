@@ -2,7 +2,7 @@
   "resourceType": "ConceptMap",
   "id": "ch-elm-expecting-specimen-specification-to-results-completion-vs",
   "url": "http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-expecting-specimen-specification-to-results-completion-vs",
-  "version": "2026-08-12",
+  "version": "2026-10-15",
   "name": "ChElmExpectingSpecimenSpecificationToResultsCompletionVs",
   "title": "CH ELM Expecting Specimen Specification To Results Completion Vs",
   "status": "active",
@@ -40,7 +40,7 @@
           "display": "Chlamydia trachomatis DNA [Presence] in Specimen by NAA with probe detection",
           "target": [
             {
-              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-geni-spec",
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-complete-spec",
               "equivalence": "relatedto"
             }
           ]
@@ -60,7 +60,7 @@
           "display": "Chlamydia trachomatis Ag [Presence] in Specimen",
           "target": [
             {
-              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-geni-spec",
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-complete-spec",
               "equivalence": "relatedto"
             }
           ]
@@ -100,7 +100,7 @@
           "display": "Chlamydia trachomatis rRNA [Presence] in Specimen by NAA with probe detection",
           "target": [
             {
-              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-geni-spec",
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-complete-spec",
               "equivalence": "relatedto"
             }
           ]
@@ -160,7 +160,7 @@
           "display": "Chlamydia trachomatis [Presence] in Specimen by Organism specific culture",
           "target": [
             {
-              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-geni-spec",
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-complete-spec",
               "equivalence": "relatedto"
             }
           ]

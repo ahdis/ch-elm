@@ -2,12 +2,12 @@
   "resourceType": "ValueSet",
   "id": "ch-elm-interpretation-codes-res",
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-res",
-  "version": "2025-01-28",
-  "name": "ChElmInterpretationCodesResSus",
-  "title": "CH ELM Interpretation Codes Resistant",
+  "version": "2026-10-20",
+  "name": "ChElmInterpretationCodesRes",
+  "title": "CH ELM Interpretation Codes RES",
   "status": "active",
   "experimental": false,
-  "description": "This CH ELM value set includes the code for resistant interpretation code(s).",
+  "description": "This CH ELM value set includes the code for res interpretation code(s).",
   "compose": {
     "include": [
       {

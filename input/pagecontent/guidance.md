@@ -87,9 +87,9 @@ In some cases, the collection material must be explicitly specified.
    * YES: The collection material must be explicitly specified, continue with step 2
       * Example Chlamydia trachomatis: LOINC 6349-5 is a member of the ConceptMap 
 2. The mapping shows from which ValueSet the code for Specimen.type has to come from (Target Code)
-   * Example Chlamydia trachomatis: http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-geni-spec
+   * Example Chlamydia trachomatis: http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-complete-spec
 3. Define Specimen.type with a code from the ValueSet from step 2
-   * Example Chlamydia trachomatis: Speciment.type = SNOMED CT 119393003 from [ValueSet CH ELM Results Geni Spec](ValueSet-ch-elm-results-geni-spec.html)
+   * Example Chlamydia trachomatis: Speciment.type = SNOMED CT 119393003 from [ValueSet CH ELM Results Complete Spec](ValueSet-ch-elm-results-complete-spec.html)
 
 {% include img.html img="expecting-specimen-specification.png" caption="Fig. 7: Schematic illustration of the mechanism for the expecting specimen specification (for simplicity, only the relevant elements are shown)" width="100%" %}   
 
