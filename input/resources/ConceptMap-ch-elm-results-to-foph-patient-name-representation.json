@@ -2,7 +2,7 @@
   "resourceType": "ConceptMap",
   "id": "ch-elm-results-to-foph-patient-name-representation",
   "url": "http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-results-to-foph-patient-name-representation",
-  "version": "2026-10-20",
+  "version": "2026-10-21",
   "name": "ChElmResultsToFophPatientNameRepresentation",
   "title": "CH ELM Results To FOPH Patient Name Representation",
   "status": "active",
@@ -3660,7 +3660,7 @@
           "display": "SARS-CoV-2 (COVID-19) RNA [Presence] in Specimen by NAA with probe detection",
           "target": [
             {
-              "code": "full-name",
+              "code": "initials",
               "equivalence": "relatedto"
             }
           ]
@@ -3700,7 +3700,7 @@
           "display": "SARS-CoV-2 (COVID-19) RNA [Presence] in Respiratory system specimen by NAA with probe detection",
           "target": [
             {
-              "code": "full-name",
+              "code": "initials",
               "equivalence": "relatedto"
             }
           ]
@@ -3720,7 +3720,7 @@
           "display": "SARS-CoV-2 (COVID-19) RNA [Presence] in Nasopharynx by NAA with probe detection",
           "target": [
             {
-              "code": "full-name",
+              "code": "initials",
               "equivalence": "relatedto"
             }
           ]
@@ -3730,7 +3730,7 @@
           "display": "SARS-CoV-2 (COVID-19) RNA [Presence] in Saliva (oral fluid) by NAA with probe detection",
           "target": [
             {
-              "code": "full-name",
+              "code": "initials",
               "equivalence": "relatedto"
             }
           ]
@@ -3750,7 +3750,7 @@
           "display": "SARS-CoV-2 (COVID-19) RNA [Presence] in Nose by NAA with probe detection",
           "target": [
             {
-              "code": "full-name",
+              "code": "initials",
               "equivalence": "relatedto"
             }
           ]
@@ -3810,7 +3810,7 @@
           "display": "SARS-CoV-2 (COVID-19) RNA [Presence] in Oropharyngeal wash by NAA with probe detection",
           "target": [
             {
-              "code": "full-name",
+              "code": "initials",
               "equivalence": "relatedto"
             }
           ]
