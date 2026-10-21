@@ -156,6 +156,24 @@ Description: "Example for a CH ELM Patient - full name"
 * address[home].country = "CH"
 * address[home].country.extension[countrycode].valueCoding = urn:iso:std:iso:3166#CH
 
+Instance: Pat-008
+InstanceOf: ChElmPatientInitials
+Usage: #example
+Title: "Pat - AD"
+Description: "Example for a CH ELM Patient - initials (Antoine Dupont)"
+* gender = #female
+* identifier[AHVN13].system = "urn:oid:2.16.756.5.32"
+* identifier[AHVN13].value = "7561234567866"
+* name.family = "D"
+* name.given = "A"
+* birthDate = "1981-02-07"
+* address[home].use = #home
+* address[home].postalCode = "1227"
+* address[home].city = "Carouge"
+* address[home].state = "GE"
+* address[home].country = "CH"
+* address[home].country.extension[countrycode].valueCoding = urn:iso:std:iso:3166#CH
+
 Instance: Pat-UnknownBirthDate
 InstanceOf: ChElmPatient
 Usage: #example
