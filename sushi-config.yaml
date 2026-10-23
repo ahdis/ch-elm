@@ -294,10 +294,6 @@ resources:
     name: 49Doc - HIV
     description: Example Document for HIV
     exampleCanonical: http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-document-strict
-  Bundle/50Doc-HIV-viremia:
-    name: 50Doc - HIV-viremia
-    description: Example Document for reporting a physical quantity value
-    exampleCanonical: http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-document-strict
   Bundle/51Doc-Gelbfieber:
     name: 51Doc - Gelbfieber
     description: Example Document for Yellow fever-virus
