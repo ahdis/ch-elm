@@ -712,15 +712,6 @@ See the examples in chapter 2.2 to learn how to use the resource profiles for di
     </thead>
     <tbody>
         <tr>
-            <td>HIV</td>
-            <td>HIV 1 RNA [Units/volume] (viral load) in Serum or Plasma by NAA with probe detection</td>
-            <td>62469-2</td>
-           <td>
-                <a href="Bundle-50Doc-HIV-viremia.json.html">JSON</a>, 
-                <a href="Bundle-50Doc-HIV-viremia.xml.html">XML</a>
-            </td>
-        </tr>
-        <tr>
             <td>Mpox</td>
             <td>Mpox virus clade [Type] in Specimen by Sequencing</td>
             <td>101003-2</td>

@@ -7,6 +7,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 * [#212](https://github.com/ahdis/ch-elm/issues/212) terminology update from the FOPH server: display of the TBE interpretation code, title of [CH ELM Interpretation Codes RES](ValueSet-ch-elm-interpretation-codes-res.html)
 * [#213](https://github.com/ahdis/ch-elm/issues/213) allow all materials for Chlamydia trachomatis (revised [FOPH ordinance](https://www.fedlex.admin.ch/eli/cc/2015/892/de) as of 01.01.2027): the leading codes map to [CH ELM Results Complete Spec](ValueSet-ch-elm-results-complete-spec.html) instead of CH ELM Results Geni Spec
 * [#219](https://github.com/ahdis/ch-elm/issues/219) record SARS-CoV-2 patients by initials (revised [FOPH ordinance](https://www.fedlex.admin.ch/eli/cc/2015/892/de) as of 01.01.2027), the example 7Doc - SARS-CoV-2 uses a patient with initials
+* [#221](https://github.com/ahdis/ch-elm/issues/221) stop reporting the HIV viral load as of 01.01.2027: leading code 62469-2, the profile CH ELM Observation Results: Viral Load, the example 50Doc - HIV-viremia and the guidance on comparators in valueQuantity are removed
 
 ### 1.15.1 2026/08/14
 

@@ -2,7 +2,7 @@
   "resourceType": "ConceptMap",
   "id": "ch-elm-results-to-foph-patient-name-representation",
   "url": "http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-results-to-foph-patient-name-representation",
-  "version": "2026-10-21",
+  "version": "2026-10-23",
   "name": "ChElmResultsToFophPatientNameRepresentation",
   "title": "CH ELM Results To FOPH Patient Name Representation",
   "status": "active",
@@ -2311,16 +2311,6 @@
           "target": [
             {
               "code": "full-name",
-              "equivalence": "relatedto"
-            }
-          ]
-        },
-        {
-          "code": "62469-2",
-          "display": "HIV 1 RNA [Units/volume] (viral load) in Serum or Plasma by NAA with probe detection",
-          "target": [
-            {
-              "code": "hiv-code",
               "equivalence": "relatedto"
             }
           ]
