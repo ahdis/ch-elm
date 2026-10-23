@@ -156,12 +156,12 @@ Expression: "'http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-results-geno-to-compone
 Invariant: ch-elm-component-code-cpe-txt-loinc
 Description: "If code is LP113695-3, then valueString must be provided"
 Severity: #error
-Expression: "component.where(code.coding.where(system='http://loinc.org' and code='LP113695-3').exists()).all((value as string).exists() and (value as string).length() > 0)"
+Expression: "component.where(code.coding.where(system='http://loinc.org' and code='LP113695-3').exists()).all((value as string).hasValue() and (value as string).length() > 0)"
 
 Invariant: name-initials
 Description: "a name with initials"
 Severity: #error
-Expression: "(given.hasValue() and (''+given.first()).length() = 1 or given.hasValue().not() and given.extension.where(url='http://hl7.org/fhir/StructureDefinition/data-absent-reason').exists()) and (family.hasValue() and (''+family.first()).length() = 1 or family.hasValue().not() and family.extension.where(url='http://hl7.org/fhir/StructureDefinition/data-absent-reason').exists())"
+Expression: "(given.hasValue() and given.first().length() = 1 or given.hasValue().not() and given.extension.where(url='http://hl7.org/fhir/StructureDefinition/data-absent-reason').exists()) and (family.hasValue() and family.first().length() = 1 or family.hasValue().not() and family.extension.where(url='http://hl7.org/fhir/StructureDefinition/data-absent-reason').exists())"
 
 Invariant: ch-elm-practioner-zsr-check-length
 Description: "invalid ZSR number, cannot be processed, must be exactly one letter and 6 digits long"

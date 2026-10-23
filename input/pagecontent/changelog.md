@@ -7,6 +7,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 * [#212](https://github.com/ahdis/ch-elm/issues/212) terminology update from the FOPH server: display of the TBE interpretation code, title of [CH ELM Interpretation Codes RES](ValueSet-ch-elm-interpretation-codes-res.html)
 * [#213](https://github.com/ahdis/ch-elm/issues/213) allow all materials for Chlamydia trachomatis (revised [FOPH ordinance](https://www.fedlex.admin.ch/eli/cc/2015/892/de) as of 01.01.2027): the leading codes map to [CH ELM Results Complete Spec](ValueSet-ch-elm-results-complete-spec.html) instead of CH ELM Results Geni Spec
 * [#219](https://github.com/ahdis/ch-elm/issues/219) record SARS-CoV-2 patients by initials (revised [FOPH ordinance](https://www.fedlex.admin.ch/eli/cc/2015/892/de) as of 01.01.2027), the example 7Doc - SARS-CoV-2 uses a patient with initials
+* [#208](https://github.com/ahdis/ch-elm/issues/208) invariants: ch-elm-component-code-cpe-txt-loinc uses `hasValue()` instead of `exists()` before `length()`, name-initials no longer needs the `('' + x)` workaround (requires the FHIRPath fix of org.hl7.fhir.core 6.10.3, e.g. matchbox 5.0.0)
 
 ### 1.15.1 2026/08/14
 
