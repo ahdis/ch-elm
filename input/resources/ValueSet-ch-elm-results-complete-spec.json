@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "ch-elm-results-complete-spec",
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-complete-spec",
-  "version": "2026-08-12",
+  "version": "2026-10-23",
   "name": "ChElmResultsCompleteSpec",
   "title": "CH ELM Results Complete Spec",
   "status": "active",
@@ -54,12 +54,20 @@
             "display": "Specimen from uterus (specimen)"
           },
           {
+            "code": "1397846008",
+            "display": "Combined genital and rectal specimen"
+          },
+          {
             "code": "119378002",
             "display": "Endocardial specimen (specimen)"
           },
           {
             "code": "119347001",
             "display": "Seminal fluid specimen (specimen)"
+          },
+          {
+            "code": "1345107007",
+            "display": "Combined urethral and genital swab"
           },
           {
             "code": "119339001",
@@ -276,6 +284,14 @@
           {
             "code": "258415003",
             "display": "Biopsy specimen (specimen)"
+          },
+          {
+            "code": "1397847004",
+            "display": "Combined genital and pharyngeal and rectal specimen"
+          },
+          {
+            "code": "1371684001",
+            "display": "Combined specimen from swab of rectum and vaginal introitus"
           },
           {
             "code": "445447003",

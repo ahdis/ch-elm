@@ -11,6 +11,10 @@ Wrong Display Name%
 The provided code 'http://snomed.info/sct|http://snomed.info/sct/2011000195101#4241000179101 ('Laborbericht')' was not found in the value set 'http://hl7.org/fhir/ValueSet/doc-typecodes|%
 None of the codings provided are in the value set 'Observation Interpretation Codes' (http://hl7.org/fhir/ValueSet/observation-interpretation|%
 
+# SNOMED CT International Edition 2026-08-01, not yet in the Swiss Edition 2026-06-07 (#218)
+The code '1397846008' is not valid in the system http://snomed.info/sct (Unknown code '1397846008' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/2011000195101/version/%
+The code '1397847004' is not valid in the system http://snomed.info/sct (Unknown code '1397847004' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/2011000195101/version/%
+
 # Logical model only integrated as abstract data model
 Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
 
