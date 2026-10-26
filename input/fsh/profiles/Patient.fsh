@@ -47,6 +47,7 @@ Description: "This CH ELM base profile constrains the Patient resource for the p
 * gender 1..
 
 * birthDate 1..
+* birthDate obeys ch-elm-patient-birthdate
 * birthDate.extension contains $data-absent-reason named dataabsentreason 0..1
 
 * address ..1 MS

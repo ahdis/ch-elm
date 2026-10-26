@@ -19,6 +19,7 @@ Description: "This CH ELM base profile constrains the Observation resource for t
 * effective[x] 1..
 * effectiveDateTime 1..
 * effectiveDateTime obeys ch-elm-dateTime
+* effectiveDateTime obeys ch-elm-effective-not-in-future
 
 * valueString ^short = "String if required by leading code, see also 'Guidance - Laboratory Result'" 
 * valueQuantity ^short = "Quantity if required by leading code, see also 'Guidance - Laboratory Result'"

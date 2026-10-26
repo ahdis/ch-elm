@@ -226,7 +226,7 @@
           <reference value="urn:uuid:89810214-e9af-4211-9ba7-57a9e77e509e"/>
         </subject>
         <collection>
-          <collectedDateTime value="2025-03-15T14:20:00+02:00"/>
+          <collectedDateTime value="2025-01-17T14:20:00+02:00"/>
         </collection>
       </Specimen>
     </resource>

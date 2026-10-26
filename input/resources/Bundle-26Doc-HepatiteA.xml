@@ -229,7 +229,7 @@
           <reference value="urn:uuid:830650ed-67d5-43f4-937d-a81d6a9664dc"/>
         </subject>
         <collection>
-          <collectedDateTime value="2024-08-22T14:20:00+02:00"/>
+          <collectedDateTime value="2024-07-23T14:20:00+02:00"/>
         </collection>
       </Specimen>
     </resource>
