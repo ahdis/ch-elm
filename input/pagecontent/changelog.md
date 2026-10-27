@@ -9,6 +9,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 * [#219](https://github.com/ahdis/ch-elm/issues/219) record SARS-CoV-2 patients by initials (revised [FOPH ordinance](https://www.fedlex.admin.ch/eli/cc/2015/892/de) as of 01.01.2027), the example 7Doc - SARS-CoV-2 uses a patient with initials
 * [#208](https://github.com/ahdis/ch-elm/issues/208) invariants: ch-elm-component-code-cpe-txt-loinc uses `hasValue()` instead of `exists()` before `length()`, name-initials no longer needs the `('' + x)` workaround (requires the FHIRPath fix of org.hl7.fhir.core 6.10.3, e.g. matchbox 5.0.0)
 * [#218](https://github.com/ahdis/ch-elm/issues/218) SNOMED CT codes for combined specimens in [CH ELM Results Complete Spec](ValueSet-ch-elm-results-complete-spec.html), 1397846008 and 1397847004 are not yet in the SNOMED CT Swiss Edition
+* [#227](https://github.com/ahdis/ch-elm/issues/227) tuberculosis: the leading code 85362-2 is removed because its specimen is unclear (sputum or bronchial), the leading codes 38379-4, 11545-1 and 543-9 require a specimen from [CH ELM Results Complete Spec](ValueSet-ch-elm-results-complete-spec.html), which is important for the cantonal medical officers
 
 ### 1.15.1 2026/08/14
 
