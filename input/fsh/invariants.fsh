@@ -29,9 +29,9 @@ Severity: #error
 Expression: "iif($this < @1900-01-01, false, true)"
 
 Invariant: ch-elm-birthdate-before-effective
-Description: "Patient.birthDate must not be after Observation.effectiveDateTime (compared at the common precision)."
+Description: "Patient.birthDate must not be after the date of Observation.effectiveDateTime (compared at the common precision)."
 Severity: #error
-Expression: "entry.resource.ofType(Observation).all(iif(%resource.entry.resource.ofType(Patient).birthDate > effective.ofType(dateTime), false, true))"
+Expression: "entry.resource.ofType(Observation).all(iif(%resource.entry.resource.ofType(Patient).birthDate > effective.ofType(dateTime).toString().substring(0, 10).toDateTime(), false, true))"
 
 Invariant: ch-elm-effective-not-in-future
 Description: "Observation.effectiveDateTime must not be in the future (one day tolerance)."
@@ -44,9 +44,9 @@ Severity: #warning
 Expression: "iif(entry.resource.ofType(Specimen).collection.collected.ofType(dateTime) > entry.resource.ofType(Observation).effective.ofType(dateTime), false, true)"
 
 Invariant: ch-elm-birthdate-before-collected
-Description: "Patient.birthDate should not be after Specimen.collection.collectedDateTime (compared at the common precision)."
+Description: "Patient.birthDate should not be after the date of Specimen.collection.collectedDateTime (compared at the common precision)."
 Severity: #warning
-Expression: "entry.resource.ofType(Specimen).all(iif(%resource.entry.resource.ofType(Patient).birthDate > collection.collected.ofType(dateTime), false, true))"
+Expression: "entry.resource.ofType(Specimen).all(iif(%resource.entry.resource.ofType(Patient).birthDate > collection.collected.ofType(dateTime).toString().substring(0, 10).toDateTime(), false, true))"
 
 Invariant: ch-elm-leading-code
 Description: "The ServiceRequest.code and the Observation.code are in general equal."
