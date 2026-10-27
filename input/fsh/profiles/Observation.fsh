@@ -147,15 +147,6 @@ Description: "This CH ELM profile constrains the Observation resource for the pu
 * component[gp105].code = $sct#118062000 "Measurement of Human immunodeficiency virus 2 glycoprotein 105 antibody (procedure)"
 * component[gp36].code = $sct#118067006 "Measurement of Human immunodeficiency virus 2 glycoprotein 36 antibody (procedure)"
 
-Profile: ChElmObservationVirl
-Parent: Observation
-Id: ch-elm-observation-pq-virl
-Title: "CH ELM Observation Results: Viral Load"
-Description: "Viral Load as observation result, see also 'Guidance - Laboratory Result'"
-* valueQuantity 1..1
-* valueQuantity.code = #1/mL 
-* valueQuantity.system = "http://unitsofmeasure.org"
-
 Profile: ChElmObservationRto
 Parent: Observation
 Id: ch-elm-observation-rto

@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "ch-elm-results-laboratory-observation-complete",
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-laboratory-observation-complete",
-  "version": "2026-10-20",
+  "version": "2026-10-27",
   "name": "ChElmResultsLaboratoryObservationComplete",
   "title": "CH ELM Results Laboratory Observation Complete",
   "status": "active",
@@ -930,10 +930,6 @@
             "display": "Vibrio cholerae DNA [Presence] in Specimen by NAA with probe detection"
           },
           {
-            "code": "62469-2",
-            "display": "HIV 1 RNA [Units/volume] (viral load) in Serum or Plasma by NAA with probe detection"
-          },
-          {
             "code": "6349-5",
             "display": "Chlamydia trachomatis [Presence] in Specimen by Organism specific culture"
           },
@@ -1224,10 +1220,6 @@
           {
             "code": "82731-1",
             "display": "Zika virus IgM Ab [Presence] in Serum by Immunofluorescence"
-          },
-          {
-            "code": "85362-2",
-            "display": "Mycobacterium tuberculosis complex DNA [Presence] in Sputum or Bronchial by NAA with probe detection"
           },
           {
             "code": "85477-8",

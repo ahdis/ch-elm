@@ -11,6 +11,10 @@ Wrong Display Name%
 The provided code 'http://snomed.info/sct|http://snomed.info/sct/2011000195101#4241000179101 ('Laborbericht')' was not found in the value set 'http://hl7.org/fhir/ValueSet/doc-typecodes|%
 None of the codings provided are in the value set 'Observation Interpretation Codes' (http://hl7.org/fhir/ValueSet/observation-interpretation|%
 
+# SNOMED CT International Edition 2026-08-01, not yet in the Swiss Edition 2026-06-07 (#218)
+The code '1397846008' is not valid in the system http://snomed.info/sct (Unknown code '1397846008' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/2011000195101/version/%
+The code '1397847004' is not valid in the system http://snomed.info/sct (Unknown code '1397847004' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/2011000195101/version/%
+
 # Logical model only integrated as abstract data model
 Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
 
@@ -231,10 +235,6 @@ Entry 'urn:uuid:50c767a9-31cc-44db-b0ab-eed33b2faf33' isn't reachable by travers
 # input/resources/Bundle-49Doc-HIV.xml
 Entry 'urn:uuid:d78e6789-f3f0-46fe-aded-04b2da318e68' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
 Entry 'urn:uuid:6bfcd981-5e6b-47ed-8531-aba2b9eef9cd' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
-
-# input/resources/Bundle-50Doc-HIV-viremia.xml
-Entry 'urn:uuid:2779825f-c7cc-4916-ac47-fb78ee8d5091' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
-Entry 'urn:uuid:99266b5b-8355-4c50-a46d-1dbdbc681c70' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
 
 # input/resources/Bundle-51Doc-Gelbfieber.xml
 Entry 'urn:uuid:2ef84027-ae9d-4406-b8e1-be895e2a570c' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)

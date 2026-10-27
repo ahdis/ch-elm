@@ -2,7 +2,7 @@
   "resourceType": "ConceptMap",
   "id": "ch-elm-results-to-foph-patient-name-representation",
   "url": "http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-results-to-foph-patient-name-representation",
-  "version": "2026-10-21",
+  "version": "2026-10-27",
   "name": "ChElmResultsToFophPatientNameRepresentation",
   "title": "CH ELM Results To FOPH Patient Name Representation",
   "status": "active",
@@ -2316,16 +2316,6 @@
           ]
         },
         {
-          "code": "62469-2",
-          "display": "HIV 1 RNA [Units/volume] (viral load) in Serum or Plasma by NAA with probe detection",
-          "target": [
-            {
-              "code": "hiv-code",
-              "equivalence": "relatedto"
-            }
-          ]
-        },
-        {
           "code": "6349-5",
           "display": "Chlamydia trachomatis [Presence] in Specimen by Organism specific culture",
           "target": [
@@ -3048,16 +3038,6 @@
         {
           "code": "82731-1",
           "display": "Zika virus IgM Ab [Presence] in Serum by Immunofluorescence",
-          "target": [
-            {
-              "code": "full-name",
-              "equivalence": "relatedto"
-            }
-          ]
-        },
-        {
-          "code": "85362-2",
-          "display": "Mycobacterium tuberculosis complex DNA [Presence] in Sputum or Bronchial by NAA with probe detection",
           "target": [
             {
               "code": "full-name",
