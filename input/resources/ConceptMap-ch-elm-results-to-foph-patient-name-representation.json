@@ -2316,16 +2316,6 @@
           ]
         },
         {
-          "code": "62469-2",
-          "display": "HIV 1 RNA [Units/volume] (viral load) in Serum or Plasma by NAA with probe detection",
-          "target": [
-            {
-              "code": "hiv-code",
-              "equivalence": "relatedto"
-            }
-          ]
-        },
-        {
           "code": "6349-5",
           "display": "Chlamydia trachomatis [Presence] in Specimen by Organism specific culture",
           "target": [
