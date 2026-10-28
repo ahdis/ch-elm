@@ -11,6 +11,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 * [#218](https://github.com/ahdis/ch-elm/issues/218) SNOMED CT codes for combined specimens in [CH ELM Results Complete Spec](ValueSet-ch-elm-results-complete-spec.html), 1397846008 and 1397847004 are not yet in the SNOMED CT Swiss Edition
 * [#227](https://github.com/ahdis/ch-elm/issues/227) tuberculosis: the leading code 85362-2 is removed because its specimen is unclear (sputum or bronchial), the leading codes 38379-4, 11545-1 and 543-9 require a specimen from [CH ELM Results Complete Spec](ValueSet-ch-elm-results-complete-spec.html), which is important for the cantonal medical officers
 * [#221](https://github.com/ahdis/ch-elm/issues/221) stop reporting the HIV viral load as of 01.01.2027: leading code 62469-2, the profile CH ELM Observation Results: Viral Load, the example 50Doc - HIV-viremia and the guidance on comparators in valueQuantity are removed
+* [#225](https://github.com/ahdis/ch-elm/issues/225) date consistency rules: birthDate not before 1900 (now on the Patient, partial birthDates `1900` and `1900-01` are accepted), birthDate not after the test date (error), test date not in the future (error), collection date not after the test date and birthDate not after the collection date (warnings). The birthDate is compared with the date of the test or collection date as sent, without conversion to UTC. The upper bound against Bundle.timestamp is removed. Collection date before the test date in the examples 24, 26, 28, 29, 30 and 65.
 
 ### 1.15.1 2026/08/14
 
