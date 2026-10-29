@@ -2,7 +2,7 @@
   "resourceType": "ConceptMap",
   "id": "ch-elm-results-geno-to-component-code",
   "url": "http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-results-geno-to-component-code",
-  "version": "2026-08-12",
+  "version": "2026-10-29",
   "name": "ChElmResultsGenoToComponentCode",
   "title": "CH ELM Results Genotype To Component Code",
   "status": "active",
@@ -186,6 +186,26 @@
           ]
         },
         {
+          "code": "1096401000112106",
+          "display": "Carbapenemase-producing Hafnia",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-component-gene-cpe",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "1096601000112109",
+          "display": "Carbapenemase-producing Hafnia alvei",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-component-gene-cpe",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
           "code": "1096801000112108",
           "display": "Carbapenemase-producing Klebsiella",
           "target": [
@@ -286,6 +306,116 @@
           ]
         },
         {
+          "code": "1101201000112109",
+          "display": "Carbapenemase-producing Moellerella wisconsensis",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-component-gene-cpe",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "1101401000112108",
+          "display": "Carbapenemase-producing Morganella",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-component-gene-cpe",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "1101601000112106",
+          "display": "Carbapenemase-producing Morganella morganii",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-component-gene-cpe",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "1101801000112105",
+          "display": "Carbapenemase-producing Morganella morganii subspecies morganii",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-component-gene-cpe",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "1102001000112107",
+          "display": "Carbapenemase-producing Pantoea",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-component-gene-cpe",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "1102201000112102",
+          "display": "Carbapenemase-producing Pantoea agglomerans",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-component-gene-cpe",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "1102601000112100",
+          "display": "Carbapenemase-producing Proteus",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-component-gene-cpe",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "1103001000112103",
+          "display": "Carbapenemase-producing Proteus mirabilis",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-component-gene-cpe",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "1103201000112108",
+          "display": "Carbapenemase-producing Proteus penneri",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-component-gene-cpe",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "1103601000112105",
+          "display": "Carbapenemase-producing Providencia",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-component-gene-cpe",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "1104001000112101",
+          "display": "Carbapenemase-producing Providencia rettgeri",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-component-gene-cpe",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
           "code": "1105401000112106",
           "display": "Carbapenemase-producing Raoultella ornithinolytica",
           "target": [
@@ -326,6 +456,36 @@
           ]
         },
         {
+          "code": "1106201000112101",
+          "display": "Carbapenemase-producing Serratia",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-component-gene-cpe",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "1106601000112104",
+          "display": "Carbapenemase-producing Serratia fonticola",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-component-gene-cpe",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "1107201000112104",
+          "display": "Carbapenemase-producing Serratia marcescens",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-component-gene-cpe",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
           "code": "1108301000112108",
           "display": "Carbapenemase-producing Shigella",
           "target": [
@@ -338,6 +498,66 @@
         {
           "code": "1112101000112106",
           "display": "Carbapenemase-producing Lelliottia amnigena",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-component-gene-cpe",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "1112301000112108",
+          "display": "Carbapenemase-producing Morganella morganii subspecies sibonii",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-component-gene-cpe",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "1359790006",
+          "display": "Carbapenemase-producing Morganellaceae",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-component-gene-cpe",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "1359791005",
+          "display": "Carbapenemase-producing Moellerella",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-component-gene-cpe",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "1359792003",
+          "display": "Carbapenemase-producing Erwinaceae",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-component-gene-cpe",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "1359793008",
+          "display": "Carbapenemase-producing Yersiniaceae",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-component-gene-cpe",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "1359809007",
+          "display": "Carbapenemase-producing Moraxellaceae",
           "target": [
             {
               "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-component-gene-cpe",
@@ -386,6 +606,26 @@
           ]
         },
         {
+          "code": "1407064004",
+          "display": "Carbapenemase-producing Proteus vulgaris",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-component-gene-cpe",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "1407065003",
+          "display": "Carbapenemase-producing Enterobacter ludwigii",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-component-gene-cpe",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
           "code": "308241000087107",
           "display": "Carbapenemase-producing Pluralibacter gergoviae (organism)",
           "target": [
@@ -406,16 +646,6 @@
           ]
         },
         {
-          "code": "432763001",
-          "display": "Enterobacter ludwigii (organism)",
-          "target": [
-            {
-              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-component-gene-cpe",
-              "equivalence": "relatedto"
-            }
-          ]
-        },
-        {
           "code": "44601000087107",
           "display": "Carbapenemase-producing Citrobacter freundii complex",
           "target": [
@@ -428,6 +658,16 @@
         {
           "code": "51271000087100",
           "display": "Carbapenemase-producing Klebsiella oxytoca",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-component-gene-cpe",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "51281000087103",
+          "display": "Carbapenemase-producing Enterobacterales",
           "target": [
             {
               "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-component-gene-cpe",
