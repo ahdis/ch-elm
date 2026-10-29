@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "ch-elm-results-laboratory-observation-complete",
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-laboratory-observation-complete",
-  "version": "2026-10-27",
+  "version": "2026-10-29",
   "name": "ChElmResultsLaboratoryObservationComplete",
   "title": "CH ELM Results Laboratory Observation Complete",
   "status": "active",
@@ -1671,6 +1671,14 @@
             "display": "Carbapenemase-producing Enterobacter hormaechei"
           },
           {
+            "code": "1096401000112106",
+            "display": "Carbapenemase-producing Hafnia"
+          },
+          {
+            "code": "1096601000112109",
+            "display": "Carbapenemase-producing Hafnia alvei"
+          },
+          {
             "code": "1096801000112108",
             "display": "Carbapenemase-producing Klebsiella"
           },
@@ -1711,6 +1719,50 @@
             "display": "Carbapenemase-producing Leclercia adecarboxylata"
           },
           {
+            "code": "1101201000112109",
+            "display": "Carbapenemase-producing Moellerella wisconsensis"
+          },
+          {
+            "code": "1101401000112108",
+            "display": "Carbapenemase-producing Morganella"
+          },
+          {
+            "code": "1101601000112106",
+            "display": "Carbapenemase-producing Morganella morganii"
+          },
+          {
+            "code": "1101801000112105",
+            "display": "Carbapenemase-producing Morganella morganii subspecies morganii"
+          },
+          {
+            "code": "1102001000112107",
+            "display": "Carbapenemase-producing Pantoea"
+          },
+          {
+            "code": "1102201000112102",
+            "display": "Carbapenemase-producing Pantoea agglomerans"
+          },
+          {
+            "code": "1102601000112100",
+            "display": "Carbapenemase-producing Proteus"
+          },
+          {
+            "code": "1103001000112103",
+            "display": "Carbapenemase-producing Proteus mirabilis"
+          },
+          {
+            "code": "1103201000112108",
+            "display": "Carbapenemase-producing Proteus penneri"
+          },
+          {
+            "code": "1103601000112105",
+            "display": "Carbapenemase-producing Providencia"
+          },
+          {
+            "code": "1104001000112101",
+            "display": "Carbapenemase-producing Providencia rettgeri"
+          },
+          {
             "code": "1105401000112106",
             "display": "Carbapenemase-producing Raoultella ornithinolytica"
           },
@@ -1727,12 +1779,48 @@
             "display": "Carbapenemase-producing Salmonella"
           },
           {
+            "code": "1106201000112101",
+            "display": "Carbapenemase-producing Serratia"
+          },
+          {
+            "code": "1106601000112104",
+            "display": "Carbapenemase-producing Serratia fonticola"
+          },
+          {
+            "code": "1107201000112104",
+            "display": "Carbapenemase-producing Serratia marcescens"
+          },
+          {
             "code": "1108301000112108",
             "display": "Carbapenemase-producing Shigella"
           },
           {
             "code": "1112101000112106",
             "display": "Carbapenemase-producing Lelliottia amnigena"
+          },
+          {
+            "code": "1112301000112108",
+            "display": "Carbapenemase-producing Morganella morganii subspecies sibonii"
+          },
+          {
+            "code": "1359790006",
+            "display": "Carbapenemase-producing Morganellaceae"
+          },
+          {
+            "code": "1359791005",
+            "display": "Carbapenemase-producing Moellerella"
+          },
+          {
+            "code": "1359792003",
+            "display": "Carbapenemase-producing Erwinaceae"
+          },
+          {
+            "code": "1359793008",
+            "display": "Carbapenemase-producing Yersiniaceae"
+          },
+          {
+            "code": "1359809007",
+            "display": "Carbapenemase-producing Moraxellaceae"
           },
           {
             "code": "1359810002",
@@ -1751,6 +1839,14 @@
             "display": "Carbapenemase-producing Pluralibacter (organism)"
           },
           {
+            "code": "1407064004",
+            "display": "Carbapenemase-producing Proteus vulgaris"
+          },
+          {
+            "code": "1407065003",
+            "display": "Carbapenemase-producing Enterobacter ludwigii"
+          },
+          {
             "code": "308241000087107",
             "display": "Carbapenemase-producing Pluralibacter gergoviae (organism)"
           },
@@ -1759,16 +1855,16 @@
             "display": "Carbapenemase-producing Klebsiella variicola"
           },
           {
-            "code": "432763001",
-            "display": "Enterobacter ludwigii (organism)"
-          },
-          {
             "code": "44601000087107",
             "display": "Carbapenemase-producing Citrobacter freundii complex"
           },
           {
             "code": "51271000087100",
             "display": "Carbapenemase-producing Klebsiella oxytoca"
+          },
+          {
+            "code": "51281000087103",
+            "display": "Carbapenemase-producing Enterobacterales"
           },
           {
             "code": "734352006",
