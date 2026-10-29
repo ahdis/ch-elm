@@ -15,6 +15,12 @@ None of the codings provided are in the value set 'Observation Interpretation Co
 The code '1397846008' is not valid in the system http://snomed.info/sct (Unknown code '1397846008' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/2011000195101/version/%
 The code '1397847004' is not valid in the system http://snomed.info/sct (Unknown code '1397847004' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/2011000195101/version/%
 
+# SNOMED CT codes not yet in the Swiss Edition 2026-06-07 (#229)
+The code '1407064004' is not valid in the system http://snomed.info/sct (Unknown code '1407064004' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/2011000195101/version/%
+The code '1407065003' is not valid in the system http://snomed.info/sct (Unknown code '1407065003' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/2011000195101/version/%
+The code '1407064004' in the system http://snomed.info/sct is not valid in the value set 'null'
+The code '1407065003' in the system http://snomed.info/sct is not valid in the value set 'null'
+
 # Logical model only integrated as abstract data model
 Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
 

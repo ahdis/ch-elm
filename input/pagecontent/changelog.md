@@ -15,6 +15,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 * [#234](https://github.com/ahdis/ch-elm/issues/234) CPE genotyping: [CH ELM Results Gene Cpe](ValueSet-ch-elm-results-component-gene-cpe.html) only contains the codes for gene families, 21 codes for specific gene variants are removed, the examples 68Doc, 69Doc and 70Doc use 85827-4 blaOXA-48-like instead of 85503-1 blaOXA-48
 * fix typos in documentation and descriptions
 * [#232](https://github.com/ahdis/ch-elm/issues/232) invariant ch-elm-component-observation-profile-geno-loinc checks the geno ConceptMap instead of the susc ConceptMap, corrected descriptions of the component invariants
+* [#229](https://github.com/ahdis/ch-elm/issues/229) CPE genotyping: 23 SNOMED CT codes for further carbapenemase-producing organisms are added as leading codes to [CH ELM Results Laboratory Observation Genotyping](ValueSet-ch-elm-results-laboratory-observation-geno.html), 432763001 Enterobacter ludwigii (organism) is replaced by 1407065003 Carbapenemase-producing Enterobacter ludwigii, 1407064004 and 1407065003 are not yet in the SNOMED CT Swiss Edition
 
 ### 1.15.1 2026/08/14
 
