@@ -75,18 +75,18 @@ Cardinalities:
 * TestResult.ExecutionDateTime 1..1 dateTime "Date (-time) of test"
 * TestResult.Type 1..1 Element "Type of test"
 * TestResult.Type.Code 1..1 code "Coded data"
-* TestResult.Type.CodeSystem 1..1 uri "Identity fo the terminology system"
+* TestResult.Type.CodeSystem 1..1 uri "Identity of the terminology system"
 * TestResult.Specimen 1..1 Element "Test sample"
 * TestResult.Specimen.CollectionDateTime 1..1 dateTime "Date (-time) of sample collection"
 * TestResult.Specimen.Type 1..1 Element "Collection material"
 * TestResult.Specimen.Type.Code 0..1 code "Coded data"
-* TestResult.Specimen.Type.CodeSystem 0..1 uri "Identity fo the terminology system"
-* TestResult.Value 1..1 Element "Acutal test result"
+* TestResult.Specimen.Type.CodeSystem 0..1 uri "Identity of the terminology system"
+* TestResult.Value 1..1 Element "Actual test result"
 * TestResult.Value.Code 1..1 code "Coded data"
-* TestResult.Value.CodeSystem 1..1 uri "Identity fo the terminology system"
+* TestResult.Value.CodeSystem 1..1 uri "Identity of the terminology system"
 * TestResult.Interpretation 1..1 Element "Interpretation of the test result"
 * TestResult.Interpretation.Code 1..1 code "Coded data"
-* TestResult.Interpretation.CodeSystem 1..1 uri "Identity fo the terminology system (HL7 ObservationInterpretation)"
+* TestResult.Interpretation.CodeSystem 1..1 uri "Identity of the terminology system (HL7 ObservationInterpretation)"
 
 
 
