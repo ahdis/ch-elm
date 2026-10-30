@@ -772,7 +772,7 @@ See the examples in chapter 2.2 to learn how to use the resource profiles for di
     </tbody>
 </table>
 
-#### Example withh minimal practitioner orderer information (only name, plz, city)
+#### Example with minimal practitioner orderer information (only name, plz, city)
 
 <table class="grid">
     <colgroup> 
