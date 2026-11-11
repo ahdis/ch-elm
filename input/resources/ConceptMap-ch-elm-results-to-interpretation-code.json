@@ -3914,6 +3914,16 @@
               "equivalence": "relatedto"
             }
           ]
+        },
+        {
+          "code": "LP268180-9",
+          "display": "Non-Enterobacteriaceae",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
+              "equivalence": "relatedto"
+            }
+          ]
         }
       ]
     },

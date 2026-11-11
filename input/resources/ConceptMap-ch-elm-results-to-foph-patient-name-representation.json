@@ -3924,6 +3924,16 @@
               "equivalence": "relatedto"
             }
           ]
+        },
+        {
+          "code": "LP268180-9",
+          "display": "Non-Enterobacteriaceae",
+          "target": [
+            {
+              "code": "full-name",
+              "equivalence": "relatedto"
+            }
+          ]
         }
       ]
     },

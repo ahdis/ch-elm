@@ -1574,6 +1574,10 @@
             "display": "Streptococcus pneumoniae DNA [Presence] in Cerebral spinal fluid by NAA with probe detection"
           },
           {
+            "code": "LP268180-9",
+            "display": "Non-Enterobacteriaceae"
+          },
+          {
             "code": "94053-6",
             "display": "Mycobacterium tuberculosis complex resistance panel by Molecular genetics method"
           },
