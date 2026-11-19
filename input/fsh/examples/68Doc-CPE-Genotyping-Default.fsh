@@ -111,6 +111,6 @@ Usage: #inline
 * performer = Reference(1Org-Labor)
 * specimen = Reference(68Spec-Genotyping-Default)
 
-* component[0].code = $loinc#85503-1 "Carbapenem resistance blaOXA-48 gene [Presence] by Molecular method"
+* component[0].code = $loinc#85827-4 "Carbapenem resistance bla OXA-48-like gene [Presence] by Molecular method"
 * component[=].dataAbsentReason = $data-absent-reason-cs#not-applicable
 * component[=].interpretation = $v3-ObservationInterpretation#POS "Positive"
