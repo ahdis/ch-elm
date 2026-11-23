@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "ch-elm-results-laboratory-observation",
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-laboratory-observation",
-  "version": "2026-10-27",
+  "version": "2027-01-04",
   "name": "ChElmResultsLaboratoryObservation",
   "title": "CH ELM Results Laboratory Observation",
   "status": "active",
@@ -1585,6 +1585,10 @@
           {
             "code": "36115006",
             "display": "Human immunodeficiency virus type 2 (organism)"
+          },
+          {
+            "code": "51281000087103",
+            "display": "Carbapenemase-producing Enterobacterales"
           },
           {
             "code": "72904005",

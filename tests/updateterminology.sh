@@ -6,6 +6,7 @@
 # they contain, because the search leaves some out. Each resource is read
 # individually because the search only returns summaries. Empty ValueSets are
 # skipped and concepts referring to them are removed from the other resources.
+# Codes listed more than once in the same include of a ValueSet are kept once.
 # New resources are added and local files are never deleted. Existing files are
 # only overwritten if more than the version changed, because the server sets the
 # version to the date of the download. Pass --all to overwrite them anyway.
@@ -191,6 +192,18 @@ while IFS= read -r url; do
     fi
   done
 done < "$WORK/empty"
+
+# The server builds the complete ValueSet by appending the codes of the
+# laboratory-observation, -susc and -geno ValueSets, so a leading code used in
+# more than one of them is listed twice.
+for file in "$WORK"/out/ValueSet-*.json; do
+  jq '.compose.include[]?.concept |= (if . then reduce .[] as $c ([]; if any(.[]; .code == $c.code) then . else . + [$c] end) else . end)' \
+    "$file" > "$WORK/deduplicated.json"
+  if ! cmp -s "$file" "$WORK/deduplicated.json"; then
+    echo "removed duplicate codes from $(basename "$file")"
+    mv "$WORK/deduplicated.json" "$file"
+  fi
+done
 
 for type in $TYPES; do
   for file in "$RESOURCES/$type"-*.json; do
