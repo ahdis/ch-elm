@@ -30,3 +30,12 @@ ELM_CERT=~/.certs/infreport-client.cer ELM_KEY=~/.certs/infreport-client.key tes
 ```
 
 Files where only the version date changed are skipped, `--all` rewrites them anyway. `--date 2027-01-01` downloads the terminology as it will be on that date, for example when a code's validity ends before a release. The script header explains how to extract the certificate and key from a `.p12` file.
+
+## Releasing
+
+Releases are published on [fhir.ch](https://fhir.ch) with the [Build IG and publish](https://github.com/hl7ch/hl7ch.github.io/actions/workflows/BuildIG_publish.yaml) workflow of [hl7ch/hl7ch.github.io](https://github.com/hl7ch/hl7ch.github.io#publish-an-ig). For CH ELM:
+
+1. In `sushi-config.yaml` set `date` to the release date and `releaseLabel: release`, in `input/pagecontent/changelog.md` replace `xx` in the version heading with the same date, in `publication-request.json` set `version` and `path`.
+2. Open a PR, check that the QA report of its branch build (`https://build.fhir.org/ig/ahdis/ch-elm/branches/<branch>/qa.html`) shows no new errors, and merge it to master.
+3. Ask someone with write access to hl7ch/hl7ch.github.io to run the workflow with the repository `ahdis/ch-elm`, the IG name `ch-elm`, the branch `master` and the version. It tags the published commit in ahdis/ch-elm with the version, e.g. `1.16.0`.
+4. Start the next version: increase `version`, set `releaseLabel: ci-build` and add a changelog heading `### x.y.z 20xx/xx/xx`.
