@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "ch-elm-interpretation-codes-vs",
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-vs",
-  "version": "2026-08-12",
+  "version": "2027-01-04",
   "name": "ChElmInterpretationCodesVs",
   "title": "CH ELM Interpretation Codes Vs",
   "status": "active",
@@ -15,6 +15,9 @@
         "concept": [
           {
             "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-avidity"
+          },
+          {
+            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-neg"
           },
           {
             "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos"

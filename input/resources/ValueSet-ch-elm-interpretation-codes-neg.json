@@ -1,0 +1,24 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ch-elm-interpretation-codes-neg",
+  "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-neg",
+  "version": "2027-01-04",
+  "name": "ChElmInterpretationCodesNeg",
+  "title": "CH ELM Interpretation Codes NEG",
+  "status": "active",
+  "experimental": false,
+  "description": "This CH ELM value set includes the code for neg interpretation code(s).",
+  "compose": {
+    "include": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+        "concept": [
+          {
+            "code": "NEG",
+            "display": "Negative"
+          }
+        ]
+      }
+    ]
+  }
+}

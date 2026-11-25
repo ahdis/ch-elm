@@ -1595,6 +1595,10 @@
             "display": "Human immunodeficiency virus type 2 (organism)"
           },
           {
+            "code": "51281000087103",
+            "display": "Carbapenemase-producing Enterobacterales"
+          },
+          {
             "code": "72904005",
             "display": "Treponema pallidum (organism)"
           },
@@ -1857,10 +1861,6 @@
           {
             "code": "51271000087100",
             "display": "Carbapenemase-producing Klebsiella oxytoca"
-          },
-          {
-            "code": "51281000087103",
-            "display": "Carbapenemase-producing Enterobacterales"
           },
           {
             "code": "734352006",
