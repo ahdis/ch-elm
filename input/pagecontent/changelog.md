@@ -16,6 +16,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 * fix typos in documentation and descriptions
 * [#232](https://github.com/ahdis/ch-elm/issues/232) invariant ch-elm-component-observation-profile-geno-loinc checks the geno ConceptMap instead of the susc ConceptMap, corrected descriptions of the component invariants
 * [#229](https://github.com/ahdis/ch-elm/issues/229) CPE genotyping: 23 SNOMED CT codes for further carbapenemase-producing organisms are added as leading codes to [CH ELM Results Laboratory Observation Genotyping](ValueSet-ch-elm-results-laboratory-observation-geno.html), 432763001 Enterobacter ludwigii (organism) is replaced by 1407065003 Carbapenemase-producing Enterobacter ludwigii, 1407064004 and 1407065003 are not yet in the SNOMED CT Swiss Edition
+* [#237](https://github.com/ahdis/ch-elm/issues/237) CPE: 51281000087103 Carbapenemase-producing Enterobacterales is also a leading code in [CH ELM Results Laboratory Observation](ValueSet-ch-elm-results-laboratory-observation.html) with interpretation NEG only ([CH ELM Interpretation Codes NEG](ValueSet-ch-elm-interpretation-codes-neg.html)), so the reference centre can report negative results with the Enterobacterales code, which a genotyping leading code cannot do. Guidance and examples 73Doc (genotyping) and 74Doc (negative result)
 
 ### 1.15.1 2026/08/14
 

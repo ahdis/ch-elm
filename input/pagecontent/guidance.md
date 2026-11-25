@@ -148,6 +148,8 @@ Important points:
 - the component.valueQuantity is mandatory for susceptibility test results indicating the applied antibiotics concentration
 - the specimen can optionally be reported within specimen.type.code using a specimen code from the valueset [CH ELM Results Complete Spec](ValueSet-ch-elm-results-complete-spec.html)
 
+For carbapenemase-producing organisms (CPE), specialized laboratories report the detected carbapenemase genes as genotyping results, with the leading code for the identified organism from [CH ELM Results Laboratory Observation Genotyping](ValueSet-ch-elm-results-laboratory-observation-geno.html) (see [68Doc - CPE Genotyping Default](Bundle-68Doc-CPE-Genotyping-Default.html)). If no carbapenemase-producing Enterobacterales are detected, they report this with the leading code SNOMED CT 51281000087103 "Carbapenemase-producing Enterobacterales" and the interpretation NEG in a document of the study type "Microbiology studies (set)" (LOINC 18725-2) (see [74Doc - CPE Negative Enterobacterales](Bundle-74Doc-CPE-Negative-Enterobacterales.html)).
+
 ### HIV recency test results
 
 HIV recency determination is carried out by a few designated laboratories. The testing consists of seven band values that always must be reported together. The FHIR document structure therefore differs from usual laboratory reports in two ways:
