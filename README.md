@@ -16,10 +16,14 @@ npm run build:ig
 Using Docker:
 
 ```bash
-docker run --rm -v "$PWD":/home/publisher/ig -v "$HOME/.fhir":/home/publisher/.fhir hl7fhir/ig-publisher-base bash -c "_updatePublisher.sh -y && _genonce.sh"
+scripts/build-docker.sh
 ```
 
-The pages are written to `output/en/`, the QA report to `output/qa.html`.
+It downloads the publisher to `~/.fhir/tools/publisher` only when a newer release exists, so the build uses the same version as the CI build. Offline, it uses the one it has.
+
+The pages are written to `output/en/`, the QA report to `output/qa.html`. The script builds with `-rapido` (also `npm run build:ig -- -rapido`), so the publisher reuses the results of the previous build for unchanged files.
+
+Terminology server responses are cached in `input-cache/txcache`, which is not in git. Copy it from an existing checkout to speed up the first build in a new clone or worktree.
 
 ## Terminology handling
 
