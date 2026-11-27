@@ -2,7 +2,7 @@ Instance: 45Doc-Sars-CoV
 InstanceOf: Bundle
 Usage: #example
 * identifier.system = "urn:ietf:rfc:3986"
-* identifier.value = "urn:uuid:54013a2d-6012-443f-9a90-6331adb23aab"
+* identifier.value = "urn:uuid:3124bce7-ea66-4c6b-8c17-f01f7d76fcd1"
 * type = #document
 * timestamp = "2024-10-20T12:00:00+02:00"
 * entry[0].fullUrl = "http://test.fhir.ch/r4/Composition/45Doc-Sars-CoV-Comp"
@@ -13,12 +13,12 @@ Usage: #example
 * entry[=].resource = Org-SanLab
 * entry[+].fullUrl = "http://test.fhir.ch/r4/Observation/45Doc-Sars-CoV-Obs"
 * entry[=].resource = 45Doc-Sars-CoV-Obs
-* entry[+].fullUrl = "http://test.fhir.ch/r4/Practitioner/Pract-PeterHauser-2"
-* entry[=].resource = Pract-PeterHauser-2
-* entry[+].fullUrl = "http://test.fhir.ch/r4/Organization/Org-PraxisDrHauser"
-* entry[=].resource = Org-PraxisDrHauser
-* entry[+].fullUrl = "http://test.fhir.ch/r4/PractitionerRole/PR-PeterHauser-2"
-* entry[=].resource = PR-PeterHauser-2
+* entry[+].fullUrl = "http://test.fhir.ch/r4/Practitioner/Pract-PeterHauser"
+* entry[=].resource = Pract-PeterHauser
+* entry[+].fullUrl = "http://test.fhir.ch/r4/Organization/Org-PeterHauser"
+* entry[=].resource = Org-PeterHauser
+* entry[+].fullUrl = "http://test.fhir.ch/r4/PractitionerRole/PR-PeterHauser"
+* entry[=].resource = PR-PeterHauser
 * entry[+].fullUrl = "http://test.fhir.ch/r4/Specimen/45Doc-Sars-CoV-Spec"
 * entry[=].resource = 45Doc-Sars-CoV-Spec
 * entry[+].fullUrl = "http://test.fhir.ch/r4/ServiceRequest/45Doc-Sars-CoV-SR"
@@ -31,7 +31,7 @@ InstanceOf: Composition
 Usage: #inline
 * language = #de-CH
 * identifier.system = "urn:ietf:rfc:3986"
-* identifier.value = "urn:uuid:54013a2d-6012-443f-9a90-6331adb23aab"
+* identifier.value = "urn:uuid:3124bce7-ea66-4c6b-8c17-f01f7d76fcd1"
 * status = #final
 * type.coding[0].version = "http://snomed.info/sct/2011000195101"
 * type.coding[=] = $sct#4241000179101 "Laborbericht"
@@ -72,7 +72,7 @@ Usage: #inline
 * intent = #order
 * code = $loinc#41458-1
 * subject = Reference(Pat-AntoineDupont)
-* requester = Reference(PR-PeterHauser-2)
+* requester = Reference(PR-PeterHauser)
 * specimen = Reference(45Doc-Sars-CoV-Spec)
 
 Instance: 45Doc-Sars-CoV-DR
@@ -81,7 +81,7 @@ Usage: #inline
 * extension.url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.composition"
 * extension.valueReference = Reference(45Doc-Sars-CoV-Comp)
 * identifier.system = "urn:ietf:rfc:3986"
-* identifier.value = "urn:uuid:54013a2d-6012-443f-9a90-6331adb23aab"
+* identifier.value = "urn:uuid:3124bce7-ea66-4c6b-8c17-f01f7d76fcd1"
 * basedOn = Reference(45Doc-Sars-CoV-SR)
 * status = #final
 * code = $loinc#11502-2 "Laboratory report"

@@ -434,7 +434,7 @@ See the examples in chapter 2.2 to learn how to use the resource profiles for di
             <td>105211-7</td>
             <td>
                 <a href="Bundle-71Doc-RSV.json.html">JSON</a>, 
-                <a href="Bundle-71Doc-RSV.json.html">XML</a>
+                <a href="Bundle-71Doc-RSV.xml.html">XML</a>
             </td>
         </tr>
         <tr>
@@ -687,7 +687,7 @@ See the examples in chapter 2.2 to learn how to use the resource profiles for di
             <td>40988-8</td>
             <td>
                 <a href="Bundle-72Doc-RSV.json.html">JSON</a>, 
-                <a href="Bundle-72Doc-RSV.json.html">XML</a>
+                <a href="Bundle-72Doc-RSV.xml.html">XML</a>
             </td>
         </tr>
     </tbody>

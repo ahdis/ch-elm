@@ -2,7 +2,7 @@ Instance: 72Doc-RSV
 InstanceOf: Bundle
 Usage: #example
 * identifier.system = "urn:ietf:rfc:3986"
-* identifier.value = "urn:uuid:1901332d-6012-443f-9690-9291adb2cb3b"
+* identifier.value = "urn:uuid:84edb280-1ee5-408f-bc8c-44fe6fddbb67"
 * type = #document
 * timestamp = "2023-09-20T07:35:00+02:00"
 * entry[0].fullUrl = "http://test.fhir.ch/r4/Composition/72Doc-RSV-Comp"
@@ -15,10 +15,10 @@ Usage: #example
 * entry[=].resource = 72Doc-RSV-Obs
 * entry[+].fullUrl = "http://test.fhir.ch/r4/Practitioner/Pract-MonikaGiacometti"
 * entry[=].resource = Pract-MonikaGiacometti
-* entry[+].fullUrl = "http://test.fhir.ch/r4/Organization/Org-A99684215ABC"
-* entry[=].resource = Org-A99684215ABC
-* entry[+].fullUrl = "http://test.fhir.ch/r4/PractitionerRole/PR-MonikaGiacometti-2"
-* entry[=].resource = PR-MonikaGiacometti-2
+* entry[+].fullUrl = "http://test.fhir.ch/r4/Organization/Org-KantonsspitalABC"
+* entry[=].resource = Org-KantonsspitalABC
+* entry[+].fullUrl = "http://test.fhir.ch/r4/PractitionerRole/PR-MonikaGiacometti"
+* entry[=].resource = PR-MonikaGiacometti
 * entry[+].fullUrl = "http://test.fhir.ch/r4/Specimen/72Doc-RSV-Spec"
 * entry[=].resource = 72Doc-RSV-Spec
 * entry[+].fullUrl = "http://test.fhir.ch/r4/ServiceRequest/72Doc-RSV-SR"
@@ -31,7 +31,7 @@ InstanceOf: Composition
 Usage: #inline
 * language = #de-CH
 * identifier.system = "urn:ietf:rfc:3986"
-* identifier.value = "urn:uuid:1901332d-6012-443f-9690-9291adb2cb3b"
+* identifier.value = "urn:uuid:84edb280-1ee5-408f-bc8c-44fe6fddbb67"
 * status = #final
 * type.coding[0].version = "http://snomed.info/sct/2011000195101"
 * type.coding[=] = $sct#4241000179101 "Laborbericht"
@@ -73,7 +73,7 @@ Usage: #inline
 * intent = #order
 * code = $loinc#40988-8
 * subject = Reference(Pat-HF)
-* requester = Reference(PR-MonikaGiacometti-2)
+* requester = Reference(PR-MonikaGiacometti)
 * specimen = Reference(72Doc-RSV-Spec)
 
 Instance: 72Doc-RSV-DR
@@ -82,7 +82,7 @@ Usage: #inline
 * extension.url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.composition"
 * extension.valueReference = Reference(72Doc-RSV-Comp)
 * identifier.system = "urn:ietf:rfc:3986"
-* identifier.value = "urn:uuid:1901332d-6012-443f-9690-9291adb2cb3b"
+* identifier.value = "urn:uuid:84edb280-1ee5-408f-bc8c-44fe6fddbb67"
 * basedOn = Reference(72Doc-RSV-SR)
 * status = #final
 * code = $loinc#11502-2 "Laboratory report"

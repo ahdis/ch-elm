@@ -13,12 +13,12 @@ Usage: #example
 * entry[=].resource = Org-SanLab
 * entry[+].fullUrl = "http://test.fhir.ch/r4/Observation/8Doc-HepatiteB-Obs"
 * entry[=].resource = 8Doc-HepatiteB-Obs
-* entry[+].fullUrl = "http://test.fhir.ch/r4/Practitioner/Pract-PeterHauser-2"
-* entry[=].resource = Pract-PeterHauser-2
-* entry[+].fullUrl = "http://test.fhir.ch/r4/Organization/Org-PraxisDrHauser"
-* entry[=].resource = Org-PraxisDrHauser
-* entry[+].fullUrl = "http://test.fhir.ch/r4/PractitionerRole/PR-PeterHauser-2"
-* entry[=].resource = PR-PeterHauser-2
+* entry[+].fullUrl = "http://test.fhir.ch/r4/Practitioner/Pract-PeterHauser"
+* entry[=].resource = Pract-PeterHauser
+* entry[+].fullUrl = "http://test.fhir.ch/r4/Organization/Org-PeterHauser"
+* entry[=].resource = Org-PeterHauser
+* entry[+].fullUrl = "http://test.fhir.ch/r4/PractitionerRole/PR-PeterHauser"
+* entry[=].resource = PR-PeterHauser
 * entry[+].fullUrl = "http://test.fhir.ch/r4/Specimen/8Doc-HepatiteB-Spec"
 * entry[=].resource = 8Doc-HepatiteB-Spec
 * entry[+].fullUrl = "http://test.fhir.ch/r4/ServiceRequest/8Doc-HepatiteB-SR"
@@ -72,7 +72,7 @@ Usage: #inline
 * intent = #order
 * code = $loinc#31204-1
 * subject = Reference(Pat-DelematMonika)
-* requester = Reference(PR-PeterHauser-2)
+* requester = Reference(PR-PeterHauser)
 * specimen = Reference(8Doc-HepatiteB-Spec)
 
 Instance: 8Doc-HepatiteB-DR

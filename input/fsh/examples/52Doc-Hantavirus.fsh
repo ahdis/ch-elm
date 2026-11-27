@@ -2,7 +2,7 @@ Instance: 52Doc-Hantavirus
 InstanceOf: Bundle
 Usage: #example
 * identifier.system = "urn:ietf:rfc:3986"
-* identifier.value = "urn:uuid:6401332d-6012-443f-9690-9331adb23aab"
+* identifier.value = "urn:uuid:8a1d658b-f470-40fe-97f3-82b2a83a9b59"
 * type = #document
 * timestamp = "2024-09-05T12:00:00+02:00"
 * entry[0].fullUrl = "http://test.fhir.ch/r4/Composition/52Doc-Hantavirus-Comp"
@@ -13,12 +13,12 @@ Usage: #example
 * entry[=].resource = Org-SanLab
 * entry[+].fullUrl = "http://test.fhir.ch/r4/Observation/52Doc-Hantavirus-Obs"
 * entry[=].resource = 52Doc-Hantavirus-Obs
-* entry[+].fullUrl = "http://test.fhir.ch/r4/Practitioner/Pract-PeterHauser-2"
-* entry[=].resource = Pract-PeterHauser-2
-* entry[+].fullUrl = "http://test.fhir.ch/r4/Organization/Org-PraxisDrHauser"
-* entry[=].resource = Org-PraxisDrHauser
-* entry[+].fullUrl = "http://test.fhir.ch/r4/PractitionerRole/PR-PeterHauser-2"
-* entry[=].resource = PR-PeterHauser-2
+* entry[+].fullUrl = "http://test.fhir.ch/r4/Practitioner/Pract-PeterHauser"
+* entry[=].resource = Pract-PeterHauser
+* entry[+].fullUrl = "http://test.fhir.ch/r4/Organization/Org-PeterHauser"
+* entry[=].resource = Org-PeterHauser
+* entry[+].fullUrl = "http://test.fhir.ch/r4/PractitionerRole/PR-PeterHauser"
+* entry[=].resource = PR-PeterHauser
 * entry[+].fullUrl = "http://test.fhir.ch/r4/Specimen/52Doc-Hantavirus-Spec"
 * entry[=].resource = 52Doc-Hantavirus-Spec
 * entry[+].fullUrl = "http://test.fhir.ch/r4/ServiceRequest/52Doc-Hantavirus-SR"
@@ -31,7 +31,7 @@ InstanceOf: Composition
 Usage: #inline
 * language = #de-CH
 * identifier.system = "urn:ietf:rfc:3986"
-* identifier.value = "urn:uuid:6401332d-6012-443f-9690-9331adb23aab"
+* identifier.value = "urn:uuid:8a1d658b-f470-40fe-97f3-82b2a83a9b59"
 * status = #final
 * type.coding[0].version = "http://snomed.info/sct/2011000195101"
 * type.coding[=] = $sct#4241000179101 "Laborbericht"
@@ -72,7 +72,7 @@ Usage: #inline
 * intent = #order
 * code = $loinc#86520-4
 * subject = Reference(Pat-AD)
-* requester = Reference(PR-PeterHauser-2)
+* requester = Reference(PR-PeterHauser)
 * specimen = Reference(52Doc-Hantavirus-Spec)
 
 Instance: 52Doc-Hantavirus-DR
@@ -81,7 +81,7 @@ Usage: #inline
 * extension.url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.composition"
 * extension.valueReference = Reference(52Doc-Hantavirus-Comp)
 * identifier.system = "urn:ietf:rfc:3986"
-* identifier.value = "urn:uuid:6401332d-6012-443f-9690-9331adb23aab"
+* identifier.value = "urn:uuid:8a1d658b-f470-40fe-97f3-82b2a83a9b59"
 * basedOn = Reference(52Doc-Hantavirus-SR)
 * status = #final
 * code = $loinc#11502-2 "Laboratory report"

@@ -13,12 +13,12 @@ Usage: #example
 * entry[=].resource = Org-SanLab
 * entry[+].fullUrl = "http://test.fhir.ch/r4/Observation/49Doc-HIV-Obs"
 * entry[=].resource = 49Doc-HIV-Obs
-* entry[+].fullUrl = "http://test.fhir.ch/r4/Practitioner/Pract-PeterHauser-2"
-* entry[=].resource = Pract-PeterHauser-2
-* entry[+].fullUrl = "http://test.fhir.ch/r4/Organization/Org-PraxisDrHauser"
-* entry[=].resource = Org-PraxisDrHauser
-* entry[+].fullUrl = "http://test.fhir.ch/r4/PractitionerRole/PR-PeterHauser-2"
-* entry[=].resource = PR-PeterHauser-2
+* entry[+].fullUrl = "http://test.fhir.ch/r4/Practitioner/Pract-PeterHauser"
+* entry[=].resource = Pract-PeterHauser
+* entry[+].fullUrl = "http://test.fhir.ch/r4/Organization/Org-PeterHauser"
+* entry[=].resource = Org-PeterHauser
+* entry[+].fullUrl = "http://test.fhir.ch/r4/PractitionerRole/PR-PeterHauser"
+* entry[=].resource = PR-PeterHauser
 * entry[+].fullUrl = "http://test.fhir.ch/r4/Specimen/49Doc-HIV-Spec"
 * entry[=].resource = 49Doc-HIV-Spec
 * entry[+].fullUrl = "http://test.fhir.ch/r4/ServiceRequest/49Doc-HIV-SR"
@@ -72,7 +72,7 @@ Usage: #inline
 * intent = #order
 * code = $sct#89293008
 * subject = Reference(Pat-49Doc-HIV)
-* requester = Reference(PR-PeterHauser-2)
+* requester = Reference(PR-PeterHauser)
 * specimen = Reference(49Doc-HIV-Spec)
 
 Instance: 49Doc-HIV-DR

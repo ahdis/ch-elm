@@ -1,21 +1,5 @@
 // Patients, organizations and practitioners referenced by the example Bundles
 
-Instance: Org-A99684215ABC
-InstanceOf: Organization
-Usage: #inline
-* identifier.system = "urn:oid:2.16.756.5.45"
-* identifier.value = "A99684215"
-* name = "A99684215 ABC"
-* address.line = "Aortastrasse 22"
-* address.line.extension[0].url = "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName"
-* address.line.extension[=].valueString = "Aortastrasse"
-* address.line.extension[+].url = "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber"
-* address.line.extension[=].valueString = "22"
-* address.line.extension[+].url = "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox"
-* address.line.extension[=].valueString = "Postfach 18"
-* address.city = "Bern"
-* address.postalCode = "3000"
-
 Instance: Org-HopitalRegionalSoleil
 InstanceOf: Organization
 Usage: #inline
@@ -53,25 +37,11 @@ Usage: #inline
 * identifier.value = "7601002131193"
 * name = "Nationales Zentrum für Meningokokken"
 
-Instance: Org-PraxisDrHauser
-InstanceOf: Organization
-Usage: #inline
-* identifier.system = "urn:oid:2.16.756.5.45"
-* identifier.value = "A74966168"
-* name = "Praxis Dr. Hauser"
-* address.line = "Hauptstrasse 10"
-* address.line.extension[0].url = "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName"
-* address.line.extension[=].valueString = "Hauptstrasse"
-* address.line.extension[+].url = "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber"
-* address.line.extension[=].valueString = "10"
-* address.city = "Solothurn"
-* address.postalCode = "4500"
-
 Instance: Org-SanLab-2
 InstanceOf: Organization
 Usage: #inline
 * identifier.system = "urn:oid:2.16.756.5.45"
-* identifier.value = "A99684215"
+* identifier.value = "A99179004"
 * name = "SanLab"
 * address.line = "rue de l'église 10"
 * address.line.extension[0].url = "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName"
@@ -201,9 +171,9 @@ InstanceOf: Patient
 Usage: #inline
 * identifier.system = "urn:oid:2.16.756.5.32"
 * identifier.value = "7562295883070"
-* name.family = "Monika"
-* name.given = "Delemat"
-* gender = #male
+* name.family = "Delemat"
+* name.given = "Monika"
+* gender = #female
 * birthDate = "1960-08-22"
 * address.use = #home
 * address.line = "Bahnhofstrasse 27"
@@ -219,9 +189,9 @@ InstanceOf: Patient
 Usage: #inline
 * identifier.system = "urn:oid:2.16.756.5.32"
 * identifier.value = "7562295883070"
-* name.family = "M"
-* name.given = "D"
-* gender = #male
+* name.family = "D"
+* name.given = "M"
+* gender = #female
 * birthDate = "1960-08-22"
 * address.use = #home
 * address.city = "Bern"
@@ -276,8 +246,8 @@ InstanceOf: Patient
 Usage: #inline
 * identifier.system = "urn:oid:2.16.756.5.32"
 * identifier.value = "7561733446723"
-* name.family = "F"
-* name.given = "H"
+* name.family = "H"
+* name.given = "F"
 * gender = #female
 * birthDate = "1985-10-17"
 * address.use = #home
@@ -293,8 +263,8 @@ InstanceOf: Patient
 Usage: #inline
 * identifier.system = "urn:oid:2.16.756.5.32"
 * identifier.value = "7561733446723"
-* name.family = "Frida"
-* name.given = "Hildetter"
+* name.family = "Hildetter"
+* name.given = "Frida"
 * gender = #female
 * birthDate = "1985-10-17"
 * address.use = #home
@@ -311,8 +281,8 @@ InstanceOf: Patient
 Usage: #inline
 * identifier.system = "urn:oid:2.16.756.5.32"
 * identifier.value = "7561733446723"
-* name.family = "Donna"
-* name.given = "Meier"
+* name.family = "Meier"
+* name.given = "Donna"
 * gender = #female
 * birthDate = "1985-10-17"
 * address.use = #home
@@ -333,26 +303,14 @@ Usage: #inline
 Instance: PR-JeanneMoreau-2
 InstanceOf: PractitionerRole
 Usage: #inline
-* practitioner = Reference(Pract-JeanneMoreau-2)
+* practitioner = Reference(Pract-JeanneMoreau)
 * organization = Reference(Org-HopitalRegionalSoleil)
-
-Instance: PR-MonikaGiacometti-2
-InstanceOf: PractitionerRole
-Usage: #inline
-* practitioner = Reference(Pract-MonikaGiacometti)
-* organization = Reference(Org-A99684215ABC)
 
 Instance: PR-MonikaGiacometti
 InstanceOf: PractitionerRole
 Usage: #inline
 * practitioner = Reference(Pract-MonikaGiacometti)
 * organization = Reference(Org-KantonsspitalABC)
-
-Instance: PR-PeterHauser-2
-InstanceOf: PractitionerRole
-Usage: #inline
-* practitioner = Reference(Pract-PeterHauser-2)
-* organization = Reference(Org-PraxisDrHauser)
 
 Instance: Pract-AndreaGasser
 InstanceOf: Practitioner
@@ -363,18 +321,6 @@ Usage: #inline
 * name.given = "Andrea"
 * telecom.system = #email
 * telecom.value = "andrea.gasser@sanlab.ch"
-
-Instance: Pract-JeanneMoreau-2
-InstanceOf: Practitioner
-Usage: #inline
-* identifier.system = "urn:oid:2.51.1.3"
-* identifier.value = "7601000121219"
-* name.family = "Moreau"
-* name.given = "Jeanne"
-* telecom[0].system = #phone
-* telecom[=].value = "+41 79 111 88 99"
-* telecom[+].system = #email
-* telecom[=].value = "jm@hr-soleil.ch"
 
 Instance: Pract-MonikaGiacometti
 InstanceOf: Practitioner
@@ -387,15 +333,3 @@ Usage: #inline
 * telecom[=].value = "+41 79 111 44 55"
 * telecom[+].system = #email
 * telecom[=].value = "m.giacometti@ks-abc.ch"
-
-Instance: Pract-PeterHauser-2
-InstanceOf: Practitioner
-Usage: #inline
-* identifier.system = "urn:oid:2.51.1.3"
-* identifier.value = "7601000000514"
-* name.family = "Hauser"
-* name.given = "Peter"
-* telecom[0].system = #phone
-* telecom[=].value = "+41 79 222 33 44"
-* telecom[+].system = #email
-* telecom[=].value = "peter.hauser@hauserpraxis.ch"

@@ -13,12 +13,12 @@ Usage: #example
 * entry[=].resource = Org-SanLab
 * entry[+].fullUrl = "http://test.fhir.ch/r4/Observation/32Doc-Rubella-avidity-Obs"
 * entry[=].resource = 32Doc-Rubella-avidity-Obs
-* entry[+].fullUrl = "http://test.fhir.ch/r4/Practitioner/Pract-PeterHauser-2"
-* entry[=].resource = Pract-PeterHauser-2
-* entry[+].fullUrl = "http://test.fhir.ch/r4/Organization/Org-PraxisDrHauser"
-* entry[=].resource = Org-PraxisDrHauser
-* entry[+].fullUrl = "http://test.fhir.ch/r4/PractitionerRole/PR-PeterHauser-2"
-* entry[=].resource = PR-PeterHauser-2
+* entry[+].fullUrl = "http://test.fhir.ch/r4/Practitioner/Pract-PeterHauser"
+* entry[=].resource = Pract-PeterHauser
+* entry[+].fullUrl = "http://test.fhir.ch/r4/Organization/Org-PeterHauser"
+* entry[=].resource = Org-PeterHauser
+* entry[+].fullUrl = "http://test.fhir.ch/r4/PractitionerRole/PR-PeterHauser"
+* entry[=].resource = PR-PeterHauser
 * entry[+].fullUrl = "http://test.fhir.ch/r4/Specimen/32Doc-Rubella-avidity-Spec"
 * entry[=].resource = 32Doc-Rubella-avidity-Spec
 * entry[+].fullUrl = "http://test.fhir.ch/r4/ServiceRequest/32Doc-Rubella-avidity-SR"
@@ -72,7 +72,7 @@ Usage: #inline
 * intent = #order
 * code = $loinc#52986-7
 * subject = Reference(Pat-AntoineDupont)
-* requester = Reference(PR-PeterHauser-2)
+* requester = Reference(PR-PeterHauser)
 * specimen = Reference(32Doc-Rubella-avidity-Spec)
 
 Instance: 32Doc-Rubella-avidity-DR

@@ -13,12 +13,12 @@ Usage: #example
 * entry[=].resource = Org-SanLab
 * entry[+].fullUrl = "http://test.fhir.ch/r4/Observation/67Doc-Emerging-Pathogen-Obs"
 * entry[=].resource = 67Doc-Emerging-Pathogen-Obs
-* entry[+].fullUrl = "http://test.fhir.ch/r4/Practitioner/Pract-PeterHauser-2"
-* entry[=].resource = Pract-PeterHauser-2
-* entry[+].fullUrl = "http://test.fhir.ch/r4/Organization/Org-PraxisDrHauser"
-* entry[=].resource = Org-PraxisDrHauser
-* entry[+].fullUrl = "http://test.fhir.ch/r4/PractitionerRole/PR-PeterHauser-2"
-* entry[=].resource = PR-PeterHauser-2
+* entry[+].fullUrl = "http://test.fhir.ch/r4/Practitioner/Pract-PeterHauser"
+* entry[=].resource = Pract-PeterHauser
+* entry[+].fullUrl = "http://test.fhir.ch/r4/Organization/Org-PeterHauser"
+* entry[=].resource = Org-PeterHauser
+* entry[+].fullUrl = "http://test.fhir.ch/r4/PractitionerRole/PR-PeterHauser"
+* entry[=].resource = PR-PeterHauser
 * entry[+].fullUrl = "http://test.fhir.ch/r4/Specimen/67Doc-Emerging-Pathogen-Spec"
 * entry[=].resource = 67Doc-Emerging-Pathogen-Spec
 * entry[+].fullUrl = "http://test.fhir.ch/r4/ServiceRequest/67Doc-Emerging-Pathogen-SR"
@@ -71,7 +71,7 @@ Usage: #inline
 * intent = #order
 * code = urn:oid:2.16.756.5.30.1.129.1.5.1#EP-100100-7 "FOPH emerging pathogen placeholder"
 * subject = Reference(Pat-AntoineDupont-3)
-* requester = Reference(PR-PeterHauser-2)
+* requester = Reference(PR-PeterHauser)
 * specimen = Reference(67Doc-Emerging-Pathogen-Spec)
 
 Instance: 67Doc-Emerging-Pathogen-DR

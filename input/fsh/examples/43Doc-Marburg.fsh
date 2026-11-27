@@ -2,7 +2,7 @@ Instance: 43Doc-Marburg
 InstanceOf: Bundle
 Usage: #example
 * identifier.system = "urn:ietf:rfc:3986"
-* identifier.value = "urn:uuid:54013a2d-6012-443f-9a90-6331adb23aab"
+* identifier.value = "urn:uuid:533e8f16-bdff-4e80-9360-415c0eaf3065"
 * type = #document
 * timestamp = "2024-10-20T12:00:00+02:00"
 * entry[0].fullUrl = "http://test.fhir.ch/r4/Composition/43Doc-Marburg-Comp"
@@ -13,12 +13,12 @@ Usage: #example
 * entry[=].resource = Org-SanLab
 * entry[+].fullUrl = "http://test.fhir.ch/r4/Observation/43Doc-Marburg-Obs"
 * entry[=].resource = 43Doc-Marburg-Obs
-* entry[+].fullUrl = "http://test.fhir.ch/r4/Practitioner/Pract-PeterHauser-2"
-* entry[=].resource = Pract-PeterHauser-2
-* entry[+].fullUrl = "http://test.fhir.ch/r4/Organization/Org-PraxisDrHauser"
-* entry[=].resource = Org-PraxisDrHauser
-* entry[+].fullUrl = "http://test.fhir.ch/r4/PractitionerRole/PR-PeterHauser-2"
-* entry[=].resource = PR-PeterHauser-2
+* entry[+].fullUrl = "http://test.fhir.ch/r4/Practitioner/Pract-PeterHauser"
+* entry[=].resource = Pract-PeterHauser
+* entry[+].fullUrl = "http://test.fhir.ch/r4/Organization/Org-PeterHauser"
+* entry[=].resource = Org-PeterHauser
+* entry[+].fullUrl = "http://test.fhir.ch/r4/PractitionerRole/PR-PeterHauser"
+* entry[=].resource = PR-PeterHauser
 * entry[+].fullUrl = "http://test.fhir.ch/r4/Specimen/43Doc-Marburg-Spec"
 * entry[=].resource = 43Doc-Marburg-Spec
 * entry[+].fullUrl = "http://test.fhir.ch/r4/ServiceRequest/43Doc-Marburg-SR"
@@ -31,7 +31,7 @@ InstanceOf: Composition
 Usage: #inline
 * language = #de-CH
 * identifier.system = "urn:ietf:rfc:3986"
-* identifier.value = "urn:uuid:54013a2d-6012-443f-9a90-6331adb23aab"
+* identifier.value = "urn:uuid:533e8f16-bdff-4e80-9360-415c0eaf3065"
 * status = #final
 * type.coding[0].version = "http://snomed.info/sct/2011000195101"
 * type.coding[=] = $sct#4241000179101 "Laborbericht"
@@ -72,7 +72,7 @@ Usage: #inline
 * intent = #order
 * code = $loinc#86574-1
 * subject = Reference(Pat-AntoineDupont)
-* requester = Reference(PR-PeterHauser-2)
+* requester = Reference(PR-PeterHauser)
 * specimen = Reference(43Doc-Marburg-Spec)
 
 Instance: 43Doc-Marburg-DR
@@ -81,7 +81,7 @@ Usage: #inline
 * extension.url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.composition"
 * extension.valueReference = Reference(43Doc-Marburg-Comp)
 * identifier.system = "urn:ietf:rfc:3986"
-* identifier.value = "urn:uuid:54013a2d-6012-443f-9a90-6331adb23aab"
+* identifier.value = "urn:uuid:533e8f16-bdff-4e80-9360-415c0eaf3065"
 * basedOn = Reference(43Doc-Marburg-SR)
 * status = #final
 * code = $loinc#11502-2 "Laboratory report"

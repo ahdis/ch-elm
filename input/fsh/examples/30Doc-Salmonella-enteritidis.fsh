@@ -2,7 +2,7 @@ Instance: 30Doc-Salmonella-enteritidis
 InstanceOf: Bundle
 Usage: #example
 * identifier.system = "urn:ietf:rfc:3986"
-* identifier.value = "urn:uuid:3401332d-6012-443f-9690-9331adb23aab"
+* identifier.value = "urn:uuid:7a436403-3567-4216-a26e-d829e703aed3"
 * type = #document
 * timestamp = "2024-09-05T12:00:00+02:00"
 * entry[0].fullUrl = "http://test.fhir.ch/r4/Composition/30Doc-Salmonella-enteritidis-Comp"
@@ -13,12 +13,12 @@ Usage: #example
 * entry[=].resource = Org-SanLab
 * entry[+].fullUrl = "http://test.fhir.ch/r4/Observation/30Doc-Salmonella-enteritidis-Obs"
 * entry[=].resource = 30Doc-Salmonella-enteritidis-Obs
-* entry[+].fullUrl = "http://test.fhir.ch/r4/Practitioner/Pract-PeterHauser-2"
-* entry[=].resource = Pract-PeterHauser-2
-* entry[+].fullUrl = "http://test.fhir.ch/r4/Organization/Org-PraxisDrHauser"
-* entry[=].resource = Org-PraxisDrHauser
-* entry[+].fullUrl = "http://test.fhir.ch/r4/PractitionerRole/PR-PeterHauser-2"
-* entry[=].resource = PR-PeterHauser-2
+* entry[+].fullUrl = "http://test.fhir.ch/r4/Practitioner/Pract-PeterHauser"
+* entry[=].resource = Pract-PeterHauser
+* entry[+].fullUrl = "http://test.fhir.ch/r4/Organization/Org-PeterHauser"
+* entry[=].resource = Org-PeterHauser
+* entry[+].fullUrl = "http://test.fhir.ch/r4/PractitionerRole/PR-PeterHauser"
+* entry[=].resource = PR-PeterHauser
 * entry[+].fullUrl = "http://test.fhir.ch/r4/Specimen/30Doc-Salmonella-enteritidis-Spec"
 * entry[=].resource = 30Doc-Salmonella-enteritidis-Spec
 * entry[+].fullUrl = "http://test.fhir.ch/r4/ServiceRequest/30Doc-Salmonella-enteritidis-SR"
@@ -31,7 +31,7 @@ InstanceOf: Composition
 Usage: #inline
 * language = #de-CH
 * identifier.system = "urn:ietf:rfc:3986"
-* identifier.value = "urn:uuid:3401332d-6012-443f-9690-9331adb23aab"
+* identifier.value = "urn:uuid:7a436403-3567-4216-a26e-d829e703aed3"
 * status = #final
 * type.coding[0].version = "http://snomed.info/sct/2011000195101"
 * type.coding[=] = $sct#4241000179101 "Laborbericht"
@@ -71,7 +71,7 @@ Usage: #inline
 * intent = #order
 * code = $loinc#49612-5
 * subject = Reference(Pat-AntoineDupont-2)
-* requester = Reference(PR-PeterHauser-2)
+* requester = Reference(PR-PeterHauser)
 * specimen = Reference(30Doc-Salmonella-enteritidis-Spec)
 
 Instance: 30Doc-Salmonella-enteritidis-DR
@@ -80,7 +80,7 @@ Usage: #inline
 * extension.url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.composition"
 * extension.valueReference = Reference(30Doc-Salmonella-enteritidis-Comp)
 * identifier.system = "urn:ietf:rfc:3986"
-* identifier.value = "urn:uuid:3401332d-6012-443f-9690-9331adb23aab"
+* identifier.value = "urn:uuid:7a436403-3567-4216-a26e-d829e703aed3"
 * basedOn = Reference(30Doc-Salmonella-enteritidis-SR)
 * status = #final
 * code = $loinc#11502-2 "Laboratory report"

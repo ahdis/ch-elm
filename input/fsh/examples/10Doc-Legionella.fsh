@@ -2,7 +2,7 @@ Instance: 10Doc-Legionella
 InstanceOf: Bundle
 Usage: #example
 * identifier.system = "urn:ietf:rfc:3986"
-* identifier.value = "urn:uuid:1991332d-6012-443f-9690-9291dtb2cb3b"
+* identifier.value = "urn:uuid:1991332d-6012-443f-9690-9291d0b2cb3b"
 * type = #document
 * timestamp = "2023-09-20T07:35:00+02:00"
 * entry[0].fullUrl = "http://test.fhir.ch/r4/Composition/10Doc-Legionella-Comp"
@@ -31,7 +31,7 @@ InstanceOf: Composition
 Usage: #inline
 * language = #de-CH
 * identifier.system = "urn:ietf:rfc:3986"
-* identifier.value = "urn:uuid:1991332d-6012-443f-9690-9291dtb2cb3b"
+* identifier.value = "urn:uuid:1991332d-6012-443f-9690-9291d0b2cb3b"
 * status = #final
 * type.coding[0].version = "http://snomed.info/sct/2011000195101"
 * type.coding[=] = $sct#4241000179101 "Laborbericht"
@@ -81,7 +81,7 @@ Usage: #inline
 * extension.url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.composition"
 * extension.valueReference = Reference(10Doc-Legionella-Comp)
 * identifier.system = "urn:ietf:rfc:3986"
-* identifier.value = "urn:uuid:1991332d-6012-443f-9690-9291dtb2cb3b"
+* identifier.value = "urn:uuid:1991332d-6012-443f-9690-9291d0b2cb3b"
 * basedOn = Reference(10Doc-Legionella-SR)
 * status = #final
 * code = $loinc#11502-2 "Laboratory report"

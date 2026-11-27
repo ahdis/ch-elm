@@ -2,7 +2,7 @@ Instance: 59Doc-EHEC
 InstanceOf: Bundle
 Usage: #example
 * identifier.system = "urn:ietf:rfc:3986"
-* identifier.value = "urn:uuid:54013a2d-6012-443f-9a90-6331adb23aab"
+* identifier.value = "urn:uuid:82f99df7-24c8-4e0e-8240-74f9d6e030d0"
 * type = #document
 * timestamp = "2025-01-20T12:00:00+02:00"
 * entry[0].fullUrl = "http://test.fhir.ch/r4/Composition/59Doc-EHEC-Comp"
@@ -13,12 +13,12 @@ Usage: #example
 * entry[=].resource = Org-SanLab
 * entry[+].fullUrl = "http://test.fhir.ch/r4/Observation/59Doc-EHEC-Obs"
 * entry[=].resource = 59Doc-EHEC-Obs
-* entry[+].fullUrl = "http://test.fhir.ch/r4/Practitioner/Pract-PeterHauser-2"
-* entry[=].resource = Pract-PeterHauser-2
-* entry[+].fullUrl = "http://test.fhir.ch/r4/Organization/Org-PraxisDrHauser"
-* entry[=].resource = Org-PraxisDrHauser
-* entry[+].fullUrl = "http://test.fhir.ch/r4/PractitionerRole/PR-PeterHauser-2"
-* entry[=].resource = PR-PeterHauser-2
+* entry[+].fullUrl = "http://test.fhir.ch/r4/Practitioner/Pract-PeterHauser"
+* entry[=].resource = Pract-PeterHauser
+* entry[+].fullUrl = "http://test.fhir.ch/r4/Organization/Org-PeterHauser"
+* entry[=].resource = Org-PeterHauser
+* entry[+].fullUrl = "http://test.fhir.ch/r4/PractitionerRole/PR-PeterHauser"
+* entry[=].resource = PR-PeterHauser
 * entry[+].fullUrl = "http://test.fhir.ch/r4/Specimen/59Doc-EHEC-Spec"
 * entry[=].resource = 59Doc-EHEC-Spec
 * entry[+].fullUrl = "http://test.fhir.ch/r4/ServiceRequest/59Doc-EHEC-SR"
@@ -31,7 +31,7 @@ InstanceOf: Composition
 Usage: #inline
 * language = #de-CH
 * identifier.system = "urn:ietf:rfc:3986"
-* identifier.value = "urn:uuid:54013a2d-6012-443f-9a90-6331adb23aab"
+* identifier.value = "urn:uuid:82f99df7-24c8-4e0e-8240-74f9d6e030d0"
 * status = #final
 * type.coding[0].version = "http://snomed.info/sct/2011000195101"
 * type.coding[=] = $sct#4241000179101 "Laborbericht"
@@ -71,7 +71,7 @@ Usage: #inline
 * intent = #order
 * code = $loinc#51940-5
 * subject = Reference(Pat-AntoineDupont)
-* requester = Reference(PR-PeterHauser-2)
+* requester = Reference(PR-PeterHauser)
 * specimen = Reference(59Doc-EHEC-Spec)
 
 Instance: 59Doc-EHEC-DR
@@ -80,7 +80,7 @@ Usage: #inline
 * extension.url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.composition"
 * extension.valueReference = Reference(59Doc-EHEC-Comp)
 * identifier.system = "urn:ietf:rfc:3986"
-* identifier.value = "urn:uuid:54013a2d-6012-443f-9a90-6331adb23aab"
+* identifier.value = "urn:uuid:82f99df7-24c8-4e0e-8240-74f9d6e030d0"
 * basedOn = Reference(59Doc-EHEC-SR)
 * status = #final
 * code = $loinc#11502-2 "Laboratory report"

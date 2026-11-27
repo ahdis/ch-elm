@@ -2,7 +2,7 @@ Instance: 16Doc-Dengue-Titer
 InstanceOf: Bundle
 Usage: #example
 * identifier.system = "urn:ietf:rfc:3986"
-* identifier.value = "urn:uuid:a701332d-6012-443f-9690-9291adb2aa89"
+* identifier.value = "urn:uuid:ae659833-0162-47b7-a2f9-41a7d90f3f9d"
 * type = #document
 * timestamp = "2024-07-25T08:30:00+02:00"
 * entry[0].fullUrl = "http://test.fhir.ch/r4/Composition/16Doc-Dengue-Titer-Comp"
@@ -13,8 +13,8 @@ Usage: #example
 * entry[=].resource = Org-SanLab
 * entry[+].fullUrl = "http://test.fhir.ch/r4/Observation/16Doc-Dengue-Titer-Obs"
 * entry[=].resource = 16Doc-Dengue-Titer-Obs
-* entry[+].fullUrl = "http://test.fhir.ch/r4/Practitioner/Pract-JeanneMoreau-2"
-* entry[=].resource = Pract-JeanneMoreau-2
+* entry[+].fullUrl = "http://test.fhir.ch/r4/Practitioner/Pract-JeanneMoreau"
+* entry[=].resource = Pract-JeanneMoreau
 * entry[+].fullUrl = "http://test.fhir.ch/r4/Organization/Org-HopitalRegionalSoleil"
 * entry[=].resource = Org-HopitalRegionalSoleil
 * entry[+].fullUrl = "http://test.fhir.ch/r4/PractitionerRole/PR-JeanneMoreau-2"
@@ -31,7 +31,7 @@ InstanceOf: Composition
 Usage: #inline
 * language = #fr-CH
 * identifier.system = "urn:ietf:rfc:3986"
-* identifier.value = "urn:uuid:a701332d-6012-443f-9690-9291adb2aa89"
+* identifier.value = "urn:uuid:ae659833-0162-47b7-a2f9-41a7d90f3f9d"
 * status = #final
 * type.coding[0].version = "http://snomed.info/sct/2011000195101"
 * type.coding[=] = $sct#4241000179101 "Laborbericht"
@@ -81,7 +81,7 @@ Usage: #inline
 * extension.url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.composition"
 * extension.valueReference = Reference(16Doc-Dengue-Titer-Comp)
 * identifier.system = "urn:ietf:rfc:3986"
-* identifier.value = "urn:uuid:a701332d-6012-443f-9690-9291adb2aa89"
+* identifier.value = "urn:uuid:ae659833-0162-47b7-a2f9-41a7d90f3f9d"
 * basedOn = Reference(16Doc-Dengue-Titer-SR)
 * status = #final
 * code = $loinc#11502-2 "Laboratory report"

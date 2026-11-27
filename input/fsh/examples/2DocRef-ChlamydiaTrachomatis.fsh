@@ -30,7 +30,7 @@ Description: "Reporting Chlamydia Trachomatis"
 * contained = 2Doc-ChlamydiaTrachomatis-Vct
 * status = #current
 * identifier[0].system = "urn:ietf:rfc:3986"
-* identifier[0].value = "urn:uuid:1301332d-6012-443f-9690-929132b2e155"
+* identifier[0].value = "urn:uuid:a3d2d16d-27dd-4cd4-aa13-8e916c8b7840"
 * content.attachment.language = #de-CH
 * content.attachment.url = "#2Doc-ChlamydiaTrachomatis-Vct" 
 

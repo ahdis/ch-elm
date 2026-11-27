@@ -13,8 +13,8 @@ Usage: #example
 * entry[=].resource = Org-SanLab
 * entry[+].fullUrl = "http://test.fhir.ch/r4/Observation/9Doc-HepatiteC-Obs"
 * entry[=].resource = 9Doc-HepatiteC-Obs
-* entry[+].fullUrl = "http://test.fhir.ch/r4/Practitioner/Pract-JeanneMoreau-2"
-* entry[=].resource = Pract-JeanneMoreau-2
+* entry[+].fullUrl = "http://test.fhir.ch/r4/Practitioner/Pract-JeanneMoreau"
+* entry[=].resource = Pract-JeanneMoreau
 * entry[+].fullUrl = "http://test.fhir.ch/r4/Organization/Org-HopitalRegionalSoleil"
 * entry[=].resource = Org-HopitalRegionalSoleil
 * entry[+].fullUrl = "http://test.fhir.ch/r4/PractitionerRole/PR-JeanneMoreau-2"

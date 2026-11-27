@@ -2,7 +2,7 @@ Instance: 53Doc-InfluenzaHxNy
 InstanceOf: Bundle
 Usage: #example
 * identifier.system = "urn:ietf:rfc:3986"
-* identifier.value = "urn:uuid:6401332d-6012-443f-9690-9331adb23aab"
+* identifier.value = "urn:uuid:44c4f804-ee10-47e6-9df8-4bf7d2b28d94"
 * type = #document
 * timestamp = "2024-09-05T12:00:00+02:00"
 * entry[0].fullUrl = "http://test.fhir.ch/r4/Composition/53Doc-InfluenzaHxNy-Comp"
@@ -13,12 +13,12 @@ Usage: #example
 * entry[=].resource = Org-SanLab
 * entry[+].fullUrl = "http://test.fhir.ch/r4/Observation/53Doc-InfluenzaHxNy-Obs"
 * entry[=].resource = 53Doc-InfluenzaHxNy-Obs
-* entry[+].fullUrl = "http://test.fhir.ch/r4/Practitioner/Pract-PeterHauser-2"
-* entry[=].resource = Pract-PeterHauser-2
-* entry[+].fullUrl = "http://test.fhir.ch/r4/Organization/Org-PraxisDrHauser"
-* entry[=].resource = Org-PraxisDrHauser
-* entry[+].fullUrl = "http://test.fhir.ch/r4/PractitionerRole/PR-PeterHauser-2"
-* entry[=].resource = PR-PeterHauser-2
+* entry[+].fullUrl = "http://test.fhir.ch/r4/Practitioner/Pract-PeterHauser"
+* entry[=].resource = Pract-PeterHauser
+* entry[+].fullUrl = "http://test.fhir.ch/r4/Organization/Org-PeterHauser"
+* entry[=].resource = Org-PeterHauser
+* entry[+].fullUrl = "http://test.fhir.ch/r4/PractitionerRole/PR-PeterHauser"
+* entry[=].resource = PR-PeterHauser
 * entry[+].fullUrl = "http://test.fhir.ch/r4/Specimen/53Doc-InfluenzaHxNy-Spec"
 * entry[=].resource = 53Doc-InfluenzaHxNy-Spec
 * entry[+].fullUrl = "http://test.fhir.ch/r4/ServiceRequest/53Doc-InfluenzaHxNy-SR"
@@ -31,7 +31,7 @@ InstanceOf: Composition
 Usage: #inline
 * language = #de-CH
 * identifier.system = "urn:ietf:rfc:3986"
-* identifier.value = "urn:uuid:6401332d-6012-443f-9690-9331adb23aab"
+* identifier.value = "urn:uuid:44c4f804-ee10-47e6-9df8-4bf7d2b28d94"
 * status = #final
 * type.coding[0].version = "http://snomed.info/sct/2011000195101"
 * type.coding[=] = $sct#4241000179101 "Laborbericht"
@@ -72,7 +72,7 @@ Usage: #inline
 * intent = #order
 * code = $loinc#59423-4
 * subject = Reference(Pat-AntoineDupont)
-* requester = Reference(PR-PeterHauser-2)
+* requester = Reference(PR-PeterHauser)
 * specimen = Reference(53Doc-InfluenzaHxNy-Spec)
 
 Instance: 53Doc-InfluenzaHxNy-DR
@@ -81,7 +81,7 @@ Usage: #inline
 * extension.url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.composition"
 * extension.valueReference = Reference(53Doc-InfluenzaHxNy-Comp)
 * identifier.system = "urn:ietf:rfc:3986"
-* identifier.value = "urn:uuid:6401332d-6012-443f-9690-9331adb23aab"
+* identifier.value = "urn:uuid:44c4f804-ee10-47e6-9df8-4bf7d2b28d94"
 * basedOn = Reference(53Doc-InfluenzaHxNy-SR)
 * status = #final
 * code = $loinc#11502-2 "Laboratory report"

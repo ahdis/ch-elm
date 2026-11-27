@@ -2,7 +2,7 @@ Instance: 19Doc-S-pneumoniae
 InstanceOf: Bundle
 Usage: #example
 * identifier.system = "urn:ietf:rfc:3986"
-* identifier.value = "urn:uuid:ac01252d-6012-443f-9690-9291adb23433"
+* identifier.value = "urn:uuid:b175e5c9-c3a6-484a-af15-4998efcca123"
 * type = #document
 * timestamp = "2024-08-14T11:00:00+02:00"
 * entry[0].fullUrl = "http://test.fhir.ch/r4/Composition/19Doc-S-pneumoniae-Comp"
@@ -31,7 +31,7 @@ InstanceOf: Composition
 Usage: #inline
 * language = #de-CH
 * identifier.system = "urn:ietf:rfc:3986"
-* identifier.value = "urn:uuid:ac01252d-6012-443f-9690-9291adb23433"
+* identifier.value = "urn:uuid:b175e5c9-c3a6-484a-af15-4998efcca123"
 * status = #final
 * type.coding[0].version = "http://snomed.info/sct/2011000195101"
 * type.coding[=] = $sct#4241000179101 "Laborbericht"
@@ -81,7 +81,7 @@ Usage: #inline
 * extension.url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.composition"
 * extension.valueReference = Reference(19Doc-S-pneumoniae-Comp)
 * identifier.system = "urn:ietf:rfc:3986"
-* identifier.value = "urn:uuid:ac01252d-6012-443f-9690-9291adb23433"
+* identifier.value = "urn:uuid:b175e5c9-c3a6-484a-af15-4998efcca123"
 * basedOn = Reference(19Doc-S-pneumoniae-SR)
 * status = #final
 * code = $loinc#11502-2 "Laboratory report"
