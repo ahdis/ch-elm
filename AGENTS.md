@@ -58,6 +58,7 @@
 
 ## Security & Configuration Tips
 - IG build contacts `tx.fhir.org` for terminology; offline builds pass `-tx n/a`.
+- The IG Publisher caches terminology results in `input-cache/txcache` by canonical URL and version, not by content. A ValueSet, CodeSystem or ConceptMap of this IG that changed without a version bump is answered from the cache with its old content. Delete `input-cache/txcache` before building when the branch changes terminology of this IG, before a build whose QA is compared with another build or reported in a PR (on both sides), and after terminology updates on the server. A build without the cache takes about 4 minutes longer.
 - Need read access to https://github.com/HL7/fhir-ig-publisher/ and https://raw.githubusercontent.com/
 - Do not embed test data with real patient information.
 
