@@ -4,7 +4,7 @@ Usage: #example
 Title: "2Doc - Chlamydia Trachomatis (VCT)"
 Description: "Example for a CH ELM Document: Laboratory Report collection material in addition to the leading LOINC code and Patient with Patient VCT code"
 * identifier.system = "urn:ietf:rfc:3986"
-* identifier.value = "urn:uuid:1301332d-6012-443f-9690-929132b2e155"
+* identifier.value = "urn:uuid:a3d2d16d-27dd-4cd4-aa13-8e916c8b7840"
 * type = #document
 * timestamp = "2023-08-05T11:30:00+02:00"
 * entry[0].fullUrl = "urn:uuid:7d9126ab-df2c-47ce-93f8-4ca4f4353b39" // Composition VCT
@@ -34,7 +34,7 @@ InstanceOf: ChElmComposition
 Usage: #inline
 * language = #de-CH
 * identifier.system = "urn:ietf:rfc:3986"
-* identifier.value = "urn:uuid:1301332d-6012-443f-9690-929132b2e155"
+* identifier.value = "urn:uuid:a3d2d16d-27dd-4cd4-aa13-8e916c8b7840"
 * status = #final
 * type.coding[0].version = "http://snomed.info/sct/2011000195101"
 * type.coding[=] = $sct#4241000179101 "Laborbericht"
@@ -57,7 +57,7 @@ Usage: #inline
 * extension[DiagnosticReportCompositionR5].valueReference = Reference(urn:uuid:7d9126ab-df2c-47ce-93f8-4ca4f4353b39 )
 * extension[DiagnosticReportCompositionR5].valueReference.type = "Composition"
 * identifier.system = "urn:ietf:rfc:3986"
-* identifier.value = "urn:uuid:1301332d-6012-443f-9690-929132b2e155"
+* identifier.value = "urn:uuid:a3d2d16d-27dd-4cd4-aa13-8e916c8b7840"
 * basedOn = Reference(urn:uuid:cfecb79a-7bb8-45a3-8b1e-9d02cad3e829)
 * basedOn.type = "ServiceRequest"
 * status = #final

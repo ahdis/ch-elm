@@ -245,3 +245,216 @@ Description: "Example for a CH ELM Patient - unknown name"
 * address[home].state = "GE"
 * address[home].country = "CH"
 * address[home].country.extension[countrycode].valueCoding = urn:iso:std:iso:3166#CH
+
+Instance: Pat-HIV-H5
+InstanceOf: ChElmPatientHIV
+Usage: #inline
+* identifier[AHVN13].system = "urn:oid:2.16.756.5.32"
+* identifier[AHVN13].value = "7561234567897"
+* name.extension[hivcode].valueString = "H5"
+* name.family.extension[dataabsentreason].valueCode = #masked
+* name.given.extension[dataabsentreason].valueCode = #masked
+* gender = #female
+* birthDate = "1981-02-07"
+* address[home].use = #home
+* address[home].city = "Carouge"
+* address[home].state = "GE"
+* address[home].postalCode = "1227"
+* address[home].country.extension[countrycode].valueCoding = urn:iso:std:iso:3166#CH
+* address[home].country = "CH"
+
+Instance: Pat-AntoineDupont-Initials
+InstanceOf: ChElmPatientInitials
+Usage: #inline
+* identifier[AHVN13].system = "urn:oid:2.16.756.5.32"
+* identifier[AHVN13].value = "7561234567897"
+* name.family = "D"
+* name.given = "A"
+* gender = #female
+* birthDate = "1981-02-07"
+* address[home].use = #home
+* address[home].city = "Carouge"
+* address[home].state = "GE"
+* address[home].postalCode = "1227"
+* address[home].country.extension[countrycode].valueCoding = urn:iso:std:iso:3166#CH
+* address[home].country = "CH"
+
+Instance: Pat-AntoineDupont-Phone
+InstanceOf: ChElmPatient
+Usage: #inline
+* identifier[AHVN13].system = "urn:oid:2.16.756.5.32"
+* identifier[AHVN13].value = "7561234567897"
+* name.family = "Dupont"
+* name.given = "Antoine"
+* telecom.system = #phone
+* telecom.value = "+41 76 222 55 22"
+* gender = #female
+* birthDate = "1981-02-07"
+* address[home].use = #home
+* address[home].line = "rue de la république 10"
+* address[home].line.extension[streetName].valueString = "rue de la république"
+* address[home].line.extension[houseNumber].valueString = "10"
+* address[home].city = "Carouge"
+* address[home].state = "GE"
+* address[home].postalCode = "1227"
+* address[home].country.extension[countrycode].valueCoding = urn:iso:std:iso:3166#CH
+* address[home].country = "CH"
+
+Instance: Pat-AntoineDupont-EmergingPathogen
+InstanceOf: ChElmPatient
+Usage: #inline
+* identifier[AHVN13].system = "urn:oid:2.16.756.5.32"
+* identifier[AHVN13].value = "7561234567866"
+* name.family = "Dupont"
+* name.given = "Antoine"
+* telecom.system = #phone
+* telecom.value = "41762225522"
+* gender = #female
+* birthDate = "1981-02-07"
+* address[home].use = #home
+* address[home].line = "Rue de la république 10"
+* address[home].line.extension[streetName].valueString = "Rue de la république"
+* address[home].line.extension[houseNumber].valueString = "10"
+* address[home].city = "Carouge"
+* address[home].state = "GE"
+* address[home].postalCode = "1227"
+* address[home].country.extension[countrycode].valueCoding = urn:iso:std:iso:3166#CH
+* address[home].country = "CH"
+
+Instance: Pat-AntoineDupont
+InstanceOf: ChElmPatient
+Usage: #inline
+* identifier[AHVN13].system = "urn:oid:2.16.756.5.32"
+* identifier[AHVN13].value = "7561234567897"
+* name.family = "Dupont"
+* name.given = "Antoine"
+* gender = #female
+* birthDate = "1981-02-07"
+* address[home].use = #home
+* address[home].line = "rue de la république 10"
+* address[home].line.extension[streetName].valueString = "rue de la république"
+* address[home].line.extension[houseNumber].valueString = "10"
+* address[home].city = "Carouge"
+* address[home].state = "GE"
+* address[home].postalCode = "1227"
+* address[home].country.extension[countrycode].valueCoding = urn:iso:std:iso:3166#CH
+* address[home].country = "CH"
+
+Instance: Pat-MonikaDelemat
+InstanceOf: ChElmPatient
+Usage: #inline
+* identifier[AHVN13].system = "urn:oid:2.16.756.5.32"
+* identifier[AHVN13].value = "7562295883070"
+* name.family = "Delemat"
+* name.given = "Monika"
+* gender = #female
+* birthDate = "1960-08-22"
+* address[home].use = #home
+* address[home].line = "Bahnhofstrasse 27"
+* address[home].city = "Bern"
+* address[home].state = "BE"
+* address[home].postalCode = "3000"
+* address[home].country.extension[countrycode].valueCoding = urn:iso:std:iso:3166#CH
+* address[home].country = "CH"
+
+Instance: Pat-MonikaDelemat-Initials
+InstanceOf: ChElmPatientInitials
+Usage: #inline
+* identifier[AHVN13].system = "urn:oid:2.16.756.5.32"
+* identifier[AHVN13].value = "7562295883070"
+* name.family = "D"
+* name.given = "M"
+* gender = #female
+* birthDate = "1960-08-22"
+* address[home].use = #home
+* address[home].city = "Bern"
+* address[home].state = "BE"
+* address[home].postalCode = "3000"
+* address[home].country.extension[countrycode].valueCoding = urn:iso:std:iso:3166#CH
+* address[home].country = "CH"
+
+Instance: Pat-ErnstKarlTanner
+InstanceOf: ChElmPatient
+Usage: #inline
+* identifier[AHVN13].system = "urn:oid:2.16.756.5.32"
+* identifier[AHVN13].value = "7561234567897"
+* name.family = "Tanner"
+* name.given = "Ernst Karl"
+* gender = #male
+* birthDate = "1966-08-22"
+* address[home].use = #home
+* address[home].line = "Tannenstrasse 10a"
+* address[home].line.extension[streetName].valueString = "Tannenstrasse"
+* address[home].line.extension[houseNumber].valueString = "10a"
+* address[home].city = "Bern"
+* address[home].state = "BE"
+* address[home].postalCode = "3000"
+* address[home].country.extension[countrycode].valueCoding = urn:iso:std:iso:3166#CH
+* address[home].country = "CH"
+
+Instance: Pat-HerberFrimousse
+InstanceOf: ChElmPatient
+Usage: #inline
+* identifier[AHVN13].system = "urn:oid:2.16.756.5.32"
+* identifier[AHVN13].value = "7561733446723"
+* name.family = "Frimousse"
+* name.given = "Herber"
+* gender = #female
+* birthDate = "1985-10-17"
+* address[home].use = #home
+* address[home].line = "Bahnhofstrasse 27"
+* address[home].city = "Derendingen"
+* address[home].state = "SO"
+* address[home].postalCode = "4552"
+* address[home].country.extension[countrycode].valueCoding = urn:iso:std:iso:3166#CH
+* address[home].country = "CH"
+
+Instance: Pat-FridaHildetter-Initials
+InstanceOf: ChElmPatientInitials
+Usage: #inline
+* identifier[AHVN13].system = "urn:oid:2.16.756.5.32"
+* identifier[AHVN13].value = "7561733446723"
+* name.family = "H"
+* name.given = "F"
+* gender = #female
+* birthDate = "1985-10-17"
+* address[home].use = #home
+* address[home].city = "Derendingen"
+* address[home].state = "SO"
+* address[home].postalCode = "4552"
+* address[home].country.extension[countrycode].valueCoding = urn:iso:std:iso:3166#CH
+* address[home].country = "CH"
+
+Instance: Pat-FridaHildetter
+InstanceOf: ChElmPatient
+Usage: #inline
+* identifier[AHVN13].system = "urn:oid:2.16.756.5.32"
+* identifier[AHVN13].value = "7561733446723"
+* name.family = "Hildetter"
+* name.given = "Frida"
+* gender = #female
+* birthDate = "1985-10-17"
+* address[home].use = #home
+* address[home].line = "Bahnhofstrasse 27"
+* address[home].city = "Derendingen"
+* address[home].state = "SO"
+* address[home].postalCode = "4552"
+* address[home].country.extension[countrycode].valueCoding = urn:iso:std:iso:3166#CH
+* address[home].country = "CH"
+
+Instance: Pat-DonnaMeier
+InstanceOf: ChElmPatient
+Usage: #inline
+* identifier[AHVN13].system = "urn:oid:2.16.756.5.32"
+* identifier[AHVN13].value = "7561733446723"
+* name.family = "Meier"
+* name.given = "Donna"
+* gender = #female
+* birthDate = "1985-10-17"
+* address[home].use = #home
+* address[home].line = "Bahnhofstrasse 27"
+* address[home].city = "Derendingen"
+* address[home].state = "SO"
+* address[home].postalCode = "4552"
+* address[home].country.extension[countrycode].valueCoding = urn:iso:std:iso:3166#CH
+* address[home].country = "CH"
