@@ -1,19 +1,25 @@
-# Generation of examples for the IG
+# Examples and maps
 
-1. BAG (usually Franz) provides an excel sheet with a sheet for each example
-2. We copy the first two columns A & B into the google sheet: Neues Beispiel;
-   https://docs.google.com/spreadsheets/d/1hq3VHGY6PcS-yQy4zq2tnHpLOT99iKBGbmET9BuSaeY/edit?gid=329207338#gid=329207338
-3. The cells with phone numbers (B24, B37) have an error due to the +, you need to remove the = sigg and prefix it with an apostrophe '. Make a copy (Duplicate, Rename) of the sheet with the same filename as in the example tab (e.g. 18Doc-C.diphtheriae)
-4. In cell B65 a 'FHIR QuestionnaireResponse' Resource is created, copy that content in a new File to the ch-elm maps directory and create in the example with ending json.
-6. With Editor, Edit Replace, replace all ("") quotes to single quotes ("), remove the (") on first and last line to get a valid json (maybe you need also remove the final comma) and format document (Shift+Alt+F) and format document.
-7. Use transform.http to convert the example to a bundle, copy that bundle into file input/resources.
-   1. Execute Send Requests to create the Map on matchbox (on Line 6) POST OrfQrToBundle.map, it will be a response 201 created
-   2. Create the transform similar to the other examples and execute the transform, response 200 OK
-   3. Store (add new File) the resulting xml in input/resources
-   4. Name the file Bundle-[id].xml, eg Bundle-18Doc-C.diphtheriae.xml
-   5. Add the it element <id value="[id]" /> e.g. <id value="18Doc-C.diphtheriae" />
-8. Add name/description/exampleCanonical of the example to sushi-config.yaml
-9. Add example in pagecontent/document.md for xml and json versions
-10. Run the IG Publisher and check that no errors have been created.
-11. Add new warnings to input/resources/ignoreWarnings.txt by changing in this example the url from qa.html http://localhost:XXXXX/output/qa.html# to qa.txt http://localhost:XXXXX/output/qa.txt#
-12. Add/Update Changelog
+The example document Bundles of the IG are FSH instances in `input/fsh/examples/`. Patients, organizations, practitioners and practitioner roles used by several Bundles are in `patient.fsh`, `organization.fsh` and `practitioner.fsh` in the same folder.
+
+## New example
+
+1. Copy the FSH file of a similar example, e.g. `input/fsh/examples/3Doc-CPE.fsh`, and adapt it. Resources that only belong to this Bundle get the id `<bundle id>-<type>`, e.g. `3Doc-CPE-Obs`. fullUrls are `http://test.fhir.ch/r4/<type>/<id>`.
+2. Add name/description/exampleCanonical of the example to `sushi-config.yaml`.
+3. Add the example in `input/pagecontent/document.md` for the xml and json versions.
+4. Run the IG Publisher and check that no errors have been created.
+5. Add new warnings to `input/ignoreWarnings.txt`. Copy them from `output/qa.txt` instead of `qa.html`.
+6. Add/Update Changelog.
+
+## QrToBundle.map
+
+`QrToBundle.map` is a StructureMap that turns a flat list of fields into a CH ELM document Bundle. Its input is a QuestionnaireResponse with one item per field, the linkIds are the paths of the [logical model](../input/fsh/LogicalModel.fsh) (e.g. `LaboratoryReport.Patient.Surname`), see `qr-example.json`. The map runs on matchbox (`test.ahdis.ch`):
+
+1. Upload the map with the first request in `transform.http`.
+2. Transform a QuestionnaireResponse with the second request in `transform.http` or with `transform.sh <file>`, which prints the Bundle as JSON.
+
+Most examples were created this way from FOPH example data and stored as XML in `input/resources`, until they were converted to FSH.
+
+## BundleToDocRef.map
+
+`BundleToDocRef.map` creates the `DocumentReference-Publish-*` examples from a Bundle. `docref_fsh.sh <bundle id>` runs it for a Bundle from `fsh-generated/resources` and writes the result to `input/resources`.

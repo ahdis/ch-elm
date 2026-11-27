@@ -1,54 +1,42 @@
 Instance: 48Doc-Mpox-Clade
-InstanceOf: Bundle
+InstanceOf: ChElmDocumentStrict
 Usage: #example
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:6e8ac014-e712-4803-96a2-9ff2424ae6b2"
 * type = #document
 * timestamp = "2024-10-20T12:00:00+02:00"
-* entry[0].fullUrl = "http://test.fhir.ch/r4/Composition/48Doc-Mpox-Clade-Comp"
-* entry[=].resource = 48Doc-Mpox-Clade-Comp
-* entry[+].fullUrl = "http://test.fhir.ch/r4/Patient/Pat-AntoineDupont"
-* entry[=].resource = Pat-AntoineDupont
-* entry[+].fullUrl = "http://test.fhir.ch/r4/Organization/Org-SanLab"
-* entry[=].resource = Org-SanLab
-* entry[+].fullUrl = "http://test.fhir.ch/r4/Observation/48Doc-Mpox-Clade-Obs"
-* entry[=].resource = 48Doc-Mpox-Clade-Obs
-* entry[+].fullUrl = "http://test.fhir.ch/r4/Practitioner/Pract-PeterHauser"
-* entry[=].resource = Pract-PeterHauser
-* entry[+].fullUrl = "http://test.fhir.ch/r4/Organization/Org-PeterHauser"
-* entry[=].resource = Org-PeterHauser
-* entry[+].fullUrl = "http://test.fhir.ch/r4/PractitionerRole/PR-PeterHauser"
-* entry[=].resource = PR-PeterHauser
-* entry[+].fullUrl = "http://test.fhir.ch/r4/Specimen/48Doc-Mpox-Clade-Spec"
-* entry[=].resource = 48Doc-Mpox-Clade-Spec
-* entry[+].fullUrl = "http://test.fhir.ch/r4/ServiceRequest/48Doc-Mpox-Clade-SR"
-* entry[=].resource = 48Doc-Mpox-Clade-SR
-* entry[+].fullUrl = "http://test.fhir.ch/r4/DiagnosticReport/48Doc-Mpox-Clade-DR"
-* entry[=].resource = 48Doc-Mpox-Clade-DR
+* insert Entry(Composition, 48Doc-Mpox-Clade-Comp)
+* insert Entry(Patient, Pat-AntoineDupont)
+* insert Entry(Organization, Org-SanLab)
+* insert Entry(Observation, 48Doc-Mpox-Clade-Obs)
+* insert Entry(Practitioner, Pract-PeterHauser)
+* insert Entry(Organization, Org-PeterHauser)
+* insert Entry(PractitionerRole, PR-PeterHauser)
+* insert Entry(Specimen, 48Doc-Mpox-Clade-Spec)
+* insert Entry(ServiceRequest, 48Doc-Mpox-Clade-SR)
+* insert Entry(DiagnosticReport, 48Doc-Mpox-Clade-DR)
 
 Instance: 48Doc-Mpox-Clade-Comp
-InstanceOf: Composition
+InstanceOf: ChElmComposition
 Usage: #inline
 * language = #de-CH
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:6e8ac014-e712-4803-96a2-9ff2424ae6b2"
 * status = #final
-* type.coding[0].version = "http://snomed.info/sct/2011000195101"
-* type.coding[=] = $sct#4241000179101 "Laborbericht"
-* type.coding[+] = $loinc#11502-2 "Laboratory report"
+* insert LabReportCompositionType
 * subject = Reference(Pat-AntoineDupont)
 * date = "2024-10-20T12:00:00+02:00"
 * author = Reference(Org-SanLab)
 * title = "Laborbericht vom 20.10.2024"
-* section.title = "Analyseergebnisse der mikrobiologischen Untersuchung"
-* section.code = $loinc#18725-2 "Microbiology studies (set)"
-* section.entry = Reference(48Doc-Mpox-Clade-Obs)
+* section[lab-no-subsections].title = "Analyseergebnisse der mikrobiologischen Untersuchung"
+* section[lab-no-subsections].code = $loinc#18725-2 "Microbiology studies (set)"
+* section[lab-no-subsections].entry = Reference(48Doc-Mpox-Clade-Obs)
 
 Instance: 48Doc-Mpox-Clade-Obs
-InstanceOf: Observation
+InstanceOf: ChElmObservationResultsLaboratory
 Usage: #inline
 * status = #final
-* category = $observation-category#laboratory "Laboratory"
+* category[laboratory] = $observation-category#laboratory "Laboratory"
 * code = $loinc#101003-2
 * subject = Reference(Pat-AntoineDupont)
 * effectiveDateTime = "2024-10-19T14:20:00+02:00"
@@ -58,14 +46,14 @@ Usage: #inline
 * specimen = Reference(48Doc-Mpox-Clade-Spec)
 
 Instance: 48Doc-Mpox-Clade-Spec
-InstanceOf: Specimen
+InstanceOf: ChElmSpecimen
 Usage: #inline
 * type.text = "Material declared by Observation.code or non-mandatory"
 * subject = Reference(Pat-AntoineDupont)
 * collection.collectedDateTime = "2024-10-15T14:20:00+02:00"
 
 Instance: 48Doc-Mpox-Clade-SR
-InstanceOf: ServiceRequest
+InstanceOf: ChElmServiceRequestLaboratoryOrder
 Usage: #inline
 * identifier.value = "26500923675"
 * status = #completed
@@ -76,10 +64,9 @@ Usage: #inline
 * specimen = Reference(48Doc-Mpox-Clade-Spec)
 
 Instance: 48Doc-Mpox-Clade-DR
-InstanceOf: DiagnosticReport
+InstanceOf: ChElmDiagnosticReport
 Usage: #inline
-* extension.url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.composition"
-* extension.valueReference = Reference(48Doc-Mpox-Clade-Comp)
+* extension[DiagnosticReportCompositionR5].valueReference = Reference(48Doc-Mpox-Clade-Comp)
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:6e8ac014-e712-4803-96a2-9ff2424ae6b2"
 * basedOn = Reference(48Doc-Mpox-Clade-SR)
